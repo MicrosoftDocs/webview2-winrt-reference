@@ -1,0 +1,8 @@
+- name: COM Interop interfaces
+  href: index.md
+- name: ICoreWebView2CompositionControllerInterop
+  href: icorewebview2compositioncontrollerinterop.md
+- name: ICoreWebView2EnvironmentInterop
+  href: icorewebview2environmentinterop.md
+- name: ICoreWebView2Interop
+  href: icorewebview2interop.md
