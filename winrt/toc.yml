@@ -1,0 +1,136 @@
+- name: Microsoft.Web.WebView2.Core Namespace
+  href: index.md
+- name: CoreWebView2
+  href: corewebview2.md
+- name: CoreWebView2BoundsMode
+  href: corewebview2boundsmode.md
+- name: CoreWebView2BrowserProcessExitKind
+  href: corewebview2browserprocessexitkind.md
+- name: CoreWebView2CapturePreviewImageFormat
+  href: corewebview2capturepreviewimageformat.md
+- name: CoreWebView2ClientCertificate
+  href: corewebview2clientcertificate.md
+- name: CoreWebView2ClientCertificateKind
+  href: corewebview2clientcertificatekind.md
+- name: CoreWebView2CompositionController
+  href: corewebview2compositioncontroller.md
+- name: CoreWebView2Controller
+  href: corewebview2controller.md
+- name: CoreWebView2ControllerWindowReference
+  href: corewebview2controllerwindowreference.md
+- name: CoreWebView2Cookie
+  href: corewebview2cookie.md
+- name: CoreWebView2CookieManager
+  href: corewebview2cookiemanager.md
+- name: CoreWebView2CookieSameSiteKind
+  href: corewebview2cookiesamesitekind.md
+- name: CoreWebView2DevToolsProtocolEventReceiver
+  href: corewebview2devtoolsprotocoleventreceiver.md
+- name: CoreWebView2DownloadInterruptReason
+  href: corewebview2downloadinterruptreason.md
+- name: CoreWebView2DownloadOperation
+  href: corewebview2downloadoperation.md
+- name: CoreWebView2DownloadState
+  href: corewebview2downloadstate.md
+- name: CoreWebView2Environment
+  href: corewebview2environment.md
+- name: CoreWebView2EnvironmentOptions
+  href: corewebview2environmentoptions.md
+- name: CoreWebView2Frame
+  href: corewebview2frame.md
+- name: CoreWebView2FrameInfo
+  href: corewebview2frameinfo.md
+- name: CoreWebView2HostResourceAccessKind
+  href: corewebview2hostresourceaccesskind.md
+- name: CoreWebView2HttpHeadersCollectionIterator
+  href: corewebview2httpheaderscollectioniterator.md
+- name: CoreWebView2HttpRequestHeaders
+  href: corewebview2httprequestheaders.md
+- name: CoreWebView2HttpResponseHeaders
+  href: corewebview2httpresponseheaders.md
+- name: CoreWebView2KeyEventKind
+  href: corewebview2keyeventkind.md
+- name: CoreWebView2MouseEventKind
+  href: corewebview2mouseeventkind.md
+- name: CoreWebView2MouseEventVirtualKeys
+  href: corewebview2mouseeventvirtualkeys.md
+- name: CoreWebView2MoveFocusReason
+  href: corewebview2movefocusreason.md
+- name: CoreWebView2PdfToolbarItems
+  href: corewebview2pdftoolbaritems.md
+- name: CoreWebView2PermissionKind
+  href: corewebview2permissionkind.md
+- name: CoreWebView2PermissionState
+  href: corewebview2permissionstate.md
+- name: CoreWebView2PhysicalKeyStatus
+  href: corewebview2physicalkeystatus.md
+- name: CoreWebView2PointerEventKind
+  href: corewebview2pointereventkind.md
+- name: CoreWebView2PointerInfo
+  href: corewebview2pointerinfo.md
+- name: CoreWebView2ProcessFailedKind
+  href: corewebview2processfailedkind.md
+- name: CoreWebView2ProcessFailedReason
+  href: corewebview2processfailedreason.md
+- name: CoreWebView2ScriptDialogKind
+  href: corewebview2scriptdialogkind.md
+- name: CoreWebView2Settings
+  href: corewebview2settings.md
+- name: CoreWebView2UpdateRuntimeResult
+  href: corewebview2updateruntimeresult.md
+- name: CoreWebView2UpdateRuntimeStatus
+  href: corewebview2updateruntimestatus.md
+- name: CoreWebView2WebErrorStatus
+  href: corewebview2weberrorstatus.md
+- name: CoreWebView2WebResourceContext
+  href: corewebview2webresourcecontext.md
+- name: CoreWebView2WebResourceRequest
+  href: corewebview2webresourcerequest.md
+- name: CoreWebView2WebResourceResponse
+  href: corewebview2webresourceresponse.md
+- name: CoreWebView2WebResourceResponseView
+  href: corewebview2webresourceresponseview.md
+- name: CoreWebView2WindowFeatures
+  href: corewebview2windowfeatures.md
+- name: ICoreWebView2DispatchAdapter
+  href: icorewebview2dispatchadapter.md
+- name: Event arguments
+  items:
+    - name: CoreWebView2AcceleratorKeyPressedEventArgs
+      href: corewebview2acceleratorkeypressedeventargs.md
+    - name: CoreWebView2BrowserProcessExitedEventArgs
+      href: corewebview2browserprocessexitedeventargs.md
+    - name: CoreWebView2ClientCertificateRequestedEventArgs
+      href: corewebview2clientcertificaterequestedeventargs.md
+    - name: CoreWebView2ContentLoadingEventArgs
+      href: corewebview2contentloadingeventargs.md
+    - name: CoreWebView2DevToolsProtocolEventReceivedEventArgs
+      href: corewebview2devtoolsprotocoleventreceivedeventargs.md
+    - name: CoreWebView2DOMContentLoadedEventArgs
+      href: corewebview2domcontentloadedeventargs.md
+    - name: CoreWebView2DownloadStartingEventArgs
+      href: corewebview2downloadstartingeventargs.md
+    - name: CoreWebView2FrameCreatedEventArgs
+      href: corewebview2framecreatedeventargs.md
+    - name: CoreWebView2MoveFocusRequestedEventArgs
+      href: corewebview2movefocusrequestedeventargs.md
+    - name: CoreWebView2NavigationCompletedEventArgs
+      href: corewebview2navigationcompletedeventargs.md
+    - name: CoreWebView2NavigationStartingEventArgs
+      href: corewebview2navigationstartingeventargs.md
+    - name: CoreWebView2NewWindowRequestedEventArgs
+      href: corewebview2newwindowrequestedeventargs.md
+    - name: CoreWebView2PermissionRequestedEventArgs
+      href: corewebview2permissionrequestedeventargs.md
+    - name: CoreWebView2ProcessFailedEventArgs
+      href: corewebview2processfailedeventargs.md
+    - name: CoreWebView2ScriptDialogOpeningEventArgs
+      href: corewebview2scriptdialogopeningeventargs.md
+    - name: CoreWebView2SourceChangedEventArgs
+      href: corewebview2sourcechangedeventargs.md
+    - name: CoreWebView2WebMessageReceivedEventArgs
+      href: corewebview2webmessagereceivedeventargs.md
+    - name: CoreWebView2WebResourceRequestedEventArgs
+      href: corewebview2webresourcerequestedeventargs.md
+    - name: CoreWebView2WebResourceResponseReceivedEventArgs
+      href: corewebview2webresourceresponsereceivedeventargs.md

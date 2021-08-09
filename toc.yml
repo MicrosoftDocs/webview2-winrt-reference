@@ -1,4 +1,6 @@
 - name: WebView2 WinRT Reference
   items:
+  - name: Microsoft.Web.WebView2.Core Namespace
+    href: winrt/toc.yml
   - name: COM Interop interfaces
     href: interop/toc.yml

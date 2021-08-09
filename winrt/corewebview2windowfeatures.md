@@ -1,0 +1,104 @@
+---
+title: CoreWebView2WindowFeatures
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 08/10/2021
+ms.topic: reference
+ms.prod: microsoft-edge
+ms.technology: webview
+keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WindowFeatures
+---
+
+# runtimeClass CoreWebView2WindowFeatures
+
+
+
+The window features for a WebView popup window.
+
+The fields match the `windowFeatures` passed to `window.open()` as specified in [Window features](https://developer.mozilla.org/docs/Web/API/Window/open#Window_features) on MDN. There is no requirement for you to respect the values. If your app does not have corresponding UI features (for example, no toolbar) or if all instance of WebView are opened in tabs and do not have distinct size or positions, then your app does not respect the values. You may want to respect values, but perhaps only some apply to the UI of you app. Accordingly, you may respect all, some, or none of the properties as appropriate for your app. For all numeric properties, if the value that is passed to `window.open()` is outside the range of an uint, the resulting value is uint.MaxValue. If you are not able to parse the value an integer, it is considered 0. If the value is a floating point value, it is rounded down to an integer.
+
+## Summary
+
+Members|Description
+--|--
+[HasPosition](#hasposition) | Indicates whether the left and top values are specified.
+[HasSize](#hassize) | Indicates whether the height and width values are specified.
+[Height](#height) | Gets the height of the window. Ignored if HasSize is `false`.
+[Left](#left) | Gets the left position of the window. Ignored if HasPosition is `false`.
+[ShouldDisplayMenuBar](#shoulddisplaymenubar) | Indicates that the menu bar is displayed.
+[ShouldDisplayScrollBars](#shoulddisplayscrollbars) | Indicates that the scroll bars are displayed.
+[ShouldDisplayStatus](#shoulddisplaystatus) | Indicates that the status bar is displayed.
+[ShouldDisplayToolbar](#shoulddisplaytoolbar) | Indicates that the browser toolbar is displayed.
+[Top](#top) | Gets the top position of the window. Ignored if HasPosition is `false`.
+[Width](#width) | Gets the width of the window. Ignored if HasSize is `false`.
+
+## Properties
+
+### HasPosition
+
+> readonly  bool HasPosition
+
+Indicates whether the left and top values are specified.
+
+### HasSize
+
+> readonly  bool HasSize
+
+Indicates whether the height and width values are specified.
+
+### Height
+
+> readonly  uint32_t Height
+
+Gets the height of the window. Ignored if HasSize is `false`.
+
+### Left
+
+> readonly  uint32_t Left
+
+Gets the left position of the window. Ignored if HasPosition is `false`.
+
+### ShouldDisplayMenuBar
+
+> readonly  bool ShouldDisplayMenuBar
+
+Indicates that the menu bar is displayed.
+
+### ShouldDisplayScrollBars
+
+> readonly  bool ShouldDisplayScrollBars
+
+Indicates that the scroll bars are displayed.
+
+### ShouldDisplayStatus
+
+> readonly  bool ShouldDisplayStatus
+
+Indicates that the status bar is displayed.
+
+### ShouldDisplayToolbar
+
+> readonly  bool ShouldDisplayToolbar
+
+Indicates that the browser toolbar is displayed.
+
+### Top
+
+> readonly  uint32_t Top
+
+Gets the top position of the window. Ignored if HasPosition is `false`.
+
+### Width
+
+> readonly  uint32_t Width
+
+Gets the width of the window. Ignored if HasSize is `false`.
+
+
+
+
+
+
+## Referenced by
+
+- [CoreWebView2NewWindowRequestedEventArgs](corewebview2newwindowrequestedeventargs.md)
