@@ -7,17 +7,27 @@
           "**/*.yml"
         ],
         "exclude": [
+          "winrt/**",
           "**/obj/**",
           "**/includes/**",
           "_themes/**",
           "_themes.pdf/**",
           "**/docfx.json",
           "_repo.en-us/**",
+          "index.md",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices.md"
         ]
+      },
+      {
+        "files": [
+          "*.md",
+          "*.yml"
+        ],
+        "src": "winrt",
+        "dest": "microsoft_web_webview2_core"
       },
       {
         "files": ["breadcrumb/toc.yml"]
