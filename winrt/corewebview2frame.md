@@ -20,7 +20,6 @@ CoreWebView2Frame provides direct access to the iframes information and handling
 Members|Description
 --|--
 [Name](#name) | The name of the iframe from the iframe html tag declaring it.
-[ExecuteScriptAsync](#executescriptasync) | Runs JavaScript code from the `javaScript` parameter in the current frame.
 [IsDestroyed](#isdestroyed) | Check whether a frame is destroyed. Returns true during the [CoreWebView2Frame.Destroyed](corewebview2frame.md#destroyed) event.
 [RemoveHostObjectFromScript](#removehostobjectfromscript) | Remove the host object specified by the name so that it is no longer accessible from JavaScript code in the iframe.
 [Destroyed](#destroyed) | Destroyed event is raised when the iframe corresponding to this [CoreWebView2Frame](corewebview2frame.md) object is removed or the document containing that iframe is destroyed.
@@ -37,20 +36,6 @@ The name of the iframe from the iframe html tag declaring it.
 
 
 ## Methods
-
-### ExecuteScriptAsync
-
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; ExecuteScriptAsync(string operation)
-
-Runs JavaScript code from the `javaScript` parameter in the current frame.
-`javaScript` is the JavaScript code to be run in the current frame.
-Returns a JSON encoded string that represents the result of running the provided JavaScript.
-
-A function that has no explicit return value returns `undefined`. If the script that was run throws an unhandled exception, then the result is also `null`. This method is applied asynchronously.
-If the method is run before [CoreWebView2Frame.ContentLoading](corewebview2frame.md#contentloading) the script will not be executed and the JSON `null` will be returned.
-This operation works even if [CoreWebView2Settings.IsScriptEnabled](corewebview2settings.md#isscriptenabled) is set to `false`.
-
-
 
 ### IsDestroyed
 

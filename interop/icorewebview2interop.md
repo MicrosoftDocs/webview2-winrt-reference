@@ -3,7 +3,7 @@ description: Interop interface for the CoreWebView2 WinRT object to allow WinRT 
 title: WebView2 WinRT COM ICoreWebView2Interop
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/11/2021
+ms.date: 08/14/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -24,6 +24,8 @@ Interop interface for the CoreWebView2 WinRT object to allow WinRT end developer
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [AddHostObjectToScript](#addhostobjecttoscript) | Add the provided host object to script running in the WebView with the specified name.
+
+This interface is implemented by the Microsoft.Web.WebView2.Core.CoreWebView2 runtime class.
 
 ## Members
 

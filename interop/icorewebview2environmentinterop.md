@@ -3,7 +3,7 @@ description: Interop interface for the CoreWebView2Environment WinRT object to a
 title: WebView2 WinRT COM ICoreWebView2EnvironmentInterop
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/11/2021
+ms.date: 08/14/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -25,6 +25,8 @@ Interop interface for the CoreWebView2Environment WinRT object to allow WinRT en
 --------------------------------|---------------------------------------------
 [GetProviderForHwnd](#getproviderforhwnd) | Returns the UI Automation Provider for the ICoreWebView2CompositionController that corresponds with the given HWND.
 
+This interface is implemented by the Microsoft.Web.WebView2.Core.CoreWebView2Environment runtime class.
+
 ## Members
 
 #### GetProviderForHwnd
@@ -32,4 +34,6 @@ Interop interface for the CoreWebView2Environment WinRT object to allow WinRT en
 Returns the UI Automation Provider for the ICoreWebView2CompositionController that corresponds with the given HWND.
 
 > public HRESULT [GetProviderForHwnd](#getproviderforhwnd)(HWND hwnd,IUnknown ** provider)
+
+See the documentation for ICoreWebView2Environment::GetProviderForHwnd for more information.
 
