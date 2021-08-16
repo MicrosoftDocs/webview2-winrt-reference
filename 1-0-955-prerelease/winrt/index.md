@@ -3,7 +3,7 @@ description: Explore all classes and interfaces of the Microsoft.Web.WebView2.Co
 title: Microsoft.Web.WebView2.Core Namespace
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/11/2021
+ms.date: 08/16/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview

@@ -3,11 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md",
-          "**/*.yml"
         ],
         "exclude": [
-          "winrt/**",
           "**/obj/**",
           "**/includes/**",
           "_themes/**",
@@ -22,16 +19,17 @@
         ]
       },
       {
-        "files": [
-          "*.md",
-          "*.yml"
-        ],
-        "src": "winrt",
-        "dest": "microsoft_web_webview2_core"
+        "files": ["breadcrumb/toc.yml"]
       },
       {
-        "files": ["breadcrumb/toc.yml"]
-      }
+        "files": [
+          "**/*.md"
+        ],
+        "src": "non-version"
+      },
+      { "files": ["*.md"], "src": "1-0-955-prerelease/interop", "dest": "interop" },
+      { "files": ["*.md"], "src": "1-0-955-prerelease/winrt", "dest": "microsoft_web_webview2_core" },
+      { "files": ["**/*.yml"], "src": "1-0-955-prerelease" }
     ],
     "resource": [
       {
@@ -59,6 +57,9 @@
     "fileMetadata": {},
     "template": [],
     "dest": "webview2-winrt",
+    "groups": {
+      "webview2-955-prerelease": { "moniker_range": "webview2-winrt-1.0.955-prerelease" }
+    },
     "markdownEngineName": "markdig"
   }
 }

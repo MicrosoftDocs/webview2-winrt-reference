@@ -6,7 +6,9 @@
       "build_output_subfolder": "webview2-winrt",
       "locale": "en-us",
       "monikers": [],
-      "moniker_ranges": [],
+      "moniker_ranges": [
+        "webview2-winrt-1.0.955-prerelease"
+      ],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content"
