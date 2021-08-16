@@ -1,15 +1,16 @@
 ---
+description: Options used to create WebView2 Environment.
 title: CoreWebView2EnvironmentOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/12/2021
+ms.date: 08/16/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2EnvironmentOptions
 ---
 
-# runtimeClass CoreWebView2EnvironmentOptions
+# runtimeclass CoreWebView2EnvironmentOptions
 
 
 

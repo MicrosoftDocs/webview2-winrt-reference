@@ -1,8 +1,9 @@
 ---
+description: Kind of cookie SameSite status used in the CoreWebView2Cookie class.
 title: CoreWebView2CookieSameSiteKind
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2021
+ms.date: 08/16/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview

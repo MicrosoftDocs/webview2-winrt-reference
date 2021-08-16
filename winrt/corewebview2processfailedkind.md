@@ -1,8 +1,9 @@
 ---
+description: Specifies the process failure kind used in CoreWebView2ProcessFailedEventArgs.
 title: CoreWebView2ProcessFailedKind
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2021
+ms.date: 08/16/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview

@@ -1,8 +1,9 @@
 ---
+description: Specifies the key event kind that raises an CoreWebView2Controller.AcceleratorKeyPressed event.
 title: CoreWebView2KeyEventKind
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2021
+ms.date: 08/16/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview

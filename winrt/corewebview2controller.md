@@ -1,15 +1,16 @@
 ---
+description: The owner of the CoreWebView2 object that provides support for resizing, showing and hiding, focusing, and other functionality related to windowing and composition.
 title: CoreWebView2Controller
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/11/2021
+ms.date: 08/16/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Controller
 ---
 
-# runtimeClass CoreWebView2Controller
+# runtimeclass CoreWebView2Controller
 
 
 

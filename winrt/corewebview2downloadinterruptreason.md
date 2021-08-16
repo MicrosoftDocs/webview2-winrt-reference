@@ -1,8 +1,9 @@
 ---
+description: The reason why the CoreWebView2DownloadOperation was interrupted.
 title: CoreWebView2DownloadInterruptReason
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2021
+ms.date: 08/16/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview

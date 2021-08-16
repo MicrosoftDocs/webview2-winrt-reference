@@ -1,15 +1,16 @@
 ---
+description: HTTP response headers.
 title: CoreWebView2HttpResponseHeaders
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/12/2021
+ms.date: 08/16/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2HttpResponseHeaders
 ---
 
-# runtimeClass CoreWebView2HttpResponseHeaders
+# runtimeclass CoreWebView2HttpResponseHeaders
 
 Implements: [IIterable](/uwp/api/Windows.Foundation.Collections.IIterable-1)&lt;[`IKeyValuePair`](/uwp/api/Windows.Foundation.Collections.IKeyValuePair-2)&lt;string, string&gt;&gt;
 

@@ -1,15 +1,16 @@
 ---
+description: Event args for the CoreWebView2.NavigationCompleted event.
 title: CoreWebView2NavigationCompletedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/12/2021
+ms.date: 08/16/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2NavigationCompletedEventArgs
 ---
 
-# runtimeClass CoreWebView2NavigationCompletedEventArgs
+# runtimeclass CoreWebView2NavigationCompletedEventArgs
 
 
 

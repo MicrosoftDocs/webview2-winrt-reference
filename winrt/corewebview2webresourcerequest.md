@@ -1,15 +1,16 @@
 ---
+description: An HTTP request used with the CoreWebView2.WebResourceRequested event.
 title: CoreWebView2WebResourceRequest
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2021
+ms.date: 08/16/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebResourceRequest
 ---
 
-# runtimeClass CoreWebView2WebResourceRequest
+# runtimeclass CoreWebView2WebResourceRequest
 
 
 

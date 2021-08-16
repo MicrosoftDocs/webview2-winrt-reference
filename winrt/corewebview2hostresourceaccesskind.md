@@ -1,8 +1,9 @@
 ---
+description: Kind of cross origin resource access allowed for host resources during download.
 title: CoreWebView2HostResourceAccessKind
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2021
+ms.date: 08/16/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview

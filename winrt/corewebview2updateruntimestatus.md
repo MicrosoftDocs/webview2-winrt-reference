@@ -1,8 +1,9 @@
 ---
+description: Status of UpdateRuntime operation result.
 title: CoreWebView2UpdateRuntimeStatus
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/11/2021
+ms.date: 08/16/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview

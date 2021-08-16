@@ -1,8 +1,9 @@
 ---
+description: Specifies the image format for the CoreWebView2.CapturePreviewAsync method.
 title: CoreWebView2CapturePreviewImageFormat
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2021
+ms.date: 08/16/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview

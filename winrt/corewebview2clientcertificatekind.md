@@ -1,8 +1,9 @@
 ---
+description: The kind of the CoreWebView2ClientCertificate.
 title: CoreWebView2ClientCertificateKind
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2021
+ms.date: 08/16/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
