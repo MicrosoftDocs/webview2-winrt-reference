@@ -27,9 +27,9 @@
         ],
         "src": "non-version"
       },
-      { "files": ["*.md"], "src": "1-0-955-prerelease/interop", "dest": "interop" },
-      { "files": ["*.md"], "src": "1-0-955-prerelease/winrt", "dest": "microsoft_web_webview2_core" },
-      { "files": ["**/*.yml"], "src": "1-0-955-prerelease" }
+      { "files": ["*.md"], "group": "webview2-955-prerelease", "src": "1-0-955-prerelease/interop", "dest": "interop" },
+      { "files": ["*.md"], "group": "webview2-955-prerelease", "src": "1-0-955-prerelease/winrt", "dest": "microsoft_web_webview2_core" },
+      { "files": ["**/*.yml"], "group": "webview2-955-prerelease", "src": "1-0-955-prerelease" }
     ],
     "resource": [
       {
