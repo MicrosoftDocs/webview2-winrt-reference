@@ -5,7 +5,7 @@ ms.date: 08/16/2021
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2CookieSameSiteKind
 ---
 
-# enum CoreWebView2CookieSameSiteKind
+# CoreWebView2CookieSameSiteKind Enum
 
 Kind of cookie SameSite status used in the [CoreWebView2Cookie](corewebview2cookie.md) class.
 

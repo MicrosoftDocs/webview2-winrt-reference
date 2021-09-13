@@ -5,7 +5,7 @@ ms.date: 08/16/2021
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ProcessFailedKind
 ---
 
-# enum CoreWebView2ProcessFailedKind
+# CoreWebView2ProcessFailedKind Enum
 
 Specifies the process failure kind used in [CoreWebView2ProcessFailedEventArgs](corewebview2processfailedeventargs.md).
 

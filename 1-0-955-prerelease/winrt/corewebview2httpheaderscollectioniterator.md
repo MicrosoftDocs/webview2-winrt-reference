@@ -5,7 +5,7 @@ ms.date: 08/16/2021
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2HttpHeadersCollectionIterator
 ---
 
-# runtimeclass CoreWebView2HttpHeadersCollectionIterator
+# CoreWebView2HttpHeadersCollectionIterator Class
 
 Implements: [IIterator](/uwp/api/Windows.Foundation.Collections.IIterator-1)&lt;[`IKeyValuePair`](/uwp/api/Windows.Foundation.Collections.IKeyValuePair-2)&lt;string, string&gt;&gt;
 

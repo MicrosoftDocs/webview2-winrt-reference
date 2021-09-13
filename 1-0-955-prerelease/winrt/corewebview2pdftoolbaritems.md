@@ -5,7 +5,7 @@ ms.date: 08/16/2021
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PdfToolbarItems
 ---
 
-# enum CoreWebView2PdfToolbarItems
+# CoreWebView2PdfToolbarItems Enum
 
 Specifies the PDF toolbar item types used for the [CoreWebView2Settings.HiddenPdfToolbarItems](corewebview2settings.md#hiddenpdftoolbaritems).
 

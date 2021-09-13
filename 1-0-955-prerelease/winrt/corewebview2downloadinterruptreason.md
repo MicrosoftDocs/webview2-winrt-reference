@@ -5,7 +5,7 @@ ms.date: 08/16/2021
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DownloadInterruptReason
 ---
 
-# enum CoreWebView2DownloadInterruptReason
+# CoreWebView2DownloadInterruptReason Enum
 
 The reason why the [CoreWebView2DownloadOperation](corewebview2downloadoperation.md) was interrupted.
 

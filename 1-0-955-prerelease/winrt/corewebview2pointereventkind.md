@@ -5,7 +5,7 @@ ms.date: 08/16/2021
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PointerEventKind
 ---
 
-# enum CoreWebView2PointerEventKind
+# CoreWebView2PointerEventKind Enum
 
 Pointer event kind used by [CoreWebView2CompositionController.SendPointerInput](corewebview2compositioncontroller.md#sendpointerinput) to convey the kind of pointer event being sent to WebView.
 

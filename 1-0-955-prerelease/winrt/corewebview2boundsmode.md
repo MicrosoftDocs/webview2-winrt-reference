@@ -5,7 +5,7 @@ ms.date: 08/16/2021
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2BoundsMode
 ---
 
-# enum CoreWebView2BoundsMode
+# CoreWebView2BoundsMode Enum
 
 Mode for how the [CoreWebView2Controller.Bounds](corewebview2controller.md#bounds) property is interpreted in relation to the [CoreWebView2Controller.RasterizationScale](corewebview2controller.md#rasterizationscale) property.
 

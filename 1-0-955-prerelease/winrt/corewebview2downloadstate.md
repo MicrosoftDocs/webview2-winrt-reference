@@ -5,7 +5,7 @@ ms.date: 08/16/2021
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DownloadState
 ---
 
-# enum CoreWebView2DownloadState
+# CoreWebView2DownloadState Enum
 
 The state of the [CoreWebView2DownloadOperation](corewebview2downloadoperation.md).
 

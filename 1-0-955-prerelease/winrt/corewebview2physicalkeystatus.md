@@ -5,7 +5,7 @@ ms.date: 08/16/2021
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PhysicalKeyStatus
 ---
 
-# struct CoreWebView2PhysicalKeyStatus
+# CoreWebView2PhysicalKeyStatus Struct
 
 Contains the information packed into the LPARAM sent to a Win32 key event.
 

@@ -5,7 +5,7 @@ ms.date: 08/16/2021
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2MouseEventVirtualKeys
 ---
 
-# enum CoreWebView2MouseEventVirtualKeys
+# CoreWebView2MouseEventVirtualKeys Enum
 
 Mouse event virtual keys associated with a [CoreWebView2MouseEventKind](corewebview2mouseeventkind.md) for [CoreWebView2CompositionController.SendMouseInput](corewebview2compositioncontroller.md#sendmouseinput).
 

@@ -5,7 +5,7 @@ ms.date: 08/16/2021
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2HostResourceAccessKind
 ---
 
-# enum CoreWebView2HostResourceAccessKind
+# CoreWebView2HostResourceAccessKind Enum
 
 Kind of cross origin resource access allowed for host resources during download.
 
