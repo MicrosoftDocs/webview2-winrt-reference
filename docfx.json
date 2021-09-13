@@ -52,6 +52,11 @@
     "globalMetadata": {
       "breadcrumb_path": "/microsoft-edge/webview2/reference/winrt/breadcrumb/toc.json",
       "extendBreadcrumb": true,
+      "author": "MSEdgeTeam",
+      "ms.author": "msedgedevrel",
+      "ms.topic": "reference",
+      "ms.prod": "microsoft-edge",
+      "ms.technology": "webview",
       "feedback_system": "None"
     },
     "fileMetadata": {},

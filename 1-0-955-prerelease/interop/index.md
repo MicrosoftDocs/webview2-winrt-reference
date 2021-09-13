@@ -1,12 +1,7 @@
 ---
 description: WebView2 WinRT COM Interop Reference
 title: WebView2 WinRT COM Interop Reference
-author: MSEdgeTeam
-ms.author: msedgedevrel
 ms.date: 08/11/2021
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, winrt, interop, edge, ICoreWebView2, ICoreWebView2Controller, ICoreWebView2Interop, browser control, edge html
 ---
 
