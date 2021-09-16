@@ -137,20 +137,20 @@ Desired [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.
 An app may set [CoreWebView2.MemoryUsageTargetLevel](corewebview2.md#memoryusagetargetlevel) to indicate desired memory consumption level of WebView.
 Scripts will not be impacted and continue to run.
 This is useful for inactive apps that still want to run scripts and/or keep network connections alive and therefore could not call [CoreWebView2.TrySuspendAsync](corewebview2.md#trysuspendasync) and [CoreWebView2.Resume](corewebview2.md#resume) to reduce memory consumption.
-These apps can set memory usage target level to [CoreWebView2MemoryUsageTargetLevel.Low](corewebview2memoryusagetargetlevel.md#low) when the app becomes inactive, and set back to [CoreWebView2MemoryUsageTargetLevel.Normal](corewebview2memoryusagetargetlevel.md#normal) when the app becomes active.
+These apps can set memory usage target level to [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Low when the app becomes inactive, and set back to [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Normal when the app becomes active.
 
 It is not necessary to set CoreWebView2Controller's IsVisible property to false when setting the property.
 
 It is a best effort operation to change memory usage level, and the API will return before the operation completes.
 
-Setting the level to [CoreWebView2MemoryUsageTargetLevel.Low](corewebview2memoryusagetargetlevel.md#low) could potentially cause memory for some WebView browser processes to be swapped out to disk in some circumstances. It is a best effort to reduce memory usage as much as possible.
+Setting the level to [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Low could potentially cause memory for some WebView browser processes to be swapped out to disk in some circumstances. It is a best effort to reduce memory usage as much as possible.
 If a script runs after its related memory has been swapped out, the memory will be swapped back in to ensure the script can still run, but performance might be impacted.
-Therefore, the app should set the level back to [CoreWebView2MemoryUsageTargetLevel.Normal](corewebview2memoryusagetargetlevel.md#normal) when the app becomes active again. Setting memory usage target level back to normal will not happen automatically.
+Therefore, the app should set the level back to [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Normal when the app becomes active again. Setting memory usage target level back to normal will not happen automatically.
 
-An app should choose to use either the combination of [CoreWebView2.TrySuspendAsync](corewebview2.md#trysuspendasync) and [CoreWebView2.Resume](corewebview2.md#resume) or the combination of setting MemoryUsageTargetLevel to [CoreWebView2MemoryUsageTargetLevel.Low](corewebview2memoryusagetargetlevel.md#low) and [CoreWebView2MemoryUsageTargetLevel.Normal](corewebview2memoryusagetargetlevel.md#normal). It is not advisable to mix them.
+An app should choose to use either the combination of [CoreWebView2.TrySuspendAsync](corewebview2.md#trysuspendasync) and [CoreWebView2.Resume](corewebview2.md#resume) or the combination of setting MemoryUsageTargetLevel to [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Low and [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Normal. It is not advisable to mix them.
 Trying to set [CoreWebView2.MemoryUsageTargetLevel](corewebview2.md#memoryusagetargetlevel) while suspended will be ignored.
 The [CoreWebView2.TrySuspendAsync](corewebview2.md#trysuspendasync) and [CoreWebView2.Resume](corewebview2.md#resume) methods will change the [CoreWebView2.MemoryUsageTargetLevel](corewebview2.md#memoryusagetargetlevel).
-[CoreWebView2.TrySuspendAsync](corewebview2.md#trysuspendasync) will automatically set [CoreWebView2.MemoryUsageTargetLevel](corewebview2.md#memoryusagetargetlevel) to [CoreWebView2MemoryUsageTargetLevel.Low](corewebview2memoryusagetargetlevel.md#low) while [CoreWebView2.Resume](corewebview2.md#resume) on suspended WebView will automatically set [CoreWebView2.MemoryUsageTargetLevel](corewebview2.md#memoryusagetargetlevel) to [CoreWebView2MemoryUsageTargetLevel.Normal](corewebview2memoryusagetargetlevel.md#normal).
+[CoreWebView2.TrySuspendAsync](corewebview2.md#trysuspendasync) will automatically set [CoreWebView2.MemoryUsageTargetLevel](corewebview2.md#memoryusagetargetlevel) to [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Low while [CoreWebView2.Resume](corewebview2.md#resume) on suspended WebView will automatically set [CoreWebView2.MemoryUsageTargetLevel](corewebview2.md#memoryusagetargetlevel) to [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Normal.
 Calling [CoreWebView2.Resume](corewebview2.md#resume) when the WebView is not suspended would not change [CoreWebView2.MemoryUsageTargetLevel](corewebview2.md#memoryusagetargetlevel).
 
 ### Settings
