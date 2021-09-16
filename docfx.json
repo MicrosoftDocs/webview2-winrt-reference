@@ -27,7 +27,7 @@
         ],
         "src": "non-version"
       },
-      { "files": ["*.md"], "src": "interop" },
+      { "files": ["*.md"], "src": "interop", "dest": "interop" },
       { "files": ["*.md"], "group": "webview2-1010-prerelease", "src": "1-0-1010-prerelease/winrt", "dest": "microsoft_web_webview2_core" },
       { "files": ["**/*.yml"], "group": "webview2-1010-prerelease", "src": "1-0-1010-prerelease" },
       { "files": ["*.md"], "group": "webview2-955-prerelease", "src": "1-0-955-prerelease/winrt", "dest": "microsoft_web_webview2_core" },
