@@ -154,11 +154,11 @@
             - name: CoreWebView2WebResourceResponseReceivedEventArgs
               href: winrt/corewebview2webresourceresponsereceivedeventargs.md
     - name: COM Interop APIs
-      href: interop/index.md
+      href: interop
       items:
         - name: ICoreWebView2CompositionControllerInterop
-          href: interop/icorewebview2compositioncontrollerinterop.md
+          href: interop/icorewebview2compositioncontrollerinterop
         - name: ICoreWebView2EnvironmentInterop
-          href: interop/icorewebview2environmentinterop.md
+          href: interop/icorewebview2environmentinterop
         - name: ICoreWebView2Interop
-          href: interop/icorewebview2interop.md
+          href: interop/icorewebview2interop
