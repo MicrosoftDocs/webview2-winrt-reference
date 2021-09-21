@@ -22,10 +22,10 @@ Members|Description
 [CreateAsync](#createasync) | Creates a WebView2 Environment using the installed or a custom WebView2 Runtime version.
 [CreateContextMenuItem](#createcontextmenuitem) | Create a [CoreWebView2ContextMenuItem](corewebview2contextmenuitem.md) object to insert into the WebView context menu.
 [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | Asynchronously creates a new WebView for use with visual hosting.
-[CreateCoreWebView2CompositionControllerWithOptionsAsync](#createcorewebview2compositioncontrollerwithoptionsasync) | 
+[CreateCoreWebView2CompositionControllerWithOptionsAsync](#createcorewebview2compositioncontrollerwithoptionsasync) | Asynchronously creates a new WebView with custom profile for use with visual hosting.
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | Asynchronously creates a new WebView.
 [CreateCoreWebView2ControllerOptions](#createcorewebview2controlleroptions) | Create a new [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) object, which can be passed as a parameter in [CoreWebView2Environment.CreateCoreWebView2ControllerWithOptionsAsync](corewebview2environment.md#createcorewebview2controllerwithoptionsasync) and [CoreWebView2Environment.CreateCoreWebView2CompositionControllerWithOptionsAsync](corewebview2environment.md#createcorewebview2compositioncontrollerwithoptionsasync) function for multiple profiles support.
-[CreateCoreWebView2ControllerWithOptionsAsync](#createcorewebview2controllerwithoptionsasync) | 
+[CreateCoreWebView2ControllerWithOptionsAsync](#createcorewebview2controllerwithoptionsasync) | Asynchronously creates a new WebView with custom profile.
 [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Creates an empty [CoreWebView2PointerInfo](corewebview2pointerinfo.md).
 [CreatePrintSettings](#createprintsettings) | Creates the [CoreWebView2PrintSettings](corewebview2printsettings.md) used by the [CoreWebView2.PrintToPdfAsync](corewebview2.md#printtopdfasync) method.
 [CreateWebResourceRequest](#createwebresourcerequest) | Creates a new [CoreWebView2WebResourceRequest](corewebview2webresourcerequest.md) object.
@@ -101,7 +101,7 @@ It is recommended that the application set Application User Model ID for the pro
 
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md)&gt; CreateCoreWebView2CompositionControllerWithOptionsAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) operation, [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) ParentWindow)
 
-
+Asynchronously creates a new WebView with custom profile for use with visual hosting.
 
 ### CreateCoreWebView2ControllerAsync
 
@@ -132,7 +132,7 @@ Create a new [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) o
 
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Controller](corewebview2controller.md)&gt; CreateCoreWebView2ControllerWithOptionsAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) operation, [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) ParentWindow)
 
-
+Asynchronously creates a new WebView with custom profile.
 
 ### CreateCoreWebView2PointerInfo
 
