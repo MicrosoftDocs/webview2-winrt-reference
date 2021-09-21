@@ -27,6 +27,9 @@
         ],
         "src": "non-version"
       },
+      { "files": ["*.md"], "group": "webview2-1018-prerelease", "src": "1-0-1018-prerelease/interop", "dest": "interop" },
+      { "files": ["*.md"], "group": "webview2-1018-prerelease", "src": "1-0-1018-prerelease/winrt", "dest": "microsoft_web_webview2_core" },
+      { "files": ["**/*.yml"], "group": "webview2-1018-prerelease", "src": "1-0-1018-prerelease" },
       { "files": ["*.md"], "group": "webview2-1010-prerelease", "src": "1-0-1010-prerelease/interop", "dest": "interop" },
       { "files": ["*.md"], "group": "webview2-1010-prerelease", "src": "1-0-1010-prerelease/winrt", "dest": "microsoft_web_webview2_core" },
       { "files": ["**/*.yml"], "group": "webview2-1010-prerelease", "src": "1-0-1010-prerelease" },
@@ -66,6 +69,7 @@
     "template": [],
     "dest": "webview2-winrt",
     "groups": {
+      "webview2-1018-prerelease": { "moniker_range": "webview2-winrt-1.0.1018-prerelease" },
       "webview2-1010-prerelease": { "moniker_range": "webview2-winrt-1.0.1010-prerelease" },
       "webview2-955-prerelease": { "moniker_range": "webview2-winrt-1.0.955-prerelease" }
     },

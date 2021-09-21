@@ -19,7 +19,7 @@ Members|Description
 [AdditionalBrowserArguments](#additionalbrowserarguments) | Gets or sets the additional browser arguments to change the behavior of the WebView.
 [AllowSingleSignOnUsingOSPrimaryAccount](#allowsinglesignonusingosprimaryaccount) | Determines whether to enable single sign on with Azure Active Directory (AAD) resources inside WebView using the logged in Windows account and single sign on (SSO) with web sites using Microsoft account associated with the login in Windows account.
 [Language](#language) | Gets or sets the default display language for WebView.
-[TargetCompatibleBrowserVersion](#targetcompatiblebrowserversion) | Gets or sets the version of the WebView2 Runtime binaries required to be compatible with the your app.
+[TargetCompatibleBrowserVersion](#targetcompatiblebrowserversion) | Gets or sets the version of the WebView2 Runtime binaries required to be compatible with your app.
 
 ## Properties
 
@@ -58,7 +58,7 @@ It applies to browser UIs such as context menu and dialogs. It also applies to t
 
 >  string TargetCompatibleBrowserVersion
 
-Gets or sets the version of the WebView2 Runtime binaries required to be compatible with the your app.
+Gets or sets the version of the WebView2 Runtime binaries required to be compatible with your app.
 
 This defaults to the WebView2 Runtime version that corresponds with the version of the SDK the app is using. The format of this value is the same as the format of the [CoreWebView2Environment.BrowserVersionString](corewebview2environment.md#browserversionstring) property and other BrowserVersion values. Only the version part of the BrowserVersion value is respected. The channel suffix, if it exists, is ignored. The version of the WebView2 Runtime binaries actually used may be different from the specified TargetCompatibleBrowserVersion. They binaries are only guaranteed to be compatible. Verify the actual version on the [CoreWebView2Environment.BrowserVersionString](corewebview2environment.md#browserversionstring) property.
 
