@@ -250,7 +250,7 @@ console.log(result);
 
 ### AddScriptToExecuteOnDocumentCreatedAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; AddScriptToExecuteOnDocumentCreatedAsync(string operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; AddScriptToExecuteOnDocumentCreatedAsync(string javaScript)
 
 Adds the provided JavaScript to a list of scripts that should be run after the global object has been created, but before the HTML document has been parsed and before any other script included by the HTML document is run.
 `javaScript` is the JavaScript code to be run.
@@ -313,7 +313,7 @@ For more information about resource context filters, navigate to
 
 ### CallDevToolsProtocolMethodAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; CallDevToolsProtocolMethodAsync(string operation, string methodName)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; CallDevToolsProtocolMethodAsync(string methodName, string parametersAsJson)
 
 Runs an asynchronous DevToolsProtocol method.
 `methodName` is the full name of the method in the format `{domain}.{method}`.
@@ -326,7 +326,7 @@ For more information about available methods, navigate to [DevTools Protocol Vie
 
 ### CapturePreviewAsync
 
-> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) CapturePreviewAsync([CoreWebView2CapturePreviewImageFormat](corewebview2capturepreviewimageformat.md) operation, [IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) imageFormat)
+> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) CapturePreviewAsync([CoreWebView2CapturePreviewImageFormat](corewebview2capturepreviewimageformat.md) imageFormat, [IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) imageStream)
 
 Captures an image of what WebView is displaying.
 `imageFormat` is the format of the image to be captured.
@@ -347,7 +347,7 @@ Clears a host name mapping for local folder that was added by [CoreWebView2.SetV
 
 ### ExecuteScriptAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; ExecuteScriptAsync(string operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; ExecuteScriptAsync(string javaScript)
 
 Runs JavaScript code from the `javaScript` parameter in the current top-level document rendered in the WebView.
 `javaScript` is the JavaScript code to be run in the current top-level document rendered in the WebView.

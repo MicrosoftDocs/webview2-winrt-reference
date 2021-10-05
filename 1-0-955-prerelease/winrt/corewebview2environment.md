@@ -64,7 +64,7 @@ Creates a WebView2 Environment using the installed or a custom WebView2 Runtime 
 
 ### CreateCoreWebView2CompositionControllerAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md)&gt; CreateCoreWebView2CompositionControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md)&gt; CreateCoreWebView2CompositionControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow)
 
 Asynchronously creates a new WebView for use with visual hosting.
 `ParentWindow` is the HWND in which the app will connect the visual tree of the WebView.
@@ -79,7 +79,7 @@ It is recommended that the application set Application User Model ID for the pro
 
 ### CreateCoreWebView2ControllerAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Controller](corewebview2controller.md)&gt; CreateCoreWebView2ControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Controller](corewebview2controller.md)&gt; CreateCoreWebView2ControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow)
 
 Asynchronously creates a new WebView.
 `ParentWindow` is the HWND in which the WebView should be displayed and from which receive input.
@@ -135,7 +135,7 @@ It is also possible to create this object with empty headers string and then use
 
 ### CreateWithOptionsAsync
 
-> static [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Environment](corewebview2environment.md)&gt; CreateWithOptionsAsync(string operation, string browserExecutableFolder, [CoreWebView2EnvironmentOptions](corewebview2environmentoptions.md) userDataFolder)
+> static [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Environment](corewebview2environment.md)&gt; CreateWithOptionsAsync(string browserExecutableFolder, string userDataFolder, [CoreWebView2EnvironmentOptions](corewebview2environmentoptions.md) options)
 
 Creates a WebView2 Environment with a custom version of WebView2 Runtime, user data folder, and environment options.
 

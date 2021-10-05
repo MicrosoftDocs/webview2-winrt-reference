@@ -268,7 +268,7 @@ console.log(result);
 
 ### AddScriptToExecuteOnDocumentCreatedAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; AddScriptToExecuteOnDocumentCreatedAsync(string operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; AddScriptToExecuteOnDocumentCreatedAsync(string javaScript)
 
 Adds the provided JavaScript to a list of scripts that should be run after the global object has been created, but before the HTML document has been parsed and before any other script included by the HTML document is run.
 The injected script will apply to all future top level document and child frame navigations until removed with [CoreWebView2.RemoveScriptToExecuteOnDocumentCreated](corewebview2.md#removescripttoexecuteondocumentcreated).
@@ -313,7 +313,7 @@ For more information about resource context filters, navigate to [CoreWebView2We
 
 ### CallDevToolsProtocolMethodAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; CallDevToolsProtocolMethodAsync(string operation, string methodName)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; CallDevToolsProtocolMethodAsync(string methodName, string parametersAsJson)
 
 Runs an asynchronous DevToolsProtocol method.
 For more information about available methods, navigate to [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs). The handler's Invoke method will be called when the method asynchronously completes. Invoke will be called with the method's return object as a JSON string.
@@ -322,7 +322,7 @@ For more information about available methods, navigate to [DevTools Protocol Vie
 
 ### CapturePreviewAsync
 
-> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) CapturePreviewAsync([CoreWebView2CapturePreviewImageFormat](corewebview2capturepreviewimageformat.md) operation, [IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) imageFormat)
+> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) CapturePreviewAsync([CoreWebView2CapturePreviewImageFormat](corewebview2capturepreviewimageformat.md) imageFormat, [IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) imageStream)
 
 Captures an image of what WebView is displaying.
 When CapturePreviewAsync finishes writing to the stream, the Invoke method on the provided handler parameter is called. This method fails if called before the first ContentLoading event. For example if this is called in the [CoreWebView2.NavigationStarting](corewebview2.md#navigationstarting) event for the first navigation it will fail. For subsequent navigations, the method may not fail, but will not capture an image of a given webpage until the [CoreWebView2.ContentLoading](corewebview2.md#contentloading) event has been fired for it.  Any call to this method prior to that will result in a capture of the page being navigated away from.
@@ -339,7 +339,7 @@ Clears a host name mapping for local folder that was added by [CoreWebView2.SetV
 
 ### ExecuteScriptAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; ExecuteScriptAsync(string operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; ExecuteScriptAsync(string javaScript)
 
 Runs JavaScript code from the `javaScript` parameter in the current top-level document rendered in the WebView.
 If the result is `undefined`, contains a reference cycle, or otherwise is not able to be encoded into JSON, the JSON `null` value is returned as the `"null"` string.
@@ -443,7 +443,7 @@ This behaves in exactly the same manner as [CoreWebView2.PostWebMessageAsJson](c
 
 ### PrintToPdfAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;bool&gt; PrintToPdfAsync(string operation, [CoreWebView2PrintSettings](corewebview2printsettings.md) ResultFilePath)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;bool&gt; PrintToPdfAsync(string ResultFilePath, [CoreWebView2PrintSettings](corewebview2printsettings.md) printSettings)
 
 Print the current page to PDF asynchronously with the provided settings.
 See [CoreWebView2PrintSettings](corewebview2printsettings.md) for description of settings. Passing null for `printSettings` results in default print settings used.
