@@ -21,6 +21,7 @@ Members|Description
 [ExclusiveUserDataFolderAccess](#exclusiveuserdatafolderaccess) | Determines whether other processes can create [CoreWebView2Controller](corewebview2controller.md) from [CoreWebView2Environment](corewebview2environment.md) created with the same user data folder and therefore sharing the same WebView browser process instance.
 [Language](#language) | Gets or sets the default display language for WebView.
 [TargetCompatibleBrowserVersion](#targetcompatiblebrowserversion) | Gets or sets the version of the WebView2 Runtime binaries required to be compatible with your app.
+[CoreWebView2EnvironmentOptions](#corewebview2environmentoptions) | Initializes a new instance of the CoreWebView2EnvironmentOptions class.
 
 ## Properties
 
@@ -66,15 +67,12 @@ This defaults to the WebView2 Runtime version that corresponds with the version 
 
 
 ## Constructors
+
 ### CoreWebView2EnvironmentOptions
 
 >  CoreWebView2EnvironmentOptions()
 
-
-
-
-
-
+Initializes a new instance of the CoreWebView2EnvironmentOptions class.
 
 ## Referenced by
 

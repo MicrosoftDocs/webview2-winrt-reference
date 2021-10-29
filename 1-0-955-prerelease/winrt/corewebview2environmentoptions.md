@@ -20,6 +20,7 @@ Members|Description
 [AllowSingleSignOnUsingOSPrimaryAccount](#allowsinglesignonusingosprimaryaccount) | Determines whether to enable single sign on with Azure Active Directory (AAD) resources inside WebView using the logged in Windows account and single sign on (SSO) with web sites using Microsoft account associated with the login in Windows account.
 [Language](#language) | Gets or sets the default display language for WebView.
 [TargetCompatibleBrowserVersion](#targetcompatiblebrowserversion) | Gets or sets the version of the WebView2 Runtime binaries required to be compatible with your app.
+[CoreWebView2EnvironmentOptions](#corewebview2environmentoptions) | Initializes a new instance of the CoreWebView2EnvironmentOptions class.
 
 ## Properties
 
@@ -64,15 +65,12 @@ This defaults to the WebView2 Runtime version that corresponds with the version 
 
 
 ## Constructors
+
 ### CoreWebView2EnvironmentOptions
 
 >  CoreWebView2EnvironmentOptions()
 
-
-
-
-
-
+Initializes a new instance of the CoreWebView2EnvironmentOptions class.
 
 ## Referenced by
 

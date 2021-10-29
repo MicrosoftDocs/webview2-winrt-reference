@@ -21,7 +21,7 @@ Members|Description
 [ExclusiveUserDataFolderAccess](#exclusiveuserdatafolderaccess) | Determines whether other processes can create [CoreWebView2Controller](corewebview2controller.md) from [CoreWebView2Environment](corewebview2environment.md) created with the same user data folder and therefore sharing the same WebView browser process instance.
 [Language](#language) | Gets or sets the default display language for WebView.
 [TargetCompatibleBrowserVersion](#targetcompatiblebrowserversion) | Gets or sets the version of the WebView2 Runtime binaries required to be compatible with your app.
-CoreWebView2EnvironmentOptions | 
+[CoreWebView2EnvironmentOptions](#corewebview2environmentoptions) | Initializes a new instance of the CoreWebView2EnvironmentOptions class.
 
 ## Properties
 
@@ -65,17 +65,13 @@ It applies to browser UIs such as context menu and dialogs. It also applies to t
 Gets or sets the version of the WebView2 Runtime binaries required to be compatible with your app.
 This defaults to the WebView2 Runtime version that corresponds with the version of the SDK the app is using. The format of this value is the same as the format of the [CoreWebView2Environment.BrowserVersionString](corewebview2environment.md#browserversionstring) property and other BrowserVersion values. Only the version part of the BrowserVersion value is respected. The channel suffix, if it exists, is ignored. The version of the WebView2 Runtime binaries actually used may be different from the specified TargetCompatibleBrowserVersion. They binaries are only guaranteed to be compatible. Verify the actual version on the [CoreWebView2Environment.BrowserVersionString](corewebview2environment.md#browserversionstring) property.
 
-
 ## Constructors
+
 ### CoreWebView2EnvironmentOptions
 
 >  CoreWebView2EnvironmentOptions()
 
-
-
-
-
-
+Initializes a new instance of the CoreWebView2EnvironmentOptions class.
 
 ## Referenced by
 
