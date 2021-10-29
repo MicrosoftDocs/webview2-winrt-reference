@@ -22,7 +22,7 @@ Members|Description
 [AreDevToolsEnabled](#aredevtoolsenabled) | Determines whether the user is able to use the context menu or keyboard shortcuts to open the DevTools window.
 [AreHostObjectsAllowed](#arehostobjectsallowed) | Determines whether host objects are accessible from the page in WebView.
 [HiddenPdfToolbarItems](#hiddenpdftoolbaritems) | Used to customize the PDF toolbar items.
-[HostObjectDispatchAdapter](#hostobjectdispatchadapter) | 
+[HostObjectDispatchAdapter](#hostobjectdispatchadapter) | The default adapter to be used when passing IInspectable objects to [CoreWebView2.AddHostObjectToScript](corewebview2.md#addhostobjecttoscript).
 [IsBuiltInErrorPageEnabled](#isbuiltinerrorpageenabled) | Determines whether to disable built in error page for navigation failure and render process failure.
 [IsGeneralAutofillEnabled](#isgeneralautofillenabled) | Determines whether general form information will be saved and autofilled.
 [IsPasswordAutosaveEnabled](#ispasswordautosaveenabled) | Determines whether password information will be autosaved.
@@ -106,6 +106,8 @@ Changes to this setting apply only after the next navigation.
 ### HostObjectDispatchAdapter
 
 >  [ICoreWebView2DispatchAdapter](icorewebview2dispatchadapter.md) HostObjectDispatchAdapter
+
+The default adapter to be used when passing IInspectable objects to [CoreWebView2.AddHostObjectToScript](corewebview2.md#addhostobjecttoscript).
 
 ### IsBuiltInErrorPageEnabled
 

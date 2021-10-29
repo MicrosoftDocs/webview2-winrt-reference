@@ -21,7 +21,7 @@ Members|Description
 [AreDefaultScriptDialogsEnabled](#aredefaultscriptdialogsenabled) | Determines whether WebView renders the default Javascript dialog box.
 [AreDevToolsEnabled](#aredevtoolsenabled) | Determines whether the user is able to use the context menu or keyboard shortcuts to open the DevTools window.
 [AreHostObjectsAllowed](#arehostobjectsallowed) | Determines whether host objects are accessible from the page in WebView.
-[HostObjectDispatchAdapter](#hostobjectdispatchadapter) | 
+[HostObjectDispatchAdapter](#hostobjectdispatchadapter) | The default adapter to be used when passing IInspectable objects to [CoreWebView2.AddHostObjectToScript](corewebview2.md#addhostobjecttoscript).
 [IsBuiltInErrorPageEnabled](#isbuiltinerrorpageenabled) | Determines whether to disable built in error page for navigation failure and render process failure.
 [IsGeneralAutofillEnabled](#isgeneralautofillenabled) | Determines whether general form information will be saved and autofilled.
 [IsPasswordAutosaveEnabled](#ispasswordautosaveenabled) | Determines whether password information will be autosaved.
@@ -96,6 +96,8 @@ The default value is `true`.
 ### HostObjectDispatchAdapter
 
 >  [ICoreWebView2DispatchAdapter](icorewebview2dispatchadapter.md) HostObjectDispatchAdapter
+
+The default adapter to be used when passing IInspectable objects to [CoreWebView2.AddHostObjectToScript](corewebview2.md#addhostobjecttoscript).
 
 ### IsBuiltInErrorPageEnabled
 

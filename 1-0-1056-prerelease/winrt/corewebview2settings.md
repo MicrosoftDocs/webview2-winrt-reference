@@ -1,7 +1,7 @@
 ---
 description: Defines properties that enable, disable, or modify WebView features.
 title: CoreWebView2Settings
-ms.date: 09/15/2021
+ms.date: 10/28/2021
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Settings
 ---
 
