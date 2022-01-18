@@ -20,9 +20,16 @@ Members|Description
 [CanGoForward](#cangoforward) | `true` if the WebView is able to navigate to a next page in the navigation history.
 [ContainsFullScreenElement](#containsfullscreenelement) | Indicates if the WebView contains a fullscreen HTML element.
 [CookieManager](#cookiemanager) | Gets the [CoreWebView2CookieManager](corewebview2cookiemanager.md) object associated with this CoreWebView2.
+[DefaultDownloadDialogCornerAlignment](#defaultdownloaddialogcorneralignment) | The default download dialog corner alignment.
+[DefaultDownloadDialogMargin](#defaultdownloaddialogmargin) | The default download dialog margin relative to the WebView corner specified by [CoreWebView2.DefaultDownloadDialogCornerAlignment](corewebview2.md#defaultdownloaddialogcorneralignment).
 [DocumentTitle](#documenttitle) | Gets the title for the current top-level document.
 [Environment](#environment) | Exposes the [CoreWebView2Environment](corewebview2environment.md) used to create this CoreWebView2.
+[IsDefaultDownloadDialogOpen](#isdefaultdownloaddialogopen) | True if the default download dialog is currently open.
+[IsDocumentPlayingAudio](#isdocumentplayingaudio) | Indicates whether any audio output from this CoreWebView2 is playing. `true` if audio is playing even if [CoreWebView2.IsMuted](corewebview2.md#ismuted) is true.
+[IsMuted](#ismuted) | Indicates whether all audio output from this CoreWebView2 is muted or not. Set to true will mute this CoreWebView2, and set to false will unmute this CoreWebView2. `true` if audio is muted.
 [IsSuspended](#issuspended) | Whether WebView is suspended.
+[MemoryUsageTargetLevel](#memoryusagetargetlevel) | Desired [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md) of a WebView.
+[Profile](#profile) | The associated [CoreWebView2Profile](corewebview2profile.md) object of CoreWebView2.
 [Settings](#settings) | Gets the [CoreWebView2Settings](corewebview2settings.md) object contains various modifiable settings for the running WebView.
 [Source](#source) | Gets the URI of the current top level document.
 [AddHostObjectToScript](#addhostobjecttoscript) | Adds the provided host object to script running in the WebView with the specified name.
@@ -31,6 +38,7 @@ Members|Description
 [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync) | Runs an asynchronous DevToolsProtocol method.
 [CapturePreviewAsync](#capturepreviewasync) | Captures an image of what WebView is displaying.
 [ClearVirtualHostNameToFolderMapping](#clearvirtualhostnametofoldermapping) | Clears a host name mapping for local folder that was added by [CoreWebView2.SetVirtualHostNameToFolderMapping](corewebview2.md#setvirtualhostnametofoldermapping).
+[CloseDefaultDownloadDialog](#closedefaultdownloaddialog) | Close the default download dialog.
 [ExecuteScriptAsync](#executescriptasync) | Runs JavaScript code from the `javaScript` parameter in the current top-level document rendered in the WebView.
 [GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver) | Gets a DevTools Protocol event receiver that allows you to subscribe to a DevToolsProtocol event.
 [GoBack](#goback) | Navigates the WebView to the previous page in the navigation history.
@@ -38,6 +46,7 @@ Members|Description
 [Navigate](#navigate) | Causes a navigation of the top level document to the specified URI.
 [NavigateToString](#navigatetostring) | Initiates a navigation to `htmlContent` as source HTML of a new document.
 [NavigateWithWebResourceRequest](#navigatewithwebresourcerequest) | Navigates using a constructed [CoreWebView2WebResourceRequest](corewebview2webresourcerequest.md) object.
+[OpenDefaultDownloadDialog](#opendefaultdownloaddialog) | Open the default download dialog.
 [OpenDevToolsWindow](#opendevtoolswindow) | Opens the DevTools window for the current document in the WebView.
 [OpenTaskManagerWindow](#opentaskmanagerwindow) | Opens the Browser Task Manager view as a new window in the foreground.
 [PostWebMessageAsJson](#postwebmessageasjson) | Posts the specified `webMessageAsJson` to the top level document in this WebView.
@@ -51,9 +60,11 @@ Members|Description
 [SetVirtualHostNameToFolderMapping](#setvirtualhostnametofoldermapping) | Sets a mapping between a virtual host name and a folder path to make available to web sites via that host name.
 [Stop](#stop) | Stops all navigations and pending resource fetches.
 [TrySuspendAsync](#trysuspendasync) | An app may call this API to have the WebView2 consume less memory.
+[BasicAuthenticationRequested](#basicauthenticationrequested) | BasicAuthenticationRequested event is raised when WebView encounters a Basic HTTP Authentication request as described in https://developer.mozilla.org/docs/Web/HTTP/Authentication or an NTLM authentication request.
 [ClientCertificateRequested](#clientcertificaterequested) | ClientCertificateRequested is raised when WebView2 is making a request to an HTTP server that needs a client certificate for HTTP authentication. Read more about HTTP client certificates at [RFC 8446 The Transport Layer Security (TLS) Protocol Version 1.3](https://tools.ietf.org/html/rfc8446).
 [ContainsFullScreenElementChanged](#containsfullscreenelementchanged) | ContainsFullScreenElementChanged is raised when the [CoreWebView2.ContainsFullScreenElement](corewebview2.md#containsfullscreenelement) property changes.
 [ContentLoading](#contentloading) | ContentLoading is raised before any content is loaded, including scripts added with [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync](corewebview2.md#addscripttoexecuteondocumentcreatedasync). ContentLoading is not raised if a same page navigation occurs (such as through fragment navigations or `history.pushState` navigations).
+[ContextMenuRequested](#contextmenurequested) | ContextMenuRequested is raised when a context menu is requested by the user and the content inside WebView hasn't disabled context menus.
 [DOMContentLoaded](#domcontentloaded) | DOMContentLoaded is raised when the initial HTML document has been parsed.
 [DocumentTitleChanged](#documenttitlechanged) | DocumentTitleChanged is raised when the [CoreWebView2.DocumentTitle](corewebview2.md#documenttitle) property changes and may be raised before or after the [CoreWebView2.NavigationCompleted](corewebview2.md#navigationcompleted) event.
 [DownloadStarting](#downloadstarting) | DownloadStarting is raised when a download has begun, blocking the default download dialog, but not blocking the progress of the download.
@@ -61,6 +72,9 @@ Members|Description
 [FrameNavigationCompleted](#framenavigationcompleted) | FrameNavigationCompleted is raised when a child frame has completely loaded (`body.onload` has been raised) or loading stopped with error.
 [FrameNavigationStarting](#framenavigationstarting) | FrameNavigationStarting is raised when a child frame in the WebView requests permission to navigate to a different URI.
 [HistoryChanged](#historychanged) | HistoryChanged is raised when there is change of navigation history for the top level document.
+[IsDefaultDownloadDialogOpenChanged](#isdefaultdownloaddialogopenchanged) | Raised when the [CoreWebView2.IsDefaultDownloadDialogOpen](corewebview2.md#isdefaultdownloaddialogopen) property changes.
+[IsDocumentPlayingAudioChanged](#isdocumentplayingaudiochanged) | IsDocumentPlayingAudioChanged is raised when document starts or stops playing audio.
+[IsMutedChanged](#ismutedchanged) | IsMutedChanged is raised when the mute state changes.
 [NavigationCompleted](#navigationcompleted) | NavigationCompleted is raised when the WebView has completely loaded (`body.onload` has been raised) or loading stopped with error.
 [NavigationStarting](#navigationstarting) | NavigationStarting is raised when the WebView main frame is requesting permission to navigate to a different URI.
 [NewWindowRequested](#newwindowrequested) | NewWindowRequested is raised when content inside the WebView requests to open a new window, such as through `window.open()`.
@@ -107,6 +121,20 @@ Indicates if the WebView contains a fullscreen HTML element.
 
 Gets the [CoreWebView2CookieManager](corewebview2cookiemanager.md) object associated with this CoreWebView2.
 
+### DefaultDownloadDialogCornerAlignment
+
+>  [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md) DefaultDownloadDialogCornerAlignment
+
+The default download dialog corner alignment.
+The dialog can be aligned to any of the WebView corners (see [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md)). When the WebView or dialog changes size, the dialog keeps it position relative to the corner. The dialog may become partially or completely outside of the WebView bounds if the WebView is small enough. Set the margin from the corner with the [CoreWebView2.DefaultDownloadDialogMargin](corewebview2.md#defaultdownloaddialogmargin) property.
+
+### DefaultDownloadDialogMargin
+
+>  [Point](/uwp/api/Windows.Foundation.Point) DefaultDownloadDialogMargin
+
+The default download dialog margin relative to the WebView corner specified by [CoreWebView2.DefaultDownloadDialogCornerAlignment](corewebview2.md#defaultdownloaddialogcorneralignment).
+The margin is a point that describes the vertical and horizontal distances between the chosen WebView corner and the default download dialog corner nearest to it. Positive values move the dialog towards the center of the WebView from the chosen WebView corner, and negative values move the dialog away from it. Use (0, 0) to align the dialog to the WebView corner with no margin.
+
 ### DocumentTitle
 
 > readonly  string DocumentTitle
@@ -120,12 +148,61 @@ If the document has no explicit title or is otherwise empty, a default that may 
 
 Exposes the [CoreWebView2Environment](corewebview2environment.md) used to create this CoreWebView2.
 
+### IsDefaultDownloadDialogOpen
+
+> readonly  bool IsDefaultDownloadDialogOpen
+
+True if the default download dialog is currently open.
+The value of this property changes only when the default download dialog is explicitly opened or closed. Hiding the WebView implicitly hides the dialog, but does not change the value of this property.
+
+### IsDocumentPlayingAudio
+
+> readonly  bool IsDocumentPlayingAudio
+
+Indicates whether any audio output from this CoreWebView2 is playing. `true` if audio is playing even if [CoreWebView2.IsMuted](corewebview2.md#ismuted) is true.
+
+### IsMuted
+
+>  bool IsMuted
+
+Indicates whether all audio output from this CoreWebView2 is muted or not. Set to true will mute this CoreWebView2, and set to false will unmute this CoreWebView2. `true` if audio is muted.
+
 ### IsSuspended
 
 > readonly  bool IsSuspended
 
 Whether WebView is suspended.
 True when WebView is suspended, from the time when [CoreWebView2.TrySuspendAsync](corewebview2.md#trysuspendasync) has completed successfully until WebView is resumed.
+
+### MemoryUsageTargetLevel
+
+>  [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md) MemoryUsageTargetLevel
+
+Desired [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md) of a WebView.
+An app may set [CoreWebView2.MemoryUsageTargetLevel](corewebview2.md#memoryusagetargetlevel) to indicate desired memory consumption level of WebView.
+Scripts will not be impacted and continue to run.
+This is useful for inactive apps that still want to run scripts and/or keep network connections alive and therefore could not call [CoreWebView2.TrySuspendAsync](corewebview2.md#trysuspendasync) and [CoreWebView2.Resume](corewebview2.md#resume) to reduce memory consumption.
+These apps can set memory usage target level to [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Low when the app becomes inactive, and set back to [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Normal when the app becomes active.
+
+It is not necessary to set CoreWebView2Controller's IsVisible property to false when setting the property.
+
+It is a best effort operation to change memory usage level, and the API will return before the operation completes.
+
+Setting the level to [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Low could potentially cause memory for some WebView browser processes to be swapped out to disk in some circumstances. It is a best effort to reduce memory usage as much as possible.
+If a script runs after its related memory has been swapped out, the memory will be swapped back in to ensure the script can still run, but performance might be impacted.
+Therefore, the app should set the level back to [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Normal when the app becomes active again. Setting memory usage target level back to normal will not happen automatically.
+
+An app should choose to use either the combination of [CoreWebView2.TrySuspendAsync](corewebview2.md#trysuspendasync) and [CoreWebView2.Resume](corewebview2.md#resume) or the combination of setting MemoryUsageTargetLevel to [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Low and [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Normal. It is not advisable to mix them.
+Trying to set [CoreWebView2.MemoryUsageTargetLevel](corewebview2.md#memoryusagetargetlevel) while suspended will be ignored.
+The [CoreWebView2.TrySuspendAsync](corewebview2.md#trysuspendasync) and [CoreWebView2.Resume](corewebview2.md#resume) methods will change the [CoreWebView2.MemoryUsageTargetLevel](corewebview2.md#memoryusagetargetlevel).
+[CoreWebView2.TrySuspendAsync](corewebview2.md#trysuspendasync) will automatically set [CoreWebView2.MemoryUsageTargetLevel](corewebview2.md#memoryusagetargetlevel) to [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Low while [CoreWebView2.Resume](corewebview2.md#resume) on suspended WebView will automatically set [CoreWebView2.MemoryUsageTargetLevel](corewebview2.md#memoryusagetargetlevel) to [CoreWebView2MemoryUsageTargetLevel](corewebview2memoryusagetargetlevel.md).Normal.
+Calling [CoreWebView2.Resume](corewebview2.md#resume) when the WebView is not suspended would not change [CoreWebView2.MemoryUsageTargetLevel](corewebview2.md#memoryusagetargetlevel).
+
+### Profile
+
+> readonly  [CoreWebView2Profile](corewebview2profile.md) Profile
+
+The associated [CoreWebView2Profile](corewebview2profile.md) object of CoreWebView2.
 
 ### Settings
 
@@ -319,6 +396,15 @@ Clears a host name mapping for local folder that was added by [CoreWebView2.SetV
 
 
 
+### CloseDefaultDownloadDialog
+
+> void CloseDefaultDownloadDialog()
+
+Close the default download dialog.
+Calling this method raises the [CoreWebView2.IsDefaultDownloadDialogOpenChanged](corewebview2.md#isdefaultdownloaddialogopenchanged) event if the dialog was open. No effect if the dialog is already closed.
+
+
+
 ### ExecuteScriptAsync
 
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; ExecuteScriptAsync(string javaScript)
@@ -379,6 +465,15 @@ The `htmlContent` parameter may not be larger than 2 MB (2 * 1024 * 1024 bytes) 
 
 Navigates using a constructed [CoreWebView2WebResourceRequest](corewebview2webresourcerequest.md) object.
 The headers in the [CoreWebView2WebResourceRequest](corewebview2webresourcerequest.md) override headers added by WebView2 runtime except for Cookie headers. Method can only be either `GET` or `POST`. Provided post data will only be sent only if the method is `POST` and the uri scheme is `HTTP(S)`.
+
+
+
+### OpenDefaultDownloadDialog
+
+> void OpenDefaultDownloadDialog()
+
+Open the default download dialog.
+If the dialog is opened before there are recent downloads, the dialog shows all past downloads for the current profile. Otherwise, the dialog shows only the recent downloads with a "See more" button for past downloads.  Calling this method raises the [CoreWebView2.IsDefaultDownloadDialogOpenChanged](corewebview2.md#isdefaultdownloaddialogopenchanged) event if the dialog was closed. No effect if the dialog is already open.
 
 
 
@@ -552,6 +647,13 @@ All WebView APIs can still be accessed when a WebView is suspended. Some APIs li
 
 ## Events
 
+### BasicAuthenticationRequested
+
+BasicAuthenticationRequested event is raised when WebView encounters a Basic HTTP Authentication request as described in https://developer.mozilla.org/docs/Web/HTTP/Authentication or an NTLM authentication request.
+The host can provide a response with credentials for the authentication or cancel the request. If the host doesn't set the Cancel property to true or set either UserName or Password properties on the Response property, then WebView2 will show the default authentication challenge dialog prompt to the user.
+
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2BasicAuthenticationRequestedEventArgs](corewebview2basicauthenticationrequestedeventargs.md)&gt;
+
 ### ClientCertificateRequested
 
 ClientCertificateRequested is raised when WebView2 is making a request to an HTTP server that needs a client certificate for HTTP authentication. Read more about HTTP client certificates at [RFC 8446 The Transport Layer Security (TLS) Protocol Version 1.3](https://tools.ietf.org/html/rfc8446).
@@ -581,6 +683,13 @@ ContentLoading is raised before any content is loaded, including scripts added w
 This operation follows the [CoreWebView2.NavigationStarting](corewebview2.md#navigationstarting) and [CoreWebView2.SourceChanged](corewebview2.md#sourcechanged) events and precedes the [CoreWebView2.HistoryChanged](corewebview2.md#historychanged) and [CoreWebView2.NavigationCompleted](corewebview2.md#navigationcompleted) events.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ContentLoadingEventArgs](corewebview2contentloadingeventargs.md)&gt;
+
+### ContextMenuRequested
+
+ContextMenuRequested is raised when a context menu is requested by the user and the content inside WebView hasn't disabled context menus.
+The host has the option to create their own context menu with the information provided in the event or can add items to or remove items from WebView context menu. If the host doesn't handle the event, WebView will display the default context menu.
+
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2ContextMenuRequestedEventArgs](corewebview2contextmenurequestedeventargs.md)&gt;
 
 ### DOMContentLoaded
 
@@ -626,6 +735,25 @@ Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;Co
 
 HistoryChanged is raised when there is change of navigation history for the top level document.
 Use HistoryChanged to verify that the [CoreWebView2.CanGoBack](corewebview2.md#cangoback) or [CoreWebView2.CanGoForward](corewebview2.md#cangoforward) value has changed. HistoryChanged is also raised for using [CoreWebView2.GoBack](corewebview2.md#goback) or [CoreWebView2.GoForward](corewebview2.md#goforward). HistoryChanged is raised after [CoreWebView2.SourceChanged](corewebview2.md#sourcechanged) and [CoreWebView2.ContentLoading](corewebview2.md#contentloading).
+
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
+
+### IsDefaultDownloadDialogOpenChanged
+
+Raised when the [CoreWebView2.IsDefaultDownloadDialogOpen](corewebview2.md#isdefaultdownloaddialogopen) property changes.
+This event comes after the [CoreWebView2.DownloadStarting](corewebview2.md#downloadstarting) event. Setting the [CoreWebView2DownloadStartingEventArgs.Handled](corewebview2downloadstartingeventargs.md#handled) property disables the default download dialog and ensures that this event is never raised.
+
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
+
+### IsDocumentPlayingAudioChanged
+
+IsDocumentPlayingAudioChanged is raised when document starts or stops playing audio.
+
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
+
+### IsMutedChanged
+
+IsMutedChanged is raised when the mute state changes.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 

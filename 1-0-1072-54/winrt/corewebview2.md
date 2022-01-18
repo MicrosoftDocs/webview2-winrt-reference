@@ -20,8 +20,13 @@ Members|Description
 [CanGoForward](#cangoforward) | `true` if the WebView is able to navigate to a next page in the navigation history.
 [ContainsFullScreenElement](#containsfullscreenelement) | Indicates if the WebView contains a fullscreen HTML element.
 [CookieManager](#cookiemanager) | Gets the [CoreWebView2CookieManager](corewebview2cookiemanager.md) object associated with this CoreWebView2.
+[DefaultDownloadDialogCornerAlignment](#defaultdownloaddialogcorneralignment) | The default download dialog corner alignment.
+[DefaultDownloadDialogMargin](#defaultdownloaddialogmargin) | The default download dialog margin relative to the WebView corner specified by [CoreWebView2.DefaultDownloadDialogCornerAlignment](corewebview2.md#defaultdownloaddialogcorneralignment).
 [DocumentTitle](#documenttitle) | Gets the title for the current top-level document.
 [Environment](#environment) | Exposes the [CoreWebView2Environment](corewebview2environment.md) used to create this CoreWebView2.
+[IsDefaultDownloadDialogOpen](#isdefaultdownloaddialogopen) | True if the default download dialog is currently open.
+[IsDocumentPlayingAudio](#isdocumentplayingaudio) | Indicates whether any audio output from this CoreWebView2 is playing. `true` if audio is playing even if [CoreWebView2.IsMuted](corewebview2.md#ismuted) is true.
+[IsMuted](#ismuted) | Indicates whether all audio output from this CoreWebView2 is muted or not. Set to true will mute this CoreWebView2, and set to false will unmute this CoreWebView2. `true` if audio is muted.
 [IsSuspended](#issuspended) | Whether WebView is suspended.
 [Settings](#settings) | Gets the [CoreWebView2Settings](corewebview2settings.md) object contains various modifiable settings for the running WebView.
 [Source](#source) | Gets the URI of the current top level document.
@@ -31,6 +36,7 @@ Members|Description
 [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync) | Runs an asynchronous DevToolsProtocol method.
 [CapturePreviewAsync](#capturepreviewasync) | Captures an image of what WebView is displaying.
 [ClearVirtualHostNameToFolderMapping](#clearvirtualhostnametofoldermapping) | Clears a host name mapping for local folder that was added by [CoreWebView2.SetVirtualHostNameToFolderMapping](corewebview2.md#setvirtualhostnametofoldermapping).
+[CloseDefaultDownloadDialog](#closedefaultdownloaddialog) | Close the default download dialog.
 [ExecuteScriptAsync](#executescriptasync) | Runs JavaScript code from the `javaScript` parameter in the current top-level document rendered in the WebView.
 [GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver) | Gets a DevTools Protocol event receiver that allows you to subscribe to a DevToolsProtocol event.
 [GoBack](#goback) | Navigates the WebView to the previous page in the navigation history.
@@ -38,6 +44,7 @@ Members|Description
 [Navigate](#navigate) | Causes a navigation of the top level document to the specified URI.
 [NavigateToString](#navigatetostring) | Initiates a navigation to `htmlContent` as source HTML of a new document.
 [NavigateWithWebResourceRequest](#navigatewithwebresourcerequest) | Navigates using a constructed [CoreWebView2WebResourceRequest](corewebview2webresourcerequest.md) object.
+[OpenDefaultDownloadDialog](#opendefaultdownloaddialog) | Open the default download dialog.
 [OpenDevToolsWindow](#opendevtoolswindow) | Opens the DevTools window for the current document in the WebView.
 [OpenTaskManagerWindow](#opentaskmanagerwindow) | Opens the Browser Task Manager view as a new window in the foreground.
 [PostWebMessageAsJson](#postwebmessageasjson) | Posts the specified `webMessageAsJson` to the top level document in this WebView.
@@ -61,6 +68,9 @@ Members|Description
 [FrameNavigationCompleted](#framenavigationcompleted) | FrameNavigationCompleted is raised when a child frame has completely loaded (`body.onload` has been raised) or loading stopped with error.
 [FrameNavigationStarting](#framenavigationstarting) | FrameNavigationStarting is raised when a child frame in the WebView requests permission to navigate to a different URI.
 [HistoryChanged](#historychanged) | HistoryChanged is raised when there is change of navigation history for the top level document.
+[IsDefaultDownloadDialogOpenChanged](#isdefaultdownloaddialogopenchanged) | Raised when the [CoreWebView2.IsDefaultDownloadDialogOpen](corewebview2.md#isdefaultdownloaddialogopen) property changes.
+[IsDocumentPlayingAudioChanged](#isdocumentplayingaudiochanged) | IsDocumentPlayingAudioChanged is raised when document starts or stops playing audio.
+[IsMutedChanged](#ismutedchanged) | IsMutedChanged is raised when the mute state changes.
 [NavigationCompleted](#navigationcompleted) | NavigationCompleted is raised when the WebView has completely loaded (`body.onload` has been raised) or loading stopped with error.
 [NavigationStarting](#navigationstarting) | NavigationStarting is raised when the WebView main frame is requesting permission to navigate to a different URI.
 [NewWindowRequested](#newwindowrequested) | NewWindowRequested is raised when content inside the WebView requests to open a new window, such as through `window.open()`.
@@ -107,6 +117,20 @@ Indicates if the WebView contains a fullscreen HTML element.
 
 Gets the [CoreWebView2CookieManager](corewebview2cookiemanager.md) object associated with this CoreWebView2.
 
+### DefaultDownloadDialogCornerAlignment
+
+>  [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md) DefaultDownloadDialogCornerAlignment
+
+The default download dialog corner alignment.
+The dialog can be aligned to any of the WebView corners (see [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md)). When the WebView or dialog changes size, the dialog keeps it position relative to the corner. The dialog may become partially or completely outside of the WebView bounds if the WebView is small enough. Set the margin from the corner with the [CoreWebView2.DefaultDownloadDialogMargin](corewebview2.md#defaultdownloaddialogmargin) property.
+
+### DefaultDownloadDialogMargin
+
+>  [Point](/uwp/api/Windows.Foundation.Point) DefaultDownloadDialogMargin
+
+The default download dialog margin relative to the WebView corner specified by [CoreWebView2.DefaultDownloadDialogCornerAlignment](corewebview2.md#defaultdownloaddialogcorneralignment).
+The margin is a point that describes the vertical and horizontal distances between the chosen WebView corner and the default download dialog corner nearest to it. Positive values move the dialog towards the center of the WebView from the chosen WebView corner, and negative values move the dialog away from it. Use (0, 0) to align the dialog to the WebView corner with no margin.
+
 ### DocumentTitle
 
 > readonly  string DocumentTitle
@@ -119,6 +143,25 @@ If the document has no explicit title or is otherwise empty, a default that may 
 > readonly  [CoreWebView2Environment](corewebview2environment.md) Environment
 
 Exposes the [CoreWebView2Environment](corewebview2environment.md) used to create this CoreWebView2.
+
+### IsDefaultDownloadDialogOpen
+
+> readonly  bool IsDefaultDownloadDialogOpen
+
+True if the default download dialog is currently open.
+The value of this property changes only when the default download dialog is explicitly opened or closed. Hiding the WebView implicitly hides the dialog, but does not change the value of this property.
+
+### IsDocumentPlayingAudio
+
+> readonly  bool IsDocumentPlayingAudio
+
+Indicates whether any audio output from this CoreWebView2 is playing. `true` if audio is playing even if [CoreWebView2.IsMuted](corewebview2.md#ismuted) is true.
+
+### IsMuted
+
+>  bool IsMuted
+
+Indicates whether all audio output from this CoreWebView2 is muted or not. Set to true will mute this CoreWebView2, and set to false will unmute this CoreWebView2. `true` if audio is muted.
 
 ### IsSuspended
 
@@ -319,6 +362,15 @@ Clears a host name mapping for local folder that was added by [CoreWebView2.SetV
 
 
 
+### CloseDefaultDownloadDialog
+
+> void CloseDefaultDownloadDialog()
+
+Close the default download dialog.
+Calling this method raises the [CoreWebView2.IsDefaultDownloadDialogOpenChanged](corewebview2.md#isdefaultdownloaddialogopenchanged) event if the dialog was open. No effect if the dialog is already closed.
+
+
+
 ### ExecuteScriptAsync
 
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;string&gt; ExecuteScriptAsync(string javaScript)
@@ -379,6 +431,15 @@ The `htmlContent` parameter may not be larger than 2 MB (2 * 1024 * 1024 bytes) 
 
 Navigates using a constructed [CoreWebView2WebResourceRequest](corewebview2webresourcerequest.md) object.
 The headers in the [CoreWebView2WebResourceRequest](corewebview2webresourcerequest.md) override headers added by WebView2 runtime except for Cookie headers. Method can only be either `GET` or `POST`. Provided post data will only be sent only if the method is `POST` and the uri scheme is `HTTP(S)`.
+
+
+
+### OpenDefaultDownloadDialog
+
+> void OpenDefaultDownloadDialog()
+
+Open the default download dialog.
+If the dialog is opened before there are recent downloads, the dialog shows all past downloads for the current profile. Otherwise, the dialog shows only the recent downloads with a "See more" button for past downloads.  Calling this method raises the [CoreWebView2.IsDefaultDownloadDialogOpenChanged](corewebview2.md#isdefaultdownloaddialogopenchanged) event if the dialog was closed. No effect if the dialog is already open.
 
 
 
@@ -626,6 +687,25 @@ Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;Co
 
 HistoryChanged is raised when there is change of navigation history for the top level document.
 Use HistoryChanged to verify that the [CoreWebView2.CanGoBack](corewebview2.md#cangoback) or [CoreWebView2.CanGoForward](corewebview2.md#cangoforward) value has changed. HistoryChanged is also raised for using [CoreWebView2.GoBack](corewebview2.md#goback) or [CoreWebView2.GoForward](corewebview2.md#goforward). HistoryChanged is raised after [CoreWebView2.SourceChanged](corewebview2.md#sourcechanged) and [CoreWebView2.ContentLoading](corewebview2.md#contentloading).
+
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
+
+### IsDefaultDownloadDialogOpenChanged
+
+Raised when the [CoreWebView2.IsDefaultDownloadDialogOpen](corewebview2.md#isdefaultdownloaddialogopen) property changes.
+This event comes after the [CoreWebView2.DownloadStarting](corewebview2.md#downloadstarting) event. Setting the [CoreWebView2DownloadStartingEventArgs.Handled](corewebview2downloadstartingeventargs.md#handled) property disables the default download dialog and ensures that this event is never raised.
+
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
+
+### IsDocumentPlayingAudioChanged
+
+IsDocumentPlayingAudioChanged is raised when document starts or stops playing audio.
+
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
+
+### IsMutedChanged
+
+IsMutedChanged is raised when the mute state changes.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
 
