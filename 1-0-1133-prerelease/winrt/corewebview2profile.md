@@ -45,7 +45,7 @@ InPrivate mode is enabled or not.
 
 The PreferredColorScheme property sets the overall color scheme of the WebView2s associated with this profile.
 This sets the color scheme for WebView2 UI like dialogs, prompts, and menus by setting the media feature `prefers-color-scheme`
-The default value for this is [CoreWebView2PreferredColorScheme.Auto](corewebview2preferredcolorscheme.md#auto), which will follow whatever color scheme the OS is currently set to.
+The default value for this is [CoreWebView2PreferredColorScheme](corewebview2preferredcolorscheme.md).Auto, which will follow whatever color scheme the OS is currently set to.
 
 ### ProfileName
 
