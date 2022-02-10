@@ -42,7 +42,7 @@
       { "files": ["*.md"], "group": "webview2-992-28", "src": "1-0-992-28/interop", "dest": "interop" },
       { "files": ["*.md"], "group": "webview2-992-28", "src": "1-0-992-28/winrt", "dest": "microsoft_web_webview2_core" },
       { "files": ["**/*.yml"], "group": "webview2-992-28", "src": "1-0-992-28" },
-      { "files": ["*.m d"], "group": "webview2-1158-prerelease", "src": "1-0-1158-prerelease/interop", "dest": "interop" },
+      { "files": ["*.md"], "group": "webview2-1158-prerelease", "src": "1-0-1158-prerelease/interop", "dest": "interop" },
       { "files": ["*.md"], "group": "webview2-1158-prerelease", "src": "1-0-1158-prerelease/winrt", "dest": "microsoft_web_webview2_core" },
       { "files": ["**/*.yml"], "group": "webview2-1158-prerelease", "src": "1-0-1158-prerelease" },
       { "files": ["*.md"], "group": "webview2-1133-prerelease", "src": "1-0-1133-prerelease/interop", "dest": "interop" },

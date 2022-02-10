@@ -123,7 +123,6 @@ When disabled, blank page is displayed when related error happens. The default v
 Determines whether general form information will be saved and autofilled.
 General autofill information includes information like names, street and email addresses, phone numbers, and arbitrary input. This excludes password information. When disabled, no suggestions appear, and no new information is saved.
 When enabled, information is saved, suggestions appear, and clicking on one will populate the form fields. The default value is `true`. It will apply immediately after setting.
-This property is linked with [CoreWebView2Profile.IsGeneralAutofillEnabled](corewebview2profile.md#isgeneralautofillenabled), so changing one will change the other. And all WebView2s that created with the same [CoreWebView2Profile](corewebview2profile.md) will share this property, so for the WebView2s with the same profile, their [CoreWebView2Settings.IsGeneralAutofillEnabled](corewebview2settings.md#isgeneralautofillenabled) and [CoreWebView2Profile.IsGeneralAutofillEnabled](corewebview2profile.md#isgeneralautofillenabled) are always in sync.
 
 ### IsPasswordAutosaveEnabled
 
@@ -132,7 +131,6 @@ This property is linked with [CoreWebView2Profile.IsGeneralAutofillEnabled](core
 Determines whether password information will be autosaved.
 When disabled, no new password data is saved and no Save/Update Password prompts are displayed. However, if there was password data already saved before disabling this setting, then that password information is auto-populated, suggestions are shown and clicking on one will populate the fields.
 When enabled, password information is auto-populated, suggestions are shown and clicking on one will populate the fields, new data is saved, and a Save/Update Password prompt is displayed. The default value is `false`. It will apply immediately after setting.
-This property is linked with [CoreWebView2Profile.IsPasswordAutosaveEnabled](corewebview2profile.md#ispasswordautosaveenabled), so changing one will change the other. And all WebView2s that created with the same [CoreWebView2Profile](corewebview2profile.md) will share this property, so for the WebView2s with the same profile, their [CoreWebView2Settings.IsPasswordAutosaveEnabled](corewebview2settings.md#ispasswordautosaveenabled) and [CoreWebView2Profile.IsPasswordAutosaveEnabled](corewebview2profile.md#ispasswordautosaveenabled) are always in sync.
 
 ### IsPinchZoomEnabled
 
