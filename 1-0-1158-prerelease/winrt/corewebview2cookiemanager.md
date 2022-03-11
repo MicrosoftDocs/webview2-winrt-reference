@@ -93,7 +93,7 @@ Deletes cookies with matching name and domain/path pair.
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;[CoreWebView2Cookie](corewebview2cookie.md)&gt;&gt; GetCookiesAsync(string uri)
 
 Gets a list of cookies matching the specific URI.
-You can modify the cookie objects by calling AddOrUpdateCookie (unresolved reference), and the changes will be applied to the webview.
+You can modify the cookie objects by calling AddOrUpdateCookie, and the changes will be applied to the webview.
 
 
 

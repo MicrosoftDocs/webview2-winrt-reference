@@ -18,14 +18,14 @@ Members|Description
 --|--
 [HasPosition](#hasposition) | Indicates whether the left and top values are specified.
 [HasSize](#hassize) | Indicates whether the height and width values are specified.
-[Height](#height) | Gets the height of the window. Ignored if HasSize (unresolved reference) is `false`.
-[Left](#left) | Gets the left position of the window. Ignored if HasPosition (unresolved reference) is `false`.
+[Height](#height) | Gets the height of the window. Ignored if HasSize is `false`.
+[Left](#left) | Gets the left position of the window. Ignored if HasPosition is `false`.
 [ShouldDisplayMenuBar](#shoulddisplaymenubar) | Indicates that the menu bar is displayed.
 [ShouldDisplayScrollBars](#shoulddisplayscrollbars) | Indicates that the scroll bars are displayed.
 [ShouldDisplayStatus](#shoulddisplaystatus) | Indicates that the status bar is displayed.
 [ShouldDisplayToolbar](#shoulddisplaytoolbar) | Indicates that the browser toolbar is displayed.
-[Top](#top) | Gets the top position of the window. Ignored if HasPosition (unresolved reference) is `false`.
-[Width](#width) | Gets the width of the window. Ignored if HasSize (unresolved reference) is `false`.
+[Top](#top) | Gets the top position of the window. Ignored if HasPosition is `false`.
+[Width](#width) | Gets the width of the window. Ignored if HasSize is `false`.
 
 ## Properties
 
@@ -45,13 +45,13 @@ Indicates whether the height and width values are specified.
 
 > readonly  uint32_t Height
 
-Gets the height of the window. Ignored if HasSize (unresolved reference) is `false`.
+Gets the height of the window. Ignored if HasSize is `false`.
 
 ### Left
 
 > readonly  uint32_t Left
 
-Gets the left position of the window. Ignored if HasPosition (unresolved reference) is `false`.
+Gets the left position of the window. Ignored if HasPosition is `false`.
 
 ### ShouldDisplayMenuBar
 
@@ -81,13 +81,13 @@ Indicates that the browser toolbar is displayed.
 
 > readonly  uint32_t Top
 
-Gets the top position of the window. Ignored if HasPosition (unresolved reference) is `false`.
+Gets the top position of the window. Ignored if HasPosition is `false`.
 
 ### Width
 
 > readonly  uint32_t Width
 
-Gets the width of the window. Ignored if HasSize (unresolved reference) is `false`.
+Gets the width of the window. Ignored if HasSize is `false`.
 
 
 
