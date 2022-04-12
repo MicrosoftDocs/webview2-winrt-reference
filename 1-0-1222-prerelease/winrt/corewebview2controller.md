@@ -83,7 +83,7 @@ The DefaultBackgroundColor is the color that renders underneath all web content.
 >  bool IsVisible
 
 Determines whether to show or hide the WebView.
-If `IsVisible` is set to `false`, the WebView is transparent and is not rendered. However, this does not affect the window containing the WebView (the `ParentWindow` parameter that was passed to <see cref="CoreWebView2Environment.CreateCoreWebView2ControllerAsync(IntPtr)"/> or <see cref="CoreWebView2Environment.CreateCoreWebView2ControllerAsync(IntPtr, CoreWebView2ControllerOptions)"/>).
+If `IsVisible` is set to `false`, the WebView is transparent and is not rendered. However, this does not affect the window containing the WebView (the `ParentWindow` parameter that was passed to [CoreWebView2Environment.CreateCoreWebView2ControllerAsync(CoreWebView2ControllerWindowReference)](corewebview2environment.md#createcorewebview2controllerasync) or [CoreWebView2Environment.CreateCoreWebView2ControllerAsync(CoreWebView2ControllerWindowReference, CoreWebView2ControllerOptions](corewebview2environment.md#createcorewebview2controllerasync-1)).
 WebView as a child window does not get window messages when the top window is minimized or restored. For performance reasons, developers should set the `IsVisible` property of the WebView to `false` when the app window is minimized and back to `true` when the app window is restored. The app window does this by handling  `SIZE_MINIMIZED and SIZE_RESTORED` command upon receiving `WM_SIZE` message. There are CPU and memory benefits when the page is hidden. For instance Chromium has code that throttles activities on the page like animations and some tasks are run less frequently. Similarly, WebView2 will purge some caches to reduce memory usage.
 
 ### ParentWindow
@@ -91,7 +91,7 @@ WebView as a child window does not get window messages when the top window is mi
 >  [CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow
 
 Gets the parent window provided by the app or sets the parent window that this WebView is using to render content.
-It initially returns the `ParentWindow` passed into <see cref="CoreWebView2Environment.CreateCoreWebView2ControllerAsync(IntPtr)"/> or <see cref="CoreWebView2Environment.CreateCoreWebView2ControllerAsync(IntPtr, CoreWebView2ControllerOptions)"/>. Setting the property causes the WebView to re-parent the main WebView window to the newly provided window.
+It initially returns the `ParentWindow` passed into [CoreWebView2Environment.CreateCoreWebView2ControllerAsync(CoreWebView2ControllerWindowReference)](corewebview2environment.md#createcorewebview2controllerasync) or [CoreWebView2Environment.CreateCoreWebView2ControllerAsync(CoreWebView2ControllerWindowReference, CoreWebView2ControllerOptions](corewebview2environment.md#createcorewebview2controllerasync-1). Setting the property causes the WebView to re-parent the main WebView window to the newly provided window.
 
 ### RasterizationScale
 

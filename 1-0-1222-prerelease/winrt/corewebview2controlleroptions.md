@@ -9,7 +9,7 @@ keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Contr
 
 
 
-Used to manage profile options that created by <see cref="CoreWebView2Environment.CreateCoreWebView2ControllerOptions()"/>.
+Used to manage profile options that created by [CoreWebView2Environment.CreateCoreWebView2ControllerOptions](corewebview2environment.md#createcorewebview2controlleroptions).
 
 ## Summary
 
@@ -35,7 +35,7 @@ The `ProfileName` property is to specify a profile name, which is only allowed t
 
 * alphabet characters: a-z and A-Z
 * digit characters: 0-9
-* and '#', '[]()', '', '(', ')', '+', '-', '_', '~', '.', ' ' (space).
+* and '#', '@', '', '(', ')', '+', '-', '_', '~', '.', ' ' (space).
 
 Note: the text must not end with a period '.' or ' ' (space). And, although upper-case letters are allowed, they're treated just as lower-case counterparts because the profile name will be mapped to the real profile directory path on disk and Windows file system handles path names in a case-insensitive way.
 
