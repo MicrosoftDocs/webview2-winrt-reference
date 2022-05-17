@@ -35,4 +35,3 @@ Indicates the error status values for web navigations.
 ## Referenced by
 
 - [CoreWebView2NavigationCompletedEventArgs](corewebview2navigationcompletedeventargs.md)
-- [CoreWebView2ServerCertificateErrorDetectedEventArgs](corewebview2servercertificateerrordetectedeventargs.md)
