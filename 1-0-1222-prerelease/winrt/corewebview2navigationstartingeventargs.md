@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.NavigationStarting event.
 title: CoreWebView2NavigationStartingEventArgs
-ms.date: 04/12/2022
+ms.date: 05/16/2022
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2NavigationStartingEventArgs
 ---
 
@@ -36,7 +36,7 @@ Whether an ancestor is allowed by the additional allowed frame ancestors is done
 For example, if `https://example.com` and `https://www.example.com` are the origins of the top page and intermediate iframes that embed a nested site-embedding iframe, and you fully trust those origins, you should set this property to `https://example.com https://www.example.com`.
 
 This property gives the app the ability to use iframe to embed sites that otherwise could not be embedded in an iframe in trusted app pages.
-This could potentially subject the embedded sites to [Clickjacking](https://en.wikipedia.org/wiki/Clickjacking) attack from the code running in the embedding web page. Therefore, you should only set this property with origins of fully trusted embedding page and any intermediate iframes.
+This could potentially subject the embedded sites to [Clickjacking](https://wikipedia.org/wiki/Clickjacking) attack from the code running in the embedding web page. Therefore, you should only set this property with origins of fully trusted embedding page and any intermediate iframes.
 Whenever possible, you should use the list of specific origins of the top and intermediate frames instead of wildcard characters for this property.
 This API is to provide limited support for app scenarios that used to be supported by `&lt;webview&gt;` element in other solutions like JavaScript UWP apps and Electron.
 You should limit the usage of this property to trusted pages, and specific navigation target url, by checking the [CoreWebView2.Source](corewebview2.md#source), and [CoreWebView2NavigationStartingEventArgs.Uri](corewebview2navigationstartingeventargs.md#uri).

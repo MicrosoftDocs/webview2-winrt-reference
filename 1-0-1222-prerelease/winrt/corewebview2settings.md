@@ -1,7 +1,7 @@
 ---
 description: Defines properties that enable, disable, or modify WebView features.
 title: CoreWebView2Settings
-ms.date: 04/12/2022
+ms.date: 05/16/2022
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Settings
 ---
 
@@ -18,7 +18,7 @@ Members|Description
 --|--
 [AreBrowserAcceleratorKeysEnabled](#arebrowseracceleratorkeysenabled) | Determines whether browser-specific accelerator keys are enabled.
 [AreDefaultContextMenusEnabled](#aredefaultcontextmenusenabled) | Determines whether the default context menus are shown to the user in WebView.
-[AreDefaultScriptDialogsEnabled](#aredefaultscriptdialogsenabled) | Determines whether WebView renders the default Javascript dialog box.
+[AreDefaultScriptDialogsEnabled](#aredefaultscriptdialogsenabled) | Determines whether WebView renders the default JavaScript dialog box.
 [AreDevToolsEnabled](#aredevtoolsenabled) | Determines whether the user is able to use the context menu or keyboard shortcuts to open the DevTools window.
 [AreHostObjectsAllowed](#arehostobjectsallowed) | Determines whether host objects are accessible from the page in WebView.
 [HiddenPdfToolbarItems](#hiddenpdftoolbaritems) | Used to customize the PDF toolbar items.
@@ -77,7 +77,7 @@ The default value is `true`.
 
 >  bool AreDefaultScriptDialogsEnabled
 
-Determines whether WebView renders the default Javascript dialog box.
+Determines whether WebView renders the default JavaScript dialog box.
 This is used when loading a new HTML document. If set to `false`, WebView does not render the default JavaScript dialog box (specifically those displayed by the JavaScript alert, confirm, prompt functions and `beforeunload` event). Instead, WebView raises [CoreWebView2.ScriptDialogOpening](corewebview2.md#scriptdialogopening) event that contains all of the information for the dialog and allow the host app to show a custom UI. The default value is `true`.
 
 ### AreDevToolsEnabled

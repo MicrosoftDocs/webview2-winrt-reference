@@ -1,7 +1,7 @@
 ---
-description: Used to manage profile options that created by <see cref="CoreWebView2Environment.CreateCoreWebView2ControllerOptions()"/>.
+description: Used to manage profile options that created by CoreWebView2Environment.CreateCoreWebView2ControllerOptions.
 title: CoreWebView2ControllerOptions
-ms.date: 04/12/2022
+ms.date: 05/16/2022
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ControllerOptions
 ---
 

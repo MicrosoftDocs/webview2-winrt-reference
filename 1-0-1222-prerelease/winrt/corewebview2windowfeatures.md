@@ -1,7 +1,7 @@
 ---
 description: The window features for a WebView popup window.
 title: CoreWebView2WindowFeatures
-ms.date: 04/12/2022
+ms.date: 05/16/2022
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WindowFeatures
 ---
 
@@ -18,14 +18,14 @@ Members|Description
 --|--
 [HasPosition](#hasposition) | Indicates whether the left and top values are specified.
 [HasSize](#hassize) | Indicates whether the height and width values are specified.
-[Height](#height) | Gets the height of the window. Ignored if HasSize (unresolved reference) is `false`.
-[Left](#left) | Gets the left position of the window. Ignored if HasPosition (unresolved reference) is `false`.
+[Height](#height) | Gets the height of the window. Ignored if [CoreWebView2WindowFeatures.HasSize](corewebview2windowfeatures.md#hassize) is `false`.
+[Left](#left) | Gets the left position of the window. Ignored if [CoreWebView2WindowFeatures.HasPosition](corewebview2windowfeatures.md#hasposition) is `false`.
 [ShouldDisplayMenuBar](#shoulddisplaymenubar) | Indicates that the menu bar is displayed.
 [ShouldDisplayScrollBars](#shoulddisplayscrollbars) | Indicates that the scroll bars are displayed.
 [ShouldDisplayStatus](#shoulddisplaystatus) | Indicates that the status bar is displayed.
 [ShouldDisplayToolbar](#shoulddisplaytoolbar) | Indicates that the browser toolbar is displayed.
-[Top](#top) | Gets the top position of the window. Ignored if HasPosition (unresolved reference) is `false`.
-[Width](#width) | Gets the width of the window. Ignored if HasSize (unresolved reference) is `false`.
+[Top](#top) | Gets the top position of the window. Ignored if [CoreWebView2WindowFeatures.HasPosition](corewebview2windowfeatures.md#hasposition) is `false`.
+[Width](#width) | Gets the width of the window. Ignored if [CoreWebView2WindowFeatures.HasSize](corewebview2windowfeatures.md#hassize) is `false`.
 
 ## Properties
 
@@ -45,13 +45,13 @@ Indicates whether the height and width values are specified.
 
 > readonly  uint32_t Height
 
-Gets the height of the window. Ignored if HasSize (unresolved reference) is `false`.
+Gets the height of the window. Ignored if [CoreWebView2WindowFeatures.HasSize](corewebview2windowfeatures.md#hassize) is `false`.
 
 ### Left
 
 > readonly  uint32_t Left
 
-Gets the left position of the window. Ignored if HasPosition (unresolved reference) is `false`.
+Gets the left position of the window. Ignored if [CoreWebView2WindowFeatures.HasPosition](corewebview2windowfeatures.md#hasposition) is `false`.
 
 ### ShouldDisplayMenuBar
 
@@ -81,13 +81,13 @@ Indicates that the browser toolbar is displayed.
 
 > readonly  uint32_t Top
 
-Gets the top position of the window. Ignored if HasPosition (unresolved reference) is `false`.
+Gets the top position of the window. Ignored if [CoreWebView2WindowFeatures.HasPosition](corewebview2windowfeatures.md#hasposition) is `false`.
 
 ### Width
 
 > readonly  uint32_t Width
 
-Gets the width of the window. Ignored if HasSize (unresolved reference) is `false`.
+Gets the width of the window. Ignored if [CoreWebView2WindowFeatures.HasSize](corewebview2windowfeatures.md#hassize) is `false`.
 
 
 

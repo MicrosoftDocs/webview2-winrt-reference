@@ -1,7 +1,7 @@
 ---
 description: WebView2 enables you to host web content using the latest Microsoft Edge browser and web technology.
 title: CoreWebView2
-ms.date: 04/12/2022
+ms.date: 05/16/2022
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2
 ---
 
@@ -24,7 +24,7 @@ Members|Description
 [DefaultDownloadDialogMargin](#defaultdownloaddialogmargin) | The default download dialog margin relative to the WebView corner specified by [CoreWebView2.DefaultDownloadDialogCornerAlignment](corewebview2.md#defaultdownloaddialogcorneralignment).
 [DocumentTitle](#documenttitle) | Gets the title for the current top-level document.
 [Environment](#environment) | Exposes the [CoreWebView2Environment](corewebview2environment.md) used to create this CoreWebView2.
-[FaviconUri](#faviconuri) | Get the Uri (unresolved reference) as a string of the current Favicon. This will be an empty string if the page does not have a Favicon.
+[FaviconUri](#faviconuri) | Get the Uri as a string of the current Favicon. This will be an empty string if the page does not have a Favicon.
 [IsDefaultDownloadDialogOpen](#isdefaultdownloaddialogopen) | True if the default download dialog is currently open.
 [IsDocumentPlayingAudio](#isdocumentplayingaudio) | Indicates whether any audio output from this CoreWebView2 is playing. `true` if audio is playing even if [CoreWebView2.IsMuted](corewebview2.md#ismuted) is true.
 [IsMuted](#ismuted) | Indicates whether all audio output from this CoreWebView2 is muted or not. Set to true will mute this CoreWebView2, and set to false will unmute this CoreWebView2. `true` if audio is muted.
@@ -33,14 +33,14 @@ Members|Description
 [Profile](#profile) | The associated [CoreWebView2Profile](corewebview2profile.md) object of CoreWebView2.
 [Settings](#settings) | Gets the [CoreWebView2Settings](corewebview2settings.md) object contains various modifiable settings for the running WebView.
 [Source](#source) | Gets the URI of the current top level document.
-[StatusBarText](#statusbartext) | The current text of the statusbar as defined by [Window.statusbar](https://developer.mozilla.org/en-US/docs/Web/API/Window/statusbar).
+[StatusBarText](#statusbartext) | The current text of the statusbar as defined by [Window.statusbar](https://developer.mozilla.org/docs/Web/API/Window/statusbar).
 [AddHostObjectToScript](#addhostobjecttoscript) | Adds the provided host object to script running in the WebView with the specified name.
 [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync) | Adds the provided JavaScript to a list of scripts that should be run after the global object has been created, but before the HTML document has been parsed and before any other script included by the HTML document is run.
 [AddWebResourceRequestedFilter](#addwebresourcerequestedfilter) | Adds a URI and resource context filter for the [CoreWebView2.WebResourceRequested](corewebview2.md#webresourcerequested) event.
 [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync) | Runs an asynchronous DevToolsProtocol method.
 [CallDevToolsProtocolMethodForSessionAsync](#calldevtoolsprotocolmethodforsessionasync) | Runs an asynchronous `DevToolsProtocol` method for a specific session of an attached target.
 [CapturePreviewAsync](#capturepreviewasync) | Captures an image of what WebView is displaying.
-[ClearServerCertificateErrorActionsAsync](#clearservercertificateerroractionsasync) | 
+[ClearServerCertificateErrorActionsAsync](#clearservercertificateerroractionsasync) | Clears all cached decisions to proceed with TLS certificate errors from the [CoreWebView2.ServerCertificateErrorDetected](corewebview2.md#servercertificateerrordetected) event for all WebView2's sharing the same session.
 [ClearVirtualHostNameToFolderMapping](#clearvirtualhostnametofoldermapping) | Clears a host name mapping for local folder that was added by [CoreWebView2.SetVirtualHostNameToFolderMapping](corewebview2.md#setvirtualhostnametofoldermapping).
 [CloseDefaultDownloadDialog](#closedefaultdownloaddialog) | Close the default download dialog.
 [ExecuteScriptAsync](#executescriptasync) | Runs JavaScript code from the `javaScript` parameter in the current top-level document rendered in the WebView.
@@ -73,7 +73,7 @@ Members|Description
 [DOMContentLoaded](#domcontentloaded) | DOMContentLoaded is raised when the initial HTML document has been parsed.
 [DocumentTitleChanged](#documenttitlechanged) | DocumentTitleChanged is raised when the [CoreWebView2.DocumentTitle](corewebview2.md#documenttitle) property changes and may be raised before or after the [CoreWebView2.NavigationCompleted](corewebview2.md#navigationcompleted) event.
 [DownloadStarting](#downloadstarting) | DownloadStarting is raised when a download has begun, blocking the default download dialog, but not blocking the progress of the download.
-[FaviconChanged](#faviconchanged) | Raised when the Favicon has changed. This can include when a new page is loaded and thus by defualt no icon is set or the icon is set for the page by DOM or Javascript.
+[FaviconChanged](#faviconchanged) | Raised when the Favicon has changed. This can include when a new page is loaded and thus by default no icon is set or the icon is set for the page by DOM or JavaScript.
 [FrameCreated](#framecreated) | FrameCreated is raised when a new iframe is created.
 [FrameNavigationCompleted](#framenavigationcompleted) | FrameNavigationCompleted is raised when a child frame has completely loaded (`body.onload` has been raised) or loading stopped with error.
 [FrameNavigationStarting](#framenavigationstarting) | FrameNavigationStarting is raised when a child frame in the WebView requests permission to navigate to a different URI.
@@ -89,10 +89,10 @@ Members|Description
 [ScriptDialogOpening](#scriptdialogopening) | ScriptDialogOpening is raised when a JavaScript dialog (`alert`, `confirm`, `prompt`, or `beforeunload`) displays for the WebView.
 [ServerCertificateErrorDetected](#servercertificateerrordetected) | The ServerCertificateErrorDetected event is raised when the WebView2 cannot verify server's digital certificate while loading a web page.
 [SourceChanged](#sourcechanged) | SourceChanged is raised when the [CoreWebView2.Source](corewebview2.md#source) property changes.
-[StatusBarTextChanged](#statusbartextchanged) | StatusBarTextChanged event is raised when the text in the [Window.statusbar](https://developer.mozilla.org/en-US/docs/Web/API/Window/statusbar) changes. When the event is fired use the property [CoreWebView2.StatusBarText](corewebview2.md#statusbartext) to get the current statusbar text.
+[StatusBarTextChanged](#statusbartextchanged) | StatusBarTextChanged event is raised when the text in the [Window.statusbar](https://developer.mozilla.org/docs/Web/API/Window/statusbar) changes. When the event is fired use the property [CoreWebView2.StatusBarText](corewebview2.md#statusbartext) to get the current statusbar text.
 [WebMessageReceived](#webmessagereceived) | WebMessageReceived is raised when the [CoreWebView2Settings.IsWebMessageEnabled](corewebview2settings.md#iswebmessageenabled) setting is set and the top-level document of the WebView runs `window.chrome.webview.postMessage`.
 [WebResourceRequested](#webresourcerequested) | WebResourceRequested is raised when the WebView is performing a URL request to a matching URL and resource context filter that was added with [CoreWebView2.AddWebResourceRequestedFilter](corewebview2.md#addwebresourcerequestedfilter).
-[WebResourceResponseReceived](#webresourceresponsereceived) | WebResourceResponseReceived is raised when the WebView receives the response for a request for a web resource (any URI resolution performed by the WebView; such as HTTP/HTTPS, file and data requests from redirects, navigations, declarations in HTML, implicit favicon lookups, and fetch API usage in the document).
+[WebResourceResponseReceived](#webresourceresponsereceived) | WebResourceResponseReceived is raised when the WebView receives the response for a request for a web resource (any URI resolution performed by the WebView; such as HTTP/HTTPS, file and data requests from redirects, navigations, declarations in HTML, implicit Favicon lookups, and fetch API usage in the document).
 [WindowCloseRequested](#windowcloserequested) | WindowCloseRequested is raised when content inside the WebView requested to close the window, such as after `window.close()` is run.
 
 ## Properties
@@ -160,7 +160,7 @@ Exposes the [CoreWebView2Environment](corewebview2environment.md) used to create
 
 > readonly  string FaviconUri
 
-Get the Uri (unresolved reference) as a string of the current Favicon. This will be an empty string if the page does not have a Favicon.
+Get the Uri as a string of the current Favicon. This will be an empty string if the page does not have a Favicon.
 
 ### IsDefaultDownloadDialogOpen
 
@@ -235,7 +235,7 @@ This value potentially changes as a part of the [CoreWebView2.SourceChanged](cor
 
 > readonly  string StatusBarText
 
-The current text of the statusbar as defined by [Window.statusbar](https://developer.mozilla.org/en-US/docs/Web/API/Window/statusbar).
+The current text of the statusbar as defined by [Window.statusbar](https://developer.mozilla.org/docs/Web/API/Window/statusbar).
 
 
 
@@ -266,9 +266,12 @@ The `chrome.webview.hostObjects.options` object provides the ability to change s
 
 Options property | Details
 ---|---
-`forceLocalProperties` | This is an array of host object property names that will be run locally, instead of being called on the native host object. This defaults to `then`, `toJSON`, `Symbol.toString`, and `Symbol.toPrimitive`. You can add other properties to specify that they should be run locally on the javascript host object proxy.
+`forceLocalProperties` | This is an array of host object property names that will be run locally, instead of being called on the native host object. This defaults to `then`, `toJSON`, `Symbol.toString`, and `Symbol.toPrimitive`. You can add other properties to specify that they should be run locally on the JavaScript host object proxy.
 `log` | This is a callback that will be called with debug information. For example, you can set this to `console.log.bind(console)` to have it print debug information to the console to help when troubleshooting host object usage. By default this is null.
-`shouldSerializeDates` | By default this is false, and javascript Date objects will be sent to host objects as a string using `JSON.stringify`. You can set this property to true to have Date objects properly serialize as a `VT_DATE` when sending to the native host object, and have `VT_DATE` properties and return values create a javascript Date object.
+`shouldSerializeDates` | By default this is false, and JavaScript Date objects will be sent to host objects as a string using `JSON.stringify`. You can set this property to true to have Date objects properly serialize as a `VT_DATE` when sending to the native host object, and have `VT_DATE` properties and return values create a JavaScript Date object.
+`defaultSyncProxy` | When calling a method on a synchronous proxy, the result should also be a synchronous proxy. But in some cases, the sync/async context is lost (for example, when providing to native code a reference to a function, and then calling that function in native code). In these cases, the proxy will be asynchronous, unless this property is set.
+`forceAsyncMethodMatches ` | This is an array of regular expressions. When calling a method on a synchronous proxy, the method call will be performed asynchronously if the method name matches a string or regular expression in this array. Setting this value to `Async` will make any method that ends with Async be an asynchronous method call. If an async method doesn't match here and isn't forced to be asynchronous, the method will be invoked synchronously, blocking execution of the calling JavaScript and then returning the resolution of the promise, rather than returning a promise.
+`ignoreMemberNotFoundError` | By default, an exception is thrown when attempting to get the value of a proxy property that doesn't exist on the corresponding native class. Setting this property to `true` switches the behavior to match Chakra WinRT projection (and general JavaScript) behavior of returning `undefined` with no error.
 
 Host object proxies additionally have the following methods which run locally:
 
@@ -376,17 +379,17 @@ For more information about resource context filters, navigate to [CoreWebView2We
 
 | URI Filter String | Request URI | Match | Notes |
 | ---- | ---- | ---- | ---- |
-| `*` | https://contoso.com/a/b/c | Yes | A single * will match all URIs |
-| `*://contoso.com/*` | https://contoso.com/a/b/c | Yes | Matches everything in contoso.com across all schemes |
-| `*://contoso.com/*` | https://example.com/?https://contoso.com/ | Yes | But also matches a URI with just the same text anywhere in the URI |
-| `example` | https://contoso.com/example | No | The filter does not perform partial matches |
-| `*example` | https://contoso.com/example | Yes | The filter matches across URI parts  |
-| `*example` | https://contoso.com/path/?example | Yes | The filter matches across URI parts |
-| `*example` | https://contoso.com/path/?query#example | No | The filter is matched against the URI with no fragment |
-| `*example` | https://example | No | The URI is normalized before filter matching so the actual URI used for comparison is https://example.com/ |
-| `*example/` | https://example | Yes | Just like above, but this time the filter ends with a / just like the normalized URI |
-| https://xn--qei.example/ | https://&#x2764;.example/ | Yes | Non-ASCII hostnames are normalized to punycode before wildcard comparison |
-| https://&#x2764;.example/ | https://xn--qei.example/ | No | Non-ASCII hostnames are normalized to punycode before wildcard comparison |
+| `*` | `https://contoso.com/a/b/c` | Yes | A single * will match all URIs |
+| `*://contoso.com/*` | `https://contoso.com/a/b/c` | Yes | Matches everything in contoso.com across all schemes |
+| `*://contoso.com/*` | `https://example.com/?https://contoso.com/` | Yes | But also matches a URI with just the same text anywhere in the URI |
+| `example` | `https://contoso.com/example` | No | The filter does not perform partial matches |
+| `*example` | `https://contoso.com/example` | Yes | The filter matches across URI parts |
+| `*example` | `https://contoso.com/path/?example` | Yes | The filter matches across URI parts |
+| `*example` | `https://contoso.com/path/?query#example` | No | The filter is matched against the URI with no fragment |
+| `*example` | `https://example` | No | The URI is normalized before filter matching so the actual URI used for comparison is `https://example.com/` |
+| `*example/` | `https://example` | Yes | Just like above, but this time the filter ends with a / just like the normalized URI |
+| `https://xn--qei.example/` | `https://&#x2764;.example/` | Yes | Non-ASCII hostnames are normalized to punycode before wildcard comparison |
+| `https://&#x2764;.example/` | `https://xn--qei.example/` | No | Non-ASCII hostnames are normalized to punycode before wildcard comparison |
 
 
 
@@ -422,13 +425,15 @@ For more information about available methods, navigate to [DevTools Protocol Vie
 > [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) CapturePreviewAsync([CoreWebView2CapturePreviewImageFormat](corewebview2capturepreviewimageformat.md) imageFormat, [IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) imageStream)
 
 Captures an image of what WebView is displaying.
-When CapturePreviewAsync finishes writing to the stream, the Invoke method on the provided handler parameter is called. This method fails if called before the first ContentLoading event. For example if this is called in the [CoreWebView2.NavigationStarting](corewebview2.md#navigationstarting) event for the first navigation it will fail. For subsequent navigations, the method may not fail, but will not capture an image of a given webpage until the [CoreWebView2.ContentLoading](corewebview2.md#contentloading) event has been fired for it.  Any call to this method prior to that will result in a capture of the page being navigated away from.
+When CapturePreviewAsync finishes writing to the stream, the Invoke method on the provided handler parameter is called. This method fails if called before the first [CoreWebView2.ContentLoading](corewebview2.md#contentloading) event. For example if this is called in the [CoreWebView2.NavigationStarting](corewebview2.md#navigationstarting) event for the first navigation it will fail. For subsequent navigations, the method may not fail, but will not capture an image of a given webpage until the [CoreWebView2.ContentLoading](corewebview2.md#contentloading) event has been fired for it. Any call to this method prior to that will result in a capture of the page being navigated away from.
 
 
 
 ### ClearServerCertificateErrorActionsAsync
 
 > [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) ClearServerCertificateErrorActionsAsync()
+
+Clears all cached decisions to proceed with TLS certificate errors from the [CoreWebView2.ServerCertificateErrorDetected](corewebview2.md#servercertificateerrordetected) event for all WebView2's sharing the same session.
 
 
 
@@ -474,7 +479,7 @@ For more information about DevToolsProtocol events description and event args, n
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream)&gt; GetFaviconAsync([CoreWebView2FaviconImageFormat](corewebview2faviconimageformat.md) format)
 
 Get the downloaded Favicon image for the current page and copy it to the image stream.
-An `IStream` populated with the downloaded favicon.
+An `IStream` populated with the downloaded Favicon.
 
 
 
@@ -509,6 +514,19 @@ For more information, navigate to [Navigation event](/microsoft-edge/webview2/co
 
 Initiates a navigation to `htmlContent` as source HTML of a new document.
 The `htmlContent` parameter may not be larger than 2 MB (2 * 1024 * 1024 bytes) in total size. The origin of the new page is `about:blank`.
+```csharp
+webView.CoreWebView2.SetVirtualHostNameToFolderMapping(
+    "appassets.example", "assets", CoreWebView2HostResourceAccessKind.DenyCors);
+string htmlContent =
+@"
+    <head><link rel='stylesheet' href ='http://appassets.example/run.css' /></head>
+    <body>
+        <img src='http://appassets.example/grill.png' />
+        <p><a href='http://appassets.example/winrt_test.txt'> Click me</a></p>
+    </body>
+";
+webview.NavigateToString(htmlContent);
+```
 
 
 
@@ -526,7 +544,7 @@ The headers in the [CoreWebView2WebResourceRequest](corewebview2webresourcereque
 > void OpenDefaultDownloadDialog()
 
 Open the default download dialog.
-If the dialog is opened before there are recent downloads, the dialog shows all past downloads for the current profile. Otherwise, the dialog shows only the recent downloads with a "See more" button for past downloads.  Calling this method raises the [CoreWebView2.IsDefaultDownloadDialogOpenChanged](corewebview2.md#isdefaultdownloaddialogopenchanged) event if the dialog was closed. No effect if the dialog is already open.
+If the dialog is opened before there are recent downloads, the dialog shows all past downloads for the current profile. Otherwise, the dialog shows only the recent downloads with a "See more" button for past downloads. Calling this method raises the [CoreWebView2.IsDefaultDownloadDialogOpenChanged](corewebview2.md#isdefaultdownloaddialogopenchanged) event if the dialog was closed. No effect if the dialog is already open.
 
 
 
@@ -647,20 +665,33 @@ As the resource loaders for the current page might have already been created and
 
 Both absolute and relative paths are supported for `folderPath`. Relative paths are interpreted as relative to the folder where the exe of the app is in.
 For example, after calling `SetVirtualHostNameToFolderMapping("appassets.example", "assets", CoreWebView2HostResourceAccessKind.Deny);`, navigating to `https://appassets.example/my-local-file.html` will show content from my-local-file.html in the assets subfolder located on disk under the same path as the app's executable file.
+
+DOM elements that want to reference local files will have their host reference virtual host in the source. If there are multiple folders being used, define one unique virtual host per folder.
 You should typically choose virtual host names that are never used by real sites.
 If you own a domain such as `example.com`, another option is to use a subdomain reserved for the app (like `my-app.example.com`).
 [RFC 6761](https://tools.ietf.org/html/rfc6761) has reserved several special-use domain names that are guaranteed to not be used by real sites (for example, `.example`, `.test`, and `.invalid`).
+Note that using `.local` as the top-level domain name will work but can cause a delay during navigations. You should avoid using `.local` if you can.
 Apps should use distinct domain names when mapping folder from different sources that should be isolated from each other. For instance, the app might use app-file.example for files that ship as part of the app, and book1.example might be used for files containing books from a less trusted source that were previously downloaded and saved to the disk by the app.
 The host name used in the APIs is canonicalized using Chromium's host name parsing logic before being used internally.
+For more information see [HTML5 2.6 URLs](https://dev.w3.org/html5/spec-LC/urls.html).
 All host names that are canonicalized to the same string are considered identical.
 For example, `EXAMPLE.COM` and `example.com` are treated as the same host name.
 An international host name and its Punycode-encoded host name are considered the same host name. There is no DNS resolution for host name and the trailing '.' is not normalized as part of canonicalization.
 Therefore `example.com` and `example.com.` are treated as different host names. Similarly, `virtual-host-name` and `virtual-host-name.example.com` are treated as different host names even if the machine has a DNS suffix of `example.com`.
 Specify the minimal cross-origin access necessary to run the app. If there is not a need to access local resources from other origins, use [CoreWebView2HostResourceAccessKind](corewebview2hostresourceaccesskind.md).Deny.
+Setting the `accessKind` parameter does not adjust the app container permission for a folder.
 ```csharp
 webView.CoreWebView2.SetVirtualHostNameToFolderMapping(
     "appassets.example", "assets", CoreWebView2HostResourceAccessKind.DenyCors);
 webView.Source = new Uri("https://appassets.example/index.html");
+```
+
+This in an example on how to embed a local image. For more information see [CoreWebView2.NavigateToString](corewebview2.md#navigatetostring).
+```csharp
+webView.CoreWebView2.SetVirtualHostNameToFolderMapping(
+    "appassets.example", "assets", CoreWebView2HostResourceAccessKind.DenyCors);
+string c_navString = "<img src='http://appassets.example/wv2.png'/>";
+webview.NavigateToString(c_navString);
 ```
 
 
@@ -766,7 +797,7 @@ Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;Co
 
 ### FaviconChanged
 
-Raised when the Favicon has changed. This can include when a new page is loaded and thus by defualt no icon is set or the icon is set for the page by DOM or Javascript.
+Raised when the Favicon has changed. This can include when a new page is loaded and thus by default no icon is set or the icon is set for the page by DOM or JavaScript.
 The first argument is the Webview2 which saw the changed Favicon and the second is null.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, Object&gt;
@@ -882,7 +913,7 @@ Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;Co
 
 ### StatusBarTextChanged
 
-StatusBarTextChanged event is raised when the text in the [Window.statusbar](https://developer.mozilla.org/en-US/docs/Web/API/Window/statusbar) changes. When the event is fired use the property [CoreWebView2.StatusBarText](corewebview2.md#statusbartext) to get the current statusbar text.
+StatusBarTextChanged event is raised when the text in the [Window.statusbar](https://developer.mozilla.org/docs/Web/API/Window/statusbar) changes. When the event is fired use the property [CoreWebView2.StatusBarText](corewebview2.md#statusbartext) to get the current statusbar text.
 Events which cause causes can be anything from hover, url events, and others. There is not a finite list on how to cause the statusbar to change.
 The developer must create the status bar and set the text.
 
@@ -893,11 +924,11 @@ Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;Co
 WebMessageReceived is raised when the [CoreWebView2Settings.IsWebMessageEnabled](corewebview2settings.md#iswebmessageenabled) setting is set and the top-level document of the WebView runs `window.chrome.webview.postMessage`.
 The `postMessage` function is `void postMessage(object)` where object is any object supported by JSON conversion.
 When `postMessage` is called, the handler's Invoke method will be called with the `object` parameter `postMessage` converted to a JSON string.
-If the same page calls `postMessage` multiple times, the corresponding `WebMessageReceived` events are guaranteed to be fired in the same order.  However, if multiple frames call `postMessage`, there is no guaranteed order.  In addition, `WebMessageReceived` events caused by calls to `postMessage` are not guaranteed to be sequenced with events caused by DOM APIs.  For example, if the page runs
+If the same page calls `postMessage` multiple times, the corresponding `WebMessageReceived` events are guaranteed to be fired in the same order. However, if multiple frames call `postMessage`, there is no guaranteed order. In addition, `WebMessageReceived` events caused by calls to `postMessage` are not guaranteed to be sequenced with events caused by DOM APIs. For example, if the page runs
 <code>
 chrome.webview.postMessage("message");
 window.open();
-then the `NewWindowRequested` event might be fired before the `WebMessageReceived` event.  If you need the `WebMessageReceived` event to happen before anything else, then in the `WebMessageReceived` handler you can post a message back to the page and have the page wait until it receives that message before continuing.
+then the [CoreWebView2.NewWindowRequested](corewebview2.md#newwindowrequested) event might be fired before the `WebMessageReceived` event. If you need the `WebMessageReceived` event to happen before anything else, then in the `WebMessageReceived` handler you can post a message back to the page and have the page wait until it receives that message before continuing.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2WebMessageReceivedEventArgs](corewebview2webmessagereceivedeventargs.md)&gt;
 
@@ -915,7 +946,7 @@ Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;Co
 
 ### WebResourceResponseReceived
 
-WebResourceResponseReceived is raised when the WebView receives the response for a request for a web resource (any URI resolution performed by the WebView; such as HTTP/HTTPS, file and data requests from redirects, navigations, declarations in HTML, implicit favicon lookups, and fetch API usage in the document).
+WebResourceResponseReceived is raised when the WebView receives the response for a request for a web resource (any URI resolution performed by the WebView; such as HTTP/HTTPS, file and data requests from redirects, navigations, declarations in HTML, implicit Favicon lookups, and fetch API usage in the document).
 The host app can use this event to view the actual request and response for a web resource. There is no guarantee about the order in which the WebView processes the response and the host app's handler runs. The app's handler will not block the WebView from processing the response.
 The event args include the [CoreWebView2WebResourceRequest](corewebview2webresourcerequest.md) as sent by the wire and [CoreWebView2WebResourceResponse](corewebview2webresourceresponse.md) received, including any additional headers added by the network stack that were not be included as part of the associated [CoreWebView2.WebResourceRequested](corewebview2.md#webresourcerequested) event, such as Authentication headers.
 

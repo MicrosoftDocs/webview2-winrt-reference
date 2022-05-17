@@ -1,7 +1,7 @@
 ---
 description: Specifies the PDF toolbar item types used for the CoreWebView2Settings.HiddenPdfToolbarItems.
 title: CoreWebView2PdfToolbarItems
-ms.date: 04/12/2022
+ms.date: 05/16/2022
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PdfToolbarItems
 ---
 
@@ -20,7 +20,7 @@ Specifies the PDF toolbar item types used for the [CoreWebView2Settings.HiddenPd
 |`Rotate` | 0x20  |  The rotate button on PDF toolbar.|
 |`FitPage` | 0x40  |  The fit to width button on PDF toolbar.|
 |`PageLayout` | 0x80  |  The page view button on PDF toolbar.|
-|`Bookmarks` | 0x100  |  |
+|`Bookmarks` | 0x100  |  The contents button on PDF toolbar.|
 |`PageSelector` | 0x200  |  The page number button on PDF toolbar.|
 |`Search` | 0x400  |  The search button on PDF toolbar.|
 

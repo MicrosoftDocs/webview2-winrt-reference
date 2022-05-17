@@ -1,7 +1,7 @@
 ---
 description: The owner of the CoreWebView2 object that provides support for resizing, showing and hiding, focusing, and other functionality related to windowing and composition.
 title: CoreWebView2Controller
-ms.date: 04/12/2022
+ms.date: 05/16/2022
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Controller
 ---
 
@@ -83,15 +83,15 @@ The DefaultBackgroundColor is the color that renders underneath all web content.
 >  bool IsVisible
 
 Determines whether to show or hide the WebView.
-If `IsVisible` is set to `false`, the WebView is transparent and is not rendered. However, this does not affect the window containing the WebView (the `ParentWindow` parameter that was passed to [CoreWebView2Environment.CreateCoreWebView2ControllerAsync(CoreWebView2ControllerWindowReference)](corewebview2environment.md#createcorewebview2controllerasync) or [CoreWebView2Environment.CreateCoreWebView2ControllerAsync(CoreWebView2ControllerWindowReference, CoreWebView2ControllerOptions](corewebview2environment.md#createcorewebview2controllerasync-1)).
-WebView as a child window does not get window messages when the top window is minimized or restored. For performance reasons, developers should set the `IsVisible` property of the WebView to `false` when the app window is minimized and back to `true` when the app window is restored. The app window does this by handling  `SIZE_MINIMIZED and SIZE_RESTORED` command upon receiving `WM_SIZE` message. There are CPU and memory benefits when the page is hidden. For instance Chromium has code that throttles activities on the page like animations and some tasks are run less frequently. Similarly, WebView2 will purge some caches to reduce memory usage.
+If `IsVisible` is set to `false`, the WebView is transparent and is not rendered. However, this does not affect the window containing the WebView (the `ParentWindow` parameter that was passed to [CoreWebView2Environment.CreateCoreWebView2ControllerAsync](corewebview2environment.md#createcorewebview2controllerasync) or [CoreWebView2Environment.CreateCoreWebView2ControllerAsync](corewebview2environment.md#createcorewebview2controllerasync)).
+WebView as a child window does not get window messages when the top window is minimized or restored. For performance reasons, developers should set the `IsVisible` property of the WebView to `false` when the app window is minimized and back to `true` when the app window is restored. The app window does this by handling `SIZE_MINIMIZED` and `SIZE_RESTORED` command upon receiving `WM_SIZE` message. There are CPU and memory benefits when the page is hidden. For instance Chromium has code that throttles activities on the page like animations and some tasks are run less frequently. Similarly, WebView2 will purge some caches to reduce memory usage.
 
 ### ParentWindow
 
 >  [CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow
 
 Gets the parent window provided by the app or sets the parent window that this WebView is using to render content.
-It initially returns the `ParentWindow` passed into [CoreWebView2Environment.CreateCoreWebView2ControllerAsync(CoreWebView2ControllerWindowReference)](corewebview2environment.md#createcorewebview2controllerasync) or [CoreWebView2Environment.CreateCoreWebView2ControllerAsync(CoreWebView2ControllerWindowReference, CoreWebView2ControllerOptions](corewebview2environment.md#createcorewebview2controllerasync-1). Setting the property causes the WebView to re-parent the main WebView window to the newly provided window.
+It initially returns the `ParentWindow` passed into [CoreWebView2Environment.CreateCoreWebView2ControllerAsync](corewebview2environment.md#createcorewebview2controllerasync). Setting the property causes the WebView to re-parent the main WebView window to the newly provided window.
 
 ### RasterizationScale
 
@@ -128,7 +128,7 @@ Cleaning up the browser instance releases the resources powering the WebView. Th
 
 After running Close, all methods fail and event handlers stop running. Specifically, the WebView releases the associated references to any associated event handlers when Close is run.
 
-Close is implicitly run when the CoreWebView2Controller loses the final reference and is destructed. But it is best practice to explicitly run Close to avoid any accidental cycle of references between the WebView and the app code. Specifically, if you capture a reference to the WebView in an event handler you create a reference cycle between the WebView and the event handler. Run Close to break the cycle by releasing all event handlers. But to avoid the situation, it is best to both explicitly run Close on the WebView and to not capture a reference to the WebView to ensure the WebView is cleaned up correctly. `Close` is synchronous and won't trigger the `beforeunload` event.
+Close is implicitly run when the CoreWebView2Controller loses the final reference and is destructed. But it is best practice to explicitly run Close to avoid any accidental cycle of references between the WebView and the app code. Specifically, if you capture a reference to the WebView in an event handler you create a reference cycle between the WebView and the event handler. Run Close to break the cycle by releasing all event handlers. But to avoid the situation, it is best to both explicitly run Close on the WebView and to not capture a reference to the WebView to ensure the WebView is cleaned up correctly. Close is synchronous and won't trigger the `beforeunload` event.
 
 
 
