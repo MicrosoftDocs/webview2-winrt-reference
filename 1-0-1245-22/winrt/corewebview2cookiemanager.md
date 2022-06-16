@@ -1,7 +1,7 @@
 ---
 description: Creates, adds or updates, gets, or or view the cookies.
 title: CoreWebView2CookieManager
-ms.date: 04/12/2022
+ms.date: 06/14/2022
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2CookieManager
 ---
 
