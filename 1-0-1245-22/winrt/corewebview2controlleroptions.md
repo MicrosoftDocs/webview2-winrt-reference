@@ -7,9 +7,7 @@ keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Contr
 
 # CoreWebView2ControllerOptions Class
 
-
-
-Used to manage profile options that created by <see cref="CoreWebView2Environment.CreateCoreWebView2ControllerOptions()"/>.
+Used to manage profile options that created by [CoreWebView2Environment.CreateCoreWebView2ControllerOptions](corewebview2environment.md#createcorewebview2controlleroptions).
 
 ## Summary
 
