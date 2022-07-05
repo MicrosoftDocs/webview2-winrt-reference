@@ -847,9 +847,10 @@ WebMessageReceived is raised when the [CoreWebView2Settings.IsWebMessageEnabled]
 The `postMessage` function is `void postMessage(object)` where object is any object supported by JSON conversion.
 When `postMessage` is called, the handler's Invoke method will be called with the `object` parameter `postMessage` converted to a JSON string.
 If the same page calls `postMessage` multiple times, the corresponding `WebMessageReceived` events are guaranteed to be fired in the same order. However, if multiple frames call `postMessage`, there is no guaranteed order. In addition, `WebMessageReceived` events caused by calls to `postMessage` are not guaranteed to be sequenced with events caused by DOM APIs. For example, if the page runs
-<code>
+```
 chrome.webview.postMessage("message");
 window.open();
+```
 then the [CoreWebView2.NewWindowRequested](corewebview2.md#newwindowrequested) event might be fired before the `WebMessageReceived` event. If you need the `WebMessageReceived` event to happen before anything else, then in the `WebMessageReceived` handler you can post a message back to the page and have the page wait until it receives that message before continuing.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2WebMessageReceivedEventArgs](corewebview2webmessagereceivedeventargs.md)&gt;
