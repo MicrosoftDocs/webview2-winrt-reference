@@ -117,6 +117,8 @@
       "ms.topic": "reference",
       "ms.prod": "microsoft-edge",
       "ms.technology": "webview",
+      "searchScope": ["Microsoft Edge", "WebView2"],
+      "uhfHeaderId": "MSDocsHeader-MSEdge",
       "feedback_system": "None"
     },
     "fileMetadata": {},
