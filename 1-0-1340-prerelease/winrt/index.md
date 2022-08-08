@@ -49,8 +49,6 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, winrt, Microsoft.Web.W
 - [CoreWebView2PermissionRequestedEventArgs](corewebview2permissionrequestedeventargs.md)
 - [CoreWebView2PointerInfo](corewebview2pointerinfo.md)
 - [CoreWebView2PrintSettings](corewebview2printsettings.md)
-- [CoreWebView2PrivateContextMenuItem](corewebview2privatecontextmenuitem.md)
-- [CoreWebView2PrivateHostObjectAsyncMethodContinuation](corewebview2privatehostobjectasyncmethodcontinuation.md)
 - [CoreWebView2ProcessFailedEventArgs](corewebview2processfailedeventargs.md)
 - [CoreWebView2ProcessInfo](corewebview2processinfo.md)
 - [CoreWebView2Profile](corewebview2profile.md)
@@ -106,7 +104,6 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, winrt, Microsoft.Web.W
 - [CoreWebView2WebErrorStatus](corewebview2weberrorstatus.md)
 - [CoreWebView2WebResourceContext](corewebview2webresourcecontext.md)
 - [CoreWebView2WebResourceRequestSourceKinds](corewebview2webresourcerequestsourcekinds.md)
-- [Dispatchcontainerscriptbehavior](dispatchcontainerscriptbehavior.md)
 
 ## Structs
 
