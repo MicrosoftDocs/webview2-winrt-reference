@@ -35,7 +35,7 @@ The `ProfileName` property is to specify a profile name, which is only allowed t
 
 * alphabet characters: a-z and A-Z
 * digit characters: 0-9
-* and '#', '[]()', '', '(', ')', '+', '-', '_', '~', '.', ' ' (space).
+* and '#', '@', '', '(', ')', '+', '-', '_', '~', '.', ' ' (space).
 
 Note: the text must not end with a period '.' or ' ' (space). And, although upper-case letters are allowed, they're treated just as lower-case counterparts because the profile name will be mapped to the real profile directory path on disk and Windows file system handles path names in a case-insensitive way.
 

@@ -528,7 +528,7 @@ The `htmlContent` parameter may not be larger than 2 MB (2 * 1024 * 1024 bytes) 
 webView.CoreWebView2.SetVirtualHostNameToFolderMapping(
     "appassets.example", "assets", CoreWebView2HostResourceAccessKind.DenyCors);
 string htmlContent =
-[]()"
+@"
     <head><link rel='stylesheet' href ='http://appassets.example/run.css' /></head>
     <body>
         <img src='http://appassets.example/grill.png' />

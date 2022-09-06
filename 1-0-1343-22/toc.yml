@@ -127,10 +127,6 @@
           href: winrt/corewebview2printorientation.md
         - name: CoreWebView2PrintSettings
           href: winrt/corewebview2printsettings.md
-        - name: CoreWebView2PrivateContextMenuItem
-          href: winrt/corewebview2privatecontextmenuitem.md
-        - name: CoreWebView2PrivateHostObjectAsyncMethodContinuation
-          href: winrt/corewebview2privatehostobjectasyncmethodcontinuation.md
         - name: CoreWebView2ProcessFailedEventArgs
           href: winrt/corewebview2processfailedeventargs.md
         - name: CoreWebView2ProcessFailedKind
@@ -173,8 +169,6 @@
           href: winrt/corewebview2webresourceresponseview.md
         - name: CoreWebView2WindowFeatures
           href: winrt/corewebview2windowfeatures.md
-        - name: Dispatchcontainerscriptbehavior
-          href: winrt/dispatchcontainerscriptbehavior.md
         - name: ICoreWebView2DispatchAdapter
           href: winrt/icorewebview2dispatchadapter.md
     - name: COM Interop APIs
