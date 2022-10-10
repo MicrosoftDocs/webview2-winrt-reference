@@ -612,8 +612,8 @@ See [CoreWebView2PrintSettings](corewebview2printsettings.md) for description of
 The method will return [CoreWebView2PrintStatus](corewebview2printstatus.md) as [CoreWebView2PrintStatus](corewebview2printstatus.md).PrinterUnavailable if `printerName` doesn't match with the name of any installed printers on the user OS.
 The method will throw ArgumentException if the caller provides invalid settings for a given printer.
 
-The async Print operation completes when it finishes printing to the printer. Only one `Printing` operation can be in progress at a time. If `Print` is called while a [CoreWebView2.Print](corewebview2.md#print) or [CoreWebView2.PrintToPdf](corewebview2.md#printtopdf)
-or [CoreWebView2.PrintToPdfStream](corewebview2.md#printtopdfstream) job is in progress, the IAsyncOperation throws exception. This is only for printing operation on one webview.
+The async Print operation completes when it finishes printing to the printer. Only one `Printing` operation can be in progress at a time. If `Print` is called while a [CoreWebView2.PrintAsync](corewebview2.md#printasync) or [CoreWebView2.PrintToPdfAsync](corewebview2.md#printtopdfasync)
+or [CoreWebView2.PrintToPdfStreamAsync](corewebview2.md#printtopdfstreamasync) job is in progress, the IAsyncOperation throws exception. This is only for printing operation on one webview.
 
 |       Error         |      PrintStatus                              |               Notes                                                                           |
 | --- | --- | ---     |
@@ -649,7 +649,7 @@ Stream will be rewound to the start of the pdf data.
 See [CoreWebView2PrintSettings](corewebview2printsettings.md) for description of settings. Passing null for `printSettings` results in default print settings used.
 
 The async PrintToPdfStream operation completes when it finishes writing to the stream. Only one `Printing` operation can be in progress at a time. If
-[CoreWebView2.PrintToPdfStream](corewebview2.md#printtopdfstream) is called while a [CoreWebView2.PrintToPdfStream](corewebview2.md#printtopdfstream) or [CoreWebView2.PrintToPdf](corewebview2.md#printtopdf) or [CoreWebView2.Print](corewebview2.md#print) job is in progress,
+[CoreWebView2.PrintToPdfStreamAsync](corewebview2.md#printtopdfstreamasync) is called while a [CoreWebView2.PrintToPdfStreamAsync](corewebview2.md#printtopdfstreamasync) or [CoreWebView2.PrintToPdfAsync](corewebview2.md#printtopdfasync) or [CoreWebView2.PrintAsync](corewebview2.md#printasync) job is in progress,
 the IAsyncOperation throws an exception. This is only for printing operation on one webview.
 
 

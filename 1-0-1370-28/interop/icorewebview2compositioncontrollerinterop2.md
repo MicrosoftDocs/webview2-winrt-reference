@@ -2,11 +2,6 @@
 description: This interface is the continuation of the ICoreWebView2CompositionControllerInterop interface to manage drag and drop.
 title: WebView2 WinRT COM ICoreWebView2CompositionControllerInterop2
 ms.date: 10/10/2022
-ms.author: msedgedevrel
-ms.date: 09/06/2022
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, winrt, interop, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html, ICoreWebView2CompositionControllerInterop2
 ---
 

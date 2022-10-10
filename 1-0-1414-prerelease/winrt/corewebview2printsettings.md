@@ -48,7 +48,7 @@ See [CoreWebView2PrintCollation](corewebview2printcollation.md) for descriptions
 
 Printing uses default value of printer's collation if an invalid value is provided for the specific printer.
 
-This value is ignored in [CoreWebView2.PrintToPdfStream](corewebview2.md#printtopdfstream) method.
+This value is ignored in [CoreWebView2.PrintToPdfStreamAsync](corewebview2.md#printtopdfstreamasync) method.
 
 ### ColorMode
 
@@ -75,7 +75,7 @@ See [CoreWebView2PrintDuplex](corewebview2printduplex.md) for descriptions of du
 
 Printing uses default value of printer's duplex if an invalid value is provided for the specific printer.
 
-This value is ignored in [CoreWebView2.PrintToPdfStream](corewebview2.md#printtopdfstream) method.
+This value is ignored in [CoreWebView2.PrintToPdfStreamAsync](corewebview2.md#printtopdfstreamasync) method.
 
 ### FooterUri
 
@@ -126,11 +126,11 @@ The default is 1 cm, or ~0.4 inches. A margin cannot be less than zero. If an in
 Printer media size.
 See [CoreWebView2PrintMediaSize](corewebview2printmediasize.md) for descriptions of media size. The default value is [CoreWebView2PrintMediaSize](corewebview2printmediasize.md).Default.
 
-If media size is [CoreWebView2PrintMediaSize.Custom](corewebview2printmediasize.md#custom), you should set the PageWidth and PageHeight.
+If media size is [CoreWebView2PrintMediaSize.Custom](corewebview2printmediasize.md), you should set the PageWidth and PageHeight.
 
 Printing uses default value of printer supported media size if an invalid value is provided for the specific printer.
 
-This value is ignored in [CoreWebView2.PrintToPdfStream](corewebview2.md#printtopdfstream) method.
+This value is ignored in [CoreWebView2.PrintToPdfStreamAsync](corewebview2.md#printtopdfstreamasync) method.
 
 ### Orientation
 
@@ -175,7 +175,7 @@ ArgumentException is thrown.
 The following examples assume a document with 20 total pages.
 
 |       Example         |       Result      |               Notes                                              |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | "2"                   |  Page 2           |                                                                  |
 | "1-4, 9, 3-6, 10, 11" |  Pages 1-6, 9-11  |                                                                  |
 | "1-4, -6"             |  Pages 1-6        | The "-6" is interpreted as "1-6".                                |
@@ -221,10 +221,10 @@ Defaults to empty string. If the printer name is empty string or null, then it p
 
 If provided printer name doesn't match with the name of any installed printers on the user OS, the method returns with [CoreWebView2PrintStatus](corewebview2printstatus.md).Unavailable.
 
-Use [DeviceInformation.FindAllAsync](/uwp/api/windows.devices.enumeration.deviceinformation.findallasync?view=winrt-22621)
+Use [DeviceInformation.FindAllAsync](/uwp/api/windows.devices.enumeration.deviceinformation.findallasync)
 to get the list of local printers with AQS as "System.Devices.HardwareIds:~~"PRINTENUM\LocalPrintQueue""
 
-This value is ignored in [CoreWebView2.PrintToPdfStream](corewebview2.md#printtopdfstream) method.
+This value is ignored in [CoreWebView2.PrintToPdfStreamAsync](corewebview2.md#printtopdfstreamasync) method.
 
 ### ScaleFactor
 
