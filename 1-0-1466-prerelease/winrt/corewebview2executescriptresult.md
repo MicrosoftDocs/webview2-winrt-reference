@@ -17,7 +17,7 @@ Members|Description
 --|--
 [Exception](#exception) | If Succeeded is false, you can use this property to get the unhandled exception thrown by script execution
 [ResultAsJson](#resultasjson) | A function that has no explicit return value returns undefined. If the script that was run throws an unhandled exception, then the result is also null.
-[Succeeded](#succeeded) | This property is true if [CoreWebView2.ExecuteScriptWithResultAsync](corewebview2.md#executescriptwithresultasync) successfully executed script with no unhandled exceptions and the result is available in the [CoreWebView2ExecuteScriptResult.ResultAsJson](corewebview2executescriptresult.md#resultasjson) property or via the [CoreWebView2ExecuteScriptResult.TryGetResultAsString](corewebview2executescriptresult.md#trygetresultasstring) method.
+[Succeeded](#succeeded) | This property is true if [CoreWebView2.ExecuteScriptWithResultAsync](corewebview2.md#executescriptwithresultasync) successfully executed script with no unhandled exceptions and the result is available in the [CoreWebView2ExecuteScriptResult.ResultAsJson](corewebview2executescriptresult.md#resultasjson) property.
 
 ## Properties
 
@@ -37,7 +37,7 @@ A function that has no explicit return value returns undefined. If the script th
 
 > readonly  bool Succeeded
 
-This property is true if [CoreWebView2.ExecuteScriptWithResultAsync](corewebview2.md#executescriptwithresultasync) successfully executed script with no unhandled exceptions and the result is available in the [CoreWebView2ExecuteScriptResult.ResultAsJson](corewebview2executescriptresult.md#resultasjson) property or via the [CoreWebView2ExecuteScriptResult.TryGetResultAsString](corewebview2executescriptresult.md#trygetresultasstring) method.
+This property is true if [CoreWebView2.ExecuteScriptWithResultAsync](corewebview2.md#executescriptwithresultasync) successfully executed script with no unhandled exceptions and the result is available in the [CoreWebView2ExecuteScriptResult.ResultAsJson](corewebview2executescriptresult.md#resultasjson) property.
 
 
 

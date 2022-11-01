@@ -71,10 +71,10 @@ The script will receive a `sharedbufferreceived` event from chrome.webview.
 The event arg for that event will have the following methods and properties.
 
 
-If `access` is [CoreWebView2SharedBufferAccess.ReadOnly](corewebview2sharedbufferaccess.md#readonly), the script will only have read access to the buffer.
+If `access` is [CoreWebView2SharedBufferAccess.ReadOnly](corewebview2sharedbufferaccess.md), the script will only have read access to the buffer.
 If the script tries to modify the content in a read only buffer, it will cause an access violation in WebView renderer process and crash the renderer process.
 
-If the shared buffer is already closed, the API throws <exception cref="COMException"/> with error code of `RO_E_CLOSED`.
+If the shared buffer is already closed, the API throws COMException with error code of `RO_E_CLOSED`.
 The script code should call `chrome.webview.releaseBuffer` with the shared buffer as the parameter to release underlying resources as soon as it does not need access to the shared buffer any more.
 
 The application can post the same shared buffer object to multiple web pages or iframes, or post to the same web page or iframe multiple times.

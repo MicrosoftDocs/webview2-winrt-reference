@@ -43,9 +43,9 @@ Since WebView2 handles HTTP continuations and redirects automatically, it is unl
 > readonly  bool IsSuccess
 
 `true` when the navigation is successful; `false` for a navigation that ended up in an error page (failures due to no network, DNS lookup failure, HTTP server responds with 4xx). Note that WebView2 will report the navigation as 'unsuccessful' if the load for the navigation did not reach the expected completion for any reason. Such reasons include potentially catastrophic issues such network and certificate issues, but can also be the result of intended actions such as the app canceling a navigation or navigating away before the original navigation completed. Applications should not just rely on this flag, but also consider the reported WebErrorStatus to determine whether the failure is indeed catastrophic in their context. WebErrorStatuses that may indicate a non-catastrophic failure include:
-- [CoreWebView2WebErrorStatus.OperationCanceled](corewebview2weberrorstatus.md#operationcanceled)
-- [CoreWebView2WebErrorStatus.ValidAuthenticationCredentialsRequired](corewebview2weberrorstatus.md#validauthenticationcredentialsrequired)
-- [CoreWebView2WebErrorStatus.ValidProxyAuthenticationRequired](corewebview2weberrorstatus.md#validproxyauthenticationrequired)
+- [CoreWebView2WebErrorStatus.OperationCanceled](corewebview2weberrorstatus.md)
+- [CoreWebView2WebErrorStatus.ValidAuthenticationCredentialsRequired](corewebview2weberrorstatus.md)
+- [CoreWebView2WebErrorStatus.ValidProxyAuthenticationRequired](corewebview2weberrorstatus.md)
 This may also be `false` for additional scenarios such as `window.stop()` run on navigated page.
 
 ### NavigationId
