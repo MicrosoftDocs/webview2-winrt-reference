@@ -60,7 +60,7 @@ There is [CoreWebView2Profile.PreferredTrackingPreventionLevel](corewebview2prof
 
 See [CoreWebView2Profile.PreferredTrackingPreventionLevel](corewebview2profile.md#preferredtrackingpreventionlevel) for more details.
 
-Tracking prevention protects users from online tracking by restricting the ability of trackers to access browser-based storage as well as the network. See [Tracking prevention](microsoft-edge/web-platform/tracking-prevention).
+Tracking prevention protects users from online tracking by restricting the ability of trackers to access browser-based storage as well as the network. See [Tracking prevention](/microsoft-edge/web-platform/tracking-prevention).
 
 ### ExclusiveUserDataFolderAccess
 
