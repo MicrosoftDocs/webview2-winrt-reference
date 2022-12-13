@@ -98,7 +98,7 @@ Members|Description
 [SourceChanged](#sourcechanged) | SourceChanged is raised when the [CoreWebView2.Source](corewebview2.md#source) property changes.
 [StatusBarTextChanged](#statusbartextchanged) | StatusBarTextChanged event is raised when the text in the [Window.statusbar](https://developer.mozilla.org/docs/Web/API/Window/statusbar) changes. When the event is fired use the property [CoreWebView2.StatusBarText](corewebview2.md#statusbartext) to get the current statusbar text.
 [WebMessageReceived](#webmessagereceived) | WebMessageReceived is raised when the [CoreWebView2Settings.IsWebMessageEnabled](corewebview2settings.md#iswebmessageenabled) setting is set and the top-level document of the WebView runs `window.chrome.webview.postMessage`.
-[WebResourceRequested](#webresourcerequested) | WebResourceRequested is raised when the WebView is performing a URL request to a matching URL and resource context filter that was added with <see cref="CoreWebView2.AddWebResourceRequestedFilter(string, CoreWebView2WebResourceContext)"/>.
+[WebResourceRequested](#webresourcerequested) | WebResourceRequested is raised when the WebView is performing a URL request to a matching URL and resource context filter that was added with [CoreWebView2.AddWebResourceRequestedFilter](corewebview2.md#addwebresourcerequestedfilter).
 [WebResourceResponseReceived](#webresourceresponsereceived) | WebResourceResponseReceived is raised when the WebView receives the response for a request for a web resource (any URI resolution performed by the WebView; such as HTTP/HTTPS, file and data requests from redirects, navigations, declarations in HTML, implicit Favicon lookups, and fetch API usage in the document).
 [WindowCloseRequested](#windowcloserequested) | WindowCloseRequested is raised when content inside the WebView requested to close the window, such as after `window.close()` is run.
 
@@ -598,10 +598,10 @@ The script will receive a `sharedbufferreceived` event from chrome.webview.
 The event arg for that event will have the following methods and properties.
 
 
-If `access` is [CoreWebView2SharedBufferAccess.ReadOnly](corewebview2sharedbufferaccess.md#readonly), the script will only have read access to the buffer.
+If `access` is [CoreWebView2SharedBufferAccess.ReadOnly](corewebview2sharedbufferaccess.md), the script will only have read access to the buffer.
 If the script tries to modify the content in a read only buffer, it will cause an access violation in WebView renderer process and crash the renderer process.
 
-If the shared buffer is already closed, the API throws <exception cref="COMException"/> with error code of `RO_E_CLOSED`.
+If the shared buffer is already closed, the API throws COMException with error code of `RO_E_CLOSED`.
 The script code should call `chrome.webview.releaseBuffer` with the shared buffer as the parameter to release underlying resources as soon as it does not need access to the shared buffer any more.
 
 The application can post the same shared buffer object to multiple web pages or iframes, or post to the same web page or iframe multiple times.
@@ -1042,7 +1042,7 @@ Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;Co
 
 ### WebResourceRequested
 
-WebResourceRequested is raised when the WebView is performing a URL request to a matching URL and resource context filter that was added with <see cref="CoreWebView2.AddWebResourceRequestedFilter(string, CoreWebView2WebResourceContext)"/>.
+WebResourceRequested is raised when the WebView is performing a URL request to a matching URL and resource context filter that was added with [CoreWebView2.AddWebResourceRequestedFilter](corewebview2.md#addwebresourcerequestedfilter).
 At least one filter must be added for the event to be raised.
 The web resource requested may be blocked until the event handler returns if a deferral is not taken on the event args. If a deferral is taken, then the web resource requested is blocked until the deferral is completed.
 
