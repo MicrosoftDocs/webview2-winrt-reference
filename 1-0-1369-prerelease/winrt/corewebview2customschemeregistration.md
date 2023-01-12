@@ -10,7 +10,7 @@ keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Contr
 
 
 Represents the registration of a custom scheme with the [CoreWebView2Environment](corewebview2environment.md)
-This allows the WebView2 app to be able to handle CoreWebView2WebResourceRequested (unresolved reference)
+This allows the WebView2 app to be able to handle [CoreWebView2.WebResourceRequested](corewebview2.md#webresourcerequested)
 event for requests with the specified scheme and be able to navigate the WebView2
 to the custom scheme. Once the environment is created, the registrations are
 valid and immutable throughout the lifetime of the associated WebView2s' browser
