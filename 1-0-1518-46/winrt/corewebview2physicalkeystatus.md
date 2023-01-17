@@ -24,4 +24,3 @@ For more information about `WM_KEYDOWN`, navigate to [WM_KEYDOWN message](/windo
 ## Referenced by
 
 - [CoreWebView2AcceleratorKeyPressedEventArgs](corewebview2acceleratorkeypressedeventargs.md)
-- [CoreWebView2PrivateKeyPressedEventArgs](corewebview2privatekeypressedeventargs.md)

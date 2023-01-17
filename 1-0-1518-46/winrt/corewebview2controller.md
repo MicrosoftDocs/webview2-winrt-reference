@@ -33,7 +33,6 @@ Members|Description
 [SetBoundsAndZoomFactor](#setboundsandzoomfactor) | Updates [CoreWebView2Controller.Bounds](corewebview2controller.md#bounds) and [CoreWebView2Controller.ZoomFactor](corewebview2controller.md#zoomfactor) properties at the same time.
 [AcceleratorKeyPressed](#acceleratorkeypressed) | AcceleratorKeyPressed is raised when an accelerator key or key combo is pressed or released while the WebView is focused.
 [GotFocus](#gotfocus) | GotFocus is raised when WebView gets focus.
-[KeyPressed](#keypressed) | 
 [LostFocus](#lostfocus) | LostFocus is raised when WebView loses focus.
 [MoveFocusRequested](#movefocusrequested) | MoveFocusRequested is raised when user tries to tab out of the WebView.
 [RasterizationScaleChanged](#rasterizationscalechanged) | RasterizationScaleChanged is raised when the [CoreWebView2Controller.RasterizationScale](corewebview2controller.md#rasterizationscale) property changes.
@@ -193,10 +192,6 @@ Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;Co
 GotFocus is raised when WebView gets focus.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Controller, Object&gt;
-
-### KeyPressed
-
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Controller, [CoreWebView2PrivateKeyPressedEventArgs](corewebview2privatekeypressedeventargs.md)&gt;
 
 ### LostFocus
 

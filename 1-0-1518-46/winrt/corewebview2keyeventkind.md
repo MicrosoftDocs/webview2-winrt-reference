@@ -20,4 +20,3 @@ Specifies the key event kind that raises an [CoreWebView2Controller.AcceleratorK
 ## Referenced by
 
 - [CoreWebView2AcceleratorKeyPressedEventArgs](corewebview2acceleratorkeypressedeventargs.md)
-- [CoreWebView2PrivateKeyPressedEventArgs](corewebview2privatekeypressedeventargs.md)
