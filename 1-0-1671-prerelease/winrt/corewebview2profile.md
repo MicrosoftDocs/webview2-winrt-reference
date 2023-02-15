@@ -15,7 +15,7 @@ Multiple profiles can be created under a single user data directory but with sep
 
 Members|Description
 --|--
-[DefaultDownloadFolderPath](defaultdownloadfolderpath) | The default download folder path.
+[DefaultDownloadFolderPath](#defaultdownloadfolderpath) | The default download folder path.
 [IsInPrivateModeEnabled](#isinprivatemodeenabled) | InPrivate mode is enabled or not.
 [PreferredColorScheme](#preferredcolorscheme) | The PreferredColorScheme property sets the overall color scheme of the WebView2s associated with this profile.
 [PreferredTrackingPreventionLevel](#preferredtrackingpreventionlevel) | The `PreferredTrackingPreventionLevel` property allows you to control levels of tracking prevention for WebView2 which are associated with a profile. This level would apply to the context of the profile. That is, all WebView2s sharing the same profile will be affected and also the value is persisted in the user data folder.
