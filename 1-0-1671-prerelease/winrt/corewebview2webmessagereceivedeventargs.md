@@ -28,7 +28,9 @@ Members|Description
 
 Additional received WebMessage objects.
 To pass `AdditionalObjects` via WebMessage to the app, use the `chrome.webview.postMessageWithAdditionalObjects` content API. Any DOM object type that can be natively representable that has been passed in to `additionalObjects` parameter will be accessible here. Currently a WebMessage object can be the following type:
-- <see cref="CoreWebView2File">.
+
+- [CoreWebView2File](corewebview2file.md)
+
 Entries in the collection can be `nullptr` if `null` or `undefined` was passed. Cast the object to the native type to access its specific properties.
 
 

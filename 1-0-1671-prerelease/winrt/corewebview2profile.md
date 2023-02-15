@@ -15,7 +15,7 @@ Multiple profiles can be created under a single user data directory but with sep
 
 Members|Description
 --|--
-[DefaultDownloadFolderPath](#defaultdownloadfolderpath) | The default download folder path.
+[DefaultDownloadFolderPath](defaultdownloadfolderpath) | The default download folder path.
 [IsInPrivateModeEnabled](#isinprivatemodeenabled) | InPrivate mode is enabled or not.
 [PreferredColorScheme](#preferredcolorscheme) | The PreferredColorScheme property sets the overall color scheme of the WebView2s associated with this profile.
 [PreferredTrackingPreventionLevel](#preferredtrackingpreventionlevel) | The `PreferredTrackingPreventionLevel` property allows you to control levels of tracking prevention for WebView2 which are associated with a profile. This level would apply to the context of the profile. That is, all WebView2s sharing the same profile will be affected and also the value is persisted in the user data folder.
@@ -128,7 +128,7 @@ Gets a list of nondefault permission settings.
 > [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) SetPermissionStateAsync([CoreWebView2PermissionKind](corewebview2permissionkind.md) PermissionKind, string origin, [CoreWebView2PermissionState](corewebview2permissionstate.md) State)
 
 Sets permission state for the given permission kind and origin asynchronously.
-The state change persists across sessions until it is changed by another call to `SetPermissionState`, or by setting the `State` property in `PermissionRequestedEventArgs`. Setting the state to [CoreWebView2PermissionState.Default](corewebview2permissionstate.md#default) will erase any state saved in the profile and restore the default behavior. The origin should have a valid scheme and host (e.g. "https://www.example.com"), otherwise the method fails. Additional URI parts like path and fragment are ignored. For example, "https://wwww.example.com/app1/index.html/" is treated the same as "https://wwww.example.com". See the [MDN origin definition](https://developer.mozilla.org/en-US/docs/Glossary/Origin) for more details.
+The state change persists across sessions until it is changed by another call to `SetPermissionState`, or by setting the `State` property in `PermissionRequestedEventArgs`. Setting the state to [CoreWebView2PermissionState.Default](corewebview2permissionstate.md) will erase any state saved in the profile and restore the default behavior. The origin should have a valid scheme and host (e.g. "https://www.example.com"), otherwise the method fails. Additional URI parts like path and fragment are ignored. For example, "https://wwww.example.com/app1/index.html/" is treated the same as "https://wwww.example.com". See the [MDN origin definition](https://developer.mozilla.org/en-US/docs/Glossary/Origin) for more details.
 
 
 
