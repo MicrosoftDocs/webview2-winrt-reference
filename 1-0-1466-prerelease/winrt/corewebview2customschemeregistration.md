@@ -49,7 +49,7 @@ If this property is set to `false`, URIs with this scheme will have an [opaque o
 This property is `false` by default.
 Note: For custom schemes registered as having authority component, navigations to URIs without authority of such custom schemes will fail.
 However, if the content inside WebView2 references a subresource with a URI that does not have an authority component, but of a custom scheme that is registered as having authority component, the URI will be interpreted as a relative path as specified in [RFC3986](https://www.rfc-editor.org/rfc/rfc3986).
-For example, custom-scheme-with-authority:path will be interpreted as `custom-scheme-with-authority://host/path`.
+For example, `custom-scheme-with-authority:path will be interpreted` as `custom-scheme-with-authority://host/path`.
 However, this behavior cannot be guaranteed to remain in future releases so it is recommended not to rely on this behavior.
 
 ### TreatAsSecure

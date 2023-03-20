@@ -30,8 +30,8 @@ Indicates the error status values for web navigations.
 - For original navigation if the app navigates the WebView2 in a rapid succession away after the load for original navigation commenced, but before it completed.|
 |`RedirectFailed` | 0xf  |  Indicates that the request redirect failed.|
 |`UnexpectedError` | 0x10  |  An unexpected error occurred.|
-|`ValidAuthenticationCredentialsRequired` | 0x11  |  Indicates that user is prompted with a login, waiting on user action. Initial navigation to a login site will always return this even if app provides credential using [CoreWebView2.BasicAuthenticationRequested](corewebview2.md#basicauthenticationrequested). HTTP response status code in this case is 401. See status code reference here: https://developer.mozilla.org/docs/Web/HTTP/Status.|
-|`ValidProxyAuthenticationRequired` | 0x12  |  Indicates that user lacks proper authentication credentials for a proxy server. HTTP response status code in this case is 407. See status code reference here: https://developer.mozilla.org/docs/Web/HTTP/Status.|
+|`ValidAuthenticationCredentialsRequired` | 0x11  |  Indicates that user is prompted with a login, waiting on user action. Initial navigation to a login site will always return this even if app provides credential using [CoreWebView2.BasicAuthenticationRequested](corewebview2.md#basicauthenticationrequested). HTTP response status code in this case is 401. See status code reference here: <https://developer.mozilla.org/docs/Web/HTTP/Status>.|
+|`ValidProxyAuthenticationRequired` | 0x12  |  Indicates that user lacks proper authentication credentials for a proxy server. HTTP response status code in this case is 407. See status code reference here: <https://developer.mozilla.org/docs/Web/HTTP/Status>.|
 
 
 ## Referenced by

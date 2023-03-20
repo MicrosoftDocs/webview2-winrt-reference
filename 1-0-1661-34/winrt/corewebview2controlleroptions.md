@@ -47,24 +47,21 @@ Note: the text must not end with a period '.' or ' ' (space). And, although uppe
 Manages the value of the controller's script locale.
 The `ScriptLocale` property is to specify the default script locale. It sets the default locale for all Intl JavaScript APIs and other JavaScript APIs that depend on it, namely `Intl.DateTimeFormat()` which affects string formatting like in the time/date formats.The intended locale value is in the format of BCP 47 Language Tags. More information can be found from [IETF BCP47](https://www.ietf.org/rfc/bcp/bcp47.html).
 The default value for ScriptLocale will be depend on the WebView2 language and OS region. If the language portions of the WebView2 language and OS region match, then it will use the OS region. Otherwise, it will use the WebView2 language.
+
 | **OS Region** | **WebView2 Language** | **Default WebView2 ScriptLocale** |
 |-----------|-------------------|-------------------------------|
 | en-GB     | en-US             | en-GB                         |
 | es-MX     | en-US             | en-US                         |
 | en-US     | en-GB             | en-US                         |
+
 You can set the ScriptLocale to the empty string to get the default ScriptLocale value.
 Use OS specific APIs to determine the OS region to use with this property if you always want to match with the OS
 region. For example:
+
 ```csharp
 CultureInfo cultureInfo = Thread.CurrentThread.CurrentCulture;
 return cultureInfo.Name
 ```
-
-
-
-
-
-
 ## Referenced by
 
 - [CoreWebView2Environment](corewebview2environment.md)

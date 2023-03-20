@@ -44,12 +44,13 @@ Specifically, if you have a URI of the following form you should set the `HasAut
 | -- | -- |
 | `custom-scheme-with-authority://host/path` | `true` |
 | `custom-scheme-without-authority:path` | `false` |
+
 When this property is set to `true`, the URIs with this scheme will be interpreted as having a [scheme and host](https://html.spec.whatwg.org/multipage/origin.html#concept-origin-tuple) origin similar to an http URI. Note that the port and user information are never included in the computation of origins for custom schemes.
 If this property is set to `false`, URIs with this scheme will have an [opaque origin](https://html.spec.whatwg.org/multipage/origin.html#concept-origin-opaque) similar to a data URI.
 This property is `false` by default.
 Note: For custom schemes registered as having authority component, navigations to URIs without authority of such custom schemes will fail.
 However, if the content inside WebView2 references a subresource with a URI that does not have an authority component, but of a custom scheme that is registered as having authority component, the URI will be interpreted as a relative path as specified in [RFC3986](https://www.rfc-editor.org/rfc/rfc3986).
-For example, custom-scheme-with-authority:path will be interpreted as `custom-scheme-with-authority://host/path`.
+For example, `custom-scheme-with-authority:path will be interpreted` as `custom-scheme-with-authority://host/path`.
 However, this behavior cannot be guaranteed to remain in future releases so it is recommended not to rely on this behavior.
 
 ### TreatAsSecure
