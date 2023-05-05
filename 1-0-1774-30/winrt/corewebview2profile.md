@@ -1,15 +1,11 @@
 ---
+description: Multiple profiles can be created under a single user data directory but with separated cookies, user preference settings, and various data storage etc.. If the CoreWebView2 was created with a CoreWebView2ControllerOptions, the CoreWebView2Profile will match those specified options. Otherwise if this CoreWebView2 was created without a CoreWebView2ControllerOptions, then this will be the default CoreWebView2Profile for the corresponding CoreWebView2Environment.
 title: CoreWebView2Profile
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/04/2023
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 05/05/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Profile
 ---
 
-# runtimeClass CoreWebView2Profile
+# CoreWebView2Profile Class
 
 
 
@@ -57,7 +53,7 @@ The default value is the system default download folder path for the user. The d
 Determines whether general form information will be saved and autofilled.
 General autofill information includes information like names, street and email addresses, phone numbers, and arbitrary input. This excludes password information. When disabled, no suggestions appear, and no new information is saved.
 When enabled, information is saved, suggestions appear, and clicking on one will populate the form fields. The default value is `true`. It will apply immediately after setting.
-This property has the same value as [CoreWebView2Settings.IsGeneralAutofillEnabled](corewebview2settings.md#isgeneralautofillenabled), and changing one will change the other. All WebView2s  with the same [CoreWebView2Profile](corewebview2profile.md) will share the same value for this property, so for the WebView2s with the same profile, their [CoreWebView2Settings.IsGeneralAutofillEnabled](corewebview2settings.md#isgeneralautofillenabled) and [CoreWebView2Profile.IsGeneralAutofillEnabled](corewebview2profile.md#isgeneralautofillenabled) will always have the same value.
+This property has the same value as [CoreWebView2Settings.IsGeneralAutofillEnabled](corewebview2settings.md#isgeneralautofillenabled), and changing one will change the other. All WebView2s  with the same CoreWebView2Profile will share the same value for this property, so for the WebView2s with the same profile, their [CoreWebView2Settings.IsGeneralAutofillEnabled](corewebview2settings.md#isgeneralautofillenabled) and [CoreWebView2Profile.IsGeneralAutofillEnabled](corewebview2profile.md#isgeneralautofillenabled) will always have the same value.
 
 ### IsInPrivateModeEnabled
 
@@ -72,7 +68,7 @@ InPrivate mode is enabled or not.
 Determines whether password information will be autosaved.
 When disabled, no new password data is saved and no Save/Update Password prompts are displayed. However, if there was password data already saved before disabling this setting, then that password information is auto-populated, suggestions are shown and clicking on one will populate the fields.
 When enabled, password information is auto-populated, suggestions are shown and clicking on one will populate the fields, new data is saved, and a Save/Update Password prompt is displayed. The default value is `false`. It will apply immediately after setting.
-This property has the same value as [CoreWebView2Settings.IsPasswordAutosaveEnabled](corewebview2settings.md#ispasswordautosaveenabled), and changing one will change the other. All WebView2s with the same [CoreWebView2Profile](corewebview2profile.md) will share the same value for this property, so for the WebView2s with the same profile, their [CoreWebView2Settings.IsPasswordAutosaveEnabled](corewebview2settings.md#ispasswordautosaveenabled) and [CoreWebView2Profile.IsPasswordAutosaveEnabled](corewebview2profile.md#ispasswordautosaveenabled) will always have the same value.
+This property has the same value as [CoreWebView2Settings.IsPasswordAutosaveEnabled](corewebview2settings.md#ispasswordautosaveenabled), and changing one will change the other. All WebView2s with the same CoreWebView2Profile will share the same value for this property, so for the WebView2s with the same profile, their [CoreWebView2Settings.IsPasswordAutosaveEnabled](corewebview2settings.md#ispasswordautosaveenabled) and [CoreWebView2Profile.IsPasswordAutosaveEnabled](corewebview2profile.md#ispasswordautosaveenabled) will always have the same value.
 
 ### PreferredColorScheme
 
@@ -113,7 +109,7 @@ Full path of the profile directory.
 
 ### ClearBrowsingDataAsync
 
-> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) ClearBrowsingDataAsync([CoreWebView2BrowsingDataKinds](corewebview2browsingdatakinds.md) operation, [DateTime](/uwp/api/Windows.Foundation.DateTime) dataKinds, [DateTime](/uwp/api/Windows.Foundation.DateTime) startTime)
+> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) ClearBrowsingDataAsync([CoreWebView2BrowsingDataKinds](corewebview2browsingdatakinds.md) dataKinds, [DateTime](/uwp/api/Windows.Foundation.DateTime) startTime, [DateTime](/uwp/api/Windows.Foundation.DateTime) endTime)
 
 Clears browsing data for dataKinds between startTime and endTime.
 
@@ -129,7 +125,7 @@ Clears all browsing data associated with the profile this method is called on re
 
 ### ClearBrowsingDataAsync
 
-> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) ClearBrowsingDataAsync([CoreWebView2BrowsingDataKinds](corewebview2browsingdatakinds.md) operation)
+> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) ClearBrowsingDataAsync([CoreWebView2BrowsingDataKinds](corewebview2browsingdatakinds.md) dataKinds)
 
 Clear the browsing data of the associated profile.
 Clears browsing data on the profile the method is called on. Additional optional parameters include the start time and end time to clear the browsing data between as well as the data specific data kinds to clear on the profile. The method may be overloaded to take:
@@ -157,7 +153,7 @@ Gets a list of nondefault permission settings.
 
 ### SetPermissionStateAsync
 
-> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) SetPermissionStateAsync([CoreWebView2PermissionKind](corewebview2permissionkind.md) operation, string PermissionKind, [CoreWebView2PermissionState](corewebview2permissionstate.md) origin)
+> [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) SetPermissionStateAsync([CoreWebView2PermissionKind](corewebview2permissionkind.md) PermissionKind, string origin, [CoreWebView2PermissionState](corewebview2permissionstate.md) State)
 
 Sets permission state for the given permission kind and origin asynchronously.
 The state change persists across sessions until it is changed by another call to `SetPermissionState`, or by setting the `State` property in `PermissionRequestedEventArgs`. Setting the state to [CoreWebView2PermissionState](corewebview2permissionstate.md).Default will erase any state saved in the profile and restore the default behavior. The origin should have a valid scheme and host (e.g. "https://www.example.com"), otherwise the method fails. Additional URI parts like path and fragment are ignored. For example, "https://wwww.example.com/app1/index.html/" is treated the same as "https://wwww.example.com". See the [MDN origin definition](https://developer.mozilla.org/docs/Glossary/Origin) for more details.

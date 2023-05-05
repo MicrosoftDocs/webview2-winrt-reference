@@ -1,15 +1,11 @@
 ---
+description: Kind of cross origin resource access allowed for host resources during download.
 title: CoreWebView2HostResourceAccessKind
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/04/2023
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 05/05/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2HostResourceAccessKind
 ---
 
-# enum CoreWebView2HostResourceAccessKind
+# CoreWebView2HostResourceAccessKind Enum
 
 Kind of cross origin resource access allowed for host resources during download.
 Note that other normal access checks like same origin DOM access check and [Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) still apply.

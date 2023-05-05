@@ -1,15 +1,11 @@
 ---
+description: This class is an extension of the CoreWebView2Controller class to support visual hosting.
 title: CoreWebView2CompositionController
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/04/2023
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 05/05/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2CompositionController
 ---
 
-# runtimeClass CoreWebView2CompositionController
+# CoreWebView2CompositionController Class
 
 Extends: [CoreWebView2Controller](corewebview2controller.md)
 
@@ -115,5 +111,5 @@ The event is raised when WebView thinks the cursor should be changed.
 For example, when the mouse cursor is currently the default cursor but is then moved over text, it may try to change to the IBeam cursor.
 It is expected for the developer to send [CoreWebView2MouseEventKind](corewebview2mouseeventkind.md).Leave messages (in addition to [CoreWebView2MouseEventKind](corewebview2mouseeventkind.md).Move messages) through [CoreWebView2CompositionController.SendMouseInput](corewebview2compositioncontroller.md#sendmouseinput). This is to ensure that the mouse is actually within the WebView that sends out CursorChanged events.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2CompositionController, Object&gt;
 

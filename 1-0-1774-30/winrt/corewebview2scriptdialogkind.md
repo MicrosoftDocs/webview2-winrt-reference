@@ -1,15 +1,11 @@
 ---
+description: Specifies the JavaScript dialog kind used in CoreWebView2ScriptDialogOpeningEventArgs.
 title: CoreWebView2ScriptDialogKind
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/04/2023
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 05/05/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ScriptDialogKind
 ---
 
-# enum CoreWebView2ScriptDialogKind
+# CoreWebView2ScriptDialogKind Enum
 
 Specifies the JavaScript dialog kind used in [CoreWebView2ScriptDialogOpeningEventArgs](corewebview2scriptdialogopeningeventargs.md).
 

@@ -1,15 +1,11 @@
 ---
+description: Specifies the action type when server certificate error is detected to be used in the CoreWebView2ServerCertificateErrorDetectedEventArgs.
 title: CoreWebView2ServerCertificateErrorAction
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/04/2023
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 05/05/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ServerCertificateErrorAction
 ---
 
-# enum CoreWebView2ServerCertificateErrorAction
+# CoreWebView2ServerCertificateErrorAction Enum
 
 Specifies the action type when server certificate error is detected to be used in the [CoreWebView2ServerCertificateErrorDetectedEventArgs](corewebview2servercertificateerrordetectedeventargs.md).
 

@@ -1,15 +1,11 @@
 ---
+description: The reason why the CoreWebView2DownloadOperation was interrupted.
 title: CoreWebView2DownloadInterruptReason
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/04/2023
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 05/05/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DownloadInterruptReason
 ---
 
-# enum CoreWebView2DownloadInterruptReason
+# CoreWebView2DownloadInterruptReason Enum
 
 The reason why the [CoreWebView2DownloadOperation](corewebview2downloadoperation.md) was interrupted.
 

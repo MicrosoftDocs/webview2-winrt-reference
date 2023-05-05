@@ -1,15 +1,11 @@
 ---
+description: Indicates the kind of browsing data to clear. Or operations can be applied to create a mask representing multiple CoreWebView2BrowsingDataKinds. The resulting mask may be passed to CoreWebView2Profile.ClearBrowsingDataAsync to clear the corresponding data.
 title: CoreWebView2BrowsingDataKinds
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/04/2023
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 05/05/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2BrowsingDataKinds
 ---
 
-# enum CoreWebView2BrowsingDataKinds
+# CoreWebView2BrowsingDataKinds Enum
 
 Indicates the kind of browsing data to clear. Or operations can be applied to create a mask representing multiple CoreWebView2BrowsingDataKinds. The resulting mask may be passed to [CoreWebView2Profile.ClearBrowsingDataAsync](corewebview2profile.md#clearbrowsingdataasync) to clear the corresponding data.
 
@@ -29,7 +25,7 @@ Indicates the kind of browsing data to clear. Or operations can be applied to cr
 |`PasswordAutosave` | 0x800  |  Specifies password autosave data.|
 |`BrowsingHistory` | 0x1000  |  Specifies browsing history data.|
 |`Settings` | 0x2000  |  Specifies settings data.|
-|`AllProfile` | 0x4000  |  Specifies profile data that should be wiped to make it look like a new profile. This does not delete account-scoped data like passwords but will remove access to account-scoped data by signing the user out. Specifies all profile data, now and future. New profile data types may be added to this data kind in the future. This browsing data kind is inclusive of [CoreWebView2BrowsingDataKinds](corewebview2browsingdatakinds.md).AllSite, [CoreWebView2BrowsingDataKinds](corewebview2browsingdatakinds.md).DiskCache, [CoreWebView2BrowsingDataKinds](corewebview2browsingdatakinds.md).DownloadHistory, [CoreWebView2BrowsingDataKinds](corewebview2browsingdatakinds.md).GeneralAutofill, [CoreWebView2BrowsingDataKinds](corewebview2browsingdatakinds.md).PasswordAutosave, [CoreWebView2BrowsingDataKinds](corewebview2browsingdatakinds.md).BrowsingHistory, [CoreWebView2BrowsingDataKinds](corewebview2browsingdatakinds.md).Settings.|
+|`AllProfile` | 0x4000  |  Specifies profile data that should be wiped to make it look like a new profile. This does not delete account-scoped data like passwords but will remove access to account-scoped data by signing the user out. Specifies all profile data, now and future. New profile data types may be added to this data kind in the future. This browsing data kind is inclusive of CoreWebView2BrowsingDataKinds.AllSite, CoreWebView2BrowsingDataKinds.DiskCache, CoreWebView2BrowsingDataKinds.DownloadHistory, CoreWebView2BrowsingDataKinds.GeneralAutofill, CoreWebView2BrowsingDataKinds.PasswordAutosave, CoreWebView2BrowsingDataKinds.BrowsingHistory, CoreWebView2BrowsingDataKinds.Settings.|
 
 
 ## Referenced by

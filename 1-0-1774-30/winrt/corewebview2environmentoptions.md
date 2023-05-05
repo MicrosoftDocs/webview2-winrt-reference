@@ -1,15 +1,11 @@
 ---
+description: Options used to create WebView2 Environment.
 title: CoreWebView2EnvironmentOptions
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/04/2023
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 05/05/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2EnvironmentOptions
 ---
 
-# runtimeClass CoreWebView2EnvironmentOptions
+# CoreWebView2EnvironmentOptions Class
 
 
 
@@ -27,6 +23,7 @@ Members|Description
 [IsCustomCrashReportingEnabled](#iscustomcrashreportingenabled) | When `IsCustomCrashReportingEnabled` is set to `true`, Windows won't send crash data to Microsoft endpoint.
 [Language](#language) | Gets or sets the default display language for WebView.
 [TargetCompatibleBrowserVersion](#targetcompatiblebrowserversion) | Gets or sets the version of the WebView2 Runtime binaries required to be compatible with your app.
+CoreWebView2EnvironmentOptions | 
 
 ## Properties
 

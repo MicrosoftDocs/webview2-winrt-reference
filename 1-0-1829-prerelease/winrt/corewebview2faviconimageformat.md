@@ -1,15 +1,11 @@
 ---
+description: The requested format to get the Favicon from CoreWebView2.GetFaviconAsync.
 title: CoreWebView2FaviconImageFormat
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/04/2023
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 05/05/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2FaviconImageFormat
 ---
 
-# enum CoreWebView2FaviconImageFormat
+# CoreWebView2FaviconImageFormat Enum
 
 The requested format to get the Favicon from [CoreWebView2.GetFaviconAsync](corewebview2.md#getfaviconasync).
 

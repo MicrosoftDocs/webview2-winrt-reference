@@ -1,20 +1,16 @@
 ---
+description: The owner of the CoreWebView2 object that provides support for resizing, showing and hiding, focusing, and other functionality related to windowing and composition.
 title: CoreWebView2Controller
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/04/2023
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 05/05/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Controller
 ---
 
-# runtimeClass CoreWebView2Controller
+# CoreWebView2Controller Class
 
 
 
 The owner of the [CoreWebView2](corewebview2.md) object that provides support for resizing, showing and hiding, focusing, and other functionality related to windowing and composition.
-The CoreWebView2Controller owns the [CoreWebView2](corewebview2.md), and if all references to the [CoreWebView2Controller](corewebview2controller.md) go away, the WebView is closed.
+The CoreWebView2Controller owns the [CoreWebView2](corewebview2.md), and if all references to the CoreWebView2Controller go away, the WebView is closed.
 
 ## Summary
 
@@ -23,7 +19,7 @@ Members|Description
 [AllowExternalDrop](#allowexternaldrop) | Gets or sets the WebView allow external drop property.
 [Bounds](#bounds) | Gets or sets the WebView bounds.
 [BoundsMode](#boundsmode) | Gets or sets the WebView bounds mode.
-[CoreWebView2](#corewebview2) | Gets the [CoreWebView2](corewebview2.md) associated with this [CoreWebView2Controller](corewebview2controller.md).
+[CoreWebView2](#corewebview2) | Gets the [CoreWebView2](corewebview2.md) associated with this CoreWebView2Controller.
 [DefaultBackgroundColor](#defaultbackgroundcolor) | Gets or sets the WebView default background color.
 [IsBrowserHitTransparent](#isbrowserhittransparent) | 
 [IsVisible](#isvisible) | Determines whether to show or hide the WebView.
@@ -74,7 +70,7 @@ BoundsMode affects how setting the [CoreWebView2Controller.Bounds](corewebview2c
 
 > readonly  [CoreWebView2](corewebview2.md) CoreWebView2
 
-Gets the [CoreWebView2](corewebview2.md) associated with this [CoreWebView2Controller](corewebview2controller.md).
+Gets the [CoreWebView2](corewebview2.md) associated with this CoreWebView2Controller.
 
 ### DefaultBackgroundColor
 
@@ -138,7 +134,7 @@ Cleaning up the browser instance releases the resources powering the WebView. Th
 
 After running Close, all methods fail and event handlers stop running. Specifically, the WebView releases the associated references to any associated event handlers when Close is run.
 
-Close is implicitly run when the [CoreWebView2Controller](corewebview2controller.md) loses the final reference and is destructed. But it is best practice to explicitly run Close to avoid any accidental cycle of references between the WebView and the app code. Specifically, if you capture a reference to the WebView in an event handler you create a reference cycle between the WebView and the event handler. Run Close to break the cycle by releasing all event handlers. But to avoid the situation, it is best to both explicitly run Close on the WebView and to not capture a reference to the WebView to ensure the WebView is cleaned up correctly. Close is synchronous and won't trigger the `beforeunload` event.
+Close is implicitly run when the CoreWebView2Controller loses the final reference and is destructed. But it is best practice to explicitly run Close to avoid any accidental cycle of references between the WebView and the app code. Specifically, if you capture a reference to the WebView in an event handler you create a reference cycle between the WebView and the event handler. Run Close to break the cycle by releasing all event handlers. But to avoid the situation, it is best to both explicitly run Close on the WebView and to not capture a reference to the WebView to ensure the WebView is cleaned up correctly. Close is synchronous and won't trigger the `beforeunload` event.
 
 
 
@@ -190,39 +186,39 @@ In windowless mode, the event is asynchronous. Further input do not reach the br
 
 It is recommended to set [CoreWebView2AcceleratorKeyPressedEventArgs.Handled](corewebview2acceleratorkeypressedeventargs.md#handled) to `true` as early as you are able to know that you want to handle the accelerator key.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Controller](corewebview2controller.md), [CoreWebView2AcceleratorKeyPressedEventArgs](corewebview2acceleratorkeypressedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Controller, [CoreWebView2AcceleratorKeyPressedEventArgs](corewebview2acceleratorkeypressedeventargs.md)&gt;
 
 ### GotFocus
 
 GotFocus is raised when WebView gets focus.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Controller](corewebview2controller.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Controller, Object&gt;
 
 ### LostFocus
 
 LostFocus is raised when WebView loses focus.
 In the case where [CoreWebView2Controller.MoveFocusRequested](corewebview2controller.md#movefocusrequested) event is raised, the focus is still on WebView when [CoreWebView2Controller.MoveFocusRequested](corewebview2controller.md#movefocusrequested) event is raised. LostFocus is only raised afterwards when code of the app or default action of [CoreWebView2Controller.MoveFocusRequested](corewebview2controller.md#movefocusrequested) event sets focus away from WebView.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Controller](corewebview2controller.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Controller, Object&gt;
 
 ### MoveFocusRequested
 
 MoveFocusRequested is raised when user tries to tab out of the WebView.
 The focus of the WebView has not changed when this event is raised.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Controller](corewebview2controller.md), [CoreWebView2MoveFocusRequestedEventArgs](corewebview2movefocusrequestedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Controller, [CoreWebView2MoveFocusRequestedEventArgs](corewebview2movefocusrequestedeventargs.md)&gt;
 
 ### RasterizationScaleChanged
 
 RasterizationScaleChanged is raised when the [CoreWebView2Controller.RasterizationScale](corewebview2controller.md#rasterizationscale) property changes.
 The event is raised when the Webview detects that the monitor DPI scale has changed, [CoreWebView2Controller.ShouldDetectMonitorScaleChanges](corewebview2controller.md#shoulddetectmonitorscalechanges) is true, and the Webview has changed the [CoreWebView2Controller.RasterizationScale](corewebview2controller.md#rasterizationscale) property.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Controller](corewebview2controller.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Controller, Object&gt;
 
 ### ZoomFactorChanged
 
 ZoomFactorChanged is raised when the [CoreWebView2Controller.ZoomFactor](corewebview2controller.md#zoomfactor) property changes.
 The event may be raised because the [CoreWebView2Controller.ZoomFactor](corewebview2controller.md#zoomfactor) property was modified, or due to the user manually modifying the zoom. When it is modified using the [CoreWebView2Controller.ZoomFactor](corewebview2controller.md#zoomfactor) property, the internal zoom factor is updated immediately and no ZoomFactorChanged event is raised. WebView associates the last used zoom factor for each site. It is possible for the zoom factor to change when navigating to a different page. When the zoom factor changes due to a navigation change, the ZoomFactorChanged event is raised right after the [CoreWebView2.ContentLoading](corewebview2.md#contentloading) event.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Controller](corewebview2controller.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Controller, Object&gt;
 

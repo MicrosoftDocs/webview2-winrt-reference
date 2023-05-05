@@ -1,15 +1,11 @@
 ---
+description: The orientation for printing, used by the CoreWebView2PrintSettings.Orientation property. Currently only printing to PDF is supported.
 title: CoreWebView2PrintOrientation
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/04/2023
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 05/05/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PrintOrientation
 ---
 
-# enum CoreWebView2PrintOrientation
+# CoreWebView2PrintOrientation Enum
 
 The orientation for printing, used by the [CoreWebView2PrintSettings.Orientation](corewebview2printsettings.md#orientation) property. Currently only printing to PDF is supported.
 

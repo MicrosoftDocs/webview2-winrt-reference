@@ -1,15 +1,11 @@
 ---
+description: This represents the WebView2 Environment.
 title: CoreWebView2Environment
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/04/2023
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 05/05/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Environment
 ---
 
-# runtimeClass CoreWebView2Environment
+# CoreWebView2Environment Class
 
 
 
@@ -20,7 +16,7 @@ WebViews created from an environment run on the Browser process specified with e
 
 Members|Description
 --|--
-[BrowserVersionString](#browserversionstring) | Gets the browser version info of the current [CoreWebView2Environment](corewebview2environment.md), including channel name if it is not the stable channel.
+[BrowserVersionString](#browserversionstring) | Gets the browser version info of the current CoreWebView2Environment, including channel name if it is not the stable channel.
 [FailureReportFolderPath](#failurereportfolderpath) | Gets the failure report folder that all CoreWebView2s created from this environment are using.
 [UserDataFolder](#userdatafolder) | Gets the user data folder that all CoreWebView2s created from this environment are using.
 [CompareBrowserVersionString](#comparebrowserversionstring) | Compares two instances of browser versions correctly and returns an integer that indicates whether the first instance is older, the same as, or newer than the second instance.
@@ -40,7 +36,7 @@ Members|Description
 [GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Gets the browser version info including channel name if it is not the stable channel or WebView2 Runtime.
 [GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Gets the browser version info including channel name if it is not the stable channel or WebView2 Runtime where `browserExecutableFolder` is the relative path to the folder that contains the WebView2 Runtime.
 [GetProcessInfos](#getprocessinfos) | Returns the list of [CoreWebView2ProcessInfo](corewebview2processinfo.md).
-[BrowserProcessExited](#browserprocessexited) | BrowserProcessExited is raised when the collection of WebView2 Runtime processes for the browser process of this [CoreWebView2Environment](corewebview2environment.md) terminate due to browser process failure or normal shutdown (for example, when all associated WebViews are closed), after all resources have been released (including the user data folder).
+[BrowserProcessExited](#browserprocessexited) | BrowserProcessExited is raised when the collection of WebView2 Runtime processes for the browser process of this CoreWebView2Environment terminate due to browser process failure or normal shutdown (for example, when all associated WebViews are closed), after all resources have been released (including the user data folder).
 [NewBrowserVersionAvailable](#newbrowserversionavailable) | NewBrowserVersionAvailable is raised when a newer version of the WebView2 Runtime is installed and available using WebView2.
 [ProcessInfosChanged](#processinfoschanged) | ProcessInfosChanged is raised when a collection of WebView2 Runtime processes changed due to new process being detected or when a existing process gone away.
 
@@ -50,7 +46,7 @@ Members|Description
 
 > readonly  string BrowserVersionString
 
-Gets the browser version info of the current [CoreWebView2Environment](corewebview2environment.md), including channel name if it is not the stable channel.
+Gets the browser version info of the current CoreWebView2Environment, including channel name if it is not the stable channel.
 It matches the format of the [CoreWebView2Environment.GetAvailableBrowserVersionString](corewebview2environment.md#getavailablebrowserversionstring) method. Channel names are `beta`, `dev`, and `canary`.
 
 ### FailureReportFolderPath
@@ -81,7 +77,7 @@ Compares two instances of browser versions correctly and returns an integer that
 
 ### CreateAsync
 
-> static [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Environment](corewebview2environment.md)&gt; CreateAsync()
+> static [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;CoreWebView2Environment&gt; CreateAsync()
 
 Creates a WebView2 Environment using the installed or a custom WebView2 Runtime version.
 
@@ -93,13 +89,13 @@ Creates a WebView2 Environment using the installed or a custom WebView2 Runtime 
 
 Create a custom [CoreWebView2ContextMenuItem](corewebview2contextmenuitem.md) object to insert into the WebView context menu.
 CoreWebView2 will rewind the `icon` stream before decoding.
-There is a limit of 1000 active custom context menu items at a given time per [CoreWebView2Environment](corewebview2environment.md). Attempting to create more before deleting existing ones will fail with `ERROR_NOT_ENOUGH_QUOTA`. It is recommended to reuse custom ContextMenuItems across CoreWebView2ContextMenuRequested events for performance. The created object's [CoreWebView2ContextMenuItem.IsEnabled](corewebview2contextmenuitem.md#isenabled) property will default to `true` and [CoreWebView2ContextMenuItem.IsChecked](corewebview2contextmenuitem.md#ischecked) property will default to `false`. A [CoreWebView2ContextMenuItem.CommandId](corewebview2contextmenuitem.md#commandid) will be assigned that's unique across active custom context menu items, but command ID values of deleted custom ContextMenuItems can be reassigned.
+There is a limit of 1000 active custom context menu items at a given time per CoreWebView2Environment. Attempting to create more before deleting existing ones will fail with `ERROR_NOT_ENOUGH_QUOTA`. It is recommended to reuse custom ContextMenuItems across CoreWebView2ContextMenuRequested events for performance. The created object's [CoreWebView2ContextMenuItem.IsEnabled](corewebview2contextmenuitem.md#isenabled) property will default to `true` and [CoreWebView2ContextMenuItem.IsChecked](corewebview2contextmenuitem.md#ischecked) property will default to `false`. A [CoreWebView2ContextMenuItem.CommandId](corewebview2contextmenuitem.md#commandid) will be assigned that's unique across active custom context menu items, but command ID values of deleted custom ContextMenuItems can be reassigned.
 
 
 
 ### CreateCoreWebView2CompositionControllerAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md)&gt; CreateCoreWebView2CompositionControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md)&gt; CreateCoreWebView2CompositionControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow)
 
 Asynchronously creates a new WebView for use with visual hosting.
 `ParentWindow` will be the HWND that the app will receive pointer/mouse input meant for the WebView (and will need to use [CoreWebView2CompositionController.SendMouseInput](corewebview2compositioncontroller.md#sendmouseinput) or [CoreWebView2CompositionController.SendPointerInput](corewebview2compositioncontroller.md#sendpointerinput) to forward). If the app moves the WebView visual tree to underneath a different window, then it needs to set [CoreWebView2Controller.ParentWindow](corewebview2controller.md#parentwindow) to update the new parent HWND of the visual tree.
@@ -121,7 +117,7 @@ CreateCoreWebView2CompositionController is supported in the following versions o
 
 ### CreateCoreWebView2CompositionControllerAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md)&gt; CreateCoreWebView2CompositionControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) operation, [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) ParentWindow)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md)&gt; CreateCoreWebView2CompositionControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow, [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) options)
 
 This is a overload method that creates a WebView2 composition controller using parent window and custom controller options.
 
@@ -129,7 +125,7 @@ This is a overload method that creates a WebView2 composition controller using p
 
 ### CreateCoreWebView2ControllerAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Controller](corewebview2controller.md)&gt; CreateCoreWebView2ControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) operation, [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) ParentWindow)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Controller](corewebview2controller.md)&gt; CreateCoreWebView2ControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow, [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) options)
 
 This is a overload method that creates a WebView2 controller using parent window and custom controller options.
 
@@ -137,7 +133,7 @@ This is a overload method that creates a WebView2 controller using parent window
 
 ### CreateCoreWebView2ControllerAsync
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Controller](corewebview2controller.md)&gt; CreateCoreWebView2ControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) operation)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Controller](corewebview2controller.md)&gt; CreateCoreWebView2ControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow)
 
 Asynchronously creates a new WebView.
 The WebView adds a child window to the provided window during WebView creation. Z-order and other things impacted by sibling window order are affected accordingly.
@@ -214,7 +210,7 @@ It is also possible to create this object with empty headers string and then use
 
 ### CreateWithOptionsAsync
 
-> static [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Environment](corewebview2environment.md)&gt; CreateWithOptionsAsync(string operation, string browserExecutableFolder, [CoreWebView2EnvironmentOptions](corewebview2environmentoptions.md) userDataFolder)
+> static [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;CoreWebView2Environment&gt; CreateWithOptionsAsync(string browserExecutableFolder, string userDataFolder, [CoreWebView2EnvironmentOptions](corewebview2environmentoptions.md) options)
 
 Creates a WebView2 Environment with a custom version of WebView2 Runtime, user data folder, and environment options.
 
@@ -249,14 +245,14 @@ Returns the list of [CoreWebView2ProcessInfo](corewebview2processinfo.md).
 
 ### BrowserProcessExited
 
-BrowserProcessExited is raised when the collection of WebView2 Runtime processes for the browser process of this [CoreWebView2Environment](corewebview2environment.md) terminate due to browser process failure or normal shutdown (for example, when all associated WebViews are closed), after all resources have been released (including the user data folder).
-Multiple app processes can share a browser process by creating their webviews from a [CoreWebView2Environment](corewebview2environment.md) with the same user data folder. When the entire collection of WebView2Runtime processes for the browser process exit, all associated [CoreWebView2Environment](corewebview2environment.md) objects receive the BrowserProcessExited event. Multiple processes sharing the same browser process need to coordinate their use of the shared user data folder to avoid race conditions and unnecessary waits. For example, one process should not clear the user data folder at the same time that another process recovers from a crash by recreating its WebView controls; one process should not block waiting for the event if other app processes are using the same browser process (the browser process will not exit until those other processes have closed their webviews too).
+BrowserProcessExited is raised when the collection of WebView2 Runtime processes for the browser process of this CoreWebView2Environment terminate due to browser process failure or normal shutdown (for example, when all associated WebViews are closed), after all resources have been released (including the user data folder).
+Multiple app processes can share a browser process by creating their webviews from a CoreWebView2Environment with the same user data folder. When the entire collection of WebView2Runtime processes for the browser process exit, all associated CoreWebView2Environment objects receive the BrowserProcessExited event. Multiple processes sharing the same browser process need to coordinate their use of the shared user data folder to avoid race conditions and unnecessary waits. For example, one process should not clear the user data folder at the same time that another process recovers from a crash by recreating its WebView controls; one process should not block waiting for the event if other app processes are using the same browser process (the browser process will not exit until those other processes have closed their webviews too).
 
-Note this is an event from [CoreWebView2Environment](corewebview2environment.md), not [CoreWebView2](corewebview2.md). The difference between BrowserProcessExited and [CoreWebView2.ProcessFailed](corewebview2.md#processfailed) is that BrowserProcessExited is raised for any **browser process** exit (expected or unexpected, after all associated processes have exited too), while [CoreWebView2.ProcessFailed](corewebview2.md#processfailed) is raised for **unexpected** process exits of any kind (browser, render, GPU, and all other types), or for main frame **render process** unresponsiveness. To learn more about the WebView2 Process Model, go to [Process model](/microsoft-edge/webview2/concepts/process-model).
+Note this is an event from CoreWebView2Environment, not [CoreWebView2](corewebview2.md). The difference between BrowserProcessExited and [CoreWebView2.ProcessFailed](corewebview2.md#processfailed) is that BrowserProcessExited is raised for any **browser process** exit (expected or unexpected, after all associated processes have exited too), while [CoreWebView2.ProcessFailed](corewebview2.md#processfailed) is raised for **unexpected** process exits of any kind (browser, render, GPU, and all other types), or for main frame **render process** unresponsiveness. To learn more about the WebView2 Process Model, go to [Process model](/microsoft-edge/webview2/concepts/process-model).
 
 In the case the browser process crashes, both BrowserProcessExited and [CoreWebView2.ProcessFailed](corewebview2.md#processfailed) events are raised, but the order is not guaranteed. These events are intended for different scenarios. It is up to the app to coordinate the handlers so they do not try to perform reliability recovery while also trying to move to a new WebView2 Runtime version or remove the user data folder.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Environment](corewebview2environment.md), [CoreWebView2BrowserProcessExitedEventArgs](corewebview2browserprocessexitedeventargs.md)&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Environment, [CoreWebView2BrowserProcessExitedEventArgs](corewebview2browserprocessexitedeventargs.md)&gt;
 
 ### NewBrowserVersionAvailable
 
@@ -265,13 +261,13 @@ To use the newer version of the browser you must create a new environment and We
 
 Because a user data folder is only able to be used by one browser process at a time, if you want to use the same user data folder in the WebViews using the new version of the browser, you must close the environment and instance of WebView that are using the older version of the browser first. Or simply prompt the user to restart the app.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Environment](corewebview2environment.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Environment, Object&gt;
 
 ### ProcessInfosChanged
 
 ProcessInfosChanged is raised when a collection of WebView2 Runtime processes changed due to new process being detected or when a existing process gone away.
 
-Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;[CoreWebView2Environment](corewebview2environment.md), Object&gt;
+Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Environment, Object&gt;
 
 
 

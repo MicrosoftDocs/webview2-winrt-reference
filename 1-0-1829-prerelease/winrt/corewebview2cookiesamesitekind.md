@@ -1,15 +1,11 @@
 ---
+description: Kind of cookie SameSite status used in the CoreWebView2Cookie class.
 title: CoreWebView2CookieSameSiteKind
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/04/2023
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 05/05/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2CookieSameSiteKind
 ---
 
-# enum CoreWebView2CookieSameSiteKind
+# CoreWebView2CookieSameSiteKind Enum
 
 Kind of cookie SameSite status used in the [CoreWebView2Cookie](corewebview2cookie.md) class.
 These fields match those as specified in https://developer.mozilla.org/docs/Web/HTTP/Cookies#.

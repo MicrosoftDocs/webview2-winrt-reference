@@ -1,15 +1,11 @@
 ---
+description: Represents a Basic HTTP authentication response that contains a user name and a password as according to RFC7617 (https://tools.ietf.org/html/rfc7617)
 title: CoreWebView2BasicAuthenticationResponse
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/04/2023
-ms.topic: reference
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.date: 05/05/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2BasicAuthenticationResponse
 ---
 
-# runtimeClass CoreWebView2BasicAuthenticationResponse
+# CoreWebView2BasicAuthenticationResponse Class
 
 
 
