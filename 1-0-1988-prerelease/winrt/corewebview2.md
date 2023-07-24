@@ -96,7 +96,7 @@ Members|Description
 [NewWindowRequested](#newwindowrequested) | NewWindowRequested is raised when content inside the WebView requests to open a new window, such as through `window.open()`.
 [NotificationReceived](#notificationreceived) | 
 [PermissionRequested](#permissionrequested) | PermissionRequested is raised when content in a WebView requests permission to access some privileged resources.
-[ProcessFailed](#processfailed) | `ProcessFailed` is raised when any of the processes in the [WebView2 Process Group](https://learn.microsoft.com/microsoft-edge/webview2/concepts/process-model?tabs=csharp#processes-in-the-webview2-runtime) encounters one of the following conditions:
+[ProcessFailed](#processfailed) | `ProcessFailed` is raised when any of the processes in the [WebView2 Process Group](/microsoft-edge/webview2/concepts/process-model?tabs=csharp#processes-in-the-webview2-runtime) encounters one of the following conditions:
 [ScriptDialogOpening](#scriptdialogopening) | ScriptDialogOpening is raised when a JavaScript dialog (`alert`, `confirm`, `prompt`, or `beforeunload`) displays for the WebView.
 [ServerCertificateErrorDetected](#servercertificateerrordetected) | The ServerCertificateErrorDetected event is raised when the WebView2 cannot verify server's digital certificate while loading a web page.
 [SourceChanged](#sourcechanged) | SourceChanged is raised when the [CoreWebView2.Source](corewebview2.md#source) property changes.
@@ -1003,7 +1003,7 @@ If a deferral is taken, the external URI scheme launch is blocked until the Core
 The host also has the option to cancel the URI scheme launch.
 
 The [CoreWebView2.NavigationStarting](corewebview2.md#navigationstarting) and [CoreWebView2.NavigationCompleted](corewebview2.md#navigationcompleted) events will be raised, regardless of whether the [CoreWebView2NavigationStartingEventArgs.Cancel](corewebview2navigationstartingeventargs.md#cancel) property is set to `true` or `false`.
-The [CoreWebView2.NavigationCompleted](corewebview2.md#navigationcompleted) event will be raised with the [CoreWebView2NavigationCompletedEventArgs.IsSuccess](corewebview2navigationcompletedeventargs.md#issuccess) property set to `false` and the [CoreWebView2NavigationCompletedEventArgs.WebErrorStatus](corewebview2navigationcompletedeventargs.md#weberrorstatus) property set to [CoreWebView2WebErrorStatus.ConnectionAborted](corewebview2weberrorstatus.md#connectionaborted) regardless of whether the host sets the [CoreWebView2LaunchingExternalUriSchemeEventArgs.Cancel](corewebview2launchingexternalurischemeeventargs.md#cancel) property.
+The [CoreWebView2.NavigationCompleted](corewebview2.md#navigationcompleted) event will be raised with the [CoreWebView2NavigationCompletedEventArgs.IsSuccess](corewebview2navigationcompletedeventargs.md#issuccess) property set to `false` and the [CoreWebView2NavigationCompletedEventArgs.WebErrorStatus](corewebview2navigationcompletedeventargs.md#weberrorstatus) property set to [CoreWebView2WebErrorStatus.ConnectionAborted](corewebview2weberrorstatus.md) regardless of whether the host sets the [CoreWebView2LaunchingExternalUriSchemeEventArgs.Cancel](corewebview2launchingexternalurischemeeventargs.md#cancel) property.
 The [CoreWebView2.SourceChanged](corewebview2.md#sourcechanged), [CoreWebView2.ContentLoading](corewebview2.md#contentloading) and [CoreWebView2.HistoryChanged](corewebview2.md#historychanged) events will not be raised for this navigation to the external URI scheme regardless of the [CoreWebView2NavigationStartingEventArgs.Cancel](corewebview2navigationstartingeventargs.md#cancel) property.
 The [CoreWebView2.LaunchingExternalUriScheme](corewebview2.md#launchingexternalurischeme) event will be raised after the [CoreWebView2.NavigationStarting](corewebview2.md#navigationstarting) event and before the [CoreWebView2.NavigationCompleted](corewebview2.md#navigationcompleted) event.
 
@@ -1053,7 +1053,7 @@ Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;Co
 
 ### ProcessFailed
 
-`ProcessFailed` is raised when any of the processes in the [WebView2 Process Group](https://learn.microsoft.com/microsoft-edge/webview2/concepts/process-model?tabs=csharp#processes-in-the-webview2-runtime) encounters one of the following conditions:
+`ProcessFailed` is raised when any of the processes in the [WebView2 Process Group](/microsoft-edge/webview2/concepts/process-model?tabs=csharp#processes-in-the-webview2-runtime) encounters one of the following conditions:
 
 Condition | Details
 ---|---
