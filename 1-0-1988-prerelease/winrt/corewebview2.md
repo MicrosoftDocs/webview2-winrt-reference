@@ -1,8 +1,106 @@
 ---
 description: WebView2 enables you to host web content using the latest Microsoft Edge browser and web technology.
 title: CoreWebView2
-ms.date: 07/24/2023
+ms.date: 07/26/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2
+- CoreWebView2.BrowserProcessId
+- CoreWebView2.CanGoBack
+- CoreWebView2.CanGoForward
+- CoreWebView2.ContainsFullScreenElement
+- CoreWebView2.CookieManager
+- CoreWebView2.CustomDataPartitionId
+- CoreWebView2.DefaultDownloadDialogCornerAlignment
+- CoreWebView2.DefaultDownloadDialogMargin
+- CoreWebView2.DocumentTitle
+- CoreWebView2.Environment
+- CoreWebView2.FaviconUri
+- CoreWebView2.FrameId
+- CoreWebView2.IsDefaultDownloadDialogOpen
+- CoreWebView2.IsDocumentPlayingAudio
+- CoreWebView2.IsMuted
+- CoreWebView2.IsSuspended
+- CoreWebView2.MemoryUsageTargetLevel
+- CoreWebView2.Profile
+- CoreWebView2.Settings
+- CoreWebView2.Source
+- CoreWebView2.StatusBarText
+- CoreWebView2.AddHostObjectToScript
+- CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync
+- CoreWebView2.AddWebResourceRequestedFilter
+- CoreWebView2.AddWebResourceRequestedFilter
+- CoreWebView2.CallDevToolsProtocolMethodAsync
+- CoreWebView2.CallDevToolsProtocolMethodForSessionAsync
+- CoreWebView2.CapturePreviewAsync
+- CoreWebView2.ClearServerCertificateErrorActionsAsync
+- CoreWebView2.ClearVirtualHostNameToFolderMapping
+- CoreWebView2.CloseDefaultDownloadDialog
+- CoreWebView2.ExecuteScriptAsync
+- CoreWebView2.ExecuteScriptWithResultAsync
+- CoreWebView2.GetDevToolsProtocolEventReceiver
+- CoreWebView2.GetFaviconAsync
+- CoreWebView2.GoBack
+- CoreWebView2.GoForward
+- CoreWebView2.Navigate
+- CoreWebView2.NavigateToString
+- CoreWebView2.NavigateWithWebResourceRequest
+- CoreWebView2.OpenDefaultDownloadDialog
+- CoreWebView2.OpenDevToolsWindow
+- CoreWebView2.OpenTaskManagerWindow
+- CoreWebView2.PostSharedBufferToScript
+- CoreWebView2.PostWebMessageAsJson
+- CoreWebView2.PostWebMessageAsString
+- CoreWebView2.PrintAsync
+- CoreWebView2.PrintToPdfAsync
+- CoreWebView2.PrintToPdfStreamAsync
+- CoreWebView2.Reload
+- CoreWebView2.RemoveHostObjectFromScript
+- CoreWebView2.RemoveScriptToExecuteOnDocumentCreated
+- CoreWebView2.RemoveWebResourceRequestedFilter
+- CoreWebView2.RemoveWebResourceRequestedFilter
+- CoreWebView2.Resume
+- CoreWebView2.SetVirtualHostNameToFolderMapping
+- CoreWebView2.ShowPrintUI
+- CoreWebView2.Stop
+- CoreWebView2.TrySuspendAsync
+- CoreWebView2.BasicAuthenticationRequested
+- CoreWebView2.ClientCertificateRequested
+- CoreWebView2.ContainsFullScreenElementChanged
+- CoreWebView2.ContentLoading
+- CoreWebView2.ContextMenuRequested
+- CoreWebView2.DOMContentLoaded
+- CoreWebView2.DocumentTitleChanged
+- CoreWebView2.DownloadStarting
+- CoreWebView2.FaviconChanged
+- CoreWebView2.FrameCreated
+- CoreWebView2.FrameNavigationCompleted
+- CoreWebView2.FrameNavigationStarting
+- CoreWebView2.HistoryChanged
+- CoreWebView2.IsDefaultDownloadDialogOpenChanged
+- CoreWebView2.IsDocumentPlayingAudioChanged
+- CoreWebView2.IsMutedChanged
+- CoreWebView2.LaunchingExternalUriScheme
+- CoreWebView2.NavigationCompleted
+- CoreWebView2.NavigationStarting
+- CoreWebView2.NewWindowRequested
+- CoreWebView2.NotificationReceived
+- CoreWebView2.PermissionRequested
+- CoreWebView2.ProcessFailed
+- CoreWebView2.ScriptDialogOpening
+- CoreWebView2.ServerCertificateErrorDetected
+- CoreWebView2.SourceChanged
+- CoreWebView2.StatusBarTextChanged
+- CoreWebView2.WebMessageReceived
+- CoreWebView2.WebResourceRequested
+- CoreWebView2.WebResourceResponseReceived
+- CoreWebView2.WindowCloseRequested
 ---
 
 # CoreWebView2 Class

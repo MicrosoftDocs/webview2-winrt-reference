@@ -1,8 +1,30 @@
 ---
 description: CoreWebView2 Texture Stream.
 title: CoreWebView2TextureStream
-ms.date: 07/24/2023
+ms.date: 07/26/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2TextureStream
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2TextureStream
+- CoreWebView2TextureStream.Id
+- CoreWebView2TextureStream.AddAllowedOrigin
+- CoreWebView2TextureStream.CloseTexture
+- CoreWebView2TextureStream.CreateTexture
+- CoreWebView2TextureStream.GetAvailableTexture
+- CoreWebView2TextureStream.PresentTexture
+- CoreWebView2TextureStream.RemoveAllowedOrigin
+- CoreWebView2TextureStream.SetD3DDevice
+- CoreWebView2TextureStream.Stop
+- CoreWebView2TextureStream.ErrorReceived
+- CoreWebView2TextureStream.StartRequested
+- CoreWebView2TextureStream.Stopped
+- CoreWebView2TextureStream.WebTextureReceived
+- CoreWebView2TextureStream.WebTextureStreamStopped
 ---
 
 # CoreWebView2TextureStream Class

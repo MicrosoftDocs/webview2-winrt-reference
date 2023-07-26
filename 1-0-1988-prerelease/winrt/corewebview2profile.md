@@ -1,8 +1,34 @@
 ---
 description: Multiple profiles can be created under a single user data directory but with separated cookies, user preference settings, and various data storage etc.. If the CoreWebView2 was created with a CoreWebView2ControllerOptions, the CoreWebView2Profile will match those specified options. Otherwise if this CoreWebView2 was created without a CoreWebView2ControllerOptions, then this will be the default CoreWebView2Profile for the corresponding CoreWebView2Environment.
 title: CoreWebView2Profile
-ms.date: 07/24/2023
+ms.date: 07/26/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Profile
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2Profile
+- CoreWebView2Profile.CookieManager
+- CoreWebView2Profile.DefaultDownloadFolderPath
+- CoreWebView2Profile.IsGeneralAutofillEnabled
+- CoreWebView2Profile.IsInPrivateModeEnabled
+- CoreWebView2Profile.IsPasswordAutosaveEnabled
+- CoreWebView2Profile.PreferredColorScheme
+- CoreWebView2Profile.PreferredTrackingPreventionLevel
+- CoreWebView2Profile.ProfileName
+- CoreWebView2Profile.ProfilePath
+- CoreWebView2Profile.AddBrowserExtensionAsync
+- CoreWebView2Profile.ClearBrowsingDataAsync
+- CoreWebView2Profile.ClearBrowsingDataAsync
+- CoreWebView2Profile.ClearBrowsingDataAsync
+- CoreWebView2Profile.ClearCustomDataPartitionAsync
+- CoreWebView2Profile.Delete
+- CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync
+- CoreWebView2Profile.SetPermissionStateAsync
+- CoreWebView2Profile.Deleted
 ---
 
 # CoreWebView2Profile Class

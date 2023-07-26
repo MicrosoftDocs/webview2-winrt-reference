@@ -1,8 +1,23 @@
 ---
 description: Event args for the CoreWebView2.PermissionRequested event.
 title: CoreWebView2PermissionRequestedEventArgs
-ms.date: 07/24/2023
+ms.date: 07/26/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PermissionRequestedEventArgs
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2PermissionRequestedEventArgs
+- CoreWebView2PermissionRequestedEventArgs.Handled
+- CoreWebView2PermissionRequestedEventArgs.IsUserInitiated
+- CoreWebView2PermissionRequestedEventArgs.PermissionKind
+- CoreWebView2PermissionRequestedEventArgs.SavesInProfile
+- CoreWebView2PermissionRequestedEventArgs.State
+- CoreWebView2PermissionRequestedEventArgs.Uri
+- CoreWebView2PermissionRequestedEventArgs.GetDeferral
 ---
 
 # CoreWebView2PermissionRequestedEventArgs Class

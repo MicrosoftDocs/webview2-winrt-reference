@@ -1,8 +1,37 @@
 ---
 description: Settings used by the CoreWebView2.PrintToPdfAsync method. Other programmatic printing is not currently supported.
 title: CoreWebView2PrintSettings
-ms.date: 07/24/2023
+ms.date: 07/26/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PrintSettings
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2PrintSettings
+- CoreWebView2PrintSettings.Collation
+- CoreWebView2PrintSettings.ColorMode
+- CoreWebView2PrintSettings.Copies
+- CoreWebView2PrintSettings.Duplex
+- CoreWebView2PrintSettings.FooterUri
+- CoreWebView2PrintSettings.HeaderTitle
+- CoreWebView2PrintSettings.MarginBottom
+- CoreWebView2PrintSettings.MarginLeft
+- CoreWebView2PrintSettings.MarginRight
+- CoreWebView2PrintSettings.MarginTop
+- CoreWebView2PrintSettings.MediaSize
+- CoreWebView2PrintSettings.Orientation
+- CoreWebView2PrintSettings.PageHeight
+- CoreWebView2PrintSettings.PageRanges
+- CoreWebView2PrintSettings.PageWidth
+- CoreWebView2PrintSettings.PagesPerSide
+- CoreWebView2PrintSettings.PrinterName
+- CoreWebView2PrintSettings.ScaleFactor
+- CoreWebView2PrintSettings.ShouldPrintBackgrounds
+- CoreWebView2PrintSettings.ShouldPrintHeaderAndFooter
+- CoreWebView2PrintSettings.ShouldPrintSelectionOnly
 ---
 
 # CoreWebView2PrintSettings Class

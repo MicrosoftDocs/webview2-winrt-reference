@@ -1,8 +1,25 @@
 ---
 description: Event args for the CoreWebView2.ClientCertificateRequested event.
 title: CoreWebView2ClientCertificateRequestedEventArgs
-ms.date: 07/24/2023
+ms.date: 07/26/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ClientCertificateRequestedEventArgs
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2ClientCertificateRequestedEventArgs
+- CoreWebView2ClientCertificateRequestedEventArgs.AllowedCertificateAuthorities
+- CoreWebView2ClientCertificateRequestedEventArgs.Cancel
+- CoreWebView2ClientCertificateRequestedEventArgs.Handled
+- CoreWebView2ClientCertificateRequestedEventArgs.Host
+- CoreWebView2ClientCertificateRequestedEventArgs.IsProxy
+- CoreWebView2ClientCertificateRequestedEventArgs.MutuallyTrustedCertificates
+- CoreWebView2ClientCertificateRequestedEventArgs.Port
+- CoreWebView2ClientCertificateRequestedEventArgs.SelectedCertificate
+- CoreWebView2ClientCertificateRequestedEventArgs.GetDeferral
 ---
 
 # CoreWebView2ClientCertificateRequestedEventArgs Class

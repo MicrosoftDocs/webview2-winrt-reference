@@ -1,8 +1,32 @@
 ---
 description: CoreWebView2Frame provides direct access to the iframes information and handling. You can get a CoreWebView2Frame by handling the CoreWebView2.FrameCreated event.
 title: CoreWebView2Frame
-ms.date: 07/24/2023
+ms.date: 07/26/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Frame
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2Frame
+- CoreWebView2Frame.FrameId
+- CoreWebView2Frame.Name
+- CoreWebView2Frame.ExecuteScriptAsync
+- CoreWebView2Frame.IsDestroyed
+- CoreWebView2Frame.PostSharedBufferToScript
+- CoreWebView2Frame.PostWebMessageAsJson
+- CoreWebView2Frame.PostWebMessageAsString
+- CoreWebView2Frame.RemoveHostObjectFromScript
+- CoreWebView2Frame.ContentLoading
+- CoreWebView2Frame.DOMContentLoaded
+- CoreWebView2Frame.Destroyed
+- CoreWebView2Frame.NameChanged
+- CoreWebView2Frame.NavigationCompleted
+- CoreWebView2Frame.NavigationStarting
+- CoreWebView2Frame.PermissionRequested
+- CoreWebView2Frame.WebMessageReceived
 ---
 
 # CoreWebView2Frame Class

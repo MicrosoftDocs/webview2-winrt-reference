@@ -1,8 +1,24 @@
 ---
 description: Options used to create WebView2 Environment.
 title: CoreWebView2EnvironmentOptions
-ms.date: 07/24/2023
+ms.date: 07/26/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2EnvironmentOptions
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2EnvironmentOptions
+- CoreWebView2EnvironmentOptions.AdditionalBrowserArguments
+- CoreWebView2EnvironmentOptions.AllowSingleSignOnUsingOSPrimaryAccount
+- CoreWebView2EnvironmentOptions.AreBrowserExtensionsEnabled
+- CoreWebView2EnvironmentOptions.EnableTrackingPrevention
+- CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess
+- CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled
+- CoreWebView2EnvironmentOptions.Language
+- CoreWebView2EnvironmentOptions.TargetCompatibleBrowserVersion
 ---
 
 # CoreWebView2EnvironmentOptions Class

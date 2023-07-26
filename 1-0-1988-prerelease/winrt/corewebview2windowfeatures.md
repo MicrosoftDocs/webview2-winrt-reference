@@ -1,8 +1,26 @@
 ---
 description: The window features for a WebView popup window.
 title: CoreWebView2WindowFeatures
-ms.date: 07/24/2023
+ms.date: 07/26/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WindowFeatures
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2WindowFeatures
+- CoreWebView2WindowFeatures.HasPosition
+- CoreWebView2WindowFeatures.HasSize
+- CoreWebView2WindowFeatures.Height
+- CoreWebView2WindowFeatures.Left
+- CoreWebView2WindowFeatures.ShouldDisplayMenuBar
+- CoreWebView2WindowFeatures.ShouldDisplayScrollBars
+- CoreWebView2WindowFeatures.ShouldDisplayStatus
+- CoreWebView2WindowFeatures.ShouldDisplayToolbar
+- CoreWebView2WindowFeatures.Top
+- CoreWebView2WindowFeatures.Width
 ---
 
 # CoreWebView2WindowFeatures Class

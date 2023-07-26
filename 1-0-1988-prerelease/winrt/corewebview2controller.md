@@ -1,8 +1,37 @@
 ---
 description: The owner of the CoreWebView2 object that provides support for resizing, showing and hiding, focusing, and other functionality related to windowing and composition.
 title: CoreWebView2Controller
-ms.date: 07/24/2023
+ms.date: 07/26/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Controller
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2Controller
+- CoreWebView2Controller.AllowExternalDrop
+- CoreWebView2Controller.Bounds
+- CoreWebView2Controller.BoundsMode
+- CoreWebView2Controller.CoreWebView2
+- CoreWebView2Controller.DefaultBackgroundColor
+- CoreWebView2Controller.IsBrowserHitTransparent
+- CoreWebView2Controller.IsVisible
+- CoreWebView2Controller.ParentWindow
+- CoreWebView2Controller.RasterizationScale
+- CoreWebView2Controller.ShouldDetectMonitorScaleChanges
+- CoreWebView2Controller.ZoomFactor
+- CoreWebView2Controller.Close
+- CoreWebView2Controller.MoveFocus
+- CoreWebView2Controller.NotifyParentWindowPositionChanged
+- CoreWebView2Controller.SetBoundsAndZoomFactor
+- CoreWebView2Controller.AcceleratorKeyPressed
+- CoreWebView2Controller.GotFocus
+- CoreWebView2Controller.LostFocus
+- CoreWebView2Controller.MoveFocusRequested
+- CoreWebView2Controller.RasterizationScaleChanged
+- CoreWebView2Controller.ZoomFactorChanged
 ---
 
 # CoreWebView2Controller Class

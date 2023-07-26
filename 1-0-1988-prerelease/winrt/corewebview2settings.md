@@ -1,8 +1,34 @@
 ---
 description: Defines properties that enable, disable, or modify WebView features.
 title: CoreWebView2Settings
-ms.date: 07/24/2023
+ms.date: 07/26/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Settings
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2Settings
+- CoreWebView2Settings.AreBrowserAcceleratorKeysEnabled
+- CoreWebView2Settings.AreDefaultContextMenusEnabled
+- CoreWebView2Settings.AreDefaultScriptDialogsEnabled
+- CoreWebView2Settings.AreDevToolsEnabled
+- CoreWebView2Settings.AreHostObjectsAllowed
+- CoreWebView2Settings.HiddenPdfToolbarItems
+- CoreWebView2Settings.HostObjectDispatchAdapter
+- CoreWebView2Settings.IsBuiltInErrorPageEnabled
+- CoreWebView2Settings.IsGeneralAutofillEnabled
+- CoreWebView2Settings.IsPasswordAutosaveEnabled
+- CoreWebView2Settings.IsPinchZoomEnabled
+- CoreWebView2Settings.IsReputationCheckingRequired
+- CoreWebView2Settings.IsScriptEnabled
+- CoreWebView2Settings.IsStatusBarEnabled
+- CoreWebView2Settings.IsSwipeNavigationEnabled
+- CoreWebView2Settings.IsWebMessageEnabled
+- CoreWebView2Settings.IsZoomControlEnabled
+- CoreWebView2Settings.UserAgent
 ---
 
 # CoreWebView2Settings Class

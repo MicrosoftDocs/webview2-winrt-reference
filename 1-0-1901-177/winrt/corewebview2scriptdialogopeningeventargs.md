@@ -1,8 +1,23 @@
 ---
 description: Event args for the CoreWebView2.ScriptDialogOpening event.
 title: CoreWebView2ScriptDialogOpeningEventArgs
-ms.date: 07/24/2023
+ms.date: 07/26/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ScriptDialogOpeningEventArgs
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2ScriptDialogOpeningEventArgs
+- CoreWebView2ScriptDialogOpeningEventArgs.DefaultText
+- CoreWebView2ScriptDialogOpeningEventArgs.Kind
+- CoreWebView2ScriptDialogOpeningEventArgs.Message
+- CoreWebView2ScriptDialogOpeningEventArgs.ResultText
+- CoreWebView2ScriptDialogOpeningEventArgs.Uri
+- CoreWebView2ScriptDialogOpeningEventArgs.Accept
+- CoreWebView2ScriptDialogOpeningEventArgs.GetDeferral
 ---
 
 # CoreWebView2ScriptDialogOpeningEventArgs Class

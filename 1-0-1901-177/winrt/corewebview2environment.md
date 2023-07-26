@@ -1,8 +1,39 @@
 ---
 description: This represents the WebView2 Environment.
 title: CoreWebView2Environment
-ms.date: 07/24/2023
+ms.date: 07/26/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Environment
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- CoreWebView2Environment
+- CoreWebView2Environment.BrowserVersionString
+- CoreWebView2Environment.FailureReportFolderPath
+- CoreWebView2Environment.UserDataFolder
+- CoreWebView2Environment.CompareBrowserVersionString
+- CoreWebView2Environment.CreateAsync
+- CoreWebView2Environment.CreateContextMenuItem
+- CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync
+- CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync
+- CoreWebView2Environment.CreateCoreWebView2ControllerAsync
+- CoreWebView2Environment.CreateCoreWebView2ControllerAsync
+- CoreWebView2Environment.CreateCoreWebView2ControllerOptions
+- CoreWebView2Environment.CreateCoreWebView2PointerInfo
+- CoreWebView2Environment.CreatePrintSettings
+- CoreWebView2Environment.CreateSharedBuffer
+- CoreWebView2Environment.CreateWebResourceRequest
+- CoreWebView2Environment.CreateWebResourceResponse
+- CoreWebView2Environment.CreateWithOptionsAsync
+- CoreWebView2Environment.GetAvailableBrowserVersionString
+- CoreWebView2Environment.GetAvailableBrowserVersionString
+- CoreWebView2Environment.GetProcessInfos
+- CoreWebView2Environment.BrowserProcessExited
+- CoreWebView2Environment.NewBrowserVersionAvailable
+- CoreWebView2Environment.ProcessInfosChanged
 ---
 
 # CoreWebView2Environment Class
