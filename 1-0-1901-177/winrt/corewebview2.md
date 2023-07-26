@@ -139,14 +139,14 @@ Gets the [CoreWebView2CookieManager](corewebview2cookiemanager.md) object associ
 >  [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md) DefaultDownloadDialogCornerAlignment
 
 The default download dialog corner alignment.
-The dialog can be aligned to any of the WebView corners (see [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md)). When the WebView or dialog changes size, the dialog keeps it position relative to the corner. The dialog may become partially or completely outside of the WebView bounds if the WebView is small enough. Set the margin from the corner with the [CoreWebView2.DefaultDownloadDialogMargin](corewebview2.md#defaultdownloaddialogmargin) property. The corner alignment and margin should be set during initialization to ensure that they are correcly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
+The dialog can be aligned to any of the WebView corners (see [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md)). When the WebView or dialog changes size, the dialog keeps it position relative to the corner. The dialog may become partially or completely outside of the WebView bounds if the WebView is small enough. Set the margin from the corner with the [CoreWebView2.DefaultDownloadDialogMargin](corewebview2.md#defaultdownloaddialogmargin) property. The corner alignment and margin should be set during initialization to ensure that they are correctly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
 
 ### DefaultDownloadDialogMargin
 
 >  [Point](/uwp/api/Windows.Foundation.Point) DefaultDownloadDialogMargin
 
 The default download dialog margin relative to the WebView corner specified by [CoreWebView2.DefaultDownloadDialogCornerAlignment](corewebview2.md#defaultdownloaddialogcorneralignment).
-The margin is a point that describes the vertical and horizontal distances between the chosen WebView corner and the default download dialog corner nearest to it. Positive values move the dialog towards the center of the WebView from the chosen WebView corner, and negative values move the dialog away from it. Use (0, 0) to align the dialog to the WebView corner with no margin. The corner alignment and margin should be set during initialization to ensure that they are correcly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
+The margin is a point that describes the vertical and horizontal distances between the chosen WebView corner and the default download dialog corner nearest to it. Positive values move the dialog towards the center of the WebView from the chosen WebView corner, and negative values move the dialog away from it. Use (0, 0) to align the dialog to the WebView corner with no margin. The corner alignment and margin should be set during initialization to ensure that they are correctly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
 
 ### DocumentTitle
 

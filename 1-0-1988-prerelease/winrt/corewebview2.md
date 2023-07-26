@@ -156,7 +156,7 @@ The change of the custom data partition id will be applied to new  page or ifram
 To avoid accidentally using the new partition id for new page or iframe navigations started by the old page, it is recommended to create a new WebView for new partition instead of changing partition.
 If you really have to change partition, it is recommended to navigate to a blank page before setting the new partition id and navigating to a page with the new partition.
 As setting custom data partition id does not change DOM security model, developers should be very careful for WebViews with opener and opened window relationship, especially when the pages in the WebViews have same origin, like when the opened window is the same website or about:blank.
-The pages in these WebViews can access each other????????s DOM and therefore can potentially access DOM storage and cookies in different partition for the same website.
+The pages in these WebViews can access each other's DOM and therefore can potentially access DOM storage and cookies in different partition for the same website.
 It is recommended to set the same custom data partition id for these WebViews, unless there is an absolute need to set different partition ids and only trusted code is hosted in them.
 :::code language="csharp" source="../code/sample/SampleApps/WebView2WpfBrowser/MainWindow.xaml.cs" id="CustomDataPartitionId":::
 
@@ -165,14 +165,14 @@ It is recommended to set the same custom data partition id for these WebViews, u
 >  [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md) DefaultDownloadDialogCornerAlignment
 
 The default download dialog corner alignment.
-The dialog can be aligned to any of the WebView corners (see [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md)). When the WebView or dialog changes size, the dialog keeps it position relative to the corner. The dialog may become partially or completely outside of the WebView bounds if the WebView is small enough. Set the margin from the corner with the [CoreWebView2.DefaultDownloadDialogMargin](corewebview2.md#defaultdownloaddialogmargin) property. The corner alignment and margin should be set during initialization to ensure that they are correcly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
+The dialog can be aligned to any of the WebView corners (see [CoreWebView2DefaultDownloadDialogCornerAlignment](corewebview2defaultdownloaddialogcorneralignment.md)). When the WebView or dialog changes size, the dialog keeps it position relative to the corner. The dialog may become partially or completely outside of the WebView bounds if the WebView is small enough. Set the margin from the corner with the [CoreWebView2.DefaultDownloadDialogMargin](corewebview2.md#defaultdownloaddialogmargin) property. The corner alignment and margin should be set during initialization to ensure that they are correctly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
 
 ### DefaultDownloadDialogMargin
 
 >  [Point](/uwp/api/Windows.Foundation.Point) DefaultDownloadDialogMargin
 
 The default download dialog margin relative to the WebView corner specified by [CoreWebView2.DefaultDownloadDialogCornerAlignment](corewebview2.md#defaultdownloaddialogcorneralignment).
-The margin is a point that describes the vertical and horizontal distances between the chosen WebView corner and the default download dialog corner nearest to it. Positive values move the dialog towards the center of the WebView from the chosen WebView corner, and negative values move the dialog away from it. Use (0, 0) to align the dialog to the WebView corner with no margin. The corner alignment and margin should be set during initialization to ensure that they are correcly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
+The margin is a point that describes the vertical and horizontal distances between the chosen WebView corner and the default download dialog corner nearest to it. Positive values move the dialog towards the center of the WebView from the chosen WebView corner, and negative values move the dialog away from it. Use (0, 0) to align the dialog to the WebView corner with no margin. The corner alignment and margin should be set during initialization to ensure that they are correctly applied when the layout is first computed, otherwise they will not take effect until the next time the WebView position or size is updated.
 
 ### DocumentTitle
 
@@ -1134,7 +1134,7 @@ The web resource requested may be blocked until the event handler returns if a d
 
 If this event is subscribed in the [CoreWebView2.NewWindowRequested](corewebview2.md#newwindowrequested) handler it should be called after the new window is set. For more details see [CoreWebView2NewWindowRequestedEventArgs.NewWindow](corewebview2newwindowrequestedeventargs.md#newwindow).
 
-This event is by default raised for file, http, and https URI schemes. This is also raised for registered custome URI schemes. See [CoreWebView2CustomSchemeRegistration](corewebview2customschemeregistration.md) for more details.
+This event is by default raised for file, http, and https URI schemes. This is also raised for registered custom URI schemes. See [CoreWebView2CustomSchemeRegistration](corewebview2customschemeregistration.md) for more details.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2WebResourceRequestedEventArgs](corewebview2webresourcerequestedeventargs.md)&gt;
 

@@ -147,14 +147,14 @@ This API requires enabling 2 experimental browser features to work properly.
 These features will be enabled by default in the future.
 Before these features are enabled by default, please enable them by ensuring `--enable-features=ThirdPartyStoragePartitioning,PartitionedCookies` is set in [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments](corewebview2environmentoptions.md#additionalbrowserarguments) used to initialize [CoreWebView2Environment](corewebview2environment.md).
 If these features are not enabled, all data are treated as unpartitioned and stored in the global default location for the profile.
-When custom data partition id id is set, the page in the WebView will act as if the page were hosted in a top level site uniquely associated with the partition id and have a separate storage partition as described in https://developer.chrome.com/docs/privacy-sandbox/storage-partitioning/ and separete cookie partition as described in https://developer.chrome.com/docs/privacy-sandbox/chips/ with all cookies partitioned.
+When custom data partition id id is set, the page in the WebView will act as if the page were hosted in a top level site uniquely associated with the partition id and have a separate storage partition as described in https://developer.chrome.com/docs/privacy-sandbox/storage-partitioning/ and separate cookie partition as described in https://developer.chrome.com/docs/privacy-sandbox/chips/ with all cookies partitioned.
 If custom data partition id is set to null or empty string, the page inside the WebView will work normally with data treated as unpartitioned.
 The custom data partition id is case sensitive. The default is an empty string. There is no restriction on the length or what characters can be used in partition id.
 The change of the custom data partition id will be applied to new  page or iframe navigations and not impact existing pages and iframes.
 To avoid accidentally using the new partition id for new page or iframe navigations started by the old page, it is recommended to create a new WebView for new partition instead of changing partition.
 If you really have to change partition, it is recommended to navigate to a blank page before setting the new partition id and navigating to a page with the new partition.
 As setting custom data partition id does not change DOM security model, developers should be very careful for WebViews with opener and opened window relationship, especially when the pages in the WebViews have same origin, like when the opened window is the same website or about:blank.
-The pages in these WebViews can access each other????????s DOM and therefore can potentially access DOM storage and cookies in different partition for the same website.
+The pages in these WebViews can access each other's DOM and therefore can potentially access DOM storage and cookies in different partition for the same website.
 It is recommended to set the same custom data partition id for these WebViews, unless there is an absolute need to set different partition ids and only trusted code is hosted in them.
 :::code language="csharp" source="../code/sample/SampleApps/WebView2WpfBrowser/MainWindow.xaml.cs" id="CustomDataPartitionId":::
 
