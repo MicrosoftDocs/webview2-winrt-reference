@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.ServerCertificateErrorDetected event.
 title: CoreWebView2ServerCertificateErrorDetectedEventArgs
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ServerCertificateErrorDetectedEventArgs
 topic_type:
 - APIRef
@@ -10,17 +10,17 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2ServerCertificateErrorDetectedEventArgs
-- CoreWebView2ServerCertificateErrorDetectedEventArgs.Action
-- CoreWebView2ServerCertificateErrorDetectedEventArgs.ErrorStatus
-- CoreWebView2ServerCertificateErrorDetectedEventArgs.RequestUri
-- CoreWebView2ServerCertificateErrorDetectedEventArgs.ServerCertificate
-- CoreWebView2ServerCertificateErrorDetectedEventArgs.GetDeferral
-- CoreWebView2ServerCertificateErrorDetectedEventArgs.get_Action
-- CoreWebView2ServerCertificateErrorDetectedEventArgs.get_ErrorStatus
-- CoreWebView2ServerCertificateErrorDetectedEventArgs.get_RequestUri
-- CoreWebView2ServerCertificateErrorDetectedEventArgs.get_ServerCertificate
-- CoreWebView2ServerCertificateErrorDetectedEventArgs.put_Action
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.Action
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.ErrorStatus
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.RequestUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.ServerCertificate
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.GetDeferral
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.get_Action
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.get_ErrorStatus
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.get_RequestUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.get_ServerCertificate
+- Microsoft.Web.WebView2.Core.CoreWebView2ServerCertificateErrorDetectedEventArgs.put_Action
 ---
 
 # CoreWebView2ServerCertificateErrorDetectedEventArgs Class

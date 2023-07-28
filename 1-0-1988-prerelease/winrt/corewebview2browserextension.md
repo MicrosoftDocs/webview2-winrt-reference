@@ -1,7 +1,7 @@
 ---
 description: Browser extension installed on current profile.
 title: CoreWebView2BrowserExtension
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2BrowserExtension
 topic_type:
 - APIRef
@@ -10,15 +10,15 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2BrowserExtension
-- CoreWebView2BrowserExtension.Id
-- CoreWebView2BrowserExtension.IsEnabled
-- CoreWebView2BrowserExtension.Name
-- CoreWebView2BrowserExtension.EnableAsync
-- CoreWebView2BrowserExtension.RemoveAsync
-- CoreWebView2BrowserExtension.get_Id
-- CoreWebView2BrowserExtension.get_IsEnabled
-- CoreWebView2BrowserExtension.get_Name
+- Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension
+- Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension.Id
+- Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension.IsEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension.Name
+- Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension.EnableAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension.RemoveAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension.get_Id
+- Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension.get_IsEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2BrowserExtension.get_Name
 ---
 
 # CoreWebView2BrowserExtension Class

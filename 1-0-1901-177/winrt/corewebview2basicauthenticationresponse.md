@@ -10,13 +10,13 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2BasicAuthenticationResponse
-- CoreWebView2BasicAuthenticationResponse.Password
-- CoreWebView2BasicAuthenticationResponse.UserName
-- CoreWebView2BasicAuthenticationResponse.get_Password
-- CoreWebView2BasicAuthenticationResponse.get_UserName
-- CoreWebView2BasicAuthenticationResponse.put_Password
-- CoreWebView2BasicAuthenticationResponse.put_UserName
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationResponse
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationResponse.Password
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationResponse.UserName
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationResponse.get_Password
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationResponse.get_UserName
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationResponse.put_Password
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationResponse.put_UserName
 ---
 
 # CoreWebView2BasicAuthenticationResponse Class

@@ -10,15 +10,15 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2NavigationCompletedEventArgs
-- CoreWebView2NavigationCompletedEventArgs.HttpStatusCode
-- CoreWebView2NavigationCompletedEventArgs.IsSuccess
-- CoreWebView2NavigationCompletedEventArgs.NavigationId
-- CoreWebView2NavigationCompletedEventArgs.WebErrorStatus
-- CoreWebView2NavigationCompletedEventArgs.get_HttpStatusCode
-- CoreWebView2NavigationCompletedEventArgs.get_IsSuccess
-- CoreWebView2NavigationCompletedEventArgs.get_NavigationId
-- CoreWebView2NavigationCompletedEventArgs.get_WebErrorStatus
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.HttpStatusCode
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.IsSuccess
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.NavigationId
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.WebErrorStatus
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.get_HttpStatusCode
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.get_IsSuccess
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.get_NavigationId
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.get_WebErrorStatus
 ---
 
 # CoreWebView2NavigationCompletedEventArgs Class

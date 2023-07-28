@@ -10,13 +10,13 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2CustomSchemeRegistration
-- CoreWebView2CustomSchemeRegistration.HasAuthorityComponent
-- CoreWebView2CustomSchemeRegistration.TreatAsSecure
-- CoreWebView2CustomSchemeRegistration.get_HasAuthorityComponent
-- CoreWebView2CustomSchemeRegistration.get_TreatAsSecure
-- CoreWebView2CustomSchemeRegistration.put_HasAuthorityComponent
-- CoreWebView2CustomSchemeRegistration.put_TreatAsSecure
+- Microsoft.Web.WebView2.Core.CoreWebView2CustomSchemeRegistration
+- Microsoft.Web.WebView2.Core.CoreWebView2CustomSchemeRegistration.HasAuthorityComponent
+- Microsoft.Web.WebView2.Core.CoreWebView2CustomSchemeRegistration.TreatAsSecure
+- Microsoft.Web.WebView2.Core.CoreWebView2CustomSchemeRegistration.get_HasAuthorityComponent
+- Microsoft.Web.WebView2.Core.CoreWebView2CustomSchemeRegistration.get_TreatAsSecure
+- Microsoft.Web.WebView2.Core.CoreWebView2CustomSchemeRegistration.put_HasAuthorityComponent
+- Microsoft.Web.WebView2.Core.CoreWebView2CustomSchemeRegistration.put_TreatAsSecure
 ---
 
 # CoreWebView2CustomSchemeRegistration Class

@@ -10,9 +10,9 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2File
-- CoreWebView2File.Path
-- CoreWebView2File.get_Path
+- Microsoft.Web.WebView2.Core.CoreWebView2File
+- Microsoft.Web.WebView2.Core.CoreWebView2File.Path
+- Microsoft.Web.WebView2.Core.CoreWebView2File.get_Path
 ---
 
 # CoreWebView2File Class

@@ -1,7 +1,7 @@
 ---
 description: Interface to create IDispatch implementing adapter classes for WinRT runtime classes to work with CoreWebView2.AddHostObjectToScript.
 title: ICoreWebView2DispatchAdapter
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, ICoreWebView2DispatchAdapter
 topic_type:
 - APIRef
@@ -10,11 +10,11 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- ICoreWebView2DispatchAdapter
-- ICoreWebView2DispatchAdapter.Clean
-- ICoreWebView2DispatchAdapter.UnwrapObject
-- ICoreWebView2DispatchAdapter.WrapNamedObject
-- ICoreWebView2DispatchAdapter.WrapObject
+- Microsoft.Web.WebView2.Core.ICoreWebView2DispatchAdapter
+- Microsoft.Web.WebView2.Core.ICoreWebView2DispatchAdapter.Clean
+- Microsoft.Web.WebView2.Core.ICoreWebView2DispatchAdapter.UnwrapObject
+- Microsoft.Web.WebView2.Core.ICoreWebView2DispatchAdapter.WrapNamedObject
+- Microsoft.Web.WebView2.Core.ICoreWebView2DispatchAdapter.WrapObject
 ---
 
 # ICoreWebView2DispatchAdapter Interface

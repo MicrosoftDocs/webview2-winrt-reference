@@ -1,7 +1,7 @@
 ---
 description: This interface represents a JavaScript exception.
 title: CoreWebView2ScriptException
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ScriptException
 topic_type:
 - APIRef
@@ -10,17 +10,17 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2ScriptException
-- CoreWebView2ScriptException.ColumnNumber
-- CoreWebView2ScriptException.LineNumber
-- CoreWebView2ScriptException.Message
-- CoreWebView2ScriptException.Name
-- CoreWebView2ScriptException.ToJson
-- CoreWebView2ScriptException.get_ColumnNumber
-- CoreWebView2ScriptException.get_LineNumber
-- CoreWebView2ScriptException.get_Message
-- CoreWebView2ScriptException.get_Name
-- CoreWebView2ScriptException.get_ToJson
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.ColumnNumber
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.LineNumber
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.Message
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.Name
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.ToJson
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.get_ColumnNumber
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.get_LineNumber
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.get_Message
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.get_Name
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.get_ToJson
 ---
 
 # CoreWebView2ScriptException Class

@@ -10,11 +10,11 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2DevToolsProtocolEventReceivedEventArgs
-- CoreWebView2DevToolsProtocolEventReceivedEventArgs.ParameterObjectAsJson
-- CoreWebView2DevToolsProtocolEventReceivedEventArgs.SessionId
-- CoreWebView2DevToolsProtocolEventReceivedEventArgs.get_ParameterObjectAsJson
-- CoreWebView2DevToolsProtocolEventReceivedEventArgs.get_SessionId
+- Microsoft.Web.WebView2.Core.CoreWebView2DevToolsProtocolEventReceivedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2DevToolsProtocolEventReceivedEventArgs.ParameterObjectAsJson
+- Microsoft.Web.WebView2.Core.CoreWebView2DevToolsProtocolEventReceivedEventArgs.SessionId
+- Microsoft.Web.WebView2.Core.CoreWebView2DevToolsProtocolEventReceivedEventArgs.get_ParameterObjectAsJson
+- Microsoft.Web.WebView2.Core.CoreWebView2DevToolsProtocolEventReceivedEventArgs.get_SessionId
 ---
 
 # CoreWebView2DevToolsProtocolEventReceivedEventArgs Class

@@ -10,9 +10,9 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2SourceChangedEventArgs
-- CoreWebView2SourceChangedEventArgs.IsNewDocument
-- CoreWebView2SourceChangedEventArgs.get_IsNewDocument
+- Microsoft.Web.WebView2.Core.CoreWebView2SourceChangedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2SourceChangedEventArgs.IsNewDocument
+- Microsoft.Web.WebView2.Core.CoreWebView2SourceChangedEventArgs.get_IsNewDocument
 ---
 
 # CoreWebView2SourceChangedEventArgs Class

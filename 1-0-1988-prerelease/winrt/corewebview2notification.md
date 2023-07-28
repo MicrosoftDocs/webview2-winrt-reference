@@ -1,7 +1,7 @@
 ---
 description: An object that represents a HTML Notification object.
 title: CoreWebView2Notification
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Notification
 topic_type:
 - APIRef
@@ -10,37 +10,37 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2Notification
-- CoreWebView2Notification.BadgeUri
-- CoreWebView2Notification.Body
-- CoreWebView2Notification.BodyImageUri
-- CoreWebView2Notification.Direction
-- CoreWebView2Notification.IconUri
-- CoreWebView2Notification.IsSilent
-- CoreWebView2Notification.Language
-- CoreWebView2Notification.RequiresInteraction
-- CoreWebView2Notification.ShouldRenotify
-- CoreWebView2Notification.Tag
-- CoreWebView2Notification.Timestamp
-- CoreWebView2Notification.Title
-- CoreWebView2Notification.ReportClicked
-- CoreWebView2Notification.ReportClosed
-- CoreWebView2Notification.ReportShown
-- CoreWebView2Notification.add_CloseRequested
-- CoreWebView2Notification.get_BadgeUri
-- CoreWebView2Notification.get_Body
-- CoreWebView2Notification.get_BodyImageUri
-- CoreWebView2Notification.get_Direction
-- CoreWebView2Notification.get_IconUri
-- CoreWebView2Notification.get_IsSilent
-- CoreWebView2Notification.get_Language
-- CoreWebView2Notification.get_RequiresInteraction
-- CoreWebView2Notification.get_ShouldRenotify
-- CoreWebView2Notification.get_Tag
-- CoreWebView2Notification.get_Timestamp
-- CoreWebView2Notification.get_Title
-- CoreWebView2Notification.remove_CloseRequested
-- CoreWebView2Notification.CloseRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.BadgeUri
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.Body
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.BodyImageUri
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.Direction
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.IconUri
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.IsSilent
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.Language
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.RequiresInteraction
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.ShouldRenotify
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.Tag
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.Timestamp
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.Title
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.ReportClicked
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.ReportClosed
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.ReportShown
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.add_CloseRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.get_BadgeUri
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.get_Body
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.get_BodyImageUri
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.get_Direction
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.get_IconUri
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.get_IsSilent
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.get_Language
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.get_RequiresInteraction
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.get_ShouldRenotify
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.get_Tag
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.get_Timestamp
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.get_Title
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.remove_CloseRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2Notification.CloseRequested
 ---
 
 # CoreWebView2Notification Class

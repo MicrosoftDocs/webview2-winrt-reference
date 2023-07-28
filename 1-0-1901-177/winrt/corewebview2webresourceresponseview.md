@@ -10,14 +10,14 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2WebResourceResponseView
-- CoreWebView2WebResourceResponseView.Headers
-- CoreWebView2WebResourceResponseView.ReasonPhrase
-- CoreWebView2WebResourceResponseView.StatusCode
-- CoreWebView2WebResourceResponseView.GetContentAsync
-- CoreWebView2WebResourceResponseView.get_Headers
-- CoreWebView2WebResourceResponseView.get_ReasonPhrase
-- CoreWebView2WebResourceResponseView.get_StatusCode
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseView
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseView.Headers
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseView.ReasonPhrase
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseView.StatusCode
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseView.GetContentAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseView.get_Headers
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseView.get_ReasonPhrase
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseView.get_StatusCode
 ---
 
 # CoreWebView2WebResourceResponseView Class

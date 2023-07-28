@@ -10,11 +10,11 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2WebResourceResponseReceivedEventArgs
-- CoreWebView2WebResourceResponseReceivedEventArgs.Request
-- CoreWebView2WebResourceResponseReceivedEventArgs.Response
-- CoreWebView2WebResourceResponseReceivedEventArgs.get_Request
-- CoreWebView2WebResourceResponseReceivedEventArgs.get_Response
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseReceivedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseReceivedEventArgs.Request
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseReceivedEventArgs.Response
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseReceivedEventArgs.get_Request
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponseReceivedEventArgs.get_Response
 ---
 
 # CoreWebView2WebResourceResponseReceivedEventArgs Class

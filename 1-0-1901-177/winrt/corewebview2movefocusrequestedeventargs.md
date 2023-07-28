@@ -10,12 +10,12 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2MoveFocusRequestedEventArgs
-- CoreWebView2MoveFocusRequestedEventArgs.Handled
-- CoreWebView2MoveFocusRequestedEventArgs.Reason
-- CoreWebView2MoveFocusRequestedEventArgs.get_Handled
-- CoreWebView2MoveFocusRequestedEventArgs.get_Reason
-- CoreWebView2MoveFocusRequestedEventArgs.put_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2MoveFocusRequestedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2MoveFocusRequestedEventArgs.Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2MoveFocusRequestedEventArgs.Reason
+- Microsoft.Web.WebView2.Core.CoreWebView2MoveFocusRequestedEventArgs.get_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2MoveFocusRequestedEventArgs.get_Reason
+- Microsoft.Web.WebView2.Core.CoreWebView2MoveFocusRequestedEventArgs.put_Handled
 ---
 
 # CoreWebView2MoveFocusRequestedEventArgs Class

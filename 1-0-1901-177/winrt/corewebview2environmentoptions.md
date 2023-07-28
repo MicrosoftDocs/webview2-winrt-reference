@@ -10,29 +10,29 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2EnvironmentOptions
-- CoreWebView2EnvironmentOptions.AdditionalBrowserArguments
-- CoreWebView2EnvironmentOptions.AllowSingleSignOnUsingOSPrimaryAccount
-- CoreWebView2EnvironmentOptions.EnableTrackingPrevention
-- CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess
-- CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled
-- CoreWebView2EnvironmentOptions.Language
-- CoreWebView2EnvironmentOptions.TargetCompatibleBrowserVersion
-- CoreWebView2EnvironmentOptions..ctor
-- CoreWebView2EnvironmentOptions.get_AdditionalBrowserArguments
-- CoreWebView2EnvironmentOptions.get_AllowSingleSignOnUsingOSPrimaryAccount
-- CoreWebView2EnvironmentOptions.get_EnableTrackingPrevention
-- CoreWebView2EnvironmentOptions.get_ExclusiveUserDataFolderAccess
-- CoreWebView2EnvironmentOptions.get_IsCustomCrashReportingEnabled
-- CoreWebView2EnvironmentOptions.get_Language
-- CoreWebView2EnvironmentOptions.get_TargetCompatibleBrowserVersion
-- CoreWebView2EnvironmentOptions.put_AdditionalBrowserArguments
-- CoreWebView2EnvironmentOptions.put_AllowSingleSignOnUsingOSPrimaryAccount
-- CoreWebView2EnvironmentOptions.put_EnableTrackingPrevention
-- CoreWebView2EnvironmentOptions.put_ExclusiveUserDataFolderAccess
-- CoreWebView2EnvironmentOptions.put_IsCustomCrashReportingEnabled
-- CoreWebView2EnvironmentOptions.put_Language
-- CoreWebView2EnvironmentOptions.put_TargetCompatibleBrowserVersion
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.AdditionalBrowserArguments
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.AllowSingleSignOnUsingOSPrimaryAccount
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.EnableTrackingPrevention
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.Language
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.TargetCompatibleBrowserVersion
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions..ctor
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_AdditionalBrowserArguments
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_AllowSingleSignOnUsingOSPrimaryAccount
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_EnableTrackingPrevention
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_ExclusiveUserDataFolderAccess
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_IsCustomCrashReportingEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_Language
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.get_TargetCompatibleBrowserVersion
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_AdditionalBrowserArguments
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_AllowSingleSignOnUsingOSPrimaryAccount
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_EnableTrackingPrevention
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_ExclusiveUserDataFolderAccess
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_IsCustomCrashReportingEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_Language
+- Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions.put_TargetCompatibleBrowserVersion
 ---
 
 # CoreWebView2EnvironmentOptions Class

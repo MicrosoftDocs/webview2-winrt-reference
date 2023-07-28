@@ -10,18 +10,18 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2WebResourceResponse
-- CoreWebView2WebResourceResponse.Content
-- CoreWebView2WebResourceResponse.Headers
-- CoreWebView2WebResourceResponse.ReasonPhrase
-- CoreWebView2WebResourceResponse.StatusCode
-- CoreWebView2WebResourceResponse.get_Content
-- CoreWebView2WebResourceResponse.get_Headers
-- CoreWebView2WebResourceResponse.get_ReasonPhrase
-- CoreWebView2WebResourceResponse.get_StatusCode
-- CoreWebView2WebResourceResponse.put_Content
-- CoreWebView2WebResourceResponse.put_ReasonPhrase
-- CoreWebView2WebResourceResponse.put_StatusCode
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponse
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponse.Content
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponse.Headers
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponse.ReasonPhrase
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponse.StatusCode
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponse.get_Content
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponse.get_Headers
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponse.get_ReasonPhrase
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponse.get_StatusCode
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponse.put_Content
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponse.put_ReasonPhrase
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceResponse.put_StatusCode
 ---
 
 # CoreWebView2WebResourceResponse Class

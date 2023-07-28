@@ -1,7 +1,7 @@
 ---
 description: Error info with enum value.
 title: CoreWebView2TextureStreamErrorKind
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2TextureStreamErrorKind
 topic_type:
 - APIRef
@@ -10,7 +10,7 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2TextureStreamErrorKind
+- Microsoft.Web.WebView2.Core.CoreWebView2TextureStreamErrorKind
 ---
 
 # CoreWebView2TextureStreamErrorKind Enum

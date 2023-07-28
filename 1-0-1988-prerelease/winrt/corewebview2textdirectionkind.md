@@ -1,7 +1,7 @@
 ---
 description: Indicates the text direction of the notification.
 title: CoreWebView2TextDirectionKind
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2TextDirectionKind
 topic_type:
 - APIRef
@@ -10,7 +10,7 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2TextDirectionKind
+- Microsoft.Web.WebView2.Core.CoreWebView2TextDirectionKind
 ---
 
 # CoreWebView2TextDirectionKind Enum

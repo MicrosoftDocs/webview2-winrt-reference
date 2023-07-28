@@ -10,11 +10,11 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2ProcessInfo
-- CoreWebView2ProcessInfo.Kind
-- CoreWebView2ProcessInfo.ProcessId
-- CoreWebView2ProcessInfo.get_Kind
-- CoreWebView2ProcessInfo.get_ProcessId
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessInfo
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessInfo.Kind
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessInfo.ProcessId
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessInfo.get_Kind
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessInfo.get_ProcessId
 ---
 
 # CoreWebView2ProcessInfo Class

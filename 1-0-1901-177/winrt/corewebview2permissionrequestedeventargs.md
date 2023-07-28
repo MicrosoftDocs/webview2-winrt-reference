@@ -10,23 +10,23 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2PermissionRequestedEventArgs
-- CoreWebView2PermissionRequestedEventArgs.Handled
-- CoreWebView2PermissionRequestedEventArgs.IsUserInitiated
-- CoreWebView2PermissionRequestedEventArgs.PermissionKind
-- CoreWebView2PermissionRequestedEventArgs.SavesInProfile
-- CoreWebView2PermissionRequestedEventArgs.State
-- CoreWebView2PermissionRequestedEventArgs.Uri
-- CoreWebView2PermissionRequestedEventArgs.GetDeferral
-- CoreWebView2PermissionRequestedEventArgs.get_Handled
-- CoreWebView2PermissionRequestedEventArgs.get_IsUserInitiated
-- CoreWebView2PermissionRequestedEventArgs.get_PermissionKind
-- CoreWebView2PermissionRequestedEventArgs.get_SavesInProfile
-- CoreWebView2PermissionRequestedEventArgs.get_State
-- CoreWebView2PermissionRequestedEventArgs.get_Uri
-- CoreWebView2PermissionRequestedEventArgs.put_Handled
-- CoreWebView2PermissionRequestedEventArgs.put_SavesInProfile
-- CoreWebView2PermissionRequestedEventArgs.put_State
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.IsUserInitiated
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.PermissionKind
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.SavesInProfile
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.State
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.GetDeferral
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.get_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.get_IsUserInitiated
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.get_PermissionKind
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.get_SavesInProfile
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.get_State
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.get_Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.put_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.put_SavesInProfile
+- Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.put_State
 ---
 
 # CoreWebView2PermissionRequestedEventArgs Class

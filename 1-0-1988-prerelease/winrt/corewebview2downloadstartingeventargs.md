@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.DownloadStarting event.
 title: CoreWebView2DownloadStartingEventArgs
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DownloadStartingEventArgs
 topic_type:
 - APIRef
@@ -10,19 +10,19 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2DownloadStartingEventArgs
-- CoreWebView2DownloadStartingEventArgs.Cancel
-- CoreWebView2DownloadStartingEventArgs.DownloadOperation
-- CoreWebView2DownloadStartingEventArgs.Handled
-- CoreWebView2DownloadStartingEventArgs.ResultFilePath
-- CoreWebView2DownloadStartingEventArgs.GetDeferral
-- CoreWebView2DownloadStartingEventArgs.get_Cancel
-- CoreWebView2DownloadStartingEventArgs.get_DownloadOperation
-- CoreWebView2DownloadStartingEventArgs.get_Handled
-- CoreWebView2DownloadStartingEventArgs.get_ResultFilePath
-- CoreWebView2DownloadStartingEventArgs.put_Cancel
-- CoreWebView2DownloadStartingEventArgs.put_Handled
-- CoreWebView2DownloadStartingEventArgs.put_ResultFilePath
+- Microsoft.Web.WebView2.Core.CoreWebView2DownloadStartingEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2DownloadStartingEventArgs.Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2DownloadStartingEventArgs.DownloadOperation
+- Microsoft.Web.WebView2.Core.CoreWebView2DownloadStartingEventArgs.Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2DownloadStartingEventArgs.ResultFilePath
+- Microsoft.Web.WebView2.Core.CoreWebView2DownloadStartingEventArgs.GetDeferral
+- Microsoft.Web.WebView2.Core.CoreWebView2DownloadStartingEventArgs.get_Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2DownloadStartingEventArgs.get_DownloadOperation
+- Microsoft.Web.WebView2.Core.CoreWebView2DownloadStartingEventArgs.get_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2DownloadStartingEventArgs.get_ResultFilePath
+- Microsoft.Web.WebView2.Core.CoreWebView2DownloadStartingEventArgs.put_Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2DownloadStartingEventArgs.put_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2DownloadStartingEventArgs.put_ResultFilePath
 ---
 
 # CoreWebView2DownloadStartingEventArgs Class

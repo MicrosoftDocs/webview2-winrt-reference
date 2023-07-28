@@ -10,16 +10,16 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2ControllerOptions
-- CoreWebView2ControllerOptions.IsInPrivateModeEnabled
-- CoreWebView2ControllerOptions.ProfileName
-- CoreWebView2ControllerOptions.ScriptLocale
-- CoreWebView2ControllerOptions.get_IsInPrivateModeEnabled
-- CoreWebView2ControllerOptions.get_ProfileName
-- CoreWebView2ControllerOptions.get_ScriptLocale
-- CoreWebView2ControllerOptions.put_IsInPrivateModeEnabled
-- CoreWebView2ControllerOptions.put_ProfileName
-- CoreWebView2ControllerOptions.put_ScriptLocale
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.IsInPrivateModeEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.ProfileName
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.ScriptLocale
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.get_IsInPrivateModeEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.get_ProfileName
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.get_ScriptLocale
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.put_IsInPrivateModeEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.put_ProfileName
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.put_ScriptLocale
 ---
 
 # CoreWebView2ControllerOptions Class

@@ -1,7 +1,7 @@
 ---
 description: Used to manage profile options that created by CoreWebView2Environment.CreateCoreWebView2ControllerOptions.
 title: CoreWebView2ControllerOptions
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ControllerOptions
 topic_type:
 - APIRef
@@ -10,16 +10,16 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2ControllerOptions
-- CoreWebView2ControllerOptions.IsInPrivateModeEnabled
-- CoreWebView2ControllerOptions.ProfileName
-- CoreWebView2ControllerOptions.ScriptLocale
-- CoreWebView2ControllerOptions.get_IsInPrivateModeEnabled
-- CoreWebView2ControllerOptions.get_ProfileName
-- CoreWebView2ControllerOptions.get_ScriptLocale
-- CoreWebView2ControllerOptions.put_IsInPrivateModeEnabled
-- CoreWebView2ControllerOptions.put_ProfileName
-- CoreWebView2ControllerOptions.put_ScriptLocale
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.IsInPrivateModeEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.ProfileName
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.ScriptLocale
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.get_IsInPrivateModeEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.get_ProfileName
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.get_ScriptLocale
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.put_IsInPrivateModeEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.put_ProfileName
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerOptions.put_ScriptLocale
 ---
 
 # CoreWebView2ControllerOptions Class

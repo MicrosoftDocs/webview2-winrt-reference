@@ -1,7 +1,7 @@
 ---
 description: An HTTP request used with the CoreWebView2.WebResourceRequested event.
 title: CoreWebView2WebResourceRequest
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebResourceRequest
 topic_type:
 - APIRef
@@ -10,18 +10,18 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2WebResourceRequest
-- CoreWebView2WebResourceRequest.Content
-- CoreWebView2WebResourceRequest.Headers
-- CoreWebView2WebResourceRequest.Method
-- CoreWebView2WebResourceRequest.Uri
-- CoreWebView2WebResourceRequest.get_Content
-- CoreWebView2WebResourceRequest.get_Headers
-- CoreWebView2WebResourceRequest.get_Method
-- CoreWebView2WebResourceRequest.get_Uri
-- CoreWebView2WebResourceRequest.put_Content
-- CoreWebView2WebResourceRequest.put_Method
-- CoreWebView2WebResourceRequest.put_Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.Content
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.Headers
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.Method
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.get_Content
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.get_Headers
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.get_Method
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.get_Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.put_Content
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.put_Method
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.put_Uri
 ---
 
 # CoreWebView2WebResourceRequest Class

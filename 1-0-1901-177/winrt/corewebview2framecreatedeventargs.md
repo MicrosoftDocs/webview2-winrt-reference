@@ -10,9 +10,9 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2FrameCreatedEventArgs
-- CoreWebView2FrameCreatedEventArgs.Frame
-- CoreWebView2FrameCreatedEventArgs.get_Frame
+- Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs.Frame
+- Microsoft.Web.WebView2.Core.CoreWebView2FrameCreatedEventArgs.get_Frame
 ---
 
 # CoreWebView2FrameCreatedEventArgs Class

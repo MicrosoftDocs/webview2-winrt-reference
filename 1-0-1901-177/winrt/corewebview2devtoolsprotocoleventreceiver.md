@@ -10,10 +10,10 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2DevToolsProtocolEventReceiver
-- CoreWebView2DevToolsProtocolEventReceiver.add_DevToolsProtocolEventReceived
-- CoreWebView2DevToolsProtocolEventReceiver.remove_DevToolsProtocolEventReceived
-- CoreWebView2DevToolsProtocolEventReceiver.DevToolsProtocolEventReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2DevToolsProtocolEventReceiver
+- Microsoft.Web.WebView2.Core.CoreWebView2DevToolsProtocolEventReceiver.add_DevToolsProtocolEventReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2DevToolsProtocolEventReceiver.remove_DevToolsProtocolEventReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2DevToolsProtocolEventReceiver.DevToolsProtocolEventReceived
 ---
 
 # CoreWebView2DevToolsProtocolEventReceiver Class

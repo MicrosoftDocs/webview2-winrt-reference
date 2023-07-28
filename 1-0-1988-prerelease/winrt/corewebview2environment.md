@@ -1,7 +1,7 @@
 ---
 description: This represents the WebView2 Environment.
 title: CoreWebView2Environment
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Environment
 topic_type:
 - APIRef
@@ -10,47 +10,47 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2Environment
-- CoreWebView2Environment.BrowserVersionString
-- CoreWebView2Environment.FailureReportFolderPath
-- CoreWebView2Environment.RenderAdapterLUID
-- CoreWebView2Environment.UserDataFolder
-- CoreWebView2Environment.CompareBrowserVersionString
-- CoreWebView2Environment.CreateAsync
-- CoreWebView2Environment.CreateContextMenuItem
-- CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync
-- CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync
-- CoreWebView2Environment.CreateCoreWebView2ControllerAsync
-- CoreWebView2Environment.CreateCoreWebView2ControllerAsync
-- CoreWebView2Environment.CreateCoreWebView2ControllerOptions
-- CoreWebView2Environment.CreateCoreWebView2PointerInfo
-- CoreWebView2Environment.CreatePrintSettings
-- CoreWebView2Environment.CreateSharedBuffer
-- CoreWebView2Environment.CreateTextureStream
-- CoreWebView2Environment.CreateWebResourceRequest
-- CoreWebView2Environment.CreateWebResourceResponse
-- CoreWebView2Environment.CreateWithOptionsAsync
-- CoreWebView2Environment.GetAvailableBrowserVersionString
-- CoreWebView2Environment.GetAvailableBrowserVersionString
-- CoreWebView2Environment.GetProcessInfos
-- CoreWebView2Environment.GetProcessInfosWithDetailsAsync
-- CoreWebView2Environment.UpdateRuntimeAsync
-- CoreWebView2Environment.add_BrowserProcessExited
-- CoreWebView2Environment.add_NewBrowserVersionAvailable
-- CoreWebView2Environment.add_ProcessInfosChanged
-- CoreWebView2Environment.add_RenderAdapterLUIDChanged
-- CoreWebView2Environment.get_BrowserVersionString
-- CoreWebView2Environment.get_FailureReportFolderPath
-- CoreWebView2Environment.get_RenderAdapterLUID
-- CoreWebView2Environment.get_UserDataFolder
-- CoreWebView2Environment.remove_BrowserProcessExited
-- CoreWebView2Environment.remove_NewBrowserVersionAvailable
-- CoreWebView2Environment.remove_ProcessInfosChanged
-- CoreWebView2Environment.remove_RenderAdapterLUIDChanged
-- CoreWebView2Environment.BrowserProcessExited
-- CoreWebView2Environment.NewBrowserVersionAvailable
-- CoreWebView2Environment.ProcessInfosChanged
-- CoreWebView2Environment.RenderAdapterLUIDChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.BrowserVersionString
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.FailureReportFolderPath
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.RenderAdapterLUID
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.UserDataFolder
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.CompareBrowserVersionString
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.CreateAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.CreateContextMenuItem
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.CreateCoreWebView2ControllerAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.CreateCoreWebView2ControllerAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.CreateCoreWebView2ControllerOptions
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.CreateCoreWebView2PointerInfo
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.CreatePrintSettings
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.CreateSharedBuffer
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.CreateTextureStream
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.CreateWebResourceRequest
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.CreateWebResourceResponse
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.CreateWithOptionsAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.GetAvailableBrowserVersionString
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.GetAvailableBrowserVersionString
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.GetProcessInfos
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.GetProcessInfosWithDetailsAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.UpdateRuntimeAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.add_BrowserProcessExited
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.add_NewBrowserVersionAvailable
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.add_ProcessInfosChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.add_RenderAdapterLUIDChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.get_BrowserVersionString
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.get_FailureReportFolderPath
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.get_RenderAdapterLUID
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.get_UserDataFolder
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.remove_BrowserProcessExited
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.remove_NewBrowserVersionAvailable
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.remove_ProcessInfosChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.remove_RenderAdapterLUIDChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.BrowserProcessExited
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.NewBrowserVersionAvailable
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.ProcessInfosChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2Environment.RenderAdapterLUIDChanged
 ---
 
 # CoreWebView2Environment Class

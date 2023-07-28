@@ -10,11 +10,11 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2BrowserProcessExitedEventArgs
-- CoreWebView2BrowserProcessExitedEventArgs.BrowserProcessExitKind
-- CoreWebView2BrowserProcessExitedEventArgs.BrowserProcessId
-- CoreWebView2BrowserProcessExitedEventArgs.get_BrowserProcessExitKind
-- CoreWebView2BrowserProcessExitedEventArgs.get_BrowserProcessId
+- Microsoft.Web.WebView2.Core.CoreWebView2BrowserProcessExitedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2BrowserProcessExitedEventArgs.BrowserProcessExitKind
+- Microsoft.Web.WebView2.Core.CoreWebView2BrowserProcessExitedEventArgs.BrowserProcessId
+- Microsoft.Web.WebView2.Core.CoreWebView2BrowserProcessExitedEventArgs.get_BrowserProcessExitKind
+- Microsoft.Web.WebView2.Core.CoreWebView2BrowserProcessExitedEventArgs.get_BrowserProcessId
 ---
 
 # CoreWebView2BrowserProcessExitedEventArgs Class

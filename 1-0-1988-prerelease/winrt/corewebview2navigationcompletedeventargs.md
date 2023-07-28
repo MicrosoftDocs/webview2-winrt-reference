@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.NavigationCompleted event.
 title: CoreWebView2NavigationCompletedEventArgs
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2NavigationCompletedEventArgs
 topic_type:
 - APIRef
@@ -10,15 +10,15 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2NavigationCompletedEventArgs
-- CoreWebView2NavigationCompletedEventArgs.HttpStatusCode
-- CoreWebView2NavigationCompletedEventArgs.IsSuccess
-- CoreWebView2NavigationCompletedEventArgs.NavigationId
-- CoreWebView2NavigationCompletedEventArgs.WebErrorStatus
-- CoreWebView2NavigationCompletedEventArgs.get_HttpStatusCode
-- CoreWebView2NavigationCompletedEventArgs.get_IsSuccess
-- CoreWebView2NavigationCompletedEventArgs.get_NavigationId
-- CoreWebView2NavigationCompletedEventArgs.get_WebErrorStatus
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.HttpStatusCode
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.IsSuccess
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.NavigationId
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.WebErrorStatus
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.get_HttpStatusCode
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.get_IsSuccess
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.get_NavigationId
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.get_WebErrorStatus
 ---
 
 # CoreWebView2NavigationCompletedEventArgs Class

@@ -10,20 +10,20 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2ContextMenuRequestedEventArgs
-- CoreWebView2ContextMenuRequestedEventArgs.ContextMenuTarget
-- CoreWebView2ContextMenuRequestedEventArgs.Handled
-- CoreWebView2ContextMenuRequestedEventArgs.Location
-- CoreWebView2ContextMenuRequestedEventArgs.MenuItems
-- CoreWebView2ContextMenuRequestedEventArgs.SelectedCommandId
-- CoreWebView2ContextMenuRequestedEventArgs.GetDeferral
-- CoreWebView2ContextMenuRequestedEventArgs.get_ContextMenuTarget
-- CoreWebView2ContextMenuRequestedEventArgs.get_Handled
-- CoreWebView2ContextMenuRequestedEventArgs.get_Location
-- CoreWebView2ContextMenuRequestedEventArgs.get_MenuItems
-- CoreWebView2ContextMenuRequestedEventArgs.get_SelectedCommandId
-- CoreWebView2ContextMenuRequestedEventArgs.put_Handled
-- CoreWebView2ContextMenuRequestedEventArgs.put_SelectedCommandId
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.ContextMenuTarget
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.Location
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.MenuItems
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.SelectedCommandId
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.GetDeferral
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.get_ContextMenuTarget
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.get_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.get_Location
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.get_MenuItems
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.get_SelectedCommandId
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.put_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuRequestedEventArgs.put_SelectedCommandId
 ---
 
 # CoreWebView2ContextMenuRequestedEventArgs Class

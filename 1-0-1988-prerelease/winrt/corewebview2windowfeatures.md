@@ -1,7 +1,7 @@
 ---
 description: The window features for a WebView popup window.
 title: CoreWebView2WindowFeatures
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WindowFeatures
 topic_type:
 - APIRef
@@ -10,27 +10,27 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2WindowFeatures
-- CoreWebView2WindowFeatures.HasPosition
-- CoreWebView2WindowFeatures.HasSize
-- CoreWebView2WindowFeatures.Height
-- CoreWebView2WindowFeatures.Left
-- CoreWebView2WindowFeatures.ShouldDisplayMenuBar
-- CoreWebView2WindowFeatures.ShouldDisplayScrollBars
-- CoreWebView2WindowFeatures.ShouldDisplayStatus
-- CoreWebView2WindowFeatures.ShouldDisplayToolbar
-- CoreWebView2WindowFeatures.Top
-- CoreWebView2WindowFeatures.Width
-- CoreWebView2WindowFeatures.get_HasPosition
-- CoreWebView2WindowFeatures.get_HasSize
-- CoreWebView2WindowFeatures.get_Height
-- CoreWebView2WindowFeatures.get_Left
-- CoreWebView2WindowFeatures.get_ShouldDisplayMenuBar
-- CoreWebView2WindowFeatures.get_ShouldDisplayScrollBars
-- CoreWebView2WindowFeatures.get_ShouldDisplayStatus
-- CoreWebView2WindowFeatures.get_ShouldDisplayToolbar
-- CoreWebView2WindowFeatures.get_Top
-- CoreWebView2WindowFeatures.get_Width
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.HasPosition
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.HasSize
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.Height
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.Left
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.ShouldDisplayMenuBar
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.ShouldDisplayScrollBars
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.ShouldDisplayStatus
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.ShouldDisplayToolbar
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.Top
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.Width
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_HasPosition
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_HasSize
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_Height
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_Left
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_ShouldDisplayMenuBar
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_ShouldDisplayScrollBars
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_ShouldDisplayStatus
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_ShouldDisplayToolbar
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_Top
+- Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures.get_Width
 ---
 
 # CoreWebView2WindowFeatures Class

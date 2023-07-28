@@ -10,18 +10,18 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2WebResourceRequest
-- CoreWebView2WebResourceRequest.Content
-- CoreWebView2WebResourceRequest.Headers
-- CoreWebView2WebResourceRequest.Method
-- CoreWebView2WebResourceRequest.Uri
-- CoreWebView2WebResourceRequest.get_Content
-- CoreWebView2WebResourceRequest.get_Headers
-- CoreWebView2WebResourceRequest.get_Method
-- CoreWebView2WebResourceRequest.get_Uri
-- CoreWebView2WebResourceRequest.put_Content
-- CoreWebView2WebResourceRequest.put_Method
-- CoreWebView2WebResourceRequest.put_Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.Content
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.Headers
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.Method
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.get_Content
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.get_Headers
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.get_Method
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.get_Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.put_Content
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.put_Method
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequest.put_Uri
 ---
 
 # CoreWebView2WebResourceRequest Class

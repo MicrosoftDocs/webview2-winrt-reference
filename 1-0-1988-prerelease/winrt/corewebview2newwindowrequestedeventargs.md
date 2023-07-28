@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.NewWindowRequested event.
 title: CoreWebView2NewWindowRequestedEventArgs
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2NewWindowRequestedEventArgs
 topic_type:
 - APIRef
@@ -10,22 +10,22 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2NewWindowRequestedEventArgs
-- CoreWebView2NewWindowRequestedEventArgs.Handled
-- CoreWebView2NewWindowRequestedEventArgs.IsUserInitiated
-- CoreWebView2NewWindowRequestedEventArgs.Name
-- CoreWebView2NewWindowRequestedEventArgs.NewWindow
-- CoreWebView2NewWindowRequestedEventArgs.Uri
-- CoreWebView2NewWindowRequestedEventArgs.WindowFeatures
-- CoreWebView2NewWindowRequestedEventArgs.GetDeferral
-- CoreWebView2NewWindowRequestedEventArgs.get_Handled
-- CoreWebView2NewWindowRequestedEventArgs.get_IsUserInitiated
-- CoreWebView2NewWindowRequestedEventArgs.get_Name
-- CoreWebView2NewWindowRequestedEventArgs.get_NewWindow
-- CoreWebView2NewWindowRequestedEventArgs.get_Uri
-- CoreWebView2NewWindowRequestedEventArgs.get_WindowFeatures
-- CoreWebView2NewWindowRequestedEventArgs.put_Handled
-- CoreWebView2NewWindowRequestedEventArgs.put_NewWindow
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.IsUserInitiated
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.Name
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.NewWindow
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.WindowFeatures
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.GetDeferral
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.get_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.get_IsUserInitiated
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.get_Name
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.get_NewWindow
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.get_Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.get_WindowFeatures
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.put_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.put_NewWindow
 ---
 
 # CoreWebView2NewWindowRequestedEventArgs Class

@@ -1,7 +1,7 @@
 ---
 description: CoreWebView2Frame provides direct access to the iframes information and handling. You can get a CoreWebView2Frame by handling the CoreWebView2.FrameCreated event.
 title: CoreWebView2Frame
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Frame
 topic_type:
 - APIRef
@@ -10,41 +10,41 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2Frame
-- CoreWebView2Frame.FrameId
-- CoreWebView2Frame.Name
-- CoreWebView2Frame.ExecuteScriptAsync
-- CoreWebView2Frame.IsDestroyed
-- CoreWebView2Frame.PostSharedBufferToScript
-- CoreWebView2Frame.PostWebMessageAsJson
-- CoreWebView2Frame.PostWebMessageAsString
-- CoreWebView2Frame.RemoveHostObjectFromScript
-- CoreWebView2Frame.add_ContentLoading
-- CoreWebView2Frame.add_DOMContentLoaded
-- CoreWebView2Frame.add_Destroyed
-- CoreWebView2Frame.add_NameChanged
-- CoreWebView2Frame.add_NavigationCompleted
-- CoreWebView2Frame.add_NavigationStarting
-- CoreWebView2Frame.add_PermissionRequested
-- CoreWebView2Frame.add_WebMessageReceived
-- CoreWebView2Frame.get_FrameId
-- CoreWebView2Frame.get_Name
-- CoreWebView2Frame.remove_ContentLoading
-- CoreWebView2Frame.remove_DOMContentLoaded
-- CoreWebView2Frame.remove_Destroyed
-- CoreWebView2Frame.remove_NameChanged
-- CoreWebView2Frame.remove_NavigationCompleted
-- CoreWebView2Frame.remove_NavigationStarting
-- CoreWebView2Frame.remove_PermissionRequested
-- CoreWebView2Frame.remove_WebMessageReceived
-- CoreWebView2Frame.ContentLoading
-- CoreWebView2Frame.DOMContentLoaded
-- CoreWebView2Frame.Destroyed
-- CoreWebView2Frame.NameChanged
-- CoreWebView2Frame.NavigationCompleted
-- CoreWebView2Frame.NavigationStarting
-- CoreWebView2Frame.PermissionRequested
-- CoreWebView2Frame.WebMessageReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.FrameId
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.Name
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.ExecuteScriptAsync
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.IsDestroyed
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.PostSharedBufferToScript
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.PostWebMessageAsJson
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.PostWebMessageAsString
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.RemoveHostObjectFromScript
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.add_ContentLoading
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.add_DOMContentLoaded
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.add_Destroyed
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.add_NameChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.add_NavigationCompleted
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.add_NavigationStarting
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.add_PermissionRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.add_WebMessageReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.get_FrameId
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.get_Name
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.remove_ContentLoading
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.remove_DOMContentLoaded
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.remove_Destroyed
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.remove_NameChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.remove_NavigationCompleted
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.remove_NavigationStarting
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.remove_PermissionRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.remove_WebMessageReceived
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.ContentLoading
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.DOMContentLoaded
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.Destroyed
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.NameChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.NavigationCompleted
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.NavigationStarting
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.PermissionRequested
+- Microsoft.Web.WebView2.Core.CoreWebView2Frame.WebMessageReceived
 ---
 
 # CoreWebView2Frame Class

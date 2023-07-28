@@ -10,14 +10,14 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2WebMessageReceivedEventArgs
-- CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects
-- CoreWebView2WebMessageReceivedEventArgs.Source
-- CoreWebView2WebMessageReceivedEventArgs.WebMessageAsJson
-- CoreWebView2WebMessageReceivedEventArgs.TryGetWebMessageAsString
-- CoreWebView2WebMessageReceivedEventArgs.get_AdditionalObjects
-- CoreWebView2WebMessageReceivedEventArgs.get_Source
-- CoreWebView2WebMessageReceivedEventArgs.get_WebMessageAsJson
+- Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs.AdditionalObjects
+- Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs.Source
+- Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs.WebMessageAsJson
+- Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs.TryGetWebMessageAsString
+- Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs.get_AdditionalObjects
+- Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs.get_Source
+- Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs.get_WebMessageAsJson
 ---
 
 # CoreWebView2WebMessageReceivedEventArgs Class

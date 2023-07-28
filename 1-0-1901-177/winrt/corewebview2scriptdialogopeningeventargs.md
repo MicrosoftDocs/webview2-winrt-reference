@@ -10,20 +10,20 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2ScriptDialogOpeningEventArgs
-- CoreWebView2ScriptDialogOpeningEventArgs.DefaultText
-- CoreWebView2ScriptDialogOpeningEventArgs.Kind
-- CoreWebView2ScriptDialogOpeningEventArgs.Message
-- CoreWebView2ScriptDialogOpeningEventArgs.ResultText
-- CoreWebView2ScriptDialogOpeningEventArgs.Uri
-- CoreWebView2ScriptDialogOpeningEventArgs.Accept
-- CoreWebView2ScriptDialogOpeningEventArgs.GetDeferral
-- CoreWebView2ScriptDialogOpeningEventArgs.get_DefaultText
-- CoreWebView2ScriptDialogOpeningEventArgs.get_Kind
-- CoreWebView2ScriptDialogOpeningEventArgs.get_Message
-- CoreWebView2ScriptDialogOpeningEventArgs.get_ResultText
-- CoreWebView2ScriptDialogOpeningEventArgs.get_Uri
-- CoreWebView2ScriptDialogOpeningEventArgs.put_ResultText
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs.DefaultText
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs.Kind
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs.Message
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs.ResultText
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs.Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs.Accept
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs.GetDeferral
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs.get_DefaultText
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs.get_Kind
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs.get_Message
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs.get_ResultText
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs.get_Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs.put_ResultText
 ---
 
 # CoreWebView2ScriptDialogOpeningEventArgs Class

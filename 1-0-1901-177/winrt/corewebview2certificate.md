@@ -10,23 +10,23 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2Certificate
-- CoreWebView2Certificate.DerEncodedSerialNumber
-- CoreWebView2Certificate.DisplayName
-- CoreWebView2Certificate.Issuer
-- CoreWebView2Certificate.PemEncodedIssuerCertificateChain
-- CoreWebView2Certificate.Subject
-- CoreWebView2Certificate.ValidFrom
-- CoreWebView2Certificate.ValidTo
-- CoreWebView2Certificate.ToCertificate
-- CoreWebView2Certificate.ToPemEncoding
-- CoreWebView2Certificate.get_DerEncodedSerialNumber
-- CoreWebView2Certificate.get_DisplayName
-- CoreWebView2Certificate.get_Issuer
-- CoreWebView2Certificate.get_PemEncodedIssuerCertificateChain
-- CoreWebView2Certificate.get_Subject
-- CoreWebView2Certificate.get_ValidFrom
-- CoreWebView2Certificate.get_ValidTo
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.DerEncodedSerialNumber
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.DisplayName
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.Issuer
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.PemEncodedIssuerCertificateChain
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.Subject
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.ValidFrom
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.ValidTo
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.ToCertificate
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.ToPemEncoding
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.get_DerEncodedSerialNumber
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.get_DisplayName
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.get_Issuer
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.get_PemEncodedIssuerCertificateChain
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.get_Subject
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.get_ValidFrom
+- Microsoft.Web.WebView2.Core.CoreWebView2Certificate.get_ValidTo
 ---
 
 # CoreWebView2Certificate Class

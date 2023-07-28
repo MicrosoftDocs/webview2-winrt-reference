@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2Controller.AcceleratorKeyPressed event.
 title: CoreWebView2AcceleratorKeyPressedEventArgs
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2AcceleratorKeyPressedEventArgs
 topic_type:
 - APIRef
@@ -10,18 +10,18 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2AcceleratorKeyPressedEventArgs
-- CoreWebView2AcceleratorKeyPressedEventArgs.Handled
-- CoreWebView2AcceleratorKeyPressedEventArgs.KeyEventKind
-- CoreWebView2AcceleratorKeyPressedEventArgs.KeyEventLParam
-- CoreWebView2AcceleratorKeyPressedEventArgs.PhysicalKeyStatus
-- CoreWebView2AcceleratorKeyPressedEventArgs.VirtualKey
-- CoreWebView2AcceleratorKeyPressedEventArgs.get_Handled
-- CoreWebView2AcceleratorKeyPressedEventArgs.get_KeyEventKind
-- CoreWebView2AcceleratorKeyPressedEventArgs.get_KeyEventLParam
-- CoreWebView2AcceleratorKeyPressedEventArgs.get_PhysicalKeyStatus
-- CoreWebView2AcceleratorKeyPressedEventArgs.get_VirtualKey
-- CoreWebView2AcceleratorKeyPressedEventArgs.put_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs.Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs.KeyEventKind
+- Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs.KeyEventLParam
+- Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs.PhysicalKeyStatus
+- Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs.VirtualKey
+- Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs.get_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs.get_KeyEventKind
+- Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs.get_KeyEventLParam
+- Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs.get_PhysicalKeyStatus
+- Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs.get_VirtualKey
+- Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs.put_Handled
 ---
 
 # CoreWebView2AcceleratorKeyPressedEventArgs Class

@@ -1,7 +1,7 @@
 ---
 description: Represents a context menu item of a context menu displayed by WebView.
 title: CoreWebView2ContextMenuItem
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContextMenuItem
 topic_type:
 - APIRef
@@ -10,30 +10,30 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2ContextMenuItem
-- CoreWebView2ContextMenuItem.Children
-- CoreWebView2ContextMenuItem.CommandId
-- CoreWebView2ContextMenuItem.Icon
-- CoreWebView2ContextMenuItem.IsChecked
-- CoreWebView2ContextMenuItem.IsEnabled
-- CoreWebView2ContextMenuItem.Kind
-- CoreWebView2ContextMenuItem.Label
-- CoreWebView2ContextMenuItem.Name
-- CoreWebView2ContextMenuItem.ShortcutKeyDescription
-- CoreWebView2ContextMenuItem.add_CustomItemSelected
-- CoreWebView2ContextMenuItem.get_Children
-- CoreWebView2ContextMenuItem.get_CommandId
-- CoreWebView2ContextMenuItem.get_Icon
-- CoreWebView2ContextMenuItem.get_IsChecked
-- CoreWebView2ContextMenuItem.get_IsEnabled
-- CoreWebView2ContextMenuItem.get_Kind
-- CoreWebView2ContextMenuItem.get_Label
-- CoreWebView2ContextMenuItem.get_Name
-- CoreWebView2ContextMenuItem.get_ShortcutKeyDescription
-- CoreWebView2ContextMenuItem.put_IsChecked
-- CoreWebView2ContextMenuItem.put_IsEnabled
-- CoreWebView2ContextMenuItem.remove_CustomItemSelected
-- CoreWebView2ContextMenuItem.CustomItemSelected
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.Children
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.CommandId
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.Icon
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.IsChecked
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.IsEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.Kind
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.Label
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.Name
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.ShortcutKeyDescription
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.add_CustomItemSelected
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_Children
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_CommandId
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_Icon
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_IsChecked
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_IsEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_Kind
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_Label
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_Name
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.get_ShortcutKeyDescription
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.put_IsChecked
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.put_IsEnabled
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.remove_CustomItemSelected
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItem.CustomItemSelected
 ---
 
 # CoreWebView2ContextMenuItem Class

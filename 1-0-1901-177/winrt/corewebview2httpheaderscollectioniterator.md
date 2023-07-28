@@ -10,13 +10,13 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2HttpHeadersCollectionIterator
-- CoreWebView2HttpHeadersCollectionIterator.Current
-- CoreWebView2HttpHeadersCollectionIterator.HasCurrent
-- CoreWebView2HttpHeadersCollectionIterator.GetMany
-- CoreWebView2HttpHeadersCollectionIterator.MoveNext
-- CoreWebView2HttpHeadersCollectionIterator.get_Current
-- CoreWebView2HttpHeadersCollectionIterator.get_HasCurrent
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpHeadersCollectionIterator
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpHeadersCollectionIterator.Current
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpHeadersCollectionIterator.HasCurrent
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpHeadersCollectionIterator.GetMany
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpHeadersCollectionIterator.MoveNext
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpHeadersCollectionIterator.get_Current
+- Microsoft.Web.WebView2.Core.CoreWebView2HttpHeadersCollectionIterator.get_HasCurrent
 ---
 
 # CoreWebView2HttpHeadersCollectionIterator Class

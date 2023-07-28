@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.ContentLoading event.
 title: CoreWebView2ContentLoadingEventArgs
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContentLoadingEventArgs
 topic_type:
 - APIRef
@@ -10,11 +10,11 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2ContentLoadingEventArgs
-- CoreWebView2ContentLoadingEventArgs.IsErrorPage
-- CoreWebView2ContentLoadingEventArgs.NavigationId
-- CoreWebView2ContentLoadingEventArgs.get_IsErrorPage
-- CoreWebView2ContentLoadingEventArgs.get_NavigationId
+- Microsoft.Web.WebView2.Core.CoreWebView2ContentLoadingEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2ContentLoadingEventArgs.IsErrorPage
+- Microsoft.Web.WebView2.Core.CoreWebView2ContentLoadingEventArgs.NavigationId
+- Microsoft.Web.WebView2.Core.CoreWebView2ContentLoadingEventArgs.get_IsErrorPage
+- Microsoft.Web.WebView2.Core.CoreWebView2ContentLoadingEventArgs.get_NavigationId
 ---
 
 # CoreWebView2ContentLoadingEventArgs Class

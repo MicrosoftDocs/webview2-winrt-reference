@@ -10,25 +10,25 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2NavigationStartingEventArgs
-- CoreWebView2NavigationStartingEventArgs.AdditionalAllowedFrameAncestors
-- CoreWebView2NavigationStartingEventArgs.Cancel
-- CoreWebView2NavigationStartingEventArgs.IsRedirected
-- CoreWebView2NavigationStartingEventArgs.IsUserInitiated
-- CoreWebView2NavigationStartingEventArgs.NavigationId
-- CoreWebView2NavigationStartingEventArgs.NavigationKind
-- CoreWebView2NavigationStartingEventArgs.RequestHeaders
-- CoreWebView2NavigationStartingEventArgs.Uri
-- CoreWebView2NavigationStartingEventArgs.get_AdditionalAllowedFrameAncestors
-- CoreWebView2NavigationStartingEventArgs.get_Cancel
-- CoreWebView2NavigationStartingEventArgs.get_IsRedirected
-- CoreWebView2NavigationStartingEventArgs.get_IsUserInitiated
-- CoreWebView2NavigationStartingEventArgs.get_NavigationId
-- CoreWebView2NavigationStartingEventArgs.get_NavigationKind
-- CoreWebView2NavigationStartingEventArgs.get_RequestHeaders
-- CoreWebView2NavigationStartingEventArgs.get_Uri
-- CoreWebView2NavigationStartingEventArgs.put_AdditionalAllowedFrameAncestors
-- CoreWebView2NavigationStartingEventArgs.put_Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.AdditionalAllowedFrameAncestors
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.IsRedirected
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.IsUserInitiated
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.NavigationId
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.NavigationKind
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.RequestHeaders
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_AdditionalAllowedFrameAncestors
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_IsRedirected
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_IsUserInitiated
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_NavigationId
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_NavigationKind
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_RequestHeaders
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.get_Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.put_AdditionalAllowedFrameAncestors
+- Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.put_Cancel
 ---
 
 # CoreWebView2NavigationStartingEventArgs Class

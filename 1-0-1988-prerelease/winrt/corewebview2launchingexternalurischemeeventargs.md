@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.LaunchingExternalUriScheme event.
 title: CoreWebView2LaunchingExternalUriSchemeEventArgs
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2LaunchingExternalUriSchemeEventArgs
 topic_type:
 - APIRef
@@ -10,17 +10,17 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2LaunchingExternalUriSchemeEventArgs
-- CoreWebView2LaunchingExternalUriSchemeEventArgs.Cancel
-- CoreWebView2LaunchingExternalUriSchemeEventArgs.InitiatingOrigin
-- CoreWebView2LaunchingExternalUriSchemeEventArgs.IsUserInitiated
-- CoreWebView2LaunchingExternalUriSchemeEventArgs.Uri
-- CoreWebView2LaunchingExternalUriSchemeEventArgs.GetDeferral
-- CoreWebView2LaunchingExternalUriSchemeEventArgs.get_Cancel
-- CoreWebView2LaunchingExternalUriSchemeEventArgs.get_InitiatingOrigin
-- CoreWebView2LaunchingExternalUriSchemeEventArgs.get_IsUserInitiated
-- CoreWebView2LaunchingExternalUriSchemeEventArgs.get_Uri
-- CoreWebView2LaunchingExternalUriSchemeEventArgs.put_Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2LaunchingExternalUriSchemeEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2LaunchingExternalUriSchemeEventArgs.Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2LaunchingExternalUriSchemeEventArgs.InitiatingOrigin
+- Microsoft.Web.WebView2.Core.CoreWebView2LaunchingExternalUriSchemeEventArgs.IsUserInitiated
+- Microsoft.Web.WebView2.Core.CoreWebView2LaunchingExternalUriSchemeEventArgs.Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2LaunchingExternalUriSchemeEventArgs.GetDeferral
+- Microsoft.Web.WebView2.Core.CoreWebView2LaunchingExternalUriSchemeEventArgs.get_Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2LaunchingExternalUriSchemeEventArgs.get_InitiatingOrigin
+- Microsoft.Web.WebView2.Core.CoreWebView2LaunchingExternalUriSchemeEventArgs.get_IsUserInitiated
+- Microsoft.Web.WebView2.Core.CoreWebView2LaunchingExternalUriSchemeEventArgs.get_Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2LaunchingExternalUriSchemeEventArgs.put_Cancel
 ---
 
 # CoreWebView2LaunchingExternalUriSchemeEventArgs Class

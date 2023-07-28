@@ -10,33 +10,33 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2ContextMenuTarget
-- CoreWebView2ContextMenuTarget.FrameUri
-- CoreWebView2ContextMenuTarget.HasLinkText
-- CoreWebView2ContextMenuTarget.HasLinkUri
-- CoreWebView2ContextMenuTarget.HasSelection
-- CoreWebView2ContextMenuTarget.HasSourceUri
-- CoreWebView2ContextMenuTarget.IsEditable
-- CoreWebView2ContextMenuTarget.IsRequestedForMainFrame
-- CoreWebView2ContextMenuTarget.Kind
-- CoreWebView2ContextMenuTarget.LinkText
-- CoreWebView2ContextMenuTarget.LinkUri
-- CoreWebView2ContextMenuTarget.PageUri
-- CoreWebView2ContextMenuTarget.SelectionText
-- CoreWebView2ContextMenuTarget.SourceUri
-- CoreWebView2ContextMenuTarget.get_FrameUri
-- CoreWebView2ContextMenuTarget.get_HasLinkText
-- CoreWebView2ContextMenuTarget.get_HasLinkUri
-- CoreWebView2ContextMenuTarget.get_HasSelection
-- CoreWebView2ContextMenuTarget.get_HasSourceUri
-- CoreWebView2ContextMenuTarget.get_IsEditable
-- CoreWebView2ContextMenuTarget.get_IsRequestedForMainFrame
-- CoreWebView2ContextMenuTarget.get_Kind
-- CoreWebView2ContextMenuTarget.get_LinkText
-- CoreWebView2ContextMenuTarget.get_LinkUri
-- CoreWebView2ContextMenuTarget.get_PageUri
-- CoreWebView2ContextMenuTarget.get_SelectionText
-- CoreWebView2ContextMenuTarget.get_SourceUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.FrameUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.HasLinkText
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.HasLinkUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.HasSelection
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.HasSourceUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.IsEditable
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.IsRequestedForMainFrame
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.Kind
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.LinkText
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.LinkUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.PageUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.SelectionText
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.SourceUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_FrameUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_HasLinkText
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_HasLinkUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_HasSelection
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_HasSourceUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_IsEditable
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_IsRequestedForMainFrame
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_Kind
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_LinkText
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_LinkUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_PageUri
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_SelectionText
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuTarget.get_SourceUri
 ---
 
 # CoreWebView2ContextMenuTarget Class

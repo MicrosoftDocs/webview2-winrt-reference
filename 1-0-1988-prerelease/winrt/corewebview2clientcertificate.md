@@ -1,7 +1,7 @@
 ---
 description: Represents a client certificate. Gives access to a certificate's metadata.
 title: CoreWebView2ClientCertificate
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ClientCertificate
 topic_type:
 - APIRef
@@ -10,25 +10,25 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2ClientCertificate
-- CoreWebView2ClientCertificate.DerEncodedSerialNumber
-- CoreWebView2ClientCertificate.DisplayName
-- CoreWebView2ClientCertificate.Issuer
-- CoreWebView2ClientCertificate.Kind
-- CoreWebView2ClientCertificate.PemEncodedIssuerCertificateChain
-- CoreWebView2ClientCertificate.Subject
-- CoreWebView2ClientCertificate.ValidFrom
-- CoreWebView2ClientCertificate.ValidTo
-- CoreWebView2ClientCertificate.ToCertificate
-- CoreWebView2ClientCertificate.ToPemEncoding
-- CoreWebView2ClientCertificate.get_DerEncodedSerialNumber
-- CoreWebView2ClientCertificate.get_DisplayName
-- CoreWebView2ClientCertificate.get_Issuer
-- CoreWebView2ClientCertificate.get_Kind
-- CoreWebView2ClientCertificate.get_PemEncodedIssuerCertificateChain
-- CoreWebView2ClientCertificate.get_Subject
-- CoreWebView2ClientCertificate.get_ValidFrom
-- CoreWebView2ClientCertificate.get_ValidTo
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.DerEncodedSerialNumber
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.DisplayName
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.Issuer
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.Kind
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.PemEncodedIssuerCertificateChain
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.Subject
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.ValidFrom
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.ValidTo
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.ToCertificate
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.ToPemEncoding
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.get_DerEncodedSerialNumber
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.get_DisplayName
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.get_Issuer
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.get_Kind
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.get_PemEncodedIssuerCertificateChain
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.get_Subject
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.get_ValidFrom
+- Microsoft.Web.WebView2.Core.CoreWebView2ClientCertificate.get_ValidTo
 ---
 
 # CoreWebView2ClientCertificate Class

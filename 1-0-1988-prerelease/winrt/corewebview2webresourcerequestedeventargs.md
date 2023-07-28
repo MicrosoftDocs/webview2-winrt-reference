@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.WebResourceRequested event.
 title: CoreWebView2WebResourceRequestedEventArgs
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebResourceRequestedEventArgs
 topic_type:
 - APIRef
@@ -10,17 +10,17 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2WebResourceRequestedEventArgs
-- CoreWebView2WebResourceRequestedEventArgs.Request
-- CoreWebView2WebResourceRequestedEventArgs.RequestedSourceKind
-- CoreWebView2WebResourceRequestedEventArgs.ResourceContext
-- CoreWebView2WebResourceRequestedEventArgs.Response
-- CoreWebView2WebResourceRequestedEventArgs.GetDeferral
-- CoreWebView2WebResourceRequestedEventArgs.get_Request
-- CoreWebView2WebResourceRequestedEventArgs.get_RequestedSourceKind
-- CoreWebView2WebResourceRequestedEventArgs.get_ResourceContext
-- CoreWebView2WebResourceRequestedEventArgs.get_Response
-- CoreWebView2WebResourceRequestedEventArgs.put_Response
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.Request
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.RequestedSourceKind
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.ResourceContext
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.Response
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.GetDeferral
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.get_Request
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.get_RequestedSourceKind
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.get_ResourceContext
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.get_Response
+- Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.put_Response
 ---
 
 # CoreWebView2WebResourceRequestedEventArgs Class

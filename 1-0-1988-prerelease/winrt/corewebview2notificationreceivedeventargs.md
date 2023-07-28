@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.NotificationReceived.
 title: CoreWebView2NotificationReceivedEventArgs
-ms.date: 07/27/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2NotificationReceivedEventArgs
 topic_type:
 - APIRef
@@ -10,15 +10,15 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2NotificationReceivedEventArgs
-- CoreWebView2NotificationReceivedEventArgs.Handled
-- CoreWebView2NotificationReceivedEventArgs.Notification
-- CoreWebView2NotificationReceivedEventArgs.SenderOrigin
-- CoreWebView2NotificationReceivedEventArgs.GetDeferral
-- CoreWebView2NotificationReceivedEventArgs.get_Handled
-- CoreWebView2NotificationReceivedEventArgs.get_Notification
-- CoreWebView2NotificationReceivedEventArgs.get_SenderOrigin
-- CoreWebView2NotificationReceivedEventArgs.put_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2NotificationReceivedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2NotificationReceivedEventArgs.Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2NotificationReceivedEventArgs.Notification
+- Microsoft.Web.WebView2.Core.CoreWebView2NotificationReceivedEventArgs.SenderOrigin
+- Microsoft.Web.WebView2.Core.CoreWebView2NotificationReceivedEventArgs.GetDeferral
+- Microsoft.Web.WebView2.Core.CoreWebView2NotificationReceivedEventArgs.get_Handled
+- Microsoft.Web.WebView2.Core.CoreWebView2NotificationReceivedEventArgs.get_Notification
+- Microsoft.Web.WebView2.Core.CoreWebView2NotificationReceivedEventArgs.get_SenderOrigin
+- Microsoft.Web.WebView2.Core.CoreWebView2NotificationReceivedEventArgs.put_Handled
 ---
 
 # CoreWebView2NotificationReceivedEventArgs Class

@@ -1,7 +1,7 @@
 ---
 description: Specifies the menu item kind for the CoreWebView2ContextMenuItem.Kind property.
 title: CoreWebView2ContextMenuItemKind
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContextMenuItemKind
 topic_type:
 - APIRef
@@ -10,7 +10,7 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2ContextMenuItemKind
+- Microsoft.Web.WebView2.Core.CoreWebView2ContextMenuItemKind
 ---
 
 # CoreWebView2ContextMenuItemKind Enum

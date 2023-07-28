@@ -10,17 +10,17 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2ProcessFailedEventArgs
-- CoreWebView2ProcessFailedEventArgs.ExitCode
-- CoreWebView2ProcessFailedEventArgs.FrameInfosForFailedProcess
-- CoreWebView2ProcessFailedEventArgs.ProcessDescription
-- CoreWebView2ProcessFailedEventArgs.ProcessFailedKind
-- CoreWebView2ProcessFailedEventArgs.Reason
-- CoreWebView2ProcessFailedEventArgs.get_ExitCode
-- CoreWebView2ProcessFailedEventArgs.get_FrameInfosForFailedProcess
-- CoreWebView2ProcessFailedEventArgs.get_ProcessDescription
-- CoreWebView2ProcessFailedEventArgs.get_ProcessFailedKind
-- CoreWebView2ProcessFailedEventArgs.get_Reason
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs.ExitCode
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs.FrameInfosForFailedProcess
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs.ProcessDescription
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs.ProcessFailedKind
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs.Reason
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs.get_ExitCode
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs.get_FrameInfosForFailedProcess
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs.get_ProcessDescription
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs.get_ProcessFailedKind
+- Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs.get_Reason
 ---
 
 # CoreWebView2ProcessFailedEventArgs Class

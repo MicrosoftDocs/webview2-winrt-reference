@@ -10,13 +10,13 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2SharedBuffer
-- CoreWebView2SharedBuffer.Buffer
-- CoreWebView2SharedBuffer.Size
-- CoreWebView2SharedBuffer.Close
-- CoreWebView2SharedBuffer.OpenStream
-- CoreWebView2SharedBuffer.get_Buffer
-- CoreWebView2SharedBuffer.get_Size
+- Microsoft.Web.WebView2.Core.CoreWebView2SharedBuffer
+- Microsoft.Web.WebView2.Core.CoreWebView2SharedBuffer.Buffer
+- Microsoft.Web.WebView2.Core.CoreWebView2SharedBuffer.Size
+- Microsoft.Web.WebView2.Core.CoreWebView2SharedBuffer.Close
+- Microsoft.Web.WebView2.Core.CoreWebView2SharedBuffer.OpenStream
+- Microsoft.Web.WebView2.Core.CoreWebView2SharedBuffer.get_Buffer
+- Microsoft.Web.WebView2.Core.CoreWebView2SharedBuffer.get_Size
 ---
 
 # CoreWebView2SharedBuffer Class

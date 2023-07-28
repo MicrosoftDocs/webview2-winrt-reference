@@ -10,13 +10,13 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2ControllerWindowReference
-- CoreWebView2ControllerWindowReference.CoreWindow
-- CoreWebView2ControllerWindowReference.WindowHandle
-- CoreWebView2ControllerWindowReference.CreateFromCoreWindow
-- CoreWebView2ControllerWindowReference.CreateFromWindowHandle
-- CoreWebView2ControllerWindowReference.get_CoreWindow
-- CoreWebView2ControllerWindowReference.get_WindowHandle
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerWindowReference
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerWindowReference.CoreWindow
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerWindowReference.WindowHandle
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerWindowReference.CreateFromCoreWindow
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerWindowReference.CreateFromWindowHandle
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerWindowReference.get_CoreWindow
+- Microsoft.Web.WebView2.Core.CoreWebView2ControllerWindowReference.get_WindowHandle
 ---
 
 # CoreWebView2ControllerWindowReference Class

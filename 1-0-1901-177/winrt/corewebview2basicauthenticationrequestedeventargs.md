@@ -10,17 +10,17 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2BasicAuthenticationRequestedEventArgs
-- CoreWebView2BasicAuthenticationRequestedEventArgs.Cancel
-- CoreWebView2BasicAuthenticationRequestedEventArgs.Challenge
-- CoreWebView2BasicAuthenticationRequestedEventArgs.Response
-- CoreWebView2BasicAuthenticationRequestedEventArgs.Uri
-- CoreWebView2BasicAuthenticationRequestedEventArgs.GetDeferral
-- CoreWebView2BasicAuthenticationRequestedEventArgs.get_Cancel
-- CoreWebView2BasicAuthenticationRequestedEventArgs.get_Challenge
-- CoreWebView2BasicAuthenticationRequestedEventArgs.get_Response
-- CoreWebView2BasicAuthenticationRequestedEventArgs.get_Uri
-- CoreWebView2BasicAuthenticationRequestedEventArgs.put_Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationRequestedEventArgs
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationRequestedEventArgs.Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationRequestedEventArgs.Challenge
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationRequestedEventArgs.Response
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationRequestedEventArgs.Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationRequestedEventArgs.GetDeferral
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationRequestedEventArgs.get_Cancel
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationRequestedEventArgs.get_Challenge
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationRequestedEventArgs.get_Response
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationRequestedEventArgs.get_Uri
+- Microsoft.Web.WebView2.Core.CoreWebView2BasicAuthenticationRequestedEventArgs.put_Cancel
 ---
 
 # CoreWebView2BasicAuthenticationRequestedEventArgs Class

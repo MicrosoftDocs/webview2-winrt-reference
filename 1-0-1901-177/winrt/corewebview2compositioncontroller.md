@@ -10,21 +10,21 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2CompositionController
-- CoreWebView2CompositionController.Cursor
-- CoreWebView2CompositionController.RootVisualTarget
-- CoreWebView2CompositionController.DragEnter
-- CoreWebView2CompositionController.DragLeave
-- CoreWebView2CompositionController.DragOver
-- CoreWebView2CompositionController.Drop
-- CoreWebView2CompositionController.SendMouseInput
-- CoreWebView2CompositionController.SendPointerInput
-- CoreWebView2CompositionController.add_CursorChanged
-- CoreWebView2CompositionController.get_Cursor
-- CoreWebView2CompositionController.get_RootVisualTarget
-- CoreWebView2CompositionController.put_RootVisualTarget
-- CoreWebView2CompositionController.remove_CursorChanged
-- CoreWebView2CompositionController.CursorChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2CompositionController
+- Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.Cursor
+- Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.RootVisualTarget
+- Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.DragEnter
+- Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.DragLeave
+- Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.DragOver
+- Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.Drop
+- Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.SendMouseInput
+- Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.SendPointerInput
+- Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.add_CursorChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.get_Cursor
+- Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.get_RootVisualTarget
+- Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.put_RootVisualTarget
+- Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.remove_CursorChanged
+- Microsoft.Web.WebView2.Core.CoreWebView2CompositionController.CursorChanged
 ---
 
 # CoreWebView2CompositionController Class

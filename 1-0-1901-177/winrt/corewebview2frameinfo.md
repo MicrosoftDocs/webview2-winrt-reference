@@ -10,11 +10,11 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2FrameInfo
-- CoreWebView2FrameInfo.Name
-- CoreWebView2FrameInfo.Source
-- CoreWebView2FrameInfo.get_Name
-- CoreWebView2FrameInfo.get_Source
+- Microsoft.Web.WebView2.Core.CoreWebView2FrameInfo
+- Microsoft.Web.WebView2.Core.CoreWebView2FrameInfo.Name
+- Microsoft.Web.WebView2.Core.CoreWebView2FrameInfo.Source
+- Microsoft.Web.WebView2.Core.CoreWebView2FrameInfo.get_Name
+- Microsoft.Web.WebView2.Core.CoreWebView2FrameInfo.get_Source
 ---
 
 # CoreWebView2FrameInfo Class

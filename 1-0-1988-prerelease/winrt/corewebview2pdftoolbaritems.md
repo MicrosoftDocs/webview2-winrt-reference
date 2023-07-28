@@ -1,7 +1,7 @@
 ---
 description: Specifies the PDF toolbar item types used for the CoreWebView2Settings.HiddenPdfToolbarItems.
 title: CoreWebView2PdfToolbarItems
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PdfToolbarItems
 topic_type:
 - APIRef
@@ -10,7 +10,7 @@ api_type:
 api_location:
 - Microsoft.Web.WebView2.Core.dll
 api_name:
-- CoreWebView2PdfToolbarItems
+- Microsoft.Web.WebView2.Core.CoreWebView2PdfToolbarItems
 ---
 
 # CoreWebView2PdfToolbarItems Enum
