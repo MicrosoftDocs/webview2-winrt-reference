@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2Controller.AcceleratorKeyPressed event.
 title: CoreWebView2AcceleratorKeyPressedEventArgs
-ms.date: 07/26/2023
+ms.date: 07/27/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2AcceleratorKeyPressedEventArgs
 topic_type:
 - APIRef
@@ -16,6 +16,12 @@ api_name:
 - CoreWebView2AcceleratorKeyPressedEventArgs.KeyEventLParam
 - CoreWebView2AcceleratorKeyPressedEventArgs.PhysicalKeyStatus
 - CoreWebView2AcceleratorKeyPressedEventArgs.VirtualKey
+- CoreWebView2AcceleratorKeyPressedEventArgs.get_Handled
+- CoreWebView2AcceleratorKeyPressedEventArgs.get_KeyEventKind
+- CoreWebView2AcceleratorKeyPressedEventArgs.get_KeyEventLParam
+- CoreWebView2AcceleratorKeyPressedEventArgs.get_PhysicalKeyStatus
+- CoreWebView2AcceleratorKeyPressedEventArgs.get_VirtualKey
+- CoreWebView2AcceleratorKeyPressedEventArgs.put_Handled
 ---
 
 # CoreWebView2AcceleratorKeyPressedEventArgs Class

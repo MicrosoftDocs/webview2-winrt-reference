@@ -1,7 +1,7 @@
 ---
 description: This represents the WebView2 Environment.
 title: CoreWebView2Environment
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Environment
 topic_type:
 - APIRef
@@ -31,6 +31,15 @@ api_name:
 - CoreWebView2Environment.GetAvailableBrowserVersionString
 - CoreWebView2Environment.GetAvailableBrowserVersionString
 - CoreWebView2Environment.GetProcessInfos
+- CoreWebView2Environment.add_BrowserProcessExited
+- CoreWebView2Environment.add_NewBrowserVersionAvailable
+- CoreWebView2Environment.add_ProcessInfosChanged
+- CoreWebView2Environment.get_BrowserVersionString
+- CoreWebView2Environment.get_FailureReportFolderPath
+- CoreWebView2Environment.get_UserDataFolder
+- CoreWebView2Environment.remove_BrowserProcessExited
+- CoreWebView2Environment.remove_NewBrowserVersionAvailable
+- CoreWebView2Environment.remove_ProcessInfosChanged
 - CoreWebView2Environment.BrowserProcessExited
 - CoreWebView2Environment.NewBrowserVersionAvailable
 - CoreWebView2Environment.ProcessInfosChanged

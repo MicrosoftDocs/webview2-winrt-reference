@@ -1,7 +1,7 @@
 ---
 description: View of the HTTP representation for a web resource response.
 title: CoreWebView2WebResourceResponseView
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebResourceResponseView
 topic_type:
 - APIRef
@@ -15,6 +15,9 @@ api_name:
 - CoreWebView2WebResourceResponseView.ReasonPhrase
 - CoreWebView2WebResourceResponseView.StatusCode
 - CoreWebView2WebResourceResponseView.GetContentAsync
+- CoreWebView2WebResourceResponseView.get_Headers
+- CoreWebView2WebResourceResponseView.get_ReasonPhrase
+- CoreWebView2WebResourceResponseView.get_StatusCode
 ---
 
 # CoreWebView2WebResourceResponseView Class

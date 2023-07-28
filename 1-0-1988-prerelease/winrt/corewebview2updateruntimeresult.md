@@ -1,7 +1,7 @@
 ---
 description: The UpdateRuntime result.
 title: CoreWebView2UpdateRuntimeResult
-ms.date: 07/26/2023
+ms.date: 07/27/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2UpdateRuntimeResult
 topic_type:
 - APIRef
@@ -13,6 +13,8 @@ api_name:
 - CoreWebView2UpdateRuntimeResult
 - CoreWebView2UpdateRuntimeResult.ExtendedError
 - CoreWebView2UpdateRuntimeResult.Status
+- CoreWebView2UpdateRuntimeResult.get_ExtendedError
+- CoreWebView2UpdateRuntimeResult.get_Status
 ---
 
 # CoreWebView2UpdateRuntimeResult Class

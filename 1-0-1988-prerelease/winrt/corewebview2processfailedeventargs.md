@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.ProcessFailed event.
 title: CoreWebView2ProcessFailedEventArgs
-ms.date: 07/26/2023
+ms.date: 07/27/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ProcessFailedEventArgs
 topic_type:
 - APIRef
@@ -16,6 +16,11 @@ api_name:
 - CoreWebView2ProcessFailedEventArgs.ProcessDescription
 - CoreWebView2ProcessFailedEventArgs.ProcessFailedKind
 - CoreWebView2ProcessFailedEventArgs.Reason
+- CoreWebView2ProcessFailedEventArgs.get_ExitCode
+- CoreWebView2ProcessFailedEventArgs.get_FrameInfosForFailedProcess
+- CoreWebView2ProcessFailedEventArgs.get_ProcessDescription
+- CoreWebView2ProcessFailedEventArgs.get_ProcessFailedKind
+- CoreWebView2ProcessFailedEventArgs.get_Reason
 ---
 
 # CoreWebView2ProcessFailedEventArgs Class

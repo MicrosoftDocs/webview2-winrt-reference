@@ -1,7 +1,7 @@
 ---
 description: Represents the registration of a custom scheme with the CoreWebView2Environment.
 title: CoreWebView2CustomSchemeRegistration
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2CustomSchemeRegistration
 topic_type:
 - APIRef
@@ -13,6 +13,10 @@ api_name:
 - CoreWebView2CustomSchemeRegistration
 - CoreWebView2CustomSchemeRegistration.HasAuthorityComponent
 - CoreWebView2CustomSchemeRegistration.TreatAsSecure
+- CoreWebView2CustomSchemeRegistration.get_HasAuthorityComponent
+- CoreWebView2CustomSchemeRegistration.get_TreatAsSecure
+- CoreWebView2CustomSchemeRegistration.put_HasAuthorityComponent
+- CoreWebView2CustomSchemeRegistration.put_TreatAsSecure
 ---
 
 # CoreWebView2CustomSchemeRegistration Class

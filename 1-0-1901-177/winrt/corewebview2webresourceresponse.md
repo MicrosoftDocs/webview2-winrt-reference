@@ -1,7 +1,7 @@
 ---
 description: An HTTP response used with the CoreWebView2.WebResourceRequested event.
 title: CoreWebView2WebResourceResponse
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebResourceResponse
 topic_type:
 - APIRef
@@ -15,6 +15,13 @@ api_name:
 - CoreWebView2WebResourceResponse.Headers
 - CoreWebView2WebResourceResponse.ReasonPhrase
 - CoreWebView2WebResourceResponse.StatusCode
+- CoreWebView2WebResourceResponse.get_Content
+- CoreWebView2WebResourceResponse.get_Headers
+- CoreWebView2WebResourceResponse.get_ReasonPhrase
+- CoreWebView2WebResourceResponse.get_StatusCode
+- CoreWebView2WebResourceResponse.put_Content
+- CoreWebView2WebResourceResponse.put_ReasonPhrase
+- CoreWebView2WebResourceResponse.put_StatusCode
 ---
 
 # CoreWebView2WebResourceResponse Class

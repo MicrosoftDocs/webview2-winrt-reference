@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.WebMessageReceived event.
 title: CoreWebView2WebMessageReceivedEventArgs
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebMessageReceivedEventArgs
 topic_type:
 - APIRef
@@ -15,6 +15,9 @@ api_name:
 - CoreWebView2WebMessageReceivedEventArgs.Source
 - CoreWebView2WebMessageReceivedEventArgs.WebMessageAsJson
 - CoreWebView2WebMessageReceivedEventArgs.TryGetWebMessageAsString
+- CoreWebView2WebMessageReceivedEventArgs.get_AdditionalObjects
+- CoreWebView2WebMessageReceivedEventArgs.get_Source
+- CoreWebView2WebMessageReceivedEventArgs.get_WebMessageAsJson
 ---
 
 # CoreWebView2WebMessageReceivedEventArgs Class

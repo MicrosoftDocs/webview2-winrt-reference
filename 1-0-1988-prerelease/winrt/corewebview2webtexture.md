@@ -1,7 +1,7 @@
 ---
 description: Web Texture that receives from the Javascript.
 title: CoreWebView2WebTexture
-ms.date: 07/26/2023
+ms.date: 07/27/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebTexture
 topic_type:
 - APIRef
@@ -13,6 +13,8 @@ api_name:
 - CoreWebView2WebTexture
 - CoreWebView2WebTexture.Resource
 - CoreWebView2WebTexture.Timestamp
+- CoreWebView2WebTexture.get_Resource
+- CoreWebView2WebTexture.get_Timestamp
 ---
 
 # CoreWebView2WebTexture Class

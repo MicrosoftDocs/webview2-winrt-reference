@@ -1,7 +1,7 @@
 ---
 description: Options used to create WebView2 Environment.
 title: CoreWebView2EnvironmentOptions
-ms.date: 07/26/2023
+ms.date: 07/27/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2EnvironmentOptions
 topic_type:
 - APIRef
@@ -19,6 +19,23 @@ api_name:
 - CoreWebView2EnvironmentOptions.IsCustomCrashReportingEnabled
 - CoreWebView2EnvironmentOptions.Language
 - CoreWebView2EnvironmentOptions.TargetCompatibleBrowserVersion
+- CoreWebView2EnvironmentOptions..ctor
+- CoreWebView2EnvironmentOptions.get_AdditionalBrowserArguments
+- CoreWebView2EnvironmentOptions.get_AllowSingleSignOnUsingOSPrimaryAccount
+- CoreWebView2EnvironmentOptions.get_AreBrowserExtensionsEnabled
+- CoreWebView2EnvironmentOptions.get_EnableTrackingPrevention
+- CoreWebView2EnvironmentOptions.get_ExclusiveUserDataFolderAccess
+- CoreWebView2EnvironmentOptions.get_IsCustomCrashReportingEnabled
+- CoreWebView2EnvironmentOptions.get_Language
+- CoreWebView2EnvironmentOptions.get_TargetCompatibleBrowserVersion
+- CoreWebView2EnvironmentOptions.put_AdditionalBrowserArguments
+- CoreWebView2EnvironmentOptions.put_AllowSingleSignOnUsingOSPrimaryAccount
+- CoreWebView2EnvironmentOptions.put_AreBrowserExtensionsEnabled
+- CoreWebView2EnvironmentOptions.put_EnableTrackingPrevention
+- CoreWebView2EnvironmentOptions.put_ExclusiveUserDataFolderAccess
+- CoreWebView2EnvironmentOptions.put_IsCustomCrashReportingEnabled
+- CoreWebView2EnvironmentOptions.put_Language
+- CoreWebView2EnvironmentOptions.put_TargetCompatibleBrowserVersion
 ---
 
 # CoreWebView2EnvironmentOptions Class

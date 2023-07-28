@@ -1,7 +1,7 @@
 ---
 description: This mostly represents a combined win32 `POINTER_INFO`, `POINTER_TOUCH_INFO`, and `POINTER_PEN_INFO` object.
 title: CoreWebView2PointerInfo
-ms.date: 07/26/2023
+ms.date: 07/27/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PointerInfo
 topic_type:
 - APIRef
@@ -39,6 +39,62 @@ api_name:
 - CoreWebView2PointerInfo.TouchMask
 - CoreWebView2PointerInfo.TouchOrientation
 - CoreWebView2PointerInfo.TouchPressure
+- CoreWebView2PointerInfo.get_ButtonChangeKind
+- CoreWebView2PointerInfo.get_DisplayRect
+- CoreWebView2PointerInfo.get_FrameId
+- CoreWebView2PointerInfo.get_HimetricLocation
+- CoreWebView2PointerInfo.get_HimetricLocationRaw
+- CoreWebView2PointerInfo.get_HistoryCount
+- CoreWebView2PointerInfo.get_InputData
+- CoreWebView2PointerInfo.get_KeyStates
+- CoreWebView2PointerInfo.get_PenFlags
+- CoreWebView2PointerInfo.get_PenMask
+- CoreWebView2PointerInfo.get_PenPressure
+- CoreWebView2PointerInfo.get_PenRotation
+- CoreWebView2PointerInfo.get_PenTiltX
+- CoreWebView2PointerInfo.get_PenTiltY
+- CoreWebView2PointerInfo.get_PerformanceCount
+- CoreWebView2PointerInfo.get_PixelLocation
+- CoreWebView2PointerInfo.get_PixelLocationRaw
+- CoreWebView2PointerInfo.get_PointerDeviceRect
+- CoreWebView2PointerInfo.get_PointerFlags
+- CoreWebView2PointerInfo.get_PointerId
+- CoreWebView2PointerInfo.get_PointerKind
+- CoreWebView2PointerInfo.get_Time
+- CoreWebView2PointerInfo.get_TouchContact
+- CoreWebView2PointerInfo.get_TouchContactRaw
+- CoreWebView2PointerInfo.get_TouchFlags
+- CoreWebView2PointerInfo.get_TouchMask
+- CoreWebView2PointerInfo.get_TouchOrientation
+- CoreWebView2PointerInfo.get_TouchPressure
+- CoreWebView2PointerInfo.put_ButtonChangeKind
+- CoreWebView2PointerInfo.put_DisplayRect
+- CoreWebView2PointerInfo.put_FrameId
+- CoreWebView2PointerInfo.put_HimetricLocation
+- CoreWebView2PointerInfo.put_HimetricLocationRaw
+- CoreWebView2PointerInfo.put_HistoryCount
+- CoreWebView2PointerInfo.put_InputData
+- CoreWebView2PointerInfo.put_KeyStates
+- CoreWebView2PointerInfo.put_PenFlags
+- CoreWebView2PointerInfo.put_PenMask
+- CoreWebView2PointerInfo.put_PenPressure
+- CoreWebView2PointerInfo.put_PenRotation
+- CoreWebView2PointerInfo.put_PenTiltX
+- CoreWebView2PointerInfo.put_PenTiltY
+- CoreWebView2PointerInfo.put_PerformanceCount
+- CoreWebView2PointerInfo.put_PixelLocation
+- CoreWebView2PointerInfo.put_PixelLocationRaw
+- CoreWebView2PointerInfo.put_PointerDeviceRect
+- CoreWebView2PointerInfo.put_PointerFlags
+- CoreWebView2PointerInfo.put_PointerId
+- CoreWebView2PointerInfo.put_PointerKind
+- CoreWebView2PointerInfo.put_Time
+- CoreWebView2PointerInfo.put_TouchContact
+- CoreWebView2PointerInfo.put_TouchContactRaw
+- CoreWebView2PointerInfo.put_TouchFlags
+- CoreWebView2PointerInfo.put_TouchMask
+- CoreWebView2PointerInfo.put_TouchOrientation
+- CoreWebView2PointerInfo.put_TouchPressure
 ---
 
 # CoreWebView2PointerInfo Class

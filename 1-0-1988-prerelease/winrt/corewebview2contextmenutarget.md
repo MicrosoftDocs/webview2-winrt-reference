@@ -1,7 +1,7 @@
 ---
 description: Represents the information regarding the context menu target. Includes the context selected and the appropriate data used for the actions of a context menu.
 title: CoreWebView2ContextMenuTarget
-ms.date: 07/26/2023
+ms.date: 07/27/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContextMenuTarget
 topic_type:
 - APIRef
@@ -24,6 +24,19 @@ api_name:
 - CoreWebView2ContextMenuTarget.PageUri
 - CoreWebView2ContextMenuTarget.SelectionText
 - CoreWebView2ContextMenuTarget.SourceUri
+- CoreWebView2ContextMenuTarget.get_FrameUri
+- CoreWebView2ContextMenuTarget.get_HasLinkText
+- CoreWebView2ContextMenuTarget.get_HasLinkUri
+- CoreWebView2ContextMenuTarget.get_HasSelection
+- CoreWebView2ContextMenuTarget.get_HasSourceUri
+- CoreWebView2ContextMenuTarget.get_IsEditable
+- CoreWebView2ContextMenuTarget.get_IsRequestedForMainFrame
+- CoreWebView2ContextMenuTarget.get_Kind
+- CoreWebView2ContextMenuTarget.get_LinkText
+- CoreWebView2ContextMenuTarget.get_LinkUri
+- CoreWebView2ContextMenuTarget.get_PageUri
+- CoreWebView2ContextMenuTarget.get_SelectionText
+- CoreWebView2ContextMenuTarget.get_SourceUri
 ---
 
 # CoreWebView2ContextMenuTarget Class

@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.NavigationStarting event.
 title: CoreWebView2NavigationStartingEventArgs
-ms.date: 07/26/2023
+ms.date: 07/27/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2NavigationStartingEventArgs
 topic_type:
 - APIRef
@@ -19,6 +19,16 @@ api_name:
 - CoreWebView2NavigationStartingEventArgs.NavigationKind
 - CoreWebView2NavigationStartingEventArgs.RequestHeaders
 - CoreWebView2NavigationStartingEventArgs.Uri
+- CoreWebView2NavigationStartingEventArgs.get_AdditionalAllowedFrameAncestors
+- CoreWebView2NavigationStartingEventArgs.get_Cancel
+- CoreWebView2NavigationStartingEventArgs.get_IsRedirected
+- CoreWebView2NavigationStartingEventArgs.get_IsUserInitiated
+- CoreWebView2NavigationStartingEventArgs.get_NavigationId
+- CoreWebView2NavigationStartingEventArgs.get_NavigationKind
+- CoreWebView2NavigationStartingEventArgs.get_RequestHeaders
+- CoreWebView2NavigationStartingEventArgs.get_Uri
+- CoreWebView2NavigationStartingEventArgs.put_AdditionalAllowedFrameAncestors
+- CoreWebView2NavigationStartingEventArgs.put_Cancel
 ---
 
 # CoreWebView2NavigationStartingEventArgs Class

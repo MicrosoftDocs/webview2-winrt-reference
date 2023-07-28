@@ -1,7 +1,7 @@
 ---
 description: This class is an extension of the CoreWebView2Controller class to support visual hosting.
 title: CoreWebView2CompositionController
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2CompositionController
 topic_type:
 - APIRef
@@ -19,6 +19,11 @@ api_name:
 - CoreWebView2CompositionController.Drop
 - CoreWebView2CompositionController.SendMouseInput
 - CoreWebView2CompositionController.SendPointerInput
+- CoreWebView2CompositionController.add_CursorChanged
+- CoreWebView2CompositionController.get_Cursor
+- CoreWebView2CompositionController.get_RootVisualTarget
+- CoreWebView2CompositionController.put_RootVisualTarget
+- CoreWebView2CompositionController.remove_CursorChanged
 - CoreWebView2CompositionController.CursorChanged
 ---
 

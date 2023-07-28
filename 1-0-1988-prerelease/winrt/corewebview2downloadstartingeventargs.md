@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.DownloadStarting event.
 title: CoreWebView2DownloadStartingEventArgs
-ms.date: 07/26/2023
+ms.date: 07/27/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DownloadStartingEventArgs
 topic_type:
 - APIRef
@@ -16,6 +16,13 @@ api_name:
 - CoreWebView2DownloadStartingEventArgs.Handled
 - CoreWebView2DownloadStartingEventArgs.ResultFilePath
 - CoreWebView2DownloadStartingEventArgs.GetDeferral
+- CoreWebView2DownloadStartingEventArgs.get_Cancel
+- CoreWebView2DownloadStartingEventArgs.get_DownloadOperation
+- CoreWebView2DownloadStartingEventArgs.get_Handled
+- CoreWebView2DownloadStartingEventArgs.get_ResultFilePath
+- CoreWebView2DownloadStartingEventArgs.put_Cancel
+- CoreWebView2DownloadStartingEventArgs.put_Handled
+- CoreWebView2DownloadStartingEventArgs.put_ResultFilePath
 ---
 
 # CoreWebView2DownloadStartingEventArgs Class

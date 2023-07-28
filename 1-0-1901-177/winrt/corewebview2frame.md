@@ -1,7 +1,7 @@
 ---
 description: CoreWebView2Frame provides direct access to the iframes information and handling. You can get a CoreWebView2Frame by handling the CoreWebView2.FrameCreated event.
 title: CoreWebView2Frame
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Frame
 topic_type:
 - APIRef
@@ -18,6 +18,23 @@ api_name:
 - CoreWebView2Frame.PostWebMessageAsJson
 - CoreWebView2Frame.PostWebMessageAsString
 - CoreWebView2Frame.RemoveHostObjectFromScript
+- CoreWebView2Frame.add_ContentLoading
+- CoreWebView2Frame.add_DOMContentLoaded
+- CoreWebView2Frame.add_Destroyed
+- CoreWebView2Frame.add_NameChanged
+- CoreWebView2Frame.add_NavigationCompleted
+- CoreWebView2Frame.add_NavigationStarting
+- CoreWebView2Frame.add_PermissionRequested
+- CoreWebView2Frame.add_WebMessageReceived
+- CoreWebView2Frame.get_Name
+- CoreWebView2Frame.remove_ContentLoading
+- CoreWebView2Frame.remove_DOMContentLoaded
+- CoreWebView2Frame.remove_Destroyed
+- CoreWebView2Frame.remove_NameChanged
+- CoreWebView2Frame.remove_NavigationCompleted
+- CoreWebView2Frame.remove_NavigationStarting
+- CoreWebView2Frame.remove_PermissionRequested
+- CoreWebView2Frame.remove_WebMessageReceived
 - CoreWebView2Frame.ContentLoading
 - CoreWebView2Frame.DOMContentLoaded
 - CoreWebView2Frame.Destroyed

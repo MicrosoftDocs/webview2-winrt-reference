@@ -1,7 +1,7 @@
 ---
 description: Texture stream error event argument.
 title: CoreWebView2TextureStreamErrorReceivedEventArgs
-ms.date: 07/26/2023
+ms.date: 07/27/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2TextureStreamErrorReceivedEventArgs
 topic_type:
 - APIRef
@@ -12,6 +12,7 @@ api_location:
 api_name:
 - CoreWebView2TextureStreamErrorReceivedEventArgs
 - CoreWebView2TextureStreamErrorReceivedEventArgs.Kind
+- CoreWebView2TextureStreamErrorReceivedEventArgs.get_Kind
 ---
 
 # CoreWebView2TextureStreamErrorReceivedEventArgs Class

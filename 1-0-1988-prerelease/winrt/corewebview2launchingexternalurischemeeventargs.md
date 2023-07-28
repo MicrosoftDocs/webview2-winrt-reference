@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.LaunchingExternalUriScheme event.
 title: CoreWebView2LaunchingExternalUriSchemeEventArgs
-ms.date: 07/26/2023
+ms.date: 07/27/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2LaunchingExternalUriSchemeEventArgs
 topic_type:
 - APIRef
@@ -16,6 +16,11 @@ api_name:
 - CoreWebView2LaunchingExternalUriSchemeEventArgs.IsUserInitiated
 - CoreWebView2LaunchingExternalUriSchemeEventArgs.Uri
 - CoreWebView2LaunchingExternalUriSchemeEventArgs.GetDeferral
+- CoreWebView2LaunchingExternalUriSchemeEventArgs.get_Cancel
+- CoreWebView2LaunchingExternalUriSchemeEventArgs.get_InitiatingOrigin
+- CoreWebView2LaunchingExternalUriSchemeEventArgs.get_IsUserInitiated
+- CoreWebView2LaunchingExternalUriSchemeEventArgs.get_Uri
+- CoreWebView2LaunchingExternalUriSchemeEventArgs.put_Cancel
 ---
 
 # CoreWebView2LaunchingExternalUriSchemeEventArgs Class

@@ -1,7 +1,7 @@
 ---
 description: Defines properties that enable, disable, or modify WebView features.
 title: CoreWebView2Settings
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Settings
 topic_type:
 - APIRef
@@ -29,6 +29,42 @@ api_name:
 - CoreWebView2Settings.IsWebMessageEnabled
 - CoreWebView2Settings.IsZoomControlEnabled
 - CoreWebView2Settings.UserAgent
+- CoreWebView2Settings.get_AreBrowserAcceleratorKeysEnabled
+- CoreWebView2Settings.get_AreDefaultContextMenusEnabled
+- CoreWebView2Settings.get_AreDefaultScriptDialogsEnabled
+- CoreWebView2Settings.get_AreDevToolsEnabled
+- CoreWebView2Settings.get_AreHostObjectsAllowed
+- CoreWebView2Settings.get_HiddenPdfToolbarItems
+- CoreWebView2Settings.get_HostObjectDispatchAdapter
+- CoreWebView2Settings.get_IsBuiltInErrorPageEnabled
+- CoreWebView2Settings.get_IsGeneralAutofillEnabled
+- CoreWebView2Settings.get_IsPasswordAutosaveEnabled
+- CoreWebView2Settings.get_IsPinchZoomEnabled
+- CoreWebView2Settings.get_IsReputationCheckingRequired
+- CoreWebView2Settings.get_IsScriptEnabled
+- CoreWebView2Settings.get_IsStatusBarEnabled
+- CoreWebView2Settings.get_IsSwipeNavigationEnabled
+- CoreWebView2Settings.get_IsWebMessageEnabled
+- CoreWebView2Settings.get_IsZoomControlEnabled
+- CoreWebView2Settings.get_UserAgent
+- CoreWebView2Settings.put_AreBrowserAcceleratorKeysEnabled
+- CoreWebView2Settings.put_AreDefaultContextMenusEnabled
+- CoreWebView2Settings.put_AreDefaultScriptDialogsEnabled
+- CoreWebView2Settings.put_AreDevToolsEnabled
+- CoreWebView2Settings.put_AreHostObjectsAllowed
+- CoreWebView2Settings.put_HiddenPdfToolbarItems
+- CoreWebView2Settings.put_HostObjectDispatchAdapter
+- CoreWebView2Settings.put_IsBuiltInErrorPageEnabled
+- CoreWebView2Settings.put_IsGeneralAutofillEnabled
+- CoreWebView2Settings.put_IsPasswordAutosaveEnabled
+- CoreWebView2Settings.put_IsPinchZoomEnabled
+- CoreWebView2Settings.put_IsReputationCheckingRequired
+- CoreWebView2Settings.put_IsScriptEnabled
+- CoreWebView2Settings.put_IsStatusBarEnabled
+- CoreWebView2Settings.put_IsSwipeNavigationEnabled
+- CoreWebView2Settings.put_IsWebMessageEnabled
+- CoreWebView2Settings.put_IsZoomControlEnabled
+- CoreWebView2Settings.put_UserAgent
 ---
 
 # CoreWebView2Settings Class

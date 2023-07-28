@@ -1,7 +1,7 @@
 ---
 description: Multiple profiles can be created under a single user data directory but with separated cookies, user preference settings, and various data storage etc.. If the CoreWebView2 was created with a CoreWebView2ControllerOptions, the CoreWebView2Profile will match those specified options. Otherwise if this CoreWebView2 was created without a CoreWebView2ControllerOptions, then this will be the default CoreWebView2Profile for the corresponding CoreWebView2Environment.
 title: CoreWebView2Profile
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Profile
 topic_type:
 - APIRef
@@ -25,6 +25,20 @@ api_name:
 - CoreWebView2Profile.ClearBrowsingDataAsync
 - CoreWebView2Profile.GetNonDefaultPermissionSettingsAsync
 - CoreWebView2Profile.SetPermissionStateAsync
+- CoreWebView2Profile.get_CookieManager
+- CoreWebView2Profile.get_DefaultDownloadFolderPath
+- CoreWebView2Profile.get_IsGeneralAutofillEnabled
+- CoreWebView2Profile.get_IsInPrivateModeEnabled
+- CoreWebView2Profile.get_IsPasswordAutosaveEnabled
+- CoreWebView2Profile.get_PreferredColorScheme
+- CoreWebView2Profile.get_PreferredTrackingPreventionLevel
+- CoreWebView2Profile.get_ProfileName
+- CoreWebView2Profile.get_ProfilePath
+- CoreWebView2Profile.put_DefaultDownloadFolderPath
+- CoreWebView2Profile.put_IsGeneralAutofillEnabled
+- CoreWebView2Profile.put_IsPasswordAutosaveEnabled
+- CoreWebView2Profile.put_PreferredColorScheme
+- CoreWebView2Profile.put_PreferredTrackingPreventionLevel
 ---
 
 # CoreWebView2Profile Class

@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.NavigationCompleted event.
 title: CoreWebView2NavigationCompletedEventArgs
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2NavigationCompletedEventArgs
 topic_type:
 - APIRef
@@ -15,6 +15,10 @@ api_name:
 - CoreWebView2NavigationCompletedEventArgs.IsSuccess
 - CoreWebView2NavigationCompletedEventArgs.NavigationId
 - CoreWebView2NavigationCompletedEventArgs.WebErrorStatus
+- CoreWebView2NavigationCompletedEventArgs.get_HttpStatusCode
+- CoreWebView2NavigationCompletedEventArgs.get_IsSuccess
+- CoreWebView2NavigationCompletedEventArgs.get_NavigationId
+- CoreWebView2NavigationCompletedEventArgs.get_WebErrorStatus
 ---
 
 # CoreWebView2NavigationCompletedEventArgs Class

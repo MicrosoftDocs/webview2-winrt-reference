@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.ContextMenuRequested event.
 title: CoreWebView2ContextMenuRequestedEventArgs
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContextMenuRequestedEventArgs
 topic_type:
 - APIRef
@@ -17,6 +17,13 @@ api_name:
 - CoreWebView2ContextMenuRequestedEventArgs.MenuItems
 - CoreWebView2ContextMenuRequestedEventArgs.SelectedCommandId
 - CoreWebView2ContextMenuRequestedEventArgs.GetDeferral
+- CoreWebView2ContextMenuRequestedEventArgs.get_ContextMenuTarget
+- CoreWebView2ContextMenuRequestedEventArgs.get_Handled
+- CoreWebView2ContextMenuRequestedEventArgs.get_Location
+- CoreWebView2ContextMenuRequestedEventArgs.get_MenuItems
+- CoreWebView2ContextMenuRequestedEventArgs.get_SelectedCommandId
+- CoreWebView2ContextMenuRequestedEventArgs.put_Handled
+- CoreWebView2ContextMenuRequestedEventArgs.put_SelectedCommandId
 ---
 
 # CoreWebView2ContextMenuRequestedEventArgs Class

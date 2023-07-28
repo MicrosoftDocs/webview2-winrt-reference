@@ -1,7 +1,7 @@
 ---
 description: References an HWND or a CoreWindow.
 title: CoreWebView2ControllerWindowReference
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ControllerWindowReference
 topic_type:
 - APIRef
@@ -15,6 +15,8 @@ api_name:
 - CoreWebView2ControllerWindowReference.WindowHandle
 - CoreWebView2ControllerWindowReference.CreateFromCoreWindow
 - CoreWebView2ControllerWindowReference.CreateFromWindowHandle
+- CoreWebView2ControllerWindowReference.get_CoreWindow
+- CoreWebView2ControllerWindowReference.get_WindowHandle
 ---
 
 # CoreWebView2ControllerWindowReference Class

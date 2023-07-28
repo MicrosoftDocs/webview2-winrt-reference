@@ -1,7 +1,7 @@
 ---
 description: Represents a certificate. Gives access to a certificate's metadata.
 title: CoreWebView2Certificate
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Certificate
 topic_type:
 - APIRef
@@ -20,6 +20,13 @@ api_name:
 - CoreWebView2Certificate.ValidTo
 - CoreWebView2Certificate.ToCertificate
 - CoreWebView2Certificate.ToPemEncoding
+- CoreWebView2Certificate.get_DerEncodedSerialNumber
+- CoreWebView2Certificate.get_DisplayName
+- CoreWebView2Certificate.get_Issuer
+- CoreWebView2Certificate.get_PemEncodedIssuerCertificateChain
+- CoreWebView2Certificate.get_Subject
+- CoreWebView2Certificate.get_ValidFrom
+- CoreWebView2Certificate.get_ValidTo
 ---
 
 # CoreWebView2Certificate Class

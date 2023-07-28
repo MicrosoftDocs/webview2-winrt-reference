@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2DevToolsProtocolEventReceiver.DevToolsProtocolEventReceived event.
 title: CoreWebView2DevToolsProtocolEventReceivedEventArgs
-ms.date: 07/26/2023
+ms.date: 07/27/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DevToolsProtocolEventReceivedEventArgs
 topic_type:
 - APIRef
@@ -13,6 +13,8 @@ api_name:
 - CoreWebView2DevToolsProtocolEventReceivedEventArgs
 - CoreWebView2DevToolsProtocolEventReceivedEventArgs.ParameterObjectAsJson
 - CoreWebView2DevToolsProtocolEventReceivedEventArgs.SessionId
+- CoreWebView2DevToolsProtocolEventReceivedEventArgs.get_ParameterObjectAsJson
+- CoreWebView2DevToolsProtocolEventReceivedEventArgs.get_SessionId
 ---
 
 # CoreWebView2DevToolsProtocolEventReceivedEventArgs Class

@@ -1,7 +1,7 @@
 ---
 description: Represents a download operation. Gives access to a download's metadata and supports a user canceling, pausing, or resuming a download.
 title: CoreWebView2DownloadOperation
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DownloadOperation
 topic_type:
 - APIRef
@@ -24,6 +24,22 @@ api_name:
 - CoreWebView2DownloadOperation.Cancel
 - CoreWebView2DownloadOperation.Pause
 - CoreWebView2DownloadOperation.Resume
+- CoreWebView2DownloadOperation.add_BytesReceivedChanged
+- CoreWebView2DownloadOperation.add_EstimatedEndTimeChanged
+- CoreWebView2DownloadOperation.add_StateChanged
+- CoreWebView2DownloadOperation.get_BytesReceived
+- CoreWebView2DownloadOperation.get_CanResume
+- CoreWebView2DownloadOperation.get_ContentDisposition
+- CoreWebView2DownloadOperation.get_EstimatedEndTime
+- CoreWebView2DownloadOperation.get_InterruptReason
+- CoreWebView2DownloadOperation.get_MimeType
+- CoreWebView2DownloadOperation.get_ResultFilePath
+- CoreWebView2DownloadOperation.get_State
+- CoreWebView2DownloadOperation.get_TotalBytesToReceive
+- CoreWebView2DownloadOperation.get_Uri
+- CoreWebView2DownloadOperation.remove_BytesReceivedChanged
+- CoreWebView2DownloadOperation.remove_EstimatedEndTimeChanged
+- CoreWebView2DownloadOperation.remove_StateChanged
 - CoreWebView2DownloadOperation.BytesReceivedChanged
 - CoreWebView2DownloadOperation.EstimatedEndTimeChanged
 - CoreWebView2DownloadOperation.StateChanged

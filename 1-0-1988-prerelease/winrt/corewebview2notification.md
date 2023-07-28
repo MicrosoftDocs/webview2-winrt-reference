@@ -1,7 +1,7 @@
 ---
 description: An object that represents a HTML Notification object.
 title: CoreWebView2Notification
-ms.date: 07/26/2023
+ms.date: 07/27/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Notification
 topic_type:
 - APIRef
@@ -26,6 +26,20 @@ api_name:
 - CoreWebView2Notification.ReportClicked
 - CoreWebView2Notification.ReportClosed
 - CoreWebView2Notification.ReportShown
+- CoreWebView2Notification.add_CloseRequested
+- CoreWebView2Notification.get_BadgeUri
+- CoreWebView2Notification.get_Body
+- CoreWebView2Notification.get_BodyImageUri
+- CoreWebView2Notification.get_Direction
+- CoreWebView2Notification.get_IconUri
+- CoreWebView2Notification.get_IsSilent
+- CoreWebView2Notification.get_Language
+- CoreWebView2Notification.get_RequiresInteraction
+- CoreWebView2Notification.get_ShouldRenotify
+- CoreWebView2Notification.get_Tag
+- CoreWebView2Notification.get_Timestamp
+- CoreWebView2Notification.get_Title
+- CoreWebView2Notification.remove_CloseRequested
 - CoreWebView2Notification.CloseRequested
 ---
 

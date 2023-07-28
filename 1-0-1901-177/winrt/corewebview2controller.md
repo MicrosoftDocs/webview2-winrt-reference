@@ -1,7 +1,7 @@
 ---
 description: The owner of the CoreWebView2 object that provides support for resizing, showing and hiding, focusing, and other functionality related to windowing and composition.
 title: CoreWebView2Controller
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Controller
 topic_type:
 - APIRef
@@ -26,6 +26,38 @@ api_name:
 - CoreWebView2Controller.MoveFocus
 - CoreWebView2Controller.NotifyParentWindowPositionChanged
 - CoreWebView2Controller.SetBoundsAndZoomFactor
+- CoreWebView2Controller.add_AcceleratorKeyPressed
+- CoreWebView2Controller.add_GotFocus
+- CoreWebView2Controller.add_LostFocus
+- CoreWebView2Controller.add_MoveFocusRequested
+- CoreWebView2Controller.add_RasterizationScaleChanged
+- CoreWebView2Controller.add_ZoomFactorChanged
+- CoreWebView2Controller.get_AllowExternalDrop
+- CoreWebView2Controller.get_Bounds
+- CoreWebView2Controller.get_BoundsMode
+- CoreWebView2Controller.get_CoreWebView2
+- CoreWebView2Controller.get_DefaultBackgroundColor
+- CoreWebView2Controller.get_IsBrowserHitTransparent
+- CoreWebView2Controller.get_IsVisible
+- CoreWebView2Controller.get_ParentWindow
+- CoreWebView2Controller.get_RasterizationScale
+- CoreWebView2Controller.get_ShouldDetectMonitorScaleChanges
+- CoreWebView2Controller.get_ZoomFactor
+- CoreWebView2Controller.put_AllowExternalDrop
+- CoreWebView2Controller.put_Bounds
+- CoreWebView2Controller.put_BoundsMode
+- CoreWebView2Controller.put_DefaultBackgroundColor
+- CoreWebView2Controller.put_IsVisible
+- CoreWebView2Controller.put_ParentWindow
+- CoreWebView2Controller.put_RasterizationScale
+- CoreWebView2Controller.put_ShouldDetectMonitorScaleChanges
+- CoreWebView2Controller.put_ZoomFactor
+- CoreWebView2Controller.remove_AcceleratorKeyPressed
+- CoreWebView2Controller.remove_GotFocus
+- CoreWebView2Controller.remove_LostFocus
+- CoreWebView2Controller.remove_MoveFocusRequested
+- CoreWebView2Controller.remove_RasterizationScaleChanged
+- CoreWebView2Controller.remove_ZoomFactorChanged
 - CoreWebView2Controller.AcceleratorKeyPressed
 - CoreWebView2Controller.GotFocus
 - CoreWebView2Controller.LostFocus

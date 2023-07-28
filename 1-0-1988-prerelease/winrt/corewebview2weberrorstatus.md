@@ -1,7 +1,7 @@
 ---
 description: Indicates the error status values for web navigations.
 title: CoreWebView2WebErrorStatus
-ms.date: 07/26/2023
+ms.date: 07/27/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebErrorStatus
 topic_type:
 - APIRef

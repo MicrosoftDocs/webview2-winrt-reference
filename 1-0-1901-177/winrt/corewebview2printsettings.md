@@ -1,7 +1,7 @@
 ---
 description: Settings used by the CoreWebView2.PrintToPdfAsync method. Other programmatic printing is not currently supported.
 title: CoreWebView2PrintSettings
-ms.date: 07/26/2023
+ms.date: 07/28/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PrintSettings
 topic_type:
 - APIRef
@@ -32,6 +32,48 @@ api_name:
 - CoreWebView2PrintSettings.ShouldPrintBackgrounds
 - CoreWebView2PrintSettings.ShouldPrintHeaderAndFooter
 - CoreWebView2PrintSettings.ShouldPrintSelectionOnly
+- CoreWebView2PrintSettings.get_Collation
+- CoreWebView2PrintSettings.get_ColorMode
+- CoreWebView2PrintSettings.get_Copies
+- CoreWebView2PrintSettings.get_Duplex
+- CoreWebView2PrintSettings.get_FooterUri
+- CoreWebView2PrintSettings.get_HeaderTitle
+- CoreWebView2PrintSettings.get_MarginBottom
+- CoreWebView2PrintSettings.get_MarginLeft
+- CoreWebView2PrintSettings.get_MarginRight
+- CoreWebView2PrintSettings.get_MarginTop
+- CoreWebView2PrintSettings.get_MediaSize
+- CoreWebView2PrintSettings.get_Orientation
+- CoreWebView2PrintSettings.get_PageHeight
+- CoreWebView2PrintSettings.get_PageRanges
+- CoreWebView2PrintSettings.get_PageWidth
+- CoreWebView2PrintSettings.get_PagesPerSide
+- CoreWebView2PrintSettings.get_PrinterName
+- CoreWebView2PrintSettings.get_ScaleFactor
+- CoreWebView2PrintSettings.get_ShouldPrintBackgrounds
+- CoreWebView2PrintSettings.get_ShouldPrintHeaderAndFooter
+- CoreWebView2PrintSettings.get_ShouldPrintSelectionOnly
+- CoreWebView2PrintSettings.put_Collation
+- CoreWebView2PrintSettings.put_ColorMode
+- CoreWebView2PrintSettings.put_Copies
+- CoreWebView2PrintSettings.put_Duplex
+- CoreWebView2PrintSettings.put_FooterUri
+- CoreWebView2PrintSettings.put_HeaderTitle
+- CoreWebView2PrintSettings.put_MarginBottom
+- CoreWebView2PrintSettings.put_MarginLeft
+- CoreWebView2PrintSettings.put_MarginRight
+- CoreWebView2PrintSettings.put_MarginTop
+- CoreWebView2PrintSettings.put_MediaSize
+- CoreWebView2PrintSettings.put_Orientation
+- CoreWebView2PrintSettings.put_PageHeight
+- CoreWebView2PrintSettings.put_PageRanges
+- CoreWebView2PrintSettings.put_PageWidth
+- CoreWebView2PrintSettings.put_PagesPerSide
+- CoreWebView2PrintSettings.put_PrinterName
+- CoreWebView2PrintSettings.put_ScaleFactor
+- CoreWebView2PrintSettings.put_ShouldPrintBackgrounds
+- CoreWebView2PrintSettings.put_ShouldPrintHeaderAndFooter
+- CoreWebView2PrintSettings.put_ShouldPrintSelectionOnly
 ---
 
 # CoreWebView2PrintSettings Class
