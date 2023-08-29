@@ -40,7 +40,7 @@ Members|Description
 > readonly  [`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;[CoreWebView2FrameInfo](corewebview2frameinfo.md)&gt; AssociatedFrameInfos
 
 Provides the collection of associated CoreWebView2FrameInfos (unresolved reference) which are actively running (showing UI elements) in this renderer process.
-AssociatedFrameInfos will only be populated when obtained via calling [CoreWebView2Environment.GetProcessInfosWithDetails](corewebview2environment.md#getprocessinfoswithdetails) and when this CoreWebView2ProcessInfo corresponds to a renderer process. CoreWebView2ProcessInfo objects obtained via [CoreWebView2Environment.GetProcessInfos](corewebview2environment.md#getprocessinfos) or for non-renderer processes will always have an empty AssociatedFrameInfo. AssociatedFrameInfos may also be empty for renderer processes that have no active frames.
+AssociatedFrameInfos will only be populated when obtained via calling [CoreWebView2Environment.GetProcessInfosWithDetailsAsync](corewebview2environment.md#getprocessinfoswithdetailsasync) and when this CoreWebView2ProcessInfo corresponds to a renderer process. CoreWebView2ProcessInfo objects obtained via [CoreWebView2Environment.GetProcessInfos](corewebview2environment.md#getprocessinfos) or for non-renderer processes will always have an empty AssociatedFrameInfo. AssociatedFrameInfos may also be empty for renderer processes that have no active frames.
 
 ### Kind
 
