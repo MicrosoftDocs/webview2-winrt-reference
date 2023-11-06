@@ -1,5 +1,5 @@
 ---
-description: 
+description: Web texture received event argument.
 title: CoreWebView2TextureStreamWebTextureReceivedEventArgs
 ms.date: 11/06/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2TextureStreamWebTextureReceivedEventArgs
@@ -19,17 +19,22 @@ api_name:
 
 
 
+Web texture received event argument.
+
 ## Summary
 
 Members|Description
 --|--
-[WebTexture](#webtexture) | 
+[WebTexture](#webtexture) | Web texture that is received.
 
 ## Properties
 
 ### WebTexture
 
 > readonly  [CoreWebView2WebTexture](corewebview2webtexture.md) WebTexture
+
+Web texture that is received.
+
 
 
 

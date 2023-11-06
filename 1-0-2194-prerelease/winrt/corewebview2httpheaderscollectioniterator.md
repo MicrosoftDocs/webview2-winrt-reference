@@ -1,5 +1,5 @@
 ---
-description: 
+description: Iterator for a collection of HTTP headers.
 title: CoreWebView2HttpHeadersCollectionIterator
 ms.date: 11/06/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2HttpHeadersCollectionIterator
@@ -22,6 +22,8 @@ api_name:
 # CoreWebView2HttpHeadersCollectionIterator Class
 
 Implements: [IIterator](/uwp/api/Windows.Foundation.Collections.IIterator-1)&lt;[`IKeyValuePair`](/uwp/api/Windows.Foundation.Collections.IKeyValuePair-2)&lt;string, string&gt;&gt;
+
+Iterator for a collection of HTTP headers.
 
 ## Summary
 

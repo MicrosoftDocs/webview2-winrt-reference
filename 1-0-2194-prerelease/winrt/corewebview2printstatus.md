@@ -1,5 +1,5 @@
 ---
-description: 
+description: Indicates the status for printing.
 title: CoreWebView2PrintStatus
 ms.date: 11/06/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PrintStatus
@@ -15,8 +15,10 @@ api_name:
 
 # CoreWebView2PrintStatus Enum
 
+Indicates the status for printing.
+
 | Name |  Value | Description |
 |--|--|--|
-|`Succeeded` | 0x0  |  |
-|`PrinterUnavailable` | 0x1  |  |
-|`OtherError` | 0x2  |  |
+|`Succeeded` | 0x0  |  Indicates that the print operation is succeeded.|
+|`PrinterUnavailable` | 0x1  |  Indicates that the printer is not available.|
+|`OtherError` | 0x2  |  Indicates that the print operation is failed.|
