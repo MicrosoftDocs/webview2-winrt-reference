@@ -1,5 +1,5 @@
 ---
-description: 
+description: The kind of the CoreWebView2ClientCertificate.
 title: CoreWebView2ClientCertificateKind
 ms.date: 11/06/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ClientCertificateKind
@@ -15,11 +15,13 @@ api_name:
 
 # CoreWebView2ClientCertificateKind Enum
 
+The kind of the [CoreWebView2ClientCertificate](corewebview2clientcertificate.md).
+
 | Name |  Value | Description |
 |--|--|--|
-|`SmartCard` | 0x0  |  |
-|`Pin` | 0x1  |  |
-|`Other` | 0x2  |  |
+|`SmartCard` | 0x0  |  Specifies smart card certificate.|
+|`Pin` | 0x1  |  Specifies PIN certificate.|
+|`Other` | 0x2  |  Specifies other certificate.|
 
 
 ## Referenced by

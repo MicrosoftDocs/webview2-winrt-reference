@@ -1,5 +1,5 @@
 ---
-description: 
+description: Specifies the web resource request contexts.
 title: CoreWebView2WebResourceContext
 ms.date: 11/06/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebResourceContext
@@ -15,25 +15,33 @@ api_name:
 
 # CoreWebView2WebResourceContext Enum
 
+Specifies the web resource request contexts.
+
 | Name |  Value | Description |
 |--|--|--|
-|`All` | 0x0  |  |
-|`Document` | 0x1  |  |
-|`Stylesheet` | 0x2  |  |
-|`Image` | 0x3  |  |
-|`Media` | 0x4  |  |
-|`Font` | 0x5  |  |
-|`Script` | 0x6  |  |
-|`XmlHttpRequest` | 0x7  |  |
-|`Fetch` | 0x8  |  |
-|`TextTrack` | 0x9  |  |
-|`EventSource` | 0xa  |  |
-|`Websocket` | 0xb  |  |
-|`Manifest` | 0xc  |  |
-|`SignedExchange` | 0xd  |  |
-|`Ping` | 0xe  |  |
-|`CspViolationReport` | 0xf  |  |
-|`Other` | 0x10  |  |
+|`All` | 0x0  |  Specifies all resources.|
+|`Document` | 0x1  |  Specifies a document resources.|
+|`Stylesheet` | 0x2  |  Specifies a CSS resources.|
+|`Image` | 0x3  |  Specifies an image resources.|
+|`Media` | 0x4  |  Specifies another media resource such as a video.|
+|`Font` | 0x5  |  Specifies a font resource.|
+|`Script` | 0x6  |  Specifies a script resource.|
+|`XmlHttpRequest` | 0x7  |  Specifies an XML HTTP request, Fetch and EventSource HTTP communication.|
+|`Fetch` | 0x8  |  Specifies a Fetch API communication.
+
+Note that this isn't working. Fetch API requests are fired as a part
+of COREWEBVIEW2_WEB_RESOURCE_CONTEXT_XML_HTTP_REQUEST.|
+|`TextTrack` | 0x9  |  Specifies a TextTrack resource.|
+|`EventSource` | 0xa  |  Specifies an EventSource API communication.
+
+Note that this isn't working. EventSource API requests are fired as a part
+of COREWEBVIEW2_WEB_RESOURCE_CONTEXT_XML_HTTP_REQUEST.|
+|`Websocket` | 0xb  |  Specifies a WebSocket API communication.|
+|`Manifest` | 0xc  |  Specifies a Web App Manifest.|
+|`SignedExchange` | 0xd  |  Specifies a Signed HTTP Exchange.|
+|`Ping` | 0xe  |  Specifies a Ping request.|
+|`CspViolationReport` | 0xf  |  Specifies a CSP Violation Report.|
+|`Other` | 0x10  |  Specifies an other resource.|
 
 
 ## Referenced by

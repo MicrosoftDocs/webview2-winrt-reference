@@ -1,5 +1,5 @@
 ---
-description: 
+description: Specifies the print dialog kind.
 title: CoreWebView2PrintDialogKind
 ms.date: 11/06/2023
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PrintDialogKind
@@ -15,10 +15,12 @@ api_name:
 
 # CoreWebView2PrintDialogKind Enum
 
+Specifies the print dialog kind.
+
 | Name |  Value | Description |
 |--|--|--|
-|`Browser` | 0x0  |  |
-|`System` | 0x1  |  |
+|`Browser` | 0x0  |  Opens the browser print preview dialog.|
+|`System` | 0x1  |  Opens the system print dialog.|
 
 
 ## Referenced by
