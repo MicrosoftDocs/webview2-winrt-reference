@@ -55,13 +55,13 @@ Members|Description
 [AdditionalBrowserArguments](#additionalbrowserarguments) | Gets or sets the additional browser arguments to change the behavior of the WebView.
 [AllowSingleSignOnUsingOSPrimaryAccount](#allowsinglesignonusingosprimaryaccount) | Determines whether to enable single sign on with Azure Active Directory (AAD) resources inside WebView using the logged in Windows account and single sign on (SSO) with web sites using Microsoft account associated with the login in Windows account.
 [AreBrowserExtensionsEnabled](#arebrowserextensionsenabled) | Enable/disable browser extensions.
-[CustomSchemeRegistrations](#customschemeregistrations) | 
+[CustomSchemeRegistrations](#customschemeregistrations) | List of custom scheme registrations to be applied to the [CoreWebView2Environment](corewebview2environment.md).
 [EnableTrackingPrevention](#enabletrackingprevention) | The EnableTrackingPrevention property is used to enable/disable tracking prevention feature in WebView2. This property enable/disable tracking prevention for all the WebView2's created in the same environment. By default this feature is enabled to block potentially harmful trackers and trackers from sites that aren't visited before and set to [CoreWebView2TrackingPreventionLevel](corewebview2trackingpreventionlevel.md).Balanced or whatever value was last changed/persisted on the profile.
 [ExclusiveUserDataFolderAccess](#exclusiveuserdatafolderaccess) | Determines whether other processes can create [CoreWebView2Controller](corewebview2controller.md) from [CoreWebView2Environment](corewebview2environment.md) created with the same user data folder and therefore sharing the same WebView browser process instance.
 [IsCustomCrashReportingEnabled](#iscustomcrashreportingenabled) | When `IsCustomCrashReportingEnabled` is set to `true`, Windows won't send crash data to Microsoft endpoint.
 [Language](#language) | Gets or sets the default display language for WebView.
 [TargetCompatibleBrowserVersion](#targetcompatiblebrowserversion) | Gets or sets the version of the WebView2 Runtime binaries required to be compatible with your app.
-CoreWebView2EnvironmentOptions | 
+[CoreWebView2EnvironmentOptions](#corewebview2environmentoptions) | Initializes a new instance of the CoreWebView2EnvironmentOptions.
 
 ## Properties
 
@@ -95,6 +95,8 @@ When `AreBrowserExtensionsEnabled` is set to `true`, new extensions can be added
 ### CustomSchemeRegistrations
 
 >  [`IVector`](/uwp/api/Windows.Foundation.Collections.IVector-1)&lt;[CoreWebView2CustomSchemeRegistration](corewebview2customschemeregistration.md)&gt; CustomSchemeRegistrations
+
+List of custom scheme registrations to be applied to the [CoreWebView2Environment](corewebview2environment.md).
 
 ### EnableTrackingPrevention
 
@@ -144,6 +146,8 @@ This defaults to the WebView2 Runtime version that corresponds with the version 
 ### CoreWebView2EnvironmentOptions
 
 >  CoreWebView2EnvironmentOptions()
+
+Initializes a new instance of the CoreWebView2EnvironmentOptions.
 
 
 
