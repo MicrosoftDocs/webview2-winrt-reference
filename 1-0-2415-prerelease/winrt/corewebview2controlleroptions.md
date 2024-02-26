@@ -47,7 +47,7 @@ Members|Description
 >  bool AllowHostInputProcessing
 
 Allows user input messages to pass through the browser window to be received by an app process window.
-The AllowHostInputProcessing property is to enable/disable input passing through the app before being delivered to the WebView2. Setting this property to `TRUE` allows default .NET event handling API of WebView2 control to work, such as [PreProcessMessage](/dotnet/api/system.windows.forms.control.preprocessmessage?view=windowsdesktop-8.0) and [ProcessCmdKey](/dotnet/api/system.windows.forms.control.processcmdkey?view=windowsdesktop-8.0). This property is only applicable to controllers created with `CoreWebView2Environment.CreateCoreWebView2ControllerAsync` and not composition controllers created with `CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync`. By default the value is `FALSE`.
+The AllowHostInputProcessing property is to enable/disable input passing through the app before being delivered to the WebView2. Setting this property to `TRUE` allows default .NET event handling API of WebView2 control to work, such as [PreProcessMessage](/dotnet/api/system.windows.forms.control.preprocessmessage) and [ProcessCmdKey](/dotnet/api/system.windows.forms.control.processcmdkey). This property is only applicable to controllers created with `CoreWebView2Environment.CreateCoreWebView2ControllerAsync` and not composition controllers created with `CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync`. By default the value is `FALSE`.
 
 ### IsInPrivateModeEnabled
 
