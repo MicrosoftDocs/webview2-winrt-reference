@@ -17,6 +17,7 @@ api_name:
 
 Specifies the WebView2 release channel.
 Use `ReleaseChannels` and `ChannelSearchKind` on `CoreWebView2EnvironmentOptions` to control which channel the WebView2 loader searches for.
+
 |Channel|Primary purpose|How often updated with new features|
 |:---:|---|:---:|
 |Stable (WebView2 Runtime)|Broad Deployment|Monthly|

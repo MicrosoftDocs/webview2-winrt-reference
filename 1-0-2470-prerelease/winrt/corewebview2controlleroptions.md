@@ -47,7 +47,6 @@ Members|Description
 >  bool AllowHostInputProcessing
 
 Allows user input messages to pass through the browser window to be received by an app process window.
-The <c># CoreWebView2ControllerOptions.AllowHostInputProcessing
 
 ### IsInPrivateModeEnabled
 

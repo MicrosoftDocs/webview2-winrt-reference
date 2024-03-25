@@ -247,7 +247,7 @@ Members|Description
 [OpenTaskManagerWindow](#opentaskmanagerwindow) | Opens the Browser Task Manager view as a new window in the foreground.
 [PostSharedBufferToScript](#postsharedbuffertoscript) | Share a shared buffer object with script of the main frame in the WebView.
 [PostWebMessageAsJson](#postwebmessageasjson) | Posts the specified `webMessageAsJson` to the top level document in this WebView.
-[PostWebMessageAsJsonWithAdditionalObjects](#postwebmessageasjsonwithadditionalobjects) | Same as <see cref="CoreWebView2.PostWebMessageAsJson">, but also has support for posting DOM objects to page content.
+[PostWebMessageAsJsonWithAdditionalObjects](#postwebmessageasjsonwithadditionalobjects) | Same as [CoreWebView2.PostWebMessageAsJson](#postwebmessageasjson), but also has support for posting DOM objects to page content.
 [PostWebMessageAsString](#postwebmessageasstring) | Posts a message that is a simple string rather than a JSON string representation of a JavaScript object.
 [PrintAsync](#printasync) | Print the current web page asynchronously to the specified printer with the provided settings.
 [PrintToPdfAsync](#printtopdfasync) | Print the current page to PDF asynchronously with the provided settings.
@@ -864,13 +864,15 @@ window.chrome.webview.removeEventListener('message', handler)
 
 > void PostWebMessageAsJsonWithAdditionalObjects(string webMessageAsJson, [`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;Object&gt; AdditionalObjects)
 
-Same as <see cref="CoreWebView2.PostWebMessageAsJson">, but also has support for posting DOM objects to page content.
+Same as [CoreWebView2.PostWebMessageAsJson](#postwebmessageasjson), but also has support for posting DOM objects to page content.
 The event args is an instance of `MessageEvent`. The [CoreWebView2Settings.IsWebMessageEnabled](corewebview2settings.md#iswebmessageenabled) setting must be `true` or the message will not be sent. The event arg's `data` property of the event arg is the `webMessageAsJson` string parameter parsed as a JSON string into a JavaScript object. The event arg's `source` property of the event arg is a reference to the `window.chrome.webview` object. For information about sending messages from the HTML document in the WebView to the host, navigate to [CoreWebView2.WebMessageReceived](corewebview2.md#webmessagereceived). The message is sent asynchronously. If a navigation occurs before the message is posted to the page, the message is not be sent.
 This property is retrieved in web content via the DOM MessageEvent `additionalObjects` property as an array-like list of DOM objects. Currently these type of objects can be the posted:
+
 | .NET / WinRT      | DOM type    |
 |-------------------|-------------|
 | [CoreWebView2FileSystemHandle](corewebview2filesystemhandle.md) | [FileSystemHandle](https://developer.mozilla.org/docs/Web/API/FileSystemHandle) |
 | `null`        | null        |
+
 The objects are posted to web content, following the [structured-clone](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Structured_clone_algorithm) semantics, meaning only objects that can be cloned can be posted. They will also behave as if they had been created by the web content they are posted to. For example, if a `FileSystemFileHandle` is posted to a web content
 it can only be re-transferred via postMessage to other web content [with the same origin](https://fs.spec.whatwg.org/#filesystemhandle).
 Warning: An app needs to be mindful when using this API to post DOM objects as this API provides the web content with unusual access to sensitive Web
