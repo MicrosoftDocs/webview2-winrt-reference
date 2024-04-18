@@ -267,7 +267,7 @@
       "webview2-1054-31": { "moniker_range": "webview2-winrt-1.0.1054.31" },
       "webview2-1020-30": { "moniker_range": "webview2-winrt-1.0.1020.30" },
       "webview2-992-28": { "moniker_range": "webview2-winrt-1.0.992.28" },
-      "webview2-2526-prerelease": { "moniker_range": "webview2-winrt-1.0.2526-prerelease" },
+      "webview2-2526-prerelease": { "moniker_range": "webview2-winrt-preview" },
       "webview2-2470-prerelease": { "moniker_range": "webview2-winrt-1.0.2470-prerelease" },
       "webview2-2415-prerelease": { "moniker_range": "webview2-winrt-1.0.2415-prerelease" },
       "webview2-2357-prerelease": { "moniker_range": "webview2-winrt-1.0.2357-prerelease" },
