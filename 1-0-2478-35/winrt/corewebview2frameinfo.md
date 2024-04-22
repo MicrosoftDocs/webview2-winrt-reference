@@ -46,7 +46,7 @@ Members|Description
 > readonly  uint32_t FrameId
 
 The unique identifier of the frame associated with the current CoreWebView2FrameInfo. It's the same kind of ID as with the [CoreWebView2.FrameId](corewebview2.md#frameid) and [CoreWebView2Frame.FrameId](corewebview2frame.md#frameid). FrameId will only be populated when obtained calling [CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos](corewebview2processextendedinfo.md#associatedframeinfos). CoreWebView2FrameInfo objects obtained via [CoreWebView2.ProcessFailed](corewebview2.md#processfailed) will always have an invalid frame Id `0`.
-FrameId could be out of date as it's a snapshot. If there's [CoreWebView2](corewebview2.md) created or destroyed or [CoreWebView2.FrameCreated](corewebview2.md#framecreated) event or <see cref="CoreWebView2Frame.Destroyed" /> event after the asynchronous call [CoreWebView2Environment.GetProcessExtendedInfosAsync](corewebview2environment.md#getprocessextendedinfosasync) starts, you may want to call the asynchronous method again to get the updated `CoreWebView2FrameInfos (unresolved reference).
+FrameId could be out of date as it's a snapshot. If there's [CoreWebView2](corewebview2.md) created or destroyed or [CoreWebView2.FrameCreated](corewebview2.md#framecreated) event or [CoreWebView2.Destroyed](corewebview2.md#destroyed) event after the asynchronous call [CoreWebView2Environment.GetProcessExtendedInfosAsync](corewebview2environment.md#getprocessextendedinfosasync) starts, you may want to call the asynchronous method again to get the updated `CoreWebView2FrameInfos (unresolved reference).
 
 ### FrameKind
 

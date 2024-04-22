@@ -51,11 +51,11 @@ Members|Description
 [DragOver](#dragover) | Call this method to inform the CoreWebView2CompositionController that a drag operation is moving over the WebView2.
 [Drop](#drop) | Call this method to inform the CoreWebView2CompositionController that an object is being dropped into the WebView2.
 [GetNonClientRegionAtPoint](#getnonclientregionatpoint) | Call this method to perform hit-testing inside of your message loop when the message is WM_NCHITTEST.
-[QueryNonClientRegion](#querynonclientregion) | This method retrieves the non-client regions on the page which corresponds to a given kind <see cref="CoreWebView2NonClientRegionKind" />.
+[QueryNonClientRegion](#querynonclientregion) | This method retrieves the non-client regions on the page which corresponds to a given kind [CoreWebView2NonClientRegionKind](corewebview2nonclientregionkind.md).
 [SendMouseInput](#sendmouseinput) | Sends mouse input to the WebView.
 [SendPointerInput](#sendpointerinput) | Sends pen or pointer input to the WebView.
 [CursorChanged](#cursorchanged) | The event is raised when WebView thinks the cursor should be changed.
-[NonClientRegionChanged](#nonclientregionchanged) | This event is raised when elements on the page with "app-region" CSS property values corresponding to non-client regions change. Use the <see cref="CoreWebView2NonClientRegionChangedEventArgs.RegionKind" /> to see the kind of non-client region that changed.
+[NonClientRegionChanged](#nonclientregionchanged) | This event is raised when elements on the page with "app-region" CSS property values corresponding to non-client regions change. Use the [CoreWebView2NonClientRegionChangedEventArgs.RegionKind](corewebview2nonclientregionchangedeventargs.md#regionkind) to see the kind of non-client region that changed.
 
 ## Properties
 
@@ -124,7 +124,7 @@ Call this method to perform hit-testing inside of your message loop when the mes
 
 > [`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;[Rect](/uwp/api/Windows.Foundation.Rect)&gt; QueryNonClientRegion([CoreWebView2NonClientRegionKind](corewebview2nonclientregionkind.md) Kind)
 
-This method retrieves the non-client regions on the page which corresponds to a given kind <see cref="CoreWebView2NonClientRegionKind" />.
+This method retrieves the non-client regions on the page which corresponds to a given kind [CoreWebView2NonClientRegionKind](corewebview2nonclientregionkind.md).
 This method can be used inside the [CoreWebView2CompositionController.NonClientRegionChanged](corewebview2compositioncontroller.md#nonclientregionchanged) event handler to get the list of rects for the specific region that changed.
 
 
@@ -162,7 +162,7 @@ Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;Co
 
 ### NonClientRegionChanged
 
-This event is raised when elements on the page with "app-region" CSS property values corresponding to non-client regions change. Use the <see cref="CoreWebView2NonClientRegionChangedEventArgs.RegionKind" /> to see the kind of non-client region that changed.
+This event is raised when elements on the page with "app-region" CSS property values corresponding to non-client regions change. Use the [CoreWebView2NonClientRegionChangedEventArgs.RegionKind](corewebview2nonclientregionchangedeventargs.md#regionkind) to see the kind of non-client region that changed.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2CompositionController, [CoreWebView2NonClientRegionChangedEventArgs](corewebview2nonclientregionchangedeventargs.md)&gt;
 

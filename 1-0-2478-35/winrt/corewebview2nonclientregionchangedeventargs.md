@@ -25,7 +25,7 @@ Event args for the [CoreWebView2CompositionController.NonClientRegionChanged](co
 
 Members|Description
 --|--
-[RegionKind](#regionkind) | Gets the region kind <see cref="CoreWebView2NonClientRegionKind" /> corresponding to the event.
+[RegionKind](#regionkind) | Gets the region kind [CoreWebView2NonClientRegionKind](corewebview2nonclientregionkind.md) corresponding to the event.
 
 ## Properties
 
@@ -33,7 +33,7 @@ Members|Description
 
 > readonly  [CoreWebView2NonClientRegionKind](corewebview2nonclientregionkind.md) RegionKind
 
-Gets the region kind <see cref="CoreWebView2NonClientRegionKind" /> corresponding to the event.
+Gets the region kind [CoreWebView2NonClientRegionKind](corewebview2nonclientregionkind.md) corresponding to the event.
 
 
 
