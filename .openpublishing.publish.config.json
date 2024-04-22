@@ -7,7 +7,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [
-        ">= webview2-winrt-1.0.992.28 <= webview2-winrt-1.0.2420.47 || >= webview2-winrt-1.0.955-prerelease <= webview2-winrt-1.0.2470-prerelease || webview2-winrt-preview"
+        ">= webview2-winrt-1.0.992.28 <= webview2-winrt-1.0.2420.47 || >= webview2-winrt-1.0.955-prerelease <= webview2-winrt-1.0.2526-prerelease"
       ],
       "open_to_public_contributors": false,
       "type_mapping": {
