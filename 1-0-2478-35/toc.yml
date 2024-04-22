@@ -1,0 +1,234 @@
+- name: WebView2 WinRT Reference
+  items:
+    - name: Microsoft.Web.WebView2.Core Namespace
+      href: winrt/index.md
+      items:
+        - name: CoreWebView2
+          href: winrt/corewebview2.md
+        - name: CoreWebView2AcceleratorKeyPressedEventArgs
+          href: winrt/corewebview2acceleratorkeypressedeventargs.md
+        - name: CoreWebView2BasicAuthenticationRequestedEventArgs
+          href: winrt/corewebview2basicauthenticationrequestedeventargs.md
+        - name: CoreWebView2BasicAuthenticationResponse
+          href: winrt/corewebview2basicauthenticationresponse.md
+        - name: CoreWebView2BoundsMode
+          href: winrt/corewebview2boundsmode.md
+        - name: CoreWebView2BrowserExtension
+          href: winrt/corewebview2browserextension.md
+        - name: CoreWebView2BrowserProcessExitedEventArgs
+          href: winrt/corewebview2browserprocessexitedeventargs.md
+        - name: CoreWebView2BrowserProcessExitKind
+          href: winrt/corewebview2browserprocessexitkind.md
+        - name: CoreWebView2BrowsingDataKinds
+          href: winrt/corewebview2browsingdatakinds.md
+        - name: CoreWebView2CapturePreviewImageFormat
+          href: winrt/corewebview2capturepreviewimageformat.md
+        - name: CoreWebView2Certificate
+          href: winrt/corewebview2certificate.md
+        - name: CoreWebView2ChannelSearchKind
+          href: winrt/corewebview2channelsearchkind.md
+        - name: CoreWebView2ClientCertificate
+          href: winrt/corewebview2clientcertificate.md
+        - name: CoreWebView2ClientCertificateKind
+          href: winrt/corewebview2clientcertificatekind.md
+        - name: CoreWebView2ClientCertificateRequestedEventArgs
+          href: winrt/corewebview2clientcertificaterequestedeventargs.md
+        - name: CoreWebView2CompositionController
+          href: winrt/corewebview2compositioncontroller.md
+        - name: CoreWebView2ContentLoadingEventArgs
+          href: winrt/corewebview2contentloadingeventargs.md
+        - name: CoreWebView2ContextMenuItem
+          href: winrt/corewebview2contextmenuitem.md
+        - name: CoreWebView2ContextMenuItemKind
+          href: winrt/corewebview2contextmenuitemkind.md
+        - name: CoreWebView2ContextMenuRequestedEventArgs
+          href: winrt/corewebview2contextmenurequestedeventargs.md
+        - name: CoreWebView2ContextMenuTarget
+          href: winrt/corewebview2contextmenutarget.md
+        - name: CoreWebView2ContextMenuTargetKind
+          href: winrt/corewebview2contextmenutargetkind.md
+        - name: CoreWebView2Controller
+          href: winrt/corewebview2controller.md
+        - name: CoreWebView2ControllerOptions
+          href: winrt/corewebview2controlleroptions.md
+        - name: CoreWebView2ControllerWindowReference
+          href: winrt/corewebview2controllerwindowreference.md
+        - name: CoreWebView2Cookie
+          href: winrt/corewebview2cookie.md
+        - name: CoreWebView2CookieManager
+          href: winrt/corewebview2cookiemanager.md
+        - name: CoreWebView2CookieSameSiteKind
+          href: winrt/corewebview2cookiesamesitekind.md
+        - name: CoreWebView2CustomSchemeRegistration
+          href: winrt/corewebview2customschemeregistration.md
+        - name: CoreWebView2DefaultDownloadDialogCornerAlignment
+          href: winrt/corewebview2defaultdownloaddialogcorneralignment.md
+        - name: CoreWebView2DevToolsProtocolEventReceivedEventArgs
+          href: winrt/corewebview2devtoolsprotocoleventreceivedeventargs.md
+        - name: CoreWebView2DevToolsProtocolEventReceiver
+          href: winrt/corewebview2devtoolsprotocoleventreceiver.md
+        - name: CoreWebView2DOMContentLoadedEventArgs
+          href: winrt/corewebview2domcontentloadedeventargs.md
+        - name: CoreWebView2DownloadInterruptReason
+          href: winrt/corewebview2downloadinterruptreason.md
+        - name: CoreWebView2DownloadOperation
+          href: winrt/corewebview2downloadoperation.md
+        - name: CoreWebView2DownloadStartingEventArgs
+          href: winrt/corewebview2downloadstartingeventargs.md
+        - name: CoreWebView2DownloadState
+          href: winrt/corewebview2downloadstate.md
+        - name: CoreWebView2Environment
+          href: winrt/corewebview2environment.md
+        - name: CoreWebView2EnvironmentOptions
+          href: winrt/corewebview2environmentoptions.md
+        - name: CoreWebView2ExecuteScriptResult
+          href: winrt/corewebview2executescriptresult.md
+        - name: CoreWebView2FaviconImageFormat
+          href: winrt/corewebview2faviconimageformat.md
+        - name: CoreWebView2File
+          href: winrt/corewebview2file.md
+        - name: CoreWebView2Frame
+          href: winrt/corewebview2frame.md
+        - name: CoreWebView2FrameCreatedEventArgs
+          href: winrt/corewebview2framecreatedeventargs.md
+        - name: CoreWebView2FrameInfo
+          href: winrt/corewebview2frameinfo.md
+        - name: CoreWebView2FrameKind
+          href: winrt/corewebview2framekind.md
+        - name: CoreWebView2HostResourceAccessKind
+          href: winrt/corewebview2hostresourceaccesskind.md
+        - name: CoreWebView2HttpHeadersCollectionIterator
+          href: winrt/corewebview2httpheaderscollectioniterator.md
+        - name: CoreWebView2HttpRequestHeaders
+          href: winrt/corewebview2httprequestheaders.md
+        - name: CoreWebView2HttpResponseHeaders
+          href: winrt/corewebview2httpresponseheaders.md
+        - name: CoreWebView2KeyEventKind
+          href: winrt/corewebview2keyeventkind.md
+        - name: CoreWebView2LaunchingExternalUriSchemeEventArgs
+          href: winrt/corewebview2launchingexternalurischemeeventargs.md
+        - name: CoreWebView2MemoryUsageTargetLevel
+          href: winrt/corewebview2memoryusagetargetlevel.md
+        - name: CoreWebView2MouseEventKind
+          href: winrt/corewebview2mouseeventkind.md
+        - name: CoreWebView2MouseEventVirtualKeys
+          href: winrt/corewebview2mouseeventvirtualkeys.md
+        - name: CoreWebView2MoveFocusReason
+          href: winrt/corewebview2movefocusreason.md
+        - name: CoreWebView2MoveFocusRequestedEventArgs
+          href: winrt/corewebview2movefocusrequestedeventargs.md
+        - name: CoreWebView2NavigationCompletedEventArgs
+          href: winrt/corewebview2navigationcompletedeventargs.md
+        - name: CoreWebView2NavigationKind
+          href: winrt/corewebview2navigationkind.md
+        - name: CoreWebView2NavigationStartingEventArgs
+          href: winrt/corewebview2navigationstartingeventargs.md
+        - name: CoreWebView2NewWindowRequestedEventArgs
+          href: winrt/corewebview2newwindowrequestedeventargs.md
+        - name: CoreWebView2NonClientRegionChangedEventArgs
+          href: winrt/corewebview2nonclientregionchangedeventargs.md
+        - name: CoreWebView2NonClientRegionKind
+          href: winrt/corewebview2nonclientregionkind.md
+        - name: CoreWebView2PdfToolbarItems
+          href: winrt/corewebview2pdftoolbaritems.md
+        - name: CoreWebView2PermissionKind
+          href: winrt/corewebview2permissionkind.md
+        - name: CoreWebView2PermissionRequestedEventArgs
+          href: winrt/corewebview2permissionrequestedeventargs.md
+        - name: CoreWebView2PermissionSetting
+          href: winrt/corewebview2permissionsetting.md
+        - name: CoreWebView2PermissionState
+          href: winrt/corewebview2permissionstate.md
+        - name: CoreWebView2PhysicalKeyStatus
+          href: winrt/corewebview2physicalkeystatus.md
+        - name: CoreWebView2PointerEventKind
+          href: winrt/corewebview2pointereventkind.md
+        - name: CoreWebView2PointerInfo
+          href: winrt/corewebview2pointerinfo.md
+        - name: CoreWebView2PreferredColorScheme
+          href: winrt/corewebview2preferredcolorscheme.md
+        - name: CoreWebView2PrintCollation
+          href: winrt/corewebview2printcollation.md
+        - name: CoreWebView2PrintColorMode
+          href: winrt/corewebview2printcolormode.md
+        - name: CoreWebView2PrintDialogKind
+          href: winrt/corewebview2printdialogkind.md
+        - name: CoreWebView2PrintDuplex
+          href: winrt/corewebview2printduplex.md
+        - name: CoreWebView2PrintMediaSize
+          href: winrt/corewebview2printmediasize.md
+        - name: CoreWebView2PrintOrientation
+          href: winrt/corewebview2printorientation.md
+        - name: CoreWebView2PrintSettings
+          href: winrt/corewebview2printsettings.md
+        - name: CoreWebView2PrintStatus
+          href: winrt/corewebview2printstatus.md
+        - name: CoreWebView2ProcessExtendedInfo
+          href: winrt/corewebview2processextendedinfo.md
+        - name: CoreWebView2ProcessFailedEventArgs
+          href: winrt/corewebview2processfailedeventargs.md
+        - name: CoreWebView2ProcessFailedKind
+          href: winrt/corewebview2processfailedkind.md
+        - name: CoreWebView2ProcessFailedReason
+          href: winrt/corewebview2processfailedreason.md
+        - name: CoreWebView2ProcessInfo
+          href: winrt/corewebview2processinfo.md
+        - name: CoreWebView2ProcessKind
+          href: winrt/corewebview2processkind.md
+        - name: CoreWebView2Profile
+          href: winrt/corewebview2profile.md
+        - name: CoreWebView2ReleaseChannels
+          href: winrt/corewebview2releasechannels.md
+        - name: CoreWebView2ScriptDialogKind
+          href: winrt/corewebview2scriptdialogkind.md
+        - name: CoreWebView2ScriptDialogOpeningEventArgs
+          href: winrt/corewebview2scriptdialogopeningeventargs.md
+        - name: CoreWebView2ScriptException
+          href: winrt/corewebview2scriptexception.md
+        - name: CoreWebView2ServerCertificateErrorAction
+          href: winrt/corewebview2servercertificateerroraction.md
+        - name: CoreWebView2ServerCertificateErrorDetectedEventArgs
+          href: winrt/corewebview2servercertificateerrordetectedeventargs.md
+        - name: CoreWebView2Settings
+          href: winrt/corewebview2settings.md
+        - name: CoreWebView2SharedBuffer
+          href: winrt/corewebview2sharedbuffer.md
+        - name: CoreWebView2SharedBufferAccess
+          href: winrt/corewebview2sharedbufferaccess.md
+        - name: CoreWebView2SourceChangedEventArgs
+          href: winrt/corewebview2sourcechangedeventargs.md
+        - name: CoreWebView2TrackingPreventionLevel
+          href: winrt/corewebview2trackingpreventionlevel.md
+        - name: CoreWebView2WebErrorStatus
+          href: winrt/corewebview2weberrorstatus.md
+        - name: CoreWebView2WebMessageReceivedEventArgs
+          href: winrt/corewebview2webmessagereceivedeventargs.md
+        - name: CoreWebView2WebResourceContext
+          href: winrt/corewebview2webresourcecontext.md
+        - name: CoreWebView2WebResourceRequest
+          href: winrt/corewebview2webresourcerequest.md
+        - name: CoreWebView2WebResourceRequestedEventArgs
+          href: winrt/corewebview2webresourcerequestedeventargs.md
+        - name: CoreWebView2WebResourceRequestSourceKinds
+          href: winrt/corewebview2webresourcerequestsourcekinds.md
+        - name: CoreWebView2WebResourceResponse
+          href: winrt/corewebview2webresourceresponse.md
+        - name: CoreWebView2WebResourceResponseReceivedEventArgs
+          href: winrt/corewebview2webresourceresponsereceivedeventargs.md
+        - name: CoreWebView2WebResourceResponseView
+          href: winrt/corewebview2webresourceresponseview.md
+        - name: CoreWebView2WindowFeatures
+          href: winrt/corewebview2windowfeatures.md
+        - name: ICoreWebView2DispatchAdapter
+          href: winrt/icorewebview2dispatchadapter.md
+    - name: COM Interop APIs
+      href: interop/index.md
+      items:
+        - name: ICoreWebView2CompositionControllerInterop
+          href: interop/icorewebview2compositioncontrollerinterop.md
+        - name: ICoreWebView2CompositionControllerInterop2
+          href: interop/icorewebview2compositioncontrollerinterop2.md
+        - name: ICoreWebView2EnvironmentInterop
+          href: interop/icorewebview2environmentinterop.md
+        - name: ICoreWebView2Interop
+          href: interop/icorewebview2interop.md
