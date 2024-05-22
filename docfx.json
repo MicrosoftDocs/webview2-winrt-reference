@@ -244,7 +244,7 @@
     "template": [],
     "dest": "webview2-winrt",
     "groups": {
-      "webview2-2535-41": { "moniker_range": "webview2-winrt-preview" },
+      "webview2-2535-41": { "moniker_range": "webview2-winrt-1.0.2535.41" },
       "webview2-2478-35": { "moniker_range": "webview2-winrt-1.0.2478.35" },
       "webview2-2420-47": { "moniker_range": "webview2-winrt-1.0.2420.47" },
       "webview2-2365-46": { "moniker_range": "webview2-winrt-1.0.2365.46" },
