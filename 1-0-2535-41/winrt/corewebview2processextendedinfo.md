@@ -1,7 +1,7 @@
 ---
 description: Provides a set of properties for a process list with extended information in the CoreWebView2Environment.
 title: CoreWebView2ProcessExtendedInfo
-ms.date: 05/20/2024
+ms.date: 05/28/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ProcessExtendedInfo
 topic_type:
 - APIRef

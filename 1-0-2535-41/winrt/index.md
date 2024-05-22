@@ -1,7 +1,7 @@
 ---
 description: Explore all classes and interfaces of the Microsoft.Web.WebView2.Core namespace.
 title: Microsoft.Web.WebView2.Core Namespace
-ms.date: 05/20/2024
+ms.date: 05/28/2024
 keywords: IWebView2, IWebView2WebView, webview2, webview, winrt, Microsoft.Web.WebView2.Core, edge, ICoreWebView2, ICoreWebView2Controller, ICoreWebView2Interop, browser control, edge html
 
 ---

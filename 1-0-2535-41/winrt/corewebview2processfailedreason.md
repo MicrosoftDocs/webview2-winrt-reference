@@ -1,7 +1,7 @@
 ---
 description: Specifies the process failure reason used in CoreWebView2ProcessFailedEventArgs. For process failures where a process has exited, it indicates the type of issue that produced the process exit.
 title: CoreWebView2ProcessFailedReason
-ms.date: 05/20/2024
+ms.date: 05/28/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ProcessFailedReason
 topic_type:
 - APIRef

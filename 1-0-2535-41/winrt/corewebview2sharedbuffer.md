@@ -1,7 +1,7 @@
 ---
 description: A shared memory based buffer object that is created by CoreWebView2Environment.CreateSharedBuffer. The object is presented to script as ArrayBuffer when posted to script with CoreWebView2.PostSharedBufferToScript.
 title: CoreWebView2SharedBuffer
-ms.date: 05/20/2024
+ms.date: 05/28/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2SharedBuffer
 topic_type:
 - APIRef

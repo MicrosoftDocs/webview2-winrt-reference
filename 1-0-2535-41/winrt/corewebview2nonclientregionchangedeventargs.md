@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2CompositionController.NonClientRegionChanged event.
 title: CoreWebView2NonClientRegionChangedEventArgs
-ms.date: 05/20/2024
+ms.date: 05/28/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2NonClientRegionChangedEventArgs
 topic_type:
 - APIRef

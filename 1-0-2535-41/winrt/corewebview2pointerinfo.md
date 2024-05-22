@@ -1,7 +1,7 @@
 ---
 description: This mostly represents a combined win32 `POINTER_INFO`, `POINTER_TOUCH_INFO`, and `POINTER_PEN_INFO` object.
 title: CoreWebView2PointerInfo
-ms.date: 05/20/2024
+ms.date: 05/28/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PointerInfo
 topic_type:
 - APIRef

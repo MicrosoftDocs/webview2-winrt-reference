@@ -1,7 +1,7 @@
 ---
 description: This class is an extension of the CoreWebView2Controller class to support visual hosting.
 title: CoreWebView2CompositionController
-ms.date: 05/20/2024
+ms.date: 05/28/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2CompositionController
 topic_type:
 - APIRef

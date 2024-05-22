@@ -1,7 +1,7 @@
 ---
 description: Specifies the process failure kind used in CoreWebView2ProcessFailedEventArgs. The values in this enum make reference to the process kinds in the Chromium architecture. For more information about what these processes are and what they do, see Browser Architecture - Inside look at modern web browser.
 title: CoreWebView2ProcessFailedKind
-ms.date: 05/20/2024
+ms.date: 05/28/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ProcessFailedKind
 topic_type:
 - APIRef

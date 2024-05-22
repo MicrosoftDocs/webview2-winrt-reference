@@ -1,7 +1,7 @@
 ---
 description: Preferred color scheme for WebView2's associated with a profile.
 title: CoreWebView2PreferredColorScheme
-ms.date: 05/20/2024
+ms.date: 05/28/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PreferredColorScheme
 topic_type:
 - APIRef

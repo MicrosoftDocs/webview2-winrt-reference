@@ -1,7 +1,7 @@
 ---
 description: Kind of cookie SameSite status used in the CoreWebView2Cookie class.
 title: CoreWebView2CookieSameSiteKind
-ms.date: 05/20/2024
+ms.date: 05/28/2024
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2CookieSameSiteKind
 topic_type:
 - APIRef

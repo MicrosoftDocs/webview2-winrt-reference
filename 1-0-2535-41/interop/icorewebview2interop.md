@@ -1,7 +1,7 @@
 ---
 description: Interop interface for the CoreWebView2 WinRT object to allow WinRT end developers to be able to use COM interfaces as parameters for some methods.
 title: WebView2 WinRT COM ICoreWebView2Interop
-ms.date: 05/20/2024
+ms.date: 05/28/2024
 keywords: IWebView2, IWebView2WebView, webview2, webview, winrt, interop, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html, ICoreWebView2Interop
 ---
 
