@@ -20,7 +20,7 @@ The ScrollBar style being set during environment creation.
 | Name |  Value | Description |
 |--|--|--|
 |`Default` | 0x0  |  Browser default ScrollBar style|
-|`FluentOverlay` | 0x1  |  Window style fluent overlay scroll bar. Please see [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/) for more details on fluent UI.|
+|`FluentOverlay` | 0x1  |  Window style fluent overlay scroll bar. See [Fluent UI](https://developer.microsoft.com/fluentui#/) for more details on fluent UI.|
 
 
 ## Referenced by
