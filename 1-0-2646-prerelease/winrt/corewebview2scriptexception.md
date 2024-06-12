@@ -1,0 +1,81 @@
+---
+description: This interface represents a JavaScript exception.
+title: CoreWebView2ScriptException
+ms.date: 06/19/2024
+keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ScriptException
+topic_type:
+- APIRef
+api_type:
+- Assembly
+api_location:
+- Microsoft.Web.WebView2.Core.dll
+api_name:
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.ColumnNumber
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.LineNumber
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.Message
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.Name
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.ToJson
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.get_ColumnNumber
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.get_LineNumber
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.get_Message
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.get_Name
+- Microsoft.Web.WebView2.Core.CoreWebView2ScriptException.get_ToJson
+---
+
+# CoreWebView2ScriptException Class
+
+
+
+This interface represents a JavaScript exception.
+
+## Summary
+
+Members|Description
+--|--
+[ColumnNumber](#columnnumber) | The column number of the source where the exception occurred. Note that this position starts at 0.
+[LineNumber](#linenumber) | The line number of the source where the exception occurred. Note that this position starts at 0.
+[Message](#message) | The Message is the exception's message and potentially stack.
+[Name](#name) | The Name is the exception's class name.
+[ToJson](#tojson) | This will return all details of the exception as a JSON string.
+
+## Properties
+
+### ColumnNumber
+
+> readonly  uint32_t ColumnNumber
+
+The column number of the source where the exception occurred. Note that this position starts at 0.
+
+### LineNumber
+
+> readonly  uint32_t LineNumber
+
+The line number of the source where the exception occurred. Note that this position starts at 0.
+
+### Message
+
+> readonly  string Message
+
+The Message is the exception's message and potentially stack.
+
+### Name
+
+> readonly  string Name
+
+The Name is the exception's class name.
+
+### ToJson
+
+> readonly  string ToJson
+
+This will return all details of the exception as a JSON string.
+
+
+
+
+
+
+## Referenced by
+
+- [CoreWebView2ExecuteScriptResult](corewebview2executescriptresult.md)
