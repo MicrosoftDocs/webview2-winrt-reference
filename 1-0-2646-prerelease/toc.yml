@@ -272,3 +272,5 @@
           href: interop/icorewebview2environmentinterop.md
         - name: ICoreWebView2Interop
           href: interop/icorewebview2interop.md
+        - name: ICoreWebView2Interop2
+          href: interop/icorewebview2interop2.md
