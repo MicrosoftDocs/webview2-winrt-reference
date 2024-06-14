@@ -56,14 +56,14 @@ Members|Description
 >  bool AllowReplace
 
 Indicates whether to allow replace old file when it already exists in the target save file path.
-Setting this property to `TRUE` allows existing files to be replaced. Setting this property to `FALSE` will not replace existing files and will return [CoreWebView2SaveAsUIResult.FileAlreadyExists](corewebview2saveasuiresult.md#filealreadyexists).
+Setting this property to `TRUE` allows existing files to be replaced. Setting this property to `FALSE` will not replace existing files and will return [CoreWebView2SaveAsUIResult.FileAlreadyExists](corewebview2saveasuiresult.md).
 
 ### Cancel
 
 >  bool Cancel
 
 Indicates whether to cancel the save as before download.
-Set this property to `TRUE` to cancel the Save As action and prevent the download from starting. [CoreWebView2.ShowSaveAsUIAsync](corewebview2.md#showsaveasuiasync) returns [CoreWebView2SaveAsUIResult.Cancelled](corewebview2saveasuiresult.md#cancelled).
+Set this property to `TRUE` to cancel the Save As action and prevent the download from starting. [CoreWebView2.ShowSaveAsUIAsync](corewebview2.md#showsaveasuiasync) returns [CoreWebView2SaveAsUIResult.Cancelled](corewebview2saveasuiresult.md).
 
 ### ContentMimeType
 
@@ -76,14 +76,14 @@ Mime type of content to be saved.
 >  [CoreWebView2SaveAsKind](corewebview2saveaskind.md) Kind
 
 The option to save content to different document. [CoreWebView2SaveAsKind](corewebview2saveaskind.md)
-If it is not allowed for the current document, method [CoreWebView2.ShowSaveAsUIAsync](corewebview2.md#showsaveasuiasync) returns [CoreWebView2SaveAsUIResult.InvalidPath](corewebview2saveasuiresult.md#invalidpath).
+If it is not allowed for the current document, method [CoreWebView2.ShowSaveAsUIAsync](corewebview2.md#showsaveasuiasync) returns [CoreWebView2SaveAsUIResult.InvalidPath](corewebview2saveasuiresult.md).
 
 ### SaveAsFilePath
 
 >  string SaveAsFilePath
 
 The absolute full path of save as location.
-It includes the file name and extension. If it is not valid (for example, the root drive does not exist), Save As is denied, and [CoreWebView2SaveAsUIResult.InvalidPath](corewebview2saveasuiresult.md#invalidpath) is returned. If the associated download completes successfully, a target file is saved at this location. If the `Kind` property is [CoreWebView2SaveAsKind.Complete](corewebview2saveaskind.md#complete), there will be an additional directory with resources files.
+It includes the file name and extension. If it is not valid (for example, the root drive does not exist), Save As is denied, and [CoreWebView2SaveAsUIResult.InvalidPath](corewebview2saveasuiresult.md) is returned. If the associated download completes successfully, a target file is saved at this location. If the `Kind` property is [CoreWebView2SaveAsKind.Complete](corewebview2saveaskind.md#complete), there will be an additional directory with resources files.
 
 ### SuppressDefaultDialog
 
