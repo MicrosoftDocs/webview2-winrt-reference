@@ -283,7 +283,7 @@ Members|Description
 [NavigationCompleted](#navigationcompleted) | NavigationCompleted is raised when the WebView has completely loaded (`body.onload` has been raised) or loading stopped with error.
 [NavigationStarting](#navigationstarting) | NavigationStarting is raised when the WebView main frame is requesting permission to navigate to a different URI.
 [NewWindowRequested](#newwindowrequested) | NewWindowRequested is raised when content inside the WebView requests to open a new window, such as through `window.open()`.
-[NotificationReceived](#notificationreceived) | 
+[NotificationReceived](#notificationreceived) | NotificationReceived is raised when a non-persistent notification is received.
 [PermissionRequested](#permissionrequested) | PermissionRequested is raised when content in a WebView requests permission to access some privileged resources.
 [ProcessFailed](#processfailed) | `ProcessFailed` is raised when any of the processes in the [WebView2 Process Group](/microsoft-edge/webview2/concepts/process-model?tabs=csharp#processes-in-the-webview2-runtime) encounters one of the following conditions:
 [SaveAsUIShowing](#saveasuishowing) | SaveAsUIShowing is raised when browser trys to open a save as dialog. It includes opening dialog manually from context menu or programmatically from [CoreWebView2.ShowSaveAsUIAsync](corewebview2.md#showsaveasuiasync).
@@ -1248,6 +1248,8 @@ If either of these properties are set, the WebView2 will not navigate to the [Co
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2NewWindowRequestedEventArgs](corewebview2newwindowrequestedeventargs.md)&gt;
 
 ### NotificationReceived
+
+NotificationReceived is raised when a non-persistent notification is received.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2, [CoreWebView2NotificationReceivedEventArgs](corewebview2notificationreceivedeventargs.md)&gt;
 
