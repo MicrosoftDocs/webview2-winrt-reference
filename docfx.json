@@ -29,7 +29,7 @@
       },
       { "files": ["*.md"], "group": "webview2-3065-39", "src": "1-0-3065-39/interop", "dest": "interop" },
       { "files": ["*.md"], "group": "webview2-3065-39", "src": "1-0-3065-39/winrt", "dest": "microsoft_web_webview2_core" },
-      { "files": ["**/*.yml"], "group": "webview2-3065-39", "src": "1-0-3065-39" }
+      { "files": ["**/*.yml"], "group": "webview2-3065-39", "src": "1-0-3065-39" },
       { "files": ["*.md"], "group": "webview2-2957-106", "src": "1-0-2957-106/interop", "dest": "interop" },
       { "files": ["*.md"], "group": "webview2-2957-106", "src": "1-0-2957-106/winrt", "dest": "microsoft_web_webview2_core" },
       { "files": ["**/*.yml"], "group": "webview2-2957-106", "src": "1-0-2957-106" },
