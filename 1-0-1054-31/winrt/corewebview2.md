@@ -288,7 +288,7 @@ For more information about resource context filters, navigate to [CoreWebView2We
 | `*example` | `https://contoso.com/path/?query#example` | No | The filter is matched against the URI with no fragment |
 | `*example` | https://example | No | The URI is normalized before filter matching so the actual URI used for comparison is https://example.com/ |
 | `*example/` | https://example | Yes | Just like above, but this time the filter ends with a / just like the normalized URI |
-| https://xn--qei.example/ | https://&#x2764;.example/ | Yes | Non-ASCII hostnames are normalized to punycode before wildcard comparison |
+| `https://xn--qei.example/` | https://&#x2764;.example/ | Yes | Non-ASCII hostnames are normalized to punycode before wildcard comparison |
 | https://&#x2764;.example/ | `https://xn--qei.example/` | No | Non-ASCII hostnames are normalized to punycode before wildcard comparison |
 
 
