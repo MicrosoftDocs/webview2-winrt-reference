@@ -34,8 +34,8 @@ Members|Description
 [PostWebMessageAsJson](#postwebmessageasjson) | Posts the specified `webMessageAsJson` to this worker.
 [PostWebMessageAsString](#postwebmessageasstring) | Posts a message that is a simple string rather than a JSON string representation of a JavaScript object.
 [DedicatedWorkerCreated](#dedicatedworkercreated) | Subscribe to this event that gets raised when a new dedicated worker is created from a dedicated worker.
-[Destroying](#destroying) | Add an event handler for the `CoreWebView2DedicatedWorker.Destroying` event that is raised when the worker object is Destroying. A worker object is Destroying when the worker script is terminated or when the `CoreWebView2DedicatedWorker` object is Destroying.
-[WebMessageReceived](#webmessagereceived) | It is raised when the 'CoreWebView2Settings.IsWebMessageEnabled' setting is set and the dedicated worker script runs 'window.chrome.webview.postMessage'.
+[Destroying](#destroying) | Add an event handler for the `CoreWebView2DedicatedWorker.Destroying` event that is raised when the worker object is Destroying. A worker object is Destroying when the worker script is terminated or when the `CoreWebView2DedicatedWorker` object is Destroying.`
+[WebMessageReceived](#webmessagereceived) | It is raised when the `CoreWebView2Settings.IsWebMessageEnabled'` setting is set and the dedicated worker script runs `window.chrome.webview.postMessage`.
 
 ## Properties
 
