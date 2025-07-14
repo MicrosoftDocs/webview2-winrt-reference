@@ -32,7 +32,6 @@ Use `ReleaseChannels` and `ChannelSearchKind` on `CoreWebView2EnvironmentOptions
 |`Beta` | 0x2  |  The Beta release channel that is released every 4 weeks, a week before the stable release.|
 |`Dev` | 0x4  |  The Dev release channel that is released weekly.|
 |`Canary` | 0x8  |  The Canary release channel that is released daily.|
-|`Internal` | 0x16  |  |
 
 
 ## Referenced by
