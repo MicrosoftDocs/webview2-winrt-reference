@@ -103,6 +103,8 @@ Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;Co
 
 ### WebMessageReceived
 
+It is raised when the `CoreWebView2Settings.IsWebMessageEnabled` setting is set and the dedicated worker script runs `window.chrome.webview.postMessage`.
+
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2DedicatedWorker, [CoreWebView2WebMessageReceivedEventArgs](corewebview2webmessagereceivedeventargs.md)&gt;
 
 
