@@ -33,7 +33,7 @@ Members|Description
 [PostWebMessageAsJson](#postwebmessageasjson) | Posts the specified `webMessageAsJson` to this worker.
 [PostWebMessageAsString](#postwebmessageasstring) | Posts a message that is a simple string rather than a JSON string representation of a JavaScript object.
 [Destroying](#destroying) | Add an event handler for the `CoreWebView2ServiceWorker.Destroying` event that is raised when the worker object is Destroying. A worker object is Destroying when the worker script is terminated or when the `CoreWebView2ServiceWorker` object is Destroying.
-[WebMessageReceived](#webmessagereceived) | 
+[WebMessageReceived](#webmessagereceived) | It is raised when the `CoreWebView2Settings.IsWebMessageEnabled` setting is set and the service worker script runs `window.chrome.webview.postMessage`.
 
 ## Properties
 
@@ -89,6 +89,8 @@ If the worker has already been destroyed before the event handler is registered,
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2ServiceWorker, Object&gt;
 
 ### WebMessageReceived
+
+It is raised when the `CoreWebView2Settings.IsWebMessageEnabled` setting is set and the service worker script runs `window.chrome.webview.postMessage`.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2ServiceWorker, [CoreWebView2WebMessageReceivedEventArgs](corewebview2webmessagereceivedeventargs.md)&gt;
 
