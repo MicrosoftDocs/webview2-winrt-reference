@@ -27,21 +27,19 @@ Specifies the web resource request contexts.
 |`Font` | 0x5  |  Specifies a font resource.|
 |`Script` | 0x6  |  Specifies a script resource.|
 |`XmlHttpRequest` | 0x7  |  Specifies an XML HTTP request, Fetch and EventSource HTTP communication.|
-|`Fetch` | 0x8  |  Specifies a Fetch API communication.
-
-Note that this isn't working. Fetch API requests are fired as a part
-of COREWEBVIEW2_WEB_RESOURCE_CONTEXT_XML_HTTP_REQUEST.|
+|`Fetch` | 0x8  |  Specifies a Fetch API communication.|
 |`TextTrack` | 0x9  |  Specifies a TextTrack resource.|
-|`EventSource` | 0xa  |  Specifies an EventSource API communication.
-
-Note that this isn't working. EventSource API requests are fired as a part
-of COREWEBVIEW2_WEB_RESOURCE_CONTEXT_XML_HTTP_REQUEST.|
+|`EventSource` | 0xa  |  Specifies an EventSource API communication.|
 |`Websocket` | 0xb  |  Specifies a WebSocket API communication.|
 |`Manifest` | 0xc  |  Specifies a Web App Manifest.|
 |`SignedExchange` | 0xd  |  Specifies a Signed HTTP Exchange.|
 |`Ping` | 0xe  |  Specifies a Ping request.|
 |`CspViolationReport` | 0xf  |  Specifies a CSP Violation Report.|
 |`Other` | 0x10  |  Specifies an other resource.|
+
+Note that `CoreWebView2WebResourceContext.Fetch` isn't working. Fetch API requests are fired as a part of COREWEBVIEW2_WEB_RESOURCE_CONTEXT_XML_HTTP_REQUEST.
+
+Note that `CoreWebView2WebResourceContext.EventSource` isn't working. EventSource API requests are fired as a part of COREWEBVIEW2_WEB_RESOURCE_CONTEXT_XML_HTTP_REQUEST.
 
 
 ## Referenced by
