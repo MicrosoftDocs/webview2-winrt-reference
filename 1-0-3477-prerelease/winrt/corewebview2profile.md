@@ -53,8 +53,8 @@ Members|Description
 [PreferredTrackingPreventionLevel](#preferredtrackingpreventionlevel) | The `PreferredTrackingPreventionLevel` property allows you to control levels of tracking prevention for WebView2 which are associated with a profile. This level would apply to the context of the profile. That is, all WebView2s sharing the same profile will be affected and also the value is persisted in the user data folder.
 [ProfileName](#profilename) | The name of the profile.
 [ProfilePath](#profilepath) | Full path of the profile directory.
-[ServiceWorkerManager](#serviceworkermanager) | 
-[SharedWorkerManager](#sharedworkermanager) | 
+[ServiceWorkerManager](#serviceworkermanager) | Get the `CoreWebView2ServiceWorkerManager` instance to monitor service worker registrations and interact with the service worker associated with the current profile.|
+[SharedWorkerManager](#sharedworkermanager) | Get the `CoreWebView2SharedWorkerManager` instance to monitor shared worker creations and interact with the shared worker associated with the current profile.|
 [AddBrowserExtensionAsync](#addbrowserextensionasync) | Add a browser extension to the current user profile from `extensionFolderPath`.
 [ClearBrowsingDataAsync](#clearbrowsingdataasync) | Clears browsing data for dataKinds between startTime and endTime.
 [ClearBrowsingDataAsync](#clearbrowsingdataasync) | Clears all browsing data associated with the profile this method is called on regardless of timestamp.
@@ -143,10 +143,13 @@ Full path of the profile directory.
 
 > readonly  [CoreWebView2ServiceWorkerManager](corewebview2serviceworkermanager.md) ServiceWorkerManager
 
+Get the `CoreWebView2ServiceWorkerManager` instance to monitor service worker registrations and interact with the service worker associated with the current profile.
+
 ### SharedWorkerManager
 
 > readonly  [CoreWebView2SharedWorkerManager](corewebview2sharedworkermanager.md) SharedWorkerManager
 
+Get the `CoreWebView2SharedWorkerManager` instance to monitor shared worker creations and interact with the shared worker associated with the current profile.
 
 
 ## Methods
