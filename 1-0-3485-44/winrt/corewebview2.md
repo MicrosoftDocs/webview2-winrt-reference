@@ -128,7 +128,7 @@ Members|Description
 [DocumentTitle](#documenttitle) | Gets the title for the current top-level document.
 [Environment](#environment) | Exposes the [CoreWebView2Environment](corewebview2environment.md) used to create this CoreWebView2.
 [FaviconUri](#faviconuri) | Get the Uri as a string of the current Favicon. This will be an empty string if the page does not have a Favicon.
-[Find](#find) | 
+[Find](#find) | The Find API allows you to programmatically control Find operations and enables your app to: search text, customize case sensitivity and word matching, highlight results, suppress the default Find UI, navigate through results, and track the status of Find operations.
 [FrameId](#frameid) | The unique identifier of the main frame. It's the same kind of ID as with the [CoreWebView2Frame.FrameId](corewebview2frame.md#frameid) and [CoreWebView2FrameInfo.FrameId](corewebview2frameinfo.md#frameid).
 [IsDefaultDownloadDialogOpen](#isdefaultdownloaddialogopen) | True if the default download dialog is currently open.
 [IsDocumentPlayingAudio](#isdocumentplayingaudio) | Indicates whether any audio output from this CoreWebView2 is playing. `true` if audio is playing even if [CoreWebView2.IsMuted](corewebview2.md#ismuted) is true.
@@ -284,6 +284,8 @@ Get the Uri as a string of the current Favicon. This will be an empty string if 
 ### Find
 
 > readonly  [CoreWebView2Find](corewebview2find.md) Find
+
+The Find API allows you to programmatically control Find operations and enables your app to: search text, customize case sensitivity and word matching, highlight results, suppress the default Find UI, navigate through results, and track the status of Find operations.
 
 ### FrameId
 
