@@ -132,7 +132,7 @@ Members|Description
 [DocumentTitle](#documenttitle) | Gets the title for the current top-level document.
 [Environment](#environment) | Exposes the [CoreWebView2Environment](corewebview2environment.md) used to create this CoreWebView2.
 [FaviconUri](#faviconuri) | Get the Uri as a string of the current Favicon. This will be an empty string if the page does not have a Favicon.
-[Find](#find) | 
+[Find](#find) | The Find API allows you to programmatically control Find operations and enables your app to: search text, customize case sensitivity and word matching, highlight results, suppress the default Find UI, navigate through results, and track the status of Find operations.
 [FrameId](#frameid) | The unique identifier of the main frame. It's the same kind of ID as with the [CoreWebView2Frame.FrameId](corewebview2frame.md#frameid) and [CoreWebView2FrameInfo.FrameId](corewebview2frameinfo.md#frameid).
 [IsDefaultDownloadDialogOpen](#isdefaultdownloaddialogopen) | True if the default download dialog is currently open.
 [IsDocumentPlayingAudio](#isdocumentplayingaudio) | Indicates whether any audio output from this CoreWebView2 is playing. `true` if audio is playing even if [CoreWebView2.IsMuted](corewebview2.md#ismuted) is true.
@@ -147,7 +147,7 @@ Members|Description
 [AddHostObjectToScript](#addhostobjecttoscript) | Adds the provided host object to script running in the WebView with the specified name.
 [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync) | Adds the provided JavaScript to a list of scripts that should be run after the global object has been created, but before the HTML document has been parsed and before any other script included by the HTML document is run.
 [AddWebResourceRequestedFilter](#addwebresourcerequestedfilter) | This is an overload method that allows to subscribe to WebResourceRequested events received outside of main page.
-[AddWebResourceRequestedFilter](#addwebresourcerequestedfilter) | 
+[AddWebResourceRequestedFilter](#addwebresourcerequestedfilter) | Warning: This method and `CoreWebView2.RemoveWebResourceRequestedFilter(string, CoreWebView2WebResourceContext)` are deprecated.
 [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync) | Runs an asynchronous DevToolsProtocol method.
 [CallDevToolsProtocolMethodForSessionAsync](#calldevtoolsprotocolmethodforsessionasync) | Runs an asynchronous `DevToolsProtocol` method for a specific session of an attached target.
 [CapturePreviewAsync](#capturepreviewasync) | Captures an image of what WebView is displaying.
@@ -177,7 +177,7 @@ Members|Description
 [RemoveHostObjectFromScript](#removehostobjectfromscript) | Removes the host object specified by the name so that it is no longer accessible from JavaScript code in the WebView.
 [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) | Removes the corresponding JavaScript added via [CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync](corewebview2.md#addscripttoexecuteondocumentcreatedasync) with the specified script ID.
 [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter) | This is an overload method that allows to unsubscribe from WebResourceRequested events received outside of main page.
-[RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter) | Warning: This method and <see cref="CoreWebView2.AddWebResourceRequestedFilter(string, CoreWebView2WebResourceContext)"/> are deprecated.
+[RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter) | Warning: This method and `CoreWebView2.AddWebResourceRequestedFilter(string, CoreWebView2WebResourceContext)` are deprecated.
 [Resume](#resume) | Resumes the WebView so that it resumes activities on the web page.
 [SetVirtualHostNameToFolderMapping](#setvirtualhostnametofoldermapping) | Sets a mapping between a virtual host name and a folder path to make available to web sites via that host name.
 [ShowPrintUI](#showprintui) | Opens the print dialog to print the current web page.
@@ -310,6 +310,8 @@ Get the Uri as a string of the current Favicon. This will be an empty string if 
 ### Find
 
 > readonly  [CoreWebView2Find](corewebview2find.md) Find
+
+The Find API allows you to programmatically control Find operations and enables your app to: search text, customize case sensitivity and word matching, highlight results, suppress the default Find UI, navigate through results, and track the status of Find operations.
 
 ### FrameId
 
@@ -535,6 +537,8 @@ This is an overload method that allows to subscribe to WebResourceRequested even
 ### AddWebResourceRequestedFilter
 
 > void AddWebResourceRequestedFilter(string uri, [CoreWebView2WebResourceContext](corewebview2webresourcecontext.md) ResourceContext)
+
+Warning: This method and `CoreWebView2.RemoveWebResourceRequestedFilter(string, CoreWebView2WebResourceContext)` are deprecated.
 
 
 
@@ -891,7 +895,7 @@ This is an overload method that allows to unsubscribe from WebResourceRequested 
 
 > void RemoveWebResourceRequestedFilter(string uri, [CoreWebView2WebResourceContext](corewebview2webresourcecontext.md) ResourceContext)
 
-Warning: This method and <see cref="CoreWebView2.AddWebResourceRequestedFilter(string, CoreWebView2WebResourceContext)"/> are deprecated.
+Warning: This method and `CoreWebView2.AddWebResourceRequestedFilter(string, CoreWebView2WebResourceContext)` are deprecated.
 Removes a matching WebResource filter that was previously added for the [CoreWebView2.WebResourceRequested](corewebview2.md#webresourcerequested) event.
 If the same filter was added multiple times, then it must need to be removed as many times as it was added for the removal to be effective.
 
