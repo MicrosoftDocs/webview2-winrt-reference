@@ -88,8 +88,11 @@ If there are no matches to find, FindPrevious will wrap around to the last match
 > [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) StartAsync([CoreWebView2FindOptions](corewebview2findoptions.md) options)
 
 Initiates a find operation using the specified options asynchronously. Starting find is an asynchronous operation and can be configured with notification handlers to know when the starting find operation has completed. The Find dialog will appear after the StartAsync operation completes. Note that the async behavior only applies to starting the find, not to the entire find dialog session.
+
 Displays the Find bar and starts the find session, replacing any existing session. Shows the Find bar even with empty search strings (no actual finding occurs). Supports HTML and TXT document queries; silently fails on unsupported formats. FindOptions changes after initiation don't affect the active session.
+
 The async action completes when the Find bar UI displays the search term and the match counter populates (may have slight latency). The `MatchCountChanged` and `ActiveMatchIndexChanged` events fire only after completion with default values of -1 for active match index and 0 for match count before completion.
+
 To start a new session from the first match, call `Stop()` before `StartAsync()`. Consecutive calls with the same options continue from the current position. Without parameters, it behaves as `FindNext` or `FindPrevious` based on the last action (defaults to forward). Different search terms always start a new session from the document beginning.
 
 
