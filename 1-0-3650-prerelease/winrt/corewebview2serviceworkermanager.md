@@ -27,17 +27,17 @@ This interface manages registrations for service workers in WebView2.
 
 Members|Description
 --|--
-[GetServiceWorkerRegistrationsAsync](#getserviceworkerregistrationsasync) | Gets the service worker registrations associated with the specified scope.
-[GetServiceWorkerRegistrationsAsync](#getserviceworkerregistrationsasync) | 
+[GetServiceWorkerRegistrationsForScope](#getserviceworkerregistrationsforscope) | Gets the service worker registrations associated with the specified scope.
+[GetServiceWorkerRegistrationsAsync](#getserviceworkerregistrationsasync) | Gets a list of the service worker registrations under the same profile. 
 [ServiceWorkerRegistered](#serviceworkerregistered) | A ServiceWorker is a specific type of worker that takes a JavaScript file that can control the web-page/site that it is associated with intercepting and modifying navigation and resource requests, and caching resources in a very granular fashion to give you complete control over how app behaves in certain situations.
 
 
 
 ## Methods
 
-### GetServiceWorkerRegistrationsAsync
+### GetServiceWorkerRegistrationsForScope
 
-> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;[CoreWebView2ServiceWorkerRegistration](corewebview2serviceworkerregistration.md)&gt;&gt; GetServiceWorkerRegistrationsAsync(string scope)
+> [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;[CoreWebView2ServiceWorkerRegistration](corewebview2serviceworkerregistration.md)&gt;&gt; GetServiceWorkerRegistrationsForScope(string scope)
 
 Gets the service worker registrations associated with the specified scope.
 
@@ -47,7 +47,7 @@ Gets the service worker registrations associated with the specified scope.
 
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;[CoreWebView2ServiceWorkerRegistration](corewebview2serviceworkerregistration.md)&gt;&gt; GetServiceWorkerRegistrationsAsync()
 
-
+Gets a list of the service worker registrations under the same profile.
 
 
 ## Events
