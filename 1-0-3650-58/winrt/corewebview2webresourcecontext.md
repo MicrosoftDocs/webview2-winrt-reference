@@ -35,13 +35,13 @@ Specifies the web resource request contexts.
 |`SignedExchange` | 0xd  |  Specifies a Signed HTTP Exchange.|
 |`Ping` | 0xe  |  Specifies a Ping request.|
 |`CspViolationReport` | 0xf  |  Specifies a CSP Violation Report.|
-|`Other` | 0x10  |  Specifies an other resource.
+|`Other` | 0x10  |  Specifies an other resource.|
 
 Note that `CoreWebView2WebResourceContext.Fetch` isn't working. Fetch API requests are fired as a part
 of COREWEBVIEW2_WEB_RESOURCE_CONTEXT_XML_HTTP_REQUEST.
 
 Note that `CoreWebView2WebResourceContext.EventSource` isn't working. EventSource API requests are fired as a part
-of COREWEBVIEW2_WEB_RESOURCE_CONTEXT_XML_HTTP_REQUEST.|
+of COREWEBVIEW2_WEB_RESOURCE_CONTEXT_XML_HTTP_REQUEST.
 
 
 ## Referenced by
