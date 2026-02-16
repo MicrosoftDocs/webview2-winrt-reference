@@ -23,7 +23,7 @@ api_name:
 
 Members|Description
 --|--
-[GetSharedWorkersAsync](#getsharedworkersasync) | 
+[GetSharedWorkersAsync](#getsharedworkersasync) | Gets a list of the shared workers created under the same profile.
 [SharedWorkerCreated](#sharedworkercreated) | Add an event handler for the `SharedWorkerCreated` event.
 
 
@@ -34,7 +34,7 @@ Members|Description
 
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;[CoreWebView2SharedWorker](corewebview2sharedworker.md)&gt;&gt; GetSharedWorkersAsync()
 
-
+Gets a list of the shared workers created under the same profile.
 
 
 ## Events
