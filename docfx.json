@@ -27,6 +27,9 @@
         ],
         "src": "non-version"
       },
+      { "files": ["*.md"], "group": "webview2-4022-49", "src": "1-0-4022-49/interop", "dest": "interop" },
+      { "files": ["*.md"], "group": "webview2-4022-49", "src": "1-0-4022-49/winrt", "dest": "microsoft_web_webview2_core" },
+      { "files": ["**/*.yml"], "group": "webview2-4022-49", "src": "1-0-4022-49" },
       { "files": ["*.md"], "group": "webview2-3967-48", "src": "1-0-3967-48/interop", "dest": "interop" },
       { "files": ["*.md"], "group": "webview2-3967-48", "src": "1-0-3967-48/winrt", "dest": "microsoft_web_webview2_core" },
       { "files": ["**/*.yml"], "group": "webview2-3967-48", "src": "1-0-3967-48" },
@@ -370,6 +373,7 @@
     "template": [],
     "dest": "webview2-winrt",
     "groups": {
+      "webview2-4022-49": { "moniker_range": "webview2-winrt-1.0.4022.49" },
       "webview2-3967-48": { "moniker_range": "webview2-winrt-1.0.3967.48" },
       "webview2-3912-50": { "moniker_range": "webview2-winrt-1.0.3912.50" },
       "webview2-3856-49": { "moniker_range": "webview2-winrt-1.0.3856.49" },
