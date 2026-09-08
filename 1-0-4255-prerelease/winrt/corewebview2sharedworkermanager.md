@@ -23,7 +23,7 @@ api_name:
 
 Members|Description
 --|--
-[GetSharedWorkersAsync](#getsharedworkersasync) | 
+[GetSharedWorkersAsync](#getsharedworkersasync) |  Gets a list of the shared workers created under the same profile.
 [SharedWorkerCreated](#sharedworkercreated) | Add an event handler for the `SharedWorkerCreated` event.
 
 

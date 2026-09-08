@@ -28,7 +28,7 @@ This interface manages registrations for service workers in WebView2.
 Members|Description
 --|--
 [GetServiceWorkerRegistrationsAsync](#getserviceworkerregistrationsasync) | Gets the service worker registrations associated with the specified scope.
-[GetServiceWorkerRegistrationsAsync](#getserviceworkerregistrationsasync) | 
+[GetServiceWorkerRegistrationsAsync](#getserviceworkerregistrationsasync) | Gets a list of the service worker registrations under the same profile.
 [ServiceWorkerRegistered](#serviceworkerregistered) | A ServiceWorker is a specific type of worker that takes a JavaScript file that can control the web-page/site that it is associated with intercepting and modifying navigation and resource requests, and caching resources in a very granular fashion to give you complete control over how app behaves in certain situations.
 
 
