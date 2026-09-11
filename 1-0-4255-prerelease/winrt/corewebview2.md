@@ -313,7 +313,6 @@ Get the Uri as a string of the current Favicon. This will be an empty string if 
 
 The Find API allows you to programmatically control Find operations and enables your app to: search text, customize case sensitivity and word matching, highlight results, suppress the default Find UI, navigate through results, and track the status of Find operations.
 
-
 ### FrameId
 
 > readonly  uint32_t FrameId

@@ -47,7 +47,7 @@ Gets the service worker registrations associated with the specified scope.
 
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;[CoreWebView2ServiceWorkerRegistration](corewebview2serviceworkerregistration.md)&gt;&gt; GetServiceWorkerRegistrationsAsync()
 
-
+Gets a list of the service worker registrations under the same profile.
 
 
 ## Events
