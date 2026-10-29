@@ -1,7 +1,7 @@
 ---
-description: Event args for the BasicAuthenticationRequested event. Will contain the request that led to the HTTP authorization challenge, the challenge and allows the host to provide authentication response or cancel the request.
+description: Event args for the CoreWebView2.BasicAuthenticationRequested event.
 title: CoreWebView2BasicAuthenticationRequestedEventArgs
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2BasicAuthenticationRequestedEventArgs
 topic_type:
 - APIRef
@@ -22,7 +22,8 @@ api_name:
 
 
 
-Event args for the BasicAuthenticationRequested event. Will contain the request that led to the HTTP authorization challenge, the challenge and allows the host to provide authentication response or cancel the request.
+Event args for the [CoreWebView2.BasicAuthenticationRequested](corewebview2.md#basicauthenticationrequested) event.
+Will contain the request that led to the HTTP authorization challenge, the challenge and allows the host to provide authentication response or cancel the request.
 
 ## Summary
 
@@ -31,7 +32,7 @@ Members|Description
 [Cancel](#cancel) | Indicates whether to cancel the authentication request.
 [Challenge](#challenge) | The authentication challenge string.
 [Response](#response) | Response to the authentication request with credentials.
-[Uri](#uri) | The URI that led to the authentication challenge. For proxy authentication requests, this will be the URI of the proxy server.
+[Uri](#uri) | The URI that led to the authentication challenge.
 [GetDeferral](#getdeferral) | Gets a Deferral object.
 
 ## Properties
@@ -60,7 +61,8 @@ This object will be populated by the app if the host would like to provide authe
 
 > readonly  string Uri
 
-The URI that led to the authentication challenge. For proxy authentication requests, this will be the URI of the proxy server.
+The URI that led to the authentication challenge.
+For proxy authentication requests, this will be the URI of the proxy server.
 
 
 
@@ -71,6 +73,7 @@ The URI that led to the authentication challenge. For proxy authentication reque
 > [Deferral](/uwp/api/Windows.Foundation.Deferral) GetDeferral()
 
 Gets a Deferral object.
+
 Use this Deferral to defer the decision to show the Basic Authentication dialog.
 
 

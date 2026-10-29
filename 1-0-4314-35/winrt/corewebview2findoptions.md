@@ -1,7 +1,7 @@
 ---
-description: Defines the options for a find session in the WebView2 control. This interface provides the necessary properties to configure a find session
+description: Defines the options for a find session in the WebView2 control.
 title: CoreWebView2FindOptions
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2FindOptions
 topic_type:
 - APIRef
@@ -22,17 +22,17 @@ api_name:
 
 
 
-Defines the options for a find session in the WebView2 control. This interface provides the necessary properties to configure a find session
-
+Defines the options for a find session in the WebView2 control.
+This class provides the necessary properties to configure a find session.
 
 ## Summary
 
 Members|Description
 --|--
 [FindTerm](#findterm) | Gets or sets the word or phrase to be searched in the current page.
-[IsCaseSensitive](#iscasesensitive) | Gets or sets a value indicating whether the find session is case sensitive
-[ShouldHighlightAllMatches](#shouldhighlightallmatches) | Gets or sets a value indicating whether all matches should be highlighted
-[ShouldMatchWord](#shouldmatchword) | Gets or sets a value indicating whether only whole words should be matched during the find session.
+[IsCaseSensitive](#iscasesensitive) | Determines if the find session is case sensitive.
+[ShouldHighlightAllMatches](#shouldhighlightallmatches) | Gets or sets the state of whether all matches are highlighted.
+[ShouldMatchWord](#shouldmatchword) | Determines if only whole words should be matched during the find session.
 [SuppressDefaultFindDialog](#suppressdefaultfinddialog) | Gets or sets a value indicating whether the default Find UI should be suppressed.
 
 ## Properties
@@ -42,40 +42,42 @@ Members|Description
 >  string FindTerm
 
 Gets or sets the word or phrase to be searched in the current page.
-You can set FindTerm to any text you want to find on the page. This will take effect the next time you call the Start method. 
+You can set `FindTerm` to any text you want to find on the page.
 
+This will take effect the next time you call [CoreWebView2Find.StartAsync](corewebview2find.md#startasync).
 
 ### IsCaseSensitive
 
 >  bool IsCaseSensitive
 
-Gets or sets a value indicating whether the find session is case sensitive
-When toggling case sensitivity, the behavior can vary by locale, which may be influenced by both the browser's UI locale and the document's language settings. The browser's UI locale typically provides a default handling approach, while the document's language settings (e.g., specified using the HTML lang attribute) can override these defaults to apply locale-specific rules. This dual consideration ensures that text is processed in a manner consistent with user expectations and the linguistic context of the content. 
-
+Determines if the find session is case sensitive.
+Returns `true` if the find is case sensitive, `false` otherwise.
+When toggling case sensitivity, the behavior can vary by locale, which may be influenced by both the browser's UI locale and the document's language settings. The browser's UI locale typically provides a default handling approach, while the document's language settings (e.g., specified using the HTML lang attribute) can override these defaults to apply locale-specific rules. This dual consideration ensures that text is processed in a manner consistent with user expectations and the linguistic context of the content.
 
 ### ShouldHighlightAllMatches
 
 >  bool ShouldHighlightAllMatches
 
-Gets or sets a value indicating whether all matches should be highlighted
- Returns true< if all matches are highlighted, false otherwise. Note: Changes to this property take effect only when Start, FindNext, or FindPrevious is called. Preferences for the session cannot be updated unless another call to the Start function on the server-side is made. Therefore, changes will not take effect until one of these functions is called.
+Gets or sets the state of whether all matches are highlighted.
+Returns `true` if all matches are highlighted, `false` otherwise.
 
+Note: Changes to this property take effect only when [CoreWebView2Find.StartAsync](corewebview2find.md#startasync) is called.
+Preferences for the session cannot be updated unless another call to [CoreWebView2Find.StartAsync](corewebview2find.md#startasync) is made.
 
 ### ShouldMatchWord
 
 >  bool ShouldMatchWord
 
-Gets or sets a value indicating whether only whole words should be matched during the find session.
- Similar to case sensitivity, word matching also can vary by locale, which may be influenced by both the browser's UI locale and the document's language settings. The browser's UI locale typically provides a default handling approach, while the document's language settings (e.g., specified using the HTML lang attribute) can override these defaults to apply locale-specific rules. This dual consideration ensures that text is processed in a manner consistent with user expectations and the linguistic context of the content.
-
+Determines if only whole words should be matched during the find session.
+Returns `true` if only whole words should be matched, `false` otherwise.
+Similar to case sensitivity, word matching also can vary by locale, which may be influenced by both the browser's UI locale and the document's language settings. The browser's UI locale typically provides a default handling approach, while the document's language settings (e.g., specified using the HTML lang attribute) can override these defaults to apply locale-specific rules. This dual consideration ensures that text is processed in a manner consistent with user expectations and the linguistic context of the content.
 
 ### SuppressDefaultFindDialog
 
 >  bool SuppressDefaultFindDialog
 
 Gets or sets a value indicating whether the default Find UI should be suppressed.
- You can use this to hide the default UI so that you can show your own custom UI or programmatically interact with the Find API while showing no Find UI. Returns true if hiding the default Find UI and false if showing the default Find UI. Note: Changes to this property take effect only when Start, FindNext, or FindPrevious is called. Preferences for the session cannot be updated unless another call to the Start function on the server-side is made. Therefore, changes will not take effect until one of these functions is called. 
-
+You can use this to hide the default UI so that you can show your own custom UI or programmatically interact with the Find API while showing no Find UI. Returns `true` if hiding the default Find UI and `false` if showing the default Find UI. Note: Changes to this property take effect only when [CoreWebView2Find.StartAsync](corewebview2find.md#startasync) is called. Preferences for the session cannot be updated unless another call to [CoreWebView2Find.StartAsync](corewebview2find.md#startasync) is made.
 
 
 

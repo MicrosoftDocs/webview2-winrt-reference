@@ -1,7 +1,7 @@
 ---
-description: Specifies the browser process exit kind used in CoreWebView2BrowserProcessExitedEventArgs.
+description: Specifies the browser process exit type used in the CoreWebView2BrowserProcessExitedEventArgs.
 title: CoreWebView2BrowserProcessExitKind
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2BrowserProcessExitKind
 topic_type:
 - APIRef
@@ -15,7 +15,7 @@ api_name:
 
 # CoreWebView2BrowserProcessExitKind Enum
 
-Specifies the browser process exit kind used in [CoreWebView2BrowserProcessExitedEventArgs](corewebview2browserprocessexitedeventargs.md).
+Specifies the browser process exit type used in the [CoreWebView2BrowserProcessExitedEventArgs](corewebview2browserprocessexitedeventargs.md).
 
 | Name |  Value | Description |
 |--|--|--|

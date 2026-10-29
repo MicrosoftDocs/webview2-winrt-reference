@@ -1,7 +1,7 @@
 ---
 description: This mostly represents a combined win32 `POINTER_INFO`, `POINTER_TOUCH_INFO`, and `POINTER_PEN_INFO` object.
 title: CoreWebView2PointerInfo
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PointerInfo
 topic_type:
 - APIRef
@@ -87,6 +87,7 @@ Members|Description
 >  int ButtonChangeKind
 
 Gets or sets the ButtonChangeKind of the pointer event.
+
 This corresponds to the ButtonChangeKind property of the `POINTER_INFO` struct. The values are defined by the `POINTER_BUTTON_CHANGE_KIND` enum in the Windows SDK (_winuser.h_).
 
 ### DisplayRect
@@ -100,6 +101,7 @@ Gets or sets the DisplayRect of the sourceDevice property of the `POINTER_INFO` 
 >  uint32_t FrameId
 
 Gets or sets the FrameID of the pointer event.
+
 This corresponds to the frameId property of the `POINTER_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### HimetricLocation
@@ -107,6 +109,7 @@ This corresponds to the frameId property of the `POINTER_INFO` struct as defined
 >  [Point](/uwp/api/Windows.Foundation.Point) HimetricLocation
 
 Gets or sets the HimetricLocation of the pointer event.
+
 This corresponds to the ptHimetricLocation property of the `POINTER_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### HimetricLocationRaw
@@ -114,6 +117,7 @@ This corresponds to the ptHimetricLocation property of the `POINTER_INFO` struct
 >  [Point](/uwp/api/Windows.Foundation.Point) HimetricLocationRaw
 
 Gets or sets the HimetricLocationRaw of the pointer event.
+
 This corresponds to the ptHimetricLocationRaw property of the `POINTER_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### HistoryCount
@@ -121,6 +125,7 @@ This corresponds to the ptHimetricLocationRaw property of the `POINTER_INFO` str
 >  uint32_t HistoryCount
 
 Gets or sets the HistoryCount of the pointer event.
+
 This corresponds to the historyCount property of the `POINTER_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### InputData
@@ -128,6 +133,7 @@ This corresponds to the historyCount property of the `POINTER_INFO` struct as de
 >  int InputData
 
 Gets or sets the InputData of the pointer event.
+
 This corresponds to the InputData property of the `POINTER_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### KeyStates
@@ -135,6 +141,7 @@ This corresponds to the InputData property of the `POINTER_INFO` struct as defin
 >  uint32_t KeyStates
 
 Gets or sets the KeyStates of the pointer event.
+
 This corresponds to the dwKeyStates property of the `POINTER_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### PenFlags
@@ -142,6 +149,7 @@ This corresponds to the dwKeyStates property of the `POINTER_INFO` struct as def
 >  uint32_t PenFlags
 
 Gets or sets the PenFlags of the pointer event.
+
 This corresponds to the penFlags property of the `POINTER_PEN_INFO` struct. The values are defined by the PEN_FLAGS constants in the Windows SDK (_winuser.h_).
 
 ### PenMask
@@ -149,6 +157,7 @@ This corresponds to the penFlags property of the `POINTER_PEN_INFO` struct. The 
 >  uint32_t PenMask
 
 Gets or sets the PenMask of the pointer event.
+
 This corresponds to the penMask property of the `POINTER_PEN_INFO` struct. The values are defined by the PEN_MASK constants in the Windows SDK (_winuser.h_).
 
 ### PenPressure
@@ -156,6 +165,7 @@ This corresponds to the penMask property of the `POINTER_PEN_INFO` struct. The v
 >  uint32_t PenPressure
 
 Gets or sets the PenPressure of the pointer event.
+
 This corresponds to the pressure property of the `POINTER_PEN_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### PenRotation
@@ -163,6 +173,7 @@ This corresponds to the pressure property of the `POINTER_PEN_INFO` struct as de
 >  uint32_t PenRotation
 
 Gets or sets the PenRotation of the pointer event.
+
 This corresponds to the rotation property of the `POINTER_PEN_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### PenTiltX
@@ -170,6 +181,7 @@ This corresponds to the rotation property of the `POINTER_PEN_INFO` struct as de
 >  int PenTiltX
 
 Gets or sets the PenTiltX of the pointer event.
+
 This corresponds to the tiltX property of the `POINTER_PEN_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### PenTiltY
@@ -177,6 +189,7 @@ This corresponds to the tiltX property of the `POINTER_PEN_INFO` struct as defin
 >  int PenTiltY
 
 Gets or sets the PenTiltY of the pointer event.
+
 This corresponds to the tiltY property of the `POINTER_PEN_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### PerformanceCount
@@ -184,6 +197,7 @@ This corresponds to the tiltY property of the `POINTER_PEN_INFO` struct as defin
 >  uint64_t PerformanceCount
 
 Gets or sets the PerformanceCount of the pointer event.
+
 This corresponds to the PerformanceCount property of the `POINTER_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### PixelLocation
@@ -191,6 +205,7 @@ This corresponds to the PerformanceCount property of the `POINTER_INFO` struct a
 >  [Point](/uwp/api/Windows.Foundation.Point) PixelLocation
 
 Gets or sets the PixelLocation of the pointer event.
+
 This corresponds to the ptPixelLocation property of the `POINTER_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### PixelLocationRaw
@@ -198,6 +213,7 @@ This corresponds to the ptPixelLocation property of the `POINTER_INFO` struct as
 >  [Point](/uwp/api/Windows.Foundation.Point) PixelLocationRaw
 
 Gets or sets the PixelLocationRaw of the pointer event.
+
 This corresponds to the ptPixelLocationRaw property of the `POINTER_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### PointerDeviceRect
@@ -211,6 +227,7 @@ Gets or sets the PointerDeviceRect of the sourceDevice property of the `POINTER_
 >  uint32_t PointerFlags
 
 Gets or sets the PointerFlags of the pointer event.
+
 This corresponds to the pointerFlags property of the `POINTER_INFO` struct. The values are defined by the `POINTER_FLAGS` constants in the Windows SDK (_winuser.h_).
 
 ### PointerId
@@ -218,6 +235,7 @@ This corresponds to the pointerFlags property of the `POINTER_INFO` struct. The 
 >  uint32_t PointerId
 
 Gets or sets the PointerId of the pointer event.
+
 This corresponds to the pointerId property of the `POINTER_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### PointerKind
@@ -225,6 +243,7 @@ This corresponds to the pointerId property of the `POINTER_INFO` struct as defin
 >  uint32_t PointerKind
 
 Gets or sets the PointerKind of the pointer event.
+
 This corresponds to the pointerKind property of the `POINTER_INFO` struct. The values are defined by the `POINTER_INPUT_KIND` enum in the Windows SDK (_winuser.h_). Supports PT_PEN and PT_TOUCH.
 
 ### Time
@@ -232,6 +251,7 @@ This corresponds to the pointerKind property of the `POINTER_INFO` struct. The v
 >  uint32_t Time
 
 Gets or sets the Time of the pointer event.
+
 This corresponds to the dwTime property of the `POINTER_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### TouchContact
@@ -239,6 +259,7 @@ This corresponds to the dwTime property of the `POINTER_INFO` struct as defined 
 >  [Rect](/uwp/api/Windows.Foundation.Rect) TouchContact
 
 Gets or sets the TouchContact of the pointer event.
+
 This corresponds to the rcContact property of the `POINTER_TOUCH_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### TouchContactRaw
@@ -246,6 +267,7 @@ This corresponds to the rcContact property of the `POINTER_TOUCH_INFO` struct as
 >  [Rect](/uwp/api/Windows.Foundation.Rect) TouchContactRaw
 
 Gets or sets the TouchContactRaw of the pointer event.
+
 This corresponds to the rcContactRaw property of the `POINTER_TOUCH_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### TouchFlags
@@ -253,6 +275,7 @@ This corresponds to the rcContactRaw property of the `POINTER_TOUCH_INFO` struct
 >  uint32_t TouchFlags
 
 Gets or sets the TouchFlags of the pointer event.
+
 This corresponds to the touchFlags property of the `POINTER_TOUCH_INFO` struct. The values are defined by the TOUCH_FLAGS constants in the Windows SDK (_winuser.h_).
 
 ### TouchMask
@@ -260,6 +283,7 @@ This corresponds to the touchFlags property of the `POINTER_TOUCH_INFO` struct. 
 >  uint32_t TouchMask
 
 Gets or sets the TouchMask of the pointer event.
+
 This corresponds to the touchMask property of the `POINTER_TOUCH_INFO` struct. The values are defined by the TOUCH_MASK constants in the Windows SDK (_winuser.h_).
 
 ### TouchOrientation
@@ -267,6 +291,7 @@ This corresponds to the touchMask property of the `POINTER_TOUCH_INFO` struct. T
 >  uint32_t TouchOrientation
 
 Gets or sets the TouchOrientation of the pointer event.
+
 This corresponds to the orientation property of the `POINTER_TOUCH_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 ### TouchPressure
@@ -274,6 +299,7 @@ This corresponds to the orientation property of the `POINTER_TOUCH_INFO` struct 
 >  uint32_t TouchPressure
 
 Gets or sets the TouchPressure of the pointer event.
+
 This corresponds to the pressure property of the `POINTER_TOUCH_INFO` struct as defined in the Windows SDK (_winuser.h_).
 
 

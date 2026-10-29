@@ -1,7 +1,7 @@
 ---
 description: Specifies the WebView2 release channel.
 title: CoreWebView2ReleaseChannels
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ReleaseChannels
 topic_type:
 - APIRef
@@ -16,6 +16,7 @@ api_name:
 # CoreWebView2ReleaseChannels Enum
 
 Specifies the WebView2 release channel.
+
 Use `ReleaseChannels` and `ChannelSearchKind` on `CoreWebView2EnvironmentOptions` to control which channel the WebView2 loader searches for.
 
 |Channel|Primary purpose|How often updated with new features|
@@ -27,7 +28,7 @@ Use `ReleaseChannels` and `ChannelSearchKind` on `CoreWebView2EnvironmentOptions
 
 | Name |  Value | Description |
 |--|--|--|
-|`None` | 0x0  |  No release channel. `ReleaseChannels` will be ignored if only this value is passed.|
+|`None` | 0x0  |  No release channel. Passing only this value to `ReleaseChannels` is treated as if `ReleaseChannels` were not set, so all channels are searched.|
 |`Stable` | 0x1  |  The stable WebView2 Runtime that is released every 4 weeks.|
 |`Beta` | 0x2  |  The Beta release channel that is released every 4 weeks, a week before the stable release.|
 |`Dev` | 0x4  |  The Dev release channel that is released weekly.|

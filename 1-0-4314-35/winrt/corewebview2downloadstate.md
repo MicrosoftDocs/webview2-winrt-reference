@@ -1,7 +1,7 @@
 ---
 description: The state of the CoreWebView2DownloadOperation.
 title: CoreWebView2DownloadState
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DownloadState
 topic_type:
 - APIRef
@@ -20,7 +20,7 @@ The state of the [CoreWebView2DownloadOperation](corewebview2downloadoperation.m
 | Name |  Value | Description |
 |--|--|--|
 |`InProgress` | 0x0  |  The download is in progress.|
-|`Interrupted` | 0x1  |  The connection with the file host was broken. The reason why a download was interrupted can accessed from [CoreWebView2DownloadOperation.InterruptReason](corewebview2downloadoperation.md#interruptreason). See [CoreWebView2DownloadInterruptReason](corewebview2downloadinterruptreason.md) for descriptions of the different kinds of interrupt reasons. Host can check whether an interrupted download can be resumed with [CoreWebView2DownloadOperation.CanResume](corewebview2downloadoperation.md#canresume). Once resumed, the download state is in progress.|
+|`Interrupted` | 0x1  |  The connection with the file host was broken. The reason why a download was interrupted can be accessed from [CoreWebView2DownloadOperation.InterruptReason](corewebview2downloadoperation.md#interruptreason). See [CoreWebView2DownloadInterruptReason](corewebview2downloadinterruptreason.md) for descriptions of the different kinds of interrupt reasons. Host can check whether an interrupted download can be resumed with [CoreWebView2DownloadOperation.CanResume](corewebview2downloadoperation.md#canresume). Once resumed, a download is in the CoreWebView2DownloadState.InProgress state.|
 |`Completed` | 0x2  |  The download completed successfully.|
 
 

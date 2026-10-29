@@ -1,7 +1,7 @@
 ---
 description: Indicates the error status values for web navigations.
 title: CoreWebView2WebErrorStatus
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebErrorStatus
 topic_type:
 - APIRef
@@ -35,7 +35,7 @@ Indicates the error status values for web navigations.
 |`HostNameNotResolved` | 0xd  |  Indicates that the provided host name was not able to be resolved.|
 |`OperationCanceled` | 0xe  |  Indicates that the operation was canceled. This status code is also used when the app cancels a navigation via [CoreWebView2.NavigationStarting](corewebview2.md#navigationstarting) event, and for original navigation if the app navigates the WebView2 in a rapid succession away after the load for original navigation commenced, but before it completed.|
 |`RedirectFailed` | 0xf  |  Indicates that the request redirect failed.|
-|`UnexpectedError` | 0x10  |  An unexpected error occurred.|
+|`UnexpectedError` | 0x10  |  Indicates that an unexpected error occurred.|
 |`ValidAuthenticationCredentialsRequired` | 0x11  |  Indicates that user is prompted with a login, waiting on user action. Initial navigation to a login site will always return this even if app provides credential using [CoreWebView2.BasicAuthenticationRequested](corewebview2.md#basicauthenticationrequested). HTTP response status code in this case is 401. See [status code reference](https://developer.mozilla.org/docs/Web/HTTP/Status).|
 |`ValidProxyAuthenticationRequired` | 0x12  |  Indicates that user lacks proper authentication credentials for a proxy server. HTTP response status code in this case is 407. See [status code reference](https://developer.mozilla.org/docs/Web/HTTP/Status).|
 

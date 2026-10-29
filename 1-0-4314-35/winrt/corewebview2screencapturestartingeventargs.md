@@ -1,7 +1,7 @@
 ---
-description: Event args for the CoreWebView2.ScreenCaptureStarting event.
+description: Event args for the CoreWebView2.ScreenCaptureStarting and CoreWebView2Frame.ScreenCaptureStarting events.
 title: CoreWebView2ScreenCaptureStartingEventArgs
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ScreenCaptureStartingEventArgs
 topic_type:
 - APIRef
@@ -21,16 +21,16 @@ api_name:
 
 
 
-Event args for the [CoreWebView2.ScreenCaptureStarting](corewebview2.md#screencapturestarting) event.
+Event args for the [CoreWebView2.ScreenCaptureStarting](corewebview2.md#screencapturestarting) and [CoreWebView2Frame.ScreenCaptureStarting](corewebview2frame.md#screencapturestarting) events.
 
 ## Summary
 
 Members|Description
 --|--
-[Cancel](#cancel) | The host may set this flag to `TRUE` to cancel the screen capture.
-[Handled](#handled) | The host may set this flag to `TRUE` to prevent the `ScreenCaptureStarting` event from firing on the `CoreWebView2` as well.
-[OriginalSourceFrameInfo](#originalsourceframeinfo) | The frame info of the frame where the screen capture starting request originated.
-[GetDeferral](#getdeferral) | Returns a Deferral object.
+[Cancel](#cancel) | The host may set this flag to cancel the screen capture.
+[Handled](#handled) | By default, both the [CoreWebView2Frame.ScreenCaptureStarting](corewebview2frame.md#screencapturestarting) event handlers on the [CoreWebView2Frame](corewebview2frame.md) and the [CoreWebView2.ScreenCaptureStarting](corewebview2.md#screencapturestarting) event handlers on the [CoreWebView2](corewebview2.md) will be invoked, with the [CoreWebView2Frame](corewebview2frame.md) event handlers invoked first.
+[OriginalSourceFrameInfo](#originalsourceframeinfo) | The associated frame information that requests the screen capture permission.
+[GetDeferral](#getdeferral) | Gets a Deferral object.
 
 ## Properties
 
@@ -38,21 +38,25 @@ Members|Description
 
 >  bool Cancel
 
-The host may set this flag to `TRUE` to cancel the screen capture.
-If canceled, the screen capture UI is not displayed regardless of the `Handled` property. On the script side, it will return with a NotAllowedError as Permission denied.
+The host may set this flag to cancel the screen capture.
+If canceled, the screen capture UI is not displayed regardless of the [CoreWebView2ScreenCaptureStartingEventArgs.Handled](corewebview2screencapturestartingeventargs.md#handled) property.
+On the script side, it will return with a NotAllowedError as Permission denied.
 
 ### Handled
 
 >  bool Handled
 
-The host may set this flag to `TRUE` to prevent the `ScreenCaptureStarting` event from firing on the `CoreWebView2` as well.
-By default, both the `ScreenCaptureStarting` event handlers on the `CoreWebView2Frame` and the `CoreWebView2` will be invoked, with the `CoreWebView2Frame` event handlers invoked first. The host may set this flag to `TRUE` within the `CoreWebView2Frame` event handlers to prevent the remaining `CoreWebView2` event handlers from being invoked. If the flag is set to `FALSE` within the `CoreWebView2Frame` event handlers, downstream handlers can update the `Cancel` property.
+By default, both the [CoreWebView2Frame.ScreenCaptureStarting](corewebview2frame.md#screencapturestarting) event handlers on the [CoreWebView2Frame](corewebview2frame.md) and the [CoreWebView2.ScreenCaptureStarting](corewebview2.md#screencapturestarting) event handlers on the [CoreWebView2](corewebview2.md) will be invoked, with the [CoreWebView2Frame](corewebview2frame.md) event handlers invoked first.
+The host may set this flag to `true` within the [CoreWebView2Frame](corewebview2frame.md) event handlers to prevent the remaining [CoreWebView2](corewebview2.md) event handlers from being invoked. If the flag is set to `false` within the [CoreWebView2Frame](corewebview2frame.md) event handlers, downstream handlers can update the [CoreWebView2ScreenCaptureStartingEventArgs.Cancel](corewebview2screencapturestartingeventargs.md#cancel) property.
+
+If a deferral is taken on the event args, then you must synchronously set [CoreWebView2ScreenCaptureStartingEventArgs.Handled](corewebview2screencapturestartingeventargs.md#handled) to `true` prior to taking your deferral to prevent the [CoreWebView2](corewebview2.md) event handlers from being invoked.
 
 ### OriginalSourceFrameInfo
 
 > readonly  [CoreWebView2FrameInfo](corewebview2frameinfo.md) OriginalSourceFrameInfo
 
-The frame info of the frame where the screen capture starting request originated.
+The associated frame information that requests the screen capture permission.
+This can be used to get the frame source, name, frameId, and parent frame information.
 
 
 
@@ -62,7 +66,7 @@ The frame info of the frame where the screen capture starting request originated
 
 > [Deferral](/uwp/api/Windows.Foundation.Deferral) GetDeferral()
 
-Returns a Deferral object.
+Gets a Deferral object.
 Use this deferral to defer the decision to show the Screen Capture UI. getDisplayMedia() won't call its callbacks until the deferral is completed.
 
 

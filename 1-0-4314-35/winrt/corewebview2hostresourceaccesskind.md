@@ -1,7 +1,7 @@
 ---
 description: Kind of cross origin resource access allowed for host resources during download.
 title: CoreWebView2HostResourceAccessKind
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2HostResourceAccessKind
 topic_type:
 - APIRef
@@ -17,9 +17,10 @@ api_name:
 
 Kind of cross origin resource access allowed for host resources during download.
 Note that other normal access checks like same origin DOM access check and [Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) still apply.
-The following table illustrates the host resource cross origin access according to access context and `CoreWebView2HostResourceAccessKind`.
 
-Cross Origin Access Context | DENY | ALLOW | DENY_CORS
+The following table illustrates the host resource cross origin access according to access context and CoreWebView2HostResourceAccessKind.
+
+Cross Origin Access Context | Deny | Allow | DenyCors
 --- | --- | --- | ---
 From DOM like src of img, script or iframe element| Deny | Allow | Allow
 From Script like Fetch or XMLHttpRequest| Deny | Allow | Deny

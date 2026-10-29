@@ -1,7 +1,7 @@
 ---
 description: View of the HTTP representation for a web resource response.
 title: CoreWebView2WebResourceResponseView
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebResourceResponseView
 topic_type:
 - APIRef
@@ -22,15 +22,16 @@ api_name:
 
 
 View of the HTTP representation for a web resource response.
+
 The properties of this object are not mutable. This response view is used with the [CoreWebView2.WebResourceResponseReceived](corewebview2.md#webresourceresponsereceived) event.
 
 ## Summary
 
 Members|Description
 --|--
-[Headers](#headers) | Gets the HTTP response headers as received.
-[ReasonPhrase](#reasonphrase) | Gets the HTTP response reason phrase.
-[StatusCode](#statuscode) | Gets the HTTP response status code.
+[Headers](#headers) | The HTTP response headers as received.
+[ReasonPhrase](#reasonphrase) | The HTTP response reason phrase.
+[StatusCode](#statuscode) | The HTTP response status code.
 [GetContentAsync](#getcontentasync) | Gets the response content stream asynchronously.
 
 ## Properties
@@ -39,19 +40,19 @@ Members|Description
 
 > readonly  [CoreWebView2HttpResponseHeaders](corewebview2httpresponseheaders.md) Headers
 
-Gets the HTTP response headers as received.
+The HTTP response headers as received.
 
 ### ReasonPhrase
 
 > readonly  string ReasonPhrase
 
-Gets the HTTP response reason phrase.
+The HTTP response reason phrase.
 
 ### StatusCode
 
 > readonly  int StatusCode
 
-Gets the HTTP response status code.
+The HTTP response status code.
 
 
 
@@ -62,6 +63,7 @@ Gets the HTTP response status code.
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream)&gt; GetContentAsync()
 
 Gets the response content stream asynchronously.
+
 A `null` stream means no content was found. Note content (if any) for redirect responses is ignored.
 This method returns `null` if content size is more than 123MB. If `msWebView2EnableDownloadContentInWebResourceResponseReceived` feature flag is disabled, for navigations that become downloads or if response is downloadable content type (e.g., application/octet-stream), this method also returns `null`. See [CoreWebView2.DownloadStarting](corewebview2.md#downloadstarting) event to handle the response or enable the feature flag. The Stream object that is returned will be thread-safe and as reads will be blocking while waiting for data to be available, it is recommended to read from a background thread.
 If this method is being called again before a first call has completed, it will complete at the same time all prior calls do.

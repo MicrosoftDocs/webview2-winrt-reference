@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.SaveFileSecurityCheckStarting event.
 title: CoreWebView2SaveFileSecurityCheckStartingEventArgs
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2SaveFileSecurityCheckStartingEventArgs
 topic_type:
 - APIRef
@@ -29,12 +29,12 @@ Event args for the [CoreWebView2.SaveFileSecurityCheckStarting](corewebview2.md#
 
 Members|Description
 --|--
-[CancelSave](#cancelsave) | Set if cancel the upcoming save/download.
+[CancelSave](#cancelsave) | Gets or sets whether to cancel the upcoming save or download.
 [DocumentOriginUri](#documentoriginuri) | Get the document origin URI of this file save operation.
 [FileExtension](#fileextension) | Get the extension of file to be saved.
-[FilePath](#filepath) | Get the full path of file to be saved. This includes the file name and extension.
-[SuppressDefaultPolicy](#suppressdefaultpolicy) | Set if the default policy checking and security warning will be suppressed.
-[GetDeferral](#getdeferral) | Returns a Deferral object.
+[FilePath](#filepath) | Get the full path of file to be saved.
+[SuppressDefaultPolicy](#suppressdefaultpolicy) | Gets or sets whether the default policy checking and security warning will be suppressed.
+[GetDeferral](#getdeferral) | Gets a Deferral object.
 
 ## Properties
 
@@ -42,7 +42,7 @@ Members|Description
 
 >  bool CancelSave
 
-Set if cancel the upcoming save/download.
+Gets or sets whether to cancel the upcoming save or download.
 
 ### DocumentOriginUri
 
@@ -60,13 +60,14 @@ Get the extension of file to be saved.
 
 > readonly  string FilePath
 
-Get the full path of file to be saved. This includes the file name and extension.
+Get the full path of file to be saved.
+This includes the file name and extension.
 
 ### SuppressDefaultPolicy
 
 >  bool SuppressDefaultPolicy
 
-Set if the default policy checking and security warning will be suppressed.
+Gets or sets whether the default policy checking and security warning will be suppressed.
 
 
 
@@ -76,9 +77,9 @@ Set if the default policy checking and security warning will be suppressed.
 
 > [Deferral](/uwp/api/Windows.Foundation.Deferral) GetDeferral()
 
-Returns a Deferral object.
-It will put the event into a deferred state. The default policy checking and any default UI will be blocked temporarily, saving file to local won't start, until the deferral is completed.
+Gets a Deferral object.
 
+It will put the event into a deferred state. The default policy checking and any default UI will be blocked temporarily, saving file to local won't start, until the deferral is completed.
 
 
 

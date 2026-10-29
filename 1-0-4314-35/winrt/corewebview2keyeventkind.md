@@ -1,7 +1,7 @@
 ---
 description: Specifies the key event kind that raises an CoreWebView2Controller.AcceleratorKeyPressed event.
 title: CoreWebView2KeyEventKind
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2KeyEventKind
 topic_type:
 - APIRef
@@ -19,10 +19,10 @@ Specifies the key event kind that raises an [CoreWebView2Controller.AcceleratorK
 
 | Name |  Value | Description |
 |--|--|--|
-|`KeyDown` | 0x0  |  Specifies that the key event kind corresponds to window message `WM_KEYDOWN`.|
-|`KeyUp` | 0x1  |  Specifies that the key event kind corresponds to window message `WM_KEYUP`.|
-|`SystemKeyDown` | 0x2  |  Specifies that the key event kind corresponds to window message `WM_SYSKEYDOWN`.|
-|`SystemKeyUp` | 0x3  |  Specifies that the key event kind corresponds to window message `WM_SYSKEYUP`.|
+|`KeyDown` | 0x0  |  Specifies that the key event type corresponds to window message `WM_KEYDOWN`.|
+|`KeyUp` | 0x1  |  Specifies that the key event type corresponds to window message `WM_KEYUP`.|
+|`SystemKeyDown` | 0x2  |  Specifies that the key event type corresponds to window message `WM_SYSKEYDOWN`.|
+|`SystemKeyUp` | 0x3  |  Specifies that the key event type corresponds to window message `WM_SYSKEYUP`.|
 
 
 ## Referenced by

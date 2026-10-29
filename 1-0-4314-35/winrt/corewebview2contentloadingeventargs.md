@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.ContentLoading event.
 title: CoreWebView2ContentLoadingEventArgs
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContentLoadingEventArgs
 topic_type:
 - APIRef
@@ -26,7 +26,7 @@ Event args for the [CoreWebView2.ContentLoading](corewebview2.md#contentloading)
 Members|Description
 --|--
 [IsErrorPage](#iserrorpage) | `true` if the loaded content is an error page.
-[NavigationId](#navigationid) | Gets the ID of the navigation.
+[NavigationId](#navigationid) | The ID of the navigation.
 
 ## Properties
 
@@ -40,7 +40,7 @@ Members|Description
 
 > readonly  uint64_t NavigationId
 
-Gets the ID of the navigation.
+The ID of the navigation.
 
 
 

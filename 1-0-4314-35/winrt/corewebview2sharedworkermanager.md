@@ -1,7 +1,7 @@
 ---
-description: 
+description: Manages the shared workers associated with a CoreWebView2Profile.
 title: CoreWebView2SharedWorkerManager
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2SharedWorkerManager
 topic_type:
 - APIRef
@@ -19,12 +19,14 @@ api_name:
 
 
 
+Manages the shared workers associated with a [CoreWebView2Profile](corewebview2profile.md).
+
 ## Summary
 
 Members|Description
 --|--
-[GetSharedWorkersAsync](#getsharedworkersasync) | 
-[SharedWorkerCreated](#sharedworkercreated) | Add an event handler for the `SharedWorkerCreated` event.
+[GetSharedWorkersAsync](#getsharedworkersasync) | Gets a list of the shared workers created under the same profile.
+[SharedWorkerCreated](#sharedworkercreated) | Raised when a web application creates a shared worker.
 
 
 
@@ -34,6 +36,8 @@ Members|Description
 
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;[CoreWebView2SharedWorker](corewebview2sharedworker.md)&gt;&gt; GetSharedWorkersAsync()
 
+Gets a list of the shared workers created under the same profile.
+
 
 
 
@@ -41,13 +45,12 @@ Members|Description
 
 ### SharedWorkerCreated
 
-Add an event handler for the `SharedWorkerCreated` event.
+Raised when a web application creates a shared worker.
 
-A SharedWorker is a specific type of worker that can be accessed from several browsing contexts, such as multiple windows, iframes, or even other workers. Unlike Dedicated Workers, which have their own separate global scope, SharedWorkers share a common global scope called SharedWorkerGlobalScope.
+A SharedWorker is a specific type of worker that can be accessed from several browsing contexts, such as multiple windows, iframes, or even other workers.
+Unlike Dedicated Workers, which have their own separate global scope, SharedWorkers share a common global scope called SharedWorkerGlobalScope.
 
-This event is raised when a web application creates a shared worker using the `new SharedWorker("worker.js")` method. See the
-[Shared Worker](https://developer.mozilla.org/docs/Web/API/SharedWorker) for more information.
-
+This event is raised when a web application creates a shared worker using the `new SharedWorker("worker.js")` method. See the [Shared Worker](https://developer.mozilla.org/docs/Web/API/SharedWorker) for more information.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2SharedWorkerManager, [CoreWebView2SharedWorkerCreatedEventArgs](corewebview2sharedworkercreatedeventargs.md)&gt;
 

@@ -1,7 +1,7 @@
 ---
-description: Represents the information regarding the context menu target. Includes the context selected and the appropriate data used for the actions of a context menu.
+description: Represents the information regarding the context menu target.
 title: CoreWebView2ContextMenuTarget
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContextMenuTarget
 topic_type:
 - APIRef
@@ -30,13 +30,14 @@ api_name:
 
 
 
-Represents the information regarding the context menu target. Includes the context selected and the appropriate data used for the actions of a context menu.
+Represents the information regarding the context menu target.
+Includes the context selected and the appropriate data used for the actions of a context menu.
 
 ## Summary
 
 Members|Description
 --|--
-[FrameUri](#frameuri) | Gets the uri of the frame. Will match the [CoreWebView2ContextMenuTarget.PageUri](corewebview2contextmenutarget.md#pageuri) if [CoreWebView2ContextMenuTarget.IsRequestedForMainFrame](corewebview2contextmenutarget.md#isrequestedformainframe) is `true`.
+[FrameUri](#frameuri) | Gets the uri of the frame.
 [HasLinkText](#haslinktext) | Returns `true` if the context menu is requested on text element that contains an anchor tag.
 [HasLinkUri](#haslinkuri) | Returns `true` if the context menu is requested on HTML containing an anchor tag.
 [HasSelection](#hasselection) | Returns `true` if the context menu is requested on a selection.
@@ -56,7 +57,8 @@ Members|Description
 
 > readonly  string FrameUri
 
-Gets the uri of the frame. Will match the [CoreWebView2ContextMenuTarget.PageUri](corewebview2contextmenutarget.md#pageuri) if [CoreWebView2ContextMenuTarget.IsRequestedForMainFrame](corewebview2contextmenutarget.md#isrequestedformainframe) is `true`.
+Gets the uri of the frame.
+Will match the [CoreWebView2ContextMenuTarget.PageUri](corewebview2contextmenutarget.md#pageuri) if [CoreWebView2ContextMenuTarget.IsRequestedForMainFrame](corewebview2contextmenutarget.md#isrequestedformainframe) is `true`.
 
 ### HasLinkText
 

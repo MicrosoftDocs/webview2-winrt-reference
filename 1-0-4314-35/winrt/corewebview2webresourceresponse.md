@@ -1,7 +1,7 @@
 ---
 description: An HTTP response used with the CoreWebView2.WebResourceRequested event.
 title: CoreWebView2WebResourceResponse
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebResourceResponse
 topic_type:
 - APIRef
@@ -27,8 +27,8 @@ An HTTP response used with the [CoreWebView2.WebResourceRequested](corewebview2.
 
 Members|Description
 --|--
-[Content](#content) | Gets HTTP response content as stream.
-[Headers](#headers) | Gets the overridden HTTP response headers.
+[Content](#content) | Gets or sets the HTTP response content as stream.
+[Headers](#headers) | Overridden HTTP response headers.
 [ReasonPhrase](#reasonphrase) | Gets or sets the HTTP response reason phrase.
 [StatusCode](#statuscode) | Gets or sets the HTTP response status code.
 
@@ -38,15 +38,16 @@ Members|Description
 
 >  [IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) Content
 
-Gets HTTP response content as stream.
+Gets or sets the HTTP response content as stream.
+
 Stream must have all the content data available by the time the [CoreWebView2.WebResourceRequested](corewebview2.md#webresourcerequested) event deferral of this response is completed. Stream should be agile or be created from a background thread to prevent performance impact to the UI thread. `null` means no content data.
-When providing the response data, you should consider relevant HTTP request headers just like an HTTP server would do. For example, if the request was for a video resource in a HTML video element, the request may contain the [Range](https://developer.mozilla.org/docs/Web/HTTP/Headers/Range) header to request only a part of the video that is streaming. In this case, your response stream should be only the portion of the video specified by the range HTTP request headers and you should set the appropriate [Content-Range](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Range) header in the response.
+When providing the response data, you should consider relevant HTTP request headers just like an HTTP server would do. For example, if the request was for a video resource in an HTML video element, the request may contain the [Range](https://developer.mozilla.org/docs/Web/HTTP/Headers/Range) header to request only a part of the video that is streaming. In this case, your response stream should be only the portion of the video specified by the range HTTP request headers and you should set the appropriate [Content-Range](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Range) header in the response.
 
 ### Headers
 
 > readonly  [CoreWebView2HttpResponseHeaders](corewebview2httpresponseheaders.md) Headers
 
-Gets the overridden HTTP response headers.
+Overridden HTTP response headers.
 
 ### ReasonPhrase
 

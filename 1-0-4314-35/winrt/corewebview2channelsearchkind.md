@@ -1,7 +1,7 @@
 ---
-description: The order that release channels are searched for during environment creation.
+description: The channel search kind determines the order that release channels are searched for during environment creation.
 title: CoreWebView2ChannelSearchKind
-ms.date: 10/19/2026
+ms.date: 10-29-2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ChannelSearchKind
 topic_type:
 - APIRef
@@ -15,7 +15,7 @@ api_name:
 
 # CoreWebView2ChannelSearchKind Enum
 
-The order that release channels are searched for during environment creation.
+The channel search kind determines the order that release channels are searched for during environment creation.
 The default behavior is to search for and use the most stable channel found on the device. The order from most to least stable is: WebView2 Runtime -> Beta -> Dev -> Canary. Switch the order to prefer the least stable channel in order to perform pre-release testing. See [CoreWebView2ReleaseChannels](corewebview2releasechannels.md) for descriptions of channels.
 
 | Name |  Value | Description |
