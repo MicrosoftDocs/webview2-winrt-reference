@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.ServerCertificateErrorDetected event.
 title: CoreWebView2ServerCertificateErrorDetectedEventArgs
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ServerCertificateErrorDetectedEventArgs
 topic_type:
 - APIRef
@@ -31,7 +31,7 @@ Members|Description
 [Action](#action) | The action of the server certificate error detection.
 [ErrorStatus](#errorstatus) | The TLS error code for the invalid certificate.
 [RequestUri](#requesturi) | URI associated with the request for the invalid certificate.
-[ServerCertificate](#servercertificate) | Returns the [CoreWebView2Certificate](corewebview2certificate.md).
+[ServerCertificate](#servercertificate) | Returns the server [CoreWebView2Certificate](corewebview2certificate.md).
 [GetDeferral](#getdeferral) | Gets a Deferral object.
 
 ## Properties
@@ -41,7 +41,8 @@ Members|Description
 >  [CoreWebView2ServerCertificateErrorAction](corewebview2servercertificateerroraction.md) Action
 
 The action of the server certificate error detection.
-The default value is [CoreWebView2ServerCertificateErrorAction](corewebview2servercertificateerroraction.md).Default.
+
+The default value is `CoreWebView2ServerCertificateErrorAction.Default`.
 
 ### ErrorStatus
 
@@ -59,7 +60,7 @@ URI associated with the request for the invalid certificate.
 
 > readonly  [CoreWebView2Certificate](corewebview2certificate.md) ServerCertificate
 
-Returns the [CoreWebView2Certificate](corewebview2certificate.md).
+Returns the server [CoreWebView2Certificate](corewebview2certificate.md).
 
 
 

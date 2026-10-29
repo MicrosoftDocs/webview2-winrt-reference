@@ -1,7 +1,7 @@
 ---
 description: HTTP request headers.
 title: CoreWebView2HttpRequestHeaders
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2HttpRequestHeaders
 topic_type:
 - APIRef
@@ -24,6 +24,7 @@ api_name:
 Implements: [IIterable](/uwp/api/Windows.Foundation.Collections.IIterable-1)&lt;[`IKeyValuePair`](/uwp/api/Windows.Foundation.Collections.IKeyValuePair-2)&lt;string, string&gt;&gt;
 
 HTTP request headers.
+
 Used to inspect the HTTP request on [CoreWebView2.WebResourceRequested](corewebview2.md#webresourcerequested) event and [CoreWebView2.NavigationStarting](corewebview2.md#navigationstarting) event. It is possible to modify the HTTP request headers from a [CoreWebView2.WebResourceRequested](corewebview2.md#webresourcerequested) event, but not from a [CoreWebView2.NavigationStarting](corewebview2.md#navigationstarting) event.
 
 ## Summary
@@ -33,7 +34,7 @@ Members|Description
 [Contains](#contains) | Checks whether the headers contain an entry that matches the header name.
 [First](#first) | 
 [GetHeader](#getheader) | Gets the header value matching the name.
-[GetHeaders](#getheaders) | Gets the header value matching the name using a [CoreWebView2HttpHeadersCollectionIterator](corewebview2httpheaderscollectioniterator.md).
+[GetHeaders](#getheaders) | Gets the header values matching the name using a [CoreWebView2HttpHeadersCollectionIterator](corewebview2httpheaderscollectioniterator.md).
 [RemoveHeader](#removeheader) | Removes header that matches the name.
 [SetHeader](#setheader) | Adds or updates header that matches the name.
 
@@ -67,7 +68,7 @@ Gets the header value matching the name.
 
 > [CoreWebView2HttpHeadersCollectionIterator](corewebview2httpheaderscollectioniterator.md) GetHeaders(string name)
 
-Gets the header value matching the name using a [CoreWebView2HttpHeadersCollectionIterator](corewebview2httpheaderscollectioniterator.md).
+Gets the header values matching the name using a [CoreWebView2HttpHeadersCollectionIterator](corewebview2httpheaderscollectioniterator.md).
 
 
 

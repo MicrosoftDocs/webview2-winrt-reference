@@ -1,7 +1,7 @@
 ---
 description: The reason why the CoreWebView2DownloadOperation was interrupted.
 title: CoreWebView2DownloadInterruptReason
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DownloadInterruptReason
 topic_type:
 - APIRef
@@ -25,7 +25,7 @@ The reason why the [CoreWebView2DownloadOperation](corewebview2downloadoperation
 |`FileNoSpace` | 0x3  |  Disk full. User should free some space or choose a different location to store the file.|
 |`FileNameTooLong` | 0x4  |  Result file path with file name is too long.|
 |`FileTooLarge` | 0x5  |  File is too large for file system.|
-|`FileMalicious` | 0x6  |  Microsoft Defender Smartscreen detected a virus in the file.|
+|`FileMalicious` | 0x6  |  Microsoft Defender SmartScreen detected a virus in the file.|
 |`FileTransientError` | 0x7  |  File was in use, too many files opened, or out of memory.|
 |`FileBlockedByPolicy` | 0x8  |  File blocked by local policy.|
 |`FileSecurityCheckFailed` | 0x9  |  Security check failed unexpectedly. Microsoft Defender SmartScreen could not scan this file.|
@@ -43,7 +43,7 @@ The reason why the [CoreWebView2DownloadOperation](corewebview2downloadoperation
 |`ServerCertificateProblem` | 0x15  |  Server certificate problem.|
 |`ServerForbidden` | 0x16  |  Server access forbidden.|
 |`ServerUnexpectedResponse` | 0x17  |  Unexpected server response. Responding server may not be intended server. User can retry the download manually.|
-|`ServerContentLengthMismatch` | 0x18  |  Server sent fewer bytes than the Content-Length header. Content-Length header may be invalid or connection may have closed. Download is treated as complete unless there are [strong validators](https://tools.ietf.org/html/rfc7232#section-2) present to interrupt the download.|
+|`ServerContentLengthMismatch` | 0x18  |  Server sent fewer bytes than the Content-Length header. Content-length header may be invalid or connection may have closed. Download is treated as complete unless there are [strong validators](https://tools.ietf.org/html/rfc7232#section-2) present to interrupt the download.|
 |`ServerCrossOriginRedirect` | 0x19  |  Unexpected cross-origin redirect.|
 |`UserCanceled` | 0x1a  |  User canceled the download.|
 |`UserShutdown` | 0x1b  |  User shut down the WebView. Resuming downloads that were interrupted during shutdown is not yet supported.|

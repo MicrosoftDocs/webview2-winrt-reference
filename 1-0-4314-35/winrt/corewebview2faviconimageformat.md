@@ -1,7 +1,7 @@
 ---
 description: The requested format to get the Favicon from CoreWebView2.GetFaviconAsync.
 title: CoreWebView2FaviconImageFormat
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2FaviconImageFormat
 topic_type:
 - APIRef
@@ -19,8 +19,8 @@ The requested format to get the Favicon from [CoreWebView2.GetFaviconAsync](core
 
 | Name |  Value | Description |
 |--|--|--|
-|`Png` | 0x0  |  Request the Favicon to be retrieved a Png Format.|
-|`Jpeg` | 0x1  |  Request the Favicon to be retrieved a Jpeg Format.|
+|`Png` | 0x0  |  Request the Favicon to be retrieved in a PNG format.|
+|`Jpeg` | 0x1  |  Request the Favicon to be retrieved in a JPEG format.|
 
 
 ## Referenced by

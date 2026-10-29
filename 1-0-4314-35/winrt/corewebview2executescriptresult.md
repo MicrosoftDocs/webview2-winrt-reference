@@ -1,7 +1,7 @@
 ---
 description: The result for CoreWebView2.ExecuteScriptWithResultAsync.
 title: CoreWebView2ExecuteScriptResult
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ExecuteScriptResult
 topic_type:
 - APIRef
@@ -27,10 +27,10 @@ The result for [CoreWebView2.ExecuteScriptWithResultAsync](corewebview2.md#execu
 
 Members|Description
 --|--
-[Exception](#exception) | If Succeeded is false, you can use this property to get the unhandled exception thrown by script execution
-[ResultAsJson](#resultasjson) | A function that has no explicit return value returns undefined. If the script that was run throws an unhandled exception, then the result is also null.
+[Exception](#exception) | Gets the unhandled exception thrown by script execution when [CoreWebView2ExecuteScriptResult.Succeeded](corewebview2executescriptresult.md#succeeded) is `false`.
+[ResultAsJson](#resultasjson) | Gets the JSON encoded string that represents the result of running the provided JavaScript.
 [Succeeded](#succeeded) | This property is true if [CoreWebView2.ExecuteScriptWithResultAsync](corewebview2.md#executescriptwithresultasync) successfully executed script with no unhandled exceptions and the result is available in the [CoreWebView2ExecuteScriptResult.ResultAsJson](corewebview2executescriptresult.md#resultasjson) property.
-[TryGetResultAsString](#trygetresultasstring) | If Succeeded is true and the result of script execution is a string, this method provides the value of the string result, and we will get the false var value when the js result is not string type.
+[TryGetResultAsString](#trygetresultasstring) | If [CoreWebView2ExecuteScriptResult.Succeeded](corewebview2executescriptresult.md#succeeded) is `true` and the result of script execution is a string, this method provides the value of the string result, and returns 0 when the JavaScript result is not a string type.
 
 ## Properties
 
@@ -38,13 +38,17 @@ Members|Description
 
 > readonly  [CoreWebView2ScriptException](corewebview2scriptexception.md) Exception
 
-If Succeeded is false, you can use this property to get the unhandled exception thrown by script execution
+Gets the unhandled exception thrown by script execution when [CoreWebView2ExecuteScriptResult.Succeeded](corewebview2executescriptresult.md#succeeded) is `false`.
+
+If [CoreWebView2ExecuteScriptResult.Succeeded](corewebview2executescriptresult.md#succeeded) is `true`, accessing this property throws an invalid argument exception.
 
 ### ResultAsJson
 
 > readonly  string ResultAsJson
 
-A function that has no explicit return value returns undefined. If the script that was run throws an unhandled exception, then the result is also null.
+Gets the JSON encoded string that represents the result of running the provided JavaScript.
+
+If the result is `undefined`, contains a reference cycle, or otherwise is not able to be encoded into JSON, then the result is considered to be `null`, which is encoded in JSON as the string `"null"`. A function that has no explicit return value returns `undefined`. If the script that was run throws an unhandled exception, then the result is also `"null"`.
 
 ### Succeeded
 
@@ -60,7 +64,7 @@ This property is true if [CoreWebView2.ExecuteScriptWithResultAsync](corewebview
 
 > int TryGetResultAsString(**out** string stringResult)
 
-If Succeeded is true and the result of script execution is a string, this method provides the value of the string result, and we will get the false var value when the js result is not string type.
+If [CoreWebView2ExecuteScriptResult.Succeeded](corewebview2executescriptresult.md#succeeded) is `true` and the result of script execution is a string, this method provides the value of the string result, and returns 0 when the JavaScript result is not a string type.
 
 
 

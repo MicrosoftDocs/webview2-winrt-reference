@@ -1,7 +1,7 @@
 ---
-description: Represents a certificate. Gives access to a certificate's metadata.
+description: Represents a certificate and provides access to its metadata.
 title: CoreWebView2Certificate
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Certificate
 topic_type:
 - APIRef
@@ -26,21 +26,21 @@ api_name:
 
 
 
-Represents a certificate. Gives access to a certificate's metadata.
+Represents a certificate and provides access to its metadata.
 
 ## Summary
 
 Members|Description
 --|--
-[DerEncodedSerialNumber](#derencodedserialnumber) | Base64 encoding of DER encoded serial number of the certificate. Read more about DER at [RFC 7468 DER](https://tools.ietf.org/html/rfc7468#appendix-B).
+[DerEncodedSerialNumber](#derencodedserialnumber) | Base64 encoding of DER encoded serial number of the certificate.
 [DisplayName](#displayname) | Display name for a certificate.
 [Issuer](#issuer) | Name of the certificate authority that issued the certificate.
-[PemEncodedIssuerCertificateChain](#pemencodedissuercertificatechain) | Returns list of PEM encoded certificate issuer chain. In this list first element is the current certificate followed by intermediate1, intermediate2...intermediateN-1. Root certificate is the last element in the list.
+[PemEncodedIssuerCertificateChain](#pemencodedissuercertificatechain) | Returns list of PEM encoded certificate issuer chain.
 [Subject](#subject) | Subject of the certificate.
 [ValidFrom](#validfrom) | The valid start date and time for the certificate as the number of seconds since the UNIX epoch.
 [ValidTo](#validto) | The valid expiration date and time for the certificate as the number of seconds since the UNIX epoch.
 [ToCertificate](#tocertificate) | Converts this to a [Certificate](/uwp/api/Windows.Security.Cryptography.Certificates.Certificate).
-[ToPemEncoding](#topemencoding) | PEM encoded data for the certificate. Returns Base64 encoding of DER encoded certificate. Read more about PEM at [RFC 1421 Privacy Enhanced Mail](https://tools.ietf.org/html/rfc1421).
+[ToPemEncoding](#topemencoding) | PEM encoded data for the certificate.
 
 ## Properties
 
@@ -48,7 +48,8 @@ Members|Description
 
 > readonly  string DerEncodedSerialNumber
 
-Base64 encoding of DER encoded serial number of the certificate. Read more about DER at [RFC 7468 DER](https://tools.ietf.org/html/rfc7468#appendix-B).
+Base64 encoding of DER encoded serial number of the certificate.
+Read more about DER at [RFC 7468 DER](https://tools.ietf.org/html/rfc7468#appendix-B).
 
 ### DisplayName
 
@@ -66,7 +67,8 @@ Name of the certificate authority that issued the certificate.
 
 > readonly  [`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;string&gt; PemEncodedIssuerCertificateChain
 
-Returns list of PEM encoded certificate issuer chain. In this list first element is the current certificate followed by intermediate1, intermediate2...intermediateN-1. Root certificate is the last element in the list.
+Returns list of PEM encoded certificate issuer chain.
+In this list first element is the current certificate followed by intermediate1, intermediate2...intermediateN-1. Root certificate is the last element in the list.
 
 ### Subject
 
@@ -102,7 +104,8 @@ Converts this to a [Certificate](/uwp/api/Windows.Security.Cryptography.Certific
 
 > string ToPemEncoding()
 
-PEM encoded data for the certificate. Returns Base64 encoding of DER encoded certificate. Read more about PEM at [RFC 1421 Privacy Enhanced Mail](https://tools.ietf.org/html/rfc1421).
+PEM encoded data for the certificate.
+Returns Base64 encoding of DER encoded certificate. Read more about PEM at [RFC 1421 Privacy Enhanced Mail](https://tools.ietf.org/html/rfc1421).
 
 
 

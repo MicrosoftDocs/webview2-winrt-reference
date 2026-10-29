@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.DOMContentLoaded event.
 title: CoreWebView2DOMContentLoadedEventArgs
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DOMContentLoadedEventArgs
 topic_type:
 - APIRef
@@ -24,7 +24,7 @@ Event args for the [CoreWebView2.DOMContentLoaded](corewebview2.md#domcontentloa
 
 Members|Description
 --|--
-[NavigationId](#navigationid) | Gets the ID of the navigation.
+[NavigationId](#navigationid) | The ID of the navigation which corresponds to other navigation ID properties on other navigation events.
 
 ## Properties
 
@@ -32,7 +32,7 @@ Members|Description
 
 > readonly  uint64_t NavigationId
 
-Gets the ID of the navigation.
+The ID of the navigation which corresponds to other navigation ID properties on other navigation events.
 
 
 

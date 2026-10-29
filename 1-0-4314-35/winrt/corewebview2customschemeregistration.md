@@ -1,7 +1,7 @@
 ---
 description: Represents the registration of a custom scheme with the CoreWebView2Environment.
 title: CoreWebView2CustomSchemeRegistration
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2CustomSchemeRegistration
 topic_type:
 - APIRef
@@ -22,6 +22,7 @@ api_name:
 
 
 Represents the registration of a custom scheme with the [CoreWebView2Environment](corewebview2environment.md).
+
 This allows the WebView2 app to be able to handle [CoreWebView2.WebResourceRequested](corewebview2.md#webresourcerequested) event for requests with the specified scheme and be able to navigate the WebView2 to the custom scheme. Once the environment is created, the registrations are valid and immutable throughout the lifetime of the associated WebView2s' browser process and any WebView2 environments sharing the browser process must be created with identical custom scheme registrations, otherwise the environment creation will fail.
 Any further attempts to register the same scheme will fail during environment creation.
 The URIs of registered custom schemes will be treated similar to http URIs for their origins.
@@ -43,7 +44,7 @@ Members|Description
 [AllowedOrigins](#allowedorigins) | List of origins that are allowed to issue requests with the custom scheme, such as XHRs and subresource requests that have an Origin header.
 [HasAuthorityComponent](#hasauthoritycomponent) | Set this property to `true` if the URIs with this custom scheme will have an authority component (a host for custom schemes).
 [SchemeName](#schemename) | The scheme name.
-[TreatAsSecure](#treatassecure) | Whether the sites with this scheme will be treated as a [Secure Context](https://developer.mozilla.org/docs/Web/Security/Secure_Contexts) like an HTTPS site. This flag is only effective when [CoreWebView2CustomSchemeRegistration.HasAuthorityComponent](corewebview2customschemeregistration.md#hasauthoritycomponent) is also set to `true`.
+[TreatAsSecure](#treatassecure) | Whether the sites with this scheme will be treated as a [Secure Context](https://developer.mozilla.org/docs/Web/Security/Secure_Contexts) like an HTTPS site.
 
 ## Properties
 
@@ -83,7 +84,8 @@ The scheme name.
 
 >  int TreatAsSecure
 
-Whether the sites with this scheme will be treated as a [Secure Context](https://developer.mozilla.org/docs/Web/Security/Secure_Contexts) like an HTTPS site. This flag is only effective when [CoreWebView2CustomSchemeRegistration.HasAuthorityComponent](corewebview2customschemeregistration.md#hasauthoritycomponent) is also set to `true`.
+Whether the sites with this scheme will be treated as a [Secure Context](https://developer.mozilla.org/docs/Web/Security/Secure_Contexts) like an HTTPS site.
+This flag is only effective when [CoreWebView2CustomSchemeRegistration.HasAuthorityComponent](corewebview2customschemeregistration.md#hasauthoritycomponent) is also set to `true`.
 `false` by default.
 
 

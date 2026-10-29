@@ -1,7 +1,7 @@
 ---
-description: The ScrollBar style being set during environment creation.
+description: Set ScrollBar style on CoreWebView2EnvironmentOptions during environment creation.
 title: CoreWebView2ScrollbarStyle
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ScrollbarStyle
 topic_type:
 - APIRef
@@ -15,7 +15,7 @@ api_name:
 
 # CoreWebView2ScrollbarStyle Enum
 
-The ScrollBar style being set during environment creation.
+Set ScrollBar style on [CoreWebView2EnvironmentOptions](corewebview2environmentoptions.md) during environment creation.
 
 | Name |  Value | Description |
 |--|--|--|

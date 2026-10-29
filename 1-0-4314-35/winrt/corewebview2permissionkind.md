@@ -1,7 +1,7 @@
 ---
-description: Indicates the kind of a permission request.
+description: Indicates the type of a permission request.
 title: CoreWebView2PermissionKind
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PermissionKind
 topic_type:
 - APIRef
@@ -15,7 +15,7 @@ api_name:
 
 # CoreWebView2PermissionKind Enum
 
-Indicates the kind of a permission request.
+Indicates the type of a permission request.
 
 | Name |  Value | Description |
 |--|--|--|
@@ -24,7 +24,7 @@ Indicates the kind of a permission request.
 |`Camera` | 0x2  |  Indicates permission to capture video.|
 |`Geolocation` | 0x3  |  Indicates permission to access geolocation.|
 |`Notifications` | 0x4  |  Indicates permission to send web notifications. Apps that would like to show notifications should handle [CoreWebView2.PermissionRequested](corewebview2.md#permissionrequested) and/or [CoreWebView2Frame.PermissionRequested](corewebview2frame.md#permissionrequested) events and no browser permission prompt will be shown for notification requests. Note that push notifications are currently unavailable in WebView2.|
-|`OtherSensors` | 0x5  |  Indicates permission to access generic sensor. Generic Sensor covers ambient-light-sensor, accelerometer, gyroscope, and magnetometer.|
+|`OtherSensors` | 0x5  |  Indicates permission to access generic sensor. Generic Sensor covering ambient-light-sensor, accelerometer, gyroscope, and magnetometer.|
 |`ClipboardRead` | 0x6  |  Indicates permission to read the system clipboard without a user gesture.|
 |`MultipleAutomaticDownloads` | 0x7  |  Indicates permission to automatically download multiple files. Permission is requested when multiple downloads are triggered in quick succession.|
 |`FileReadWrite` | 0x8  |  Indicates permission to read and write to files or folders on the device. Permission is requested when developers use the [File System Access API](https://developer.mozilla.org/docs/Web/API/File_System_Access_API) to show the file or folder picker to the end user, and then request "readwrite" permission for the user's selection.|
@@ -32,7 +32,7 @@ Indicates the kind of a permission request.
 |`LocalFonts` | 0xa  |  Indicates permission to use fonts on the device. Permission is requested when developers use the [Local Font Access API](https://wicg.github.io/local-font-access/) to query the system fonts available for styling web content.|
 |`MidiSystemExclusiveMessages` | 0xb  |  Indicates permission to send and receive system exclusive messages to/from MIDI (Musical Instrument Digital Interface) devices. Permission is requested when developers use the [Web MIDI API](https://developer.mozilla.org/docs/Web/API/Web_MIDI_API) to request access to system exclusive MIDI messages.|
 |`WindowManagement` | 0xc  |  Indicates permission to open and place windows on the screen. Permission is requested when developers use the [Multi-Screen Window Placement API](https://www.w3.org/TR/window-placement/) to get screen details.|
-|`PersistentStorage` | 0xd  |  Indicates permission to persist storage created by the Storage APIs, service workers, etc. If the persistent storage permission is granted, the browser will not evict data in case of low disk space. Permission for a site can be checked using the [Storage Manager API](https://developer.mozilla.org/docs/Web/API/StorageManager/persisted).|
+|`PersistentStorage` | 0xd  |  Indicates permission to persist storage created by the Storage APIs, service workers, etc. If the persistent storage permission is granted, the browser will not evict data in case of low disk space. Permission for a site can be checked using [Storage Manager API](https://developer.mozilla.org/docs/Web/API/StorageManager/persisted).|
 
 
 ## Referenced by

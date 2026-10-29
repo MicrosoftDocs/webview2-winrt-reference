@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2Controller.MoveFocusRequested event.
 title: CoreWebView2MoveFocusRequestedEventArgs
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2MoveFocusRequestedEventArgs
 topic_type:
 - APIRef
@@ -35,6 +35,7 @@ Members|Description
 >  bool Handled
 
 Indicates whether the event has been handled by the app.
+
 If the app has moved the focus to another desired location, it should set Handled property to `true`. When `Handled` property is `false` after the event handler returns, default action is taken. The default action is to try to find the next tab stop child window in the app and try to move focus to that window. If no other window exists to move focus, focus is cycled within the web content of the WebView.
 
 ### Reason

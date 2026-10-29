@@ -1,7 +1,7 @@
 ---
 description: Specifies the image format for the CoreWebView2.CapturePreviewAsync method.
 title: CoreWebView2CapturePreviewImageFormat
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2CapturePreviewImageFormat
 topic_type:
 - APIRef
@@ -20,7 +20,7 @@ Specifies the image format for the [CoreWebView2.CapturePreviewAsync](corewebvie
 | Name |  Value | Description |
 |--|--|--|
 |`Png` | 0x0  |  Indicates that the PNG image format is used.|
-|`Jpeg` | 0x1  |  Indicates that the JPEG image format is used.|
+|`Jpeg` | 0x1  |  Indicates the JPEG image format is used.|
 
 
 ## Referenced by

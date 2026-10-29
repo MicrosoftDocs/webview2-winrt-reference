@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2SharedWorkerManager.SharedWorkerCreated event.
 title: CoreWebView2SharedWorkerCreatedEventArgs
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2SharedWorkerCreatedEventArgs
 topic_type:
 - APIRef
@@ -20,7 +20,6 @@ api_name:
 
 Event args for the [CoreWebView2SharedWorkerManager.SharedWorkerCreated](corewebview2sharedworkermanager.md#sharedworkercreated) event.
 
-
 ## Summary
 
 Members|Description
@@ -34,7 +33,6 @@ Members|Description
 > readonly  [CoreWebView2SharedWorker](corewebview2sharedworker.md) Worker
 
 The shared worker that was created.
-
 
 
 

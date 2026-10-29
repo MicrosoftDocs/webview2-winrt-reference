@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.ContextMenuRequested event.
 title: CoreWebView2ContextMenuRequestedEventArgs
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContextMenuRequestedEventArgs
 topic_type:
 - APIRef
@@ -24,6 +24,7 @@ api_name:
 
 
 Event args for the [CoreWebView2.ContextMenuRequested](corewebview2.md#contextmenurequested) event.
+
 Will contain the selection information and a collection of all of the default context menu items that the WebView would show. Allows the app to draw its own context menu or add/remove from the default context menu.
 
 ## Summary
@@ -35,7 +36,7 @@ Members|Description
 [Location](#location) | Gets the coordinates where the context menu request occurred in relation to the upper left corner of the WebView bounds.
 [MenuItems](#menuitems) | Gets the collection of [CoreWebView2ContextMenuItem](corewebview2contextmenuitem.md) objects.
 [SelectedCommandId](#selectedcommandid) | Gets or sets the selected [CoreWebView2ContextMenuItem](corewebview2contextmenuitem.md)'s [CoreWebView2ContextMenuItem.CommandId](corewebview2contextmenuitem.md#commandid).
-[GetDeferral](#getdeferral) | Returns a Deferral object.
+[GetDeferral](#getdeferral) | Returns a [Deferral](/uwp/api/windows.foundation.deferral) object.
 
 ## Properties
 
@@ -50,7 +51,8 @@ Gets the target information associated with the requested context menu.
 >  bool Handled
 
 Gets or sets whether the [CoreWebView2.ContextMenuRequested](corewebview2.md#contextmenurequested) event is handled by host after the event handler completes or after the deferral is completed if there is a taken Deferral.
-If Handled is set to `true` then WebView2 will not display a context menu and will instead use the [CoreWebView2ContextMenuRequestedEventArgs.SelectedCommandId](corewebview2contextmenurequestedeventargs.md#selectedcommandid) property to indicate which, if any, context menu item to invoke. If after the event handler or deferral completes, Handled is set to `false` then WebView will display a context menu based on the contents of the [CoreWebView2ContextMenuRequestedEventArgs.MenuItems](corewebview2contextmenurequestedeventargs.md#menuitems) property. The default value is `false`.
+
+If [CoreWebView2ContextMenuRequestedEventArgs.Handled](corewebview2contextmenurequestedeventargs.md#handled) is set to `true` then WebView2 will not display a context menu and will instead use the [CoreWebView2ContextMenuRequestedEventArgs.SelectedCommandId](corewebview2contextmenurequestedeventargs.md#selectedcommandid) property to indicate which, if any, context menu item to invoke. If after the event handler or deferral completes, [CoreWebView2ContextMenuRequestedEventArgs.Handled](corewebview2contextmenurequestedeventargs.md#handled) is set to `false` then WebView will display a context menu based on the contents of the [CoreWebView2ContextMenuRequestedEventArgs.MenuItems](corewebview2contextmenurequestedeventargs.md#menuitems) property. The default value is `false`.
 
 ### Location
 
@@ -69,7 +71,8 @@ Gets the collection of [CoreWebView2ContextMenuItem](corewebview2contextmenuitem
 >  int SelectedCommandId
 
 Gets or sets the selected [CoreWebView2ContextMenuItem](corewebview2contextmenuitem.md)'s [CoreWebView2ContextMenuItem.CommandId](corewebview2contextmenuitem.md#commandid).
-When the app handles the [CoreWebView2.ContextMenuRequested](corewebview2.md#contextmenurequested) event, it can set this to report the selected command from the context menu. The default value is -1 which means that no selection occurred. The app can also set the command ID for a custom context menu item, which will cause the [CoreWebView2ContextMenuItem.CustomItemSelected](corewebview2contextmenuitem.md#customitemselected) event to be fired, however while command IDs for each custom context menu item is unique during a ContextMenuRequested event, WebView may reassign command ID values of deleted custom ContextMenuItems to new objects and the command ID assigned to the same custom item can be different between each app runtime. The command ID should always be obtained via the [CoreWebView2ContextMenuItem.CommandId](corewebview2contextmenuitem.md#commandid) property.
+
+When the app handles the [CoreWebView2.ContextMenuRequested](corewebview2.md#contextmenurequested) event, it can set this to report the selected command from the context menu. The default value is -1 which means that no selection occurred. The app can also set the command ID for a custom context menu item, which will cause the [CoreWebView2ContextMenuItem.CustomItemSelected](corewebview2contextmenuitem.md#customitemselected) event to be fired, however while command IDs for each custom context menu item are unique during a [CoreWebView2.ContextMenuRequested](corewebview2.md#contextmenurequested) event, WebView may reassign command ID values of deleted custom [CoreWebView2ContextMenuItem](corewebview2contextmenuitem.md) objects to new objects and the command ID assigned to the same custom item can be different between each app runtime. The command ID should always be obtained via the [CoreWebView2ContextMenuItem.CommandId](corewebview2contextmenuitem.md#commandid) property.
 
 
 
@@ -79,7 +82,8 @@ When the app handles the [CoreWebView2.ContextMenuRequested](corewebview2.md#con
 
 > [Deferral](/uwp/api/Windows.Foundation.Deferral) GetDeferral()
 
-Returns a Deferral object.
+Returns a [Deferral](/uwp/api/windows.foundation.deferral) object.
+
 Use this operation to complete the event when the custom context menu is closed.
 
 

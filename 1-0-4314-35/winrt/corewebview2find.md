@@ -1,7 +1,7 @@
 ---
-description: Provides methods and properties for finding and navigating through text in the web view. This interface allows for finding text, navigation between matches, and customization of the find UI.
+description: Provides methods and properties for finding and navigating through text in the web view.
 title: CoreWebView2Find
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Find
 topic_type:
 - APIRef
@@ -25,21 +25,21 @@ api_name:
 
 
 
-Provides methods and properties for finding and navigating through text in the web view. This interface allows for finding text, navigation between matches, and customization of the find UI.
-
+Provides methods and properties for finding and navigating through text in the web view.
+This class allows for finding text, navigation between matches, and customization of the find UI.
 
 ## Summary
 
 Members|Description
 --|--
-[ActiveMatchIndex](#activematchindex) | Retrieves the index of the currently active match in the find session. Returns the index of the currently active match, or -1 if there is no active match.
+[ActiveMatchIndex](#activematchindex) | Retrieves the index of the currently active match in the find session.
 [MatchCount](#matchcount) | Gets the total count of matches found in the current document based on the last find session's criteria.
 [FindNext](#findnext) | Navigates to the next match in the document.
 [FindPrevious](#findprevious) | Navigates to the previous match in the document.
 [StartAsync](#startasync) | Initiates a find using the specified find options asynchronously.
 [Stop](#stop) | Stops the current 'Find' session and hides the Find bar.
-[ActiveMatchIndexChanged](#activematchindexchanged) | Registers an event handler for the ActiveMatchIndexChanged event. This event is raised when the index of the currently active match changes.
-[MatchCountChanged](#matchcountchanged) | Registers an event handler for the MatchCountChanged event. This event is raised when the total count of matches in the document changes due to a new find session or changes in the document.
+[ActiveMatchIndexChanged](#activematchindexchanged) | Raised when the index of the currently active match changes.
+[MatchCountChanged](#matchcountchanged) | Raised when the total count of matches in the document changes due to a new find session or changes in the document.
 
 ## Properties
 
@@ -47,17 +47,16 @@ Members|Description
 
 > readonly  int ActiveMatchIndex
 
-Retrieves the index of the currently active match in the find session. Returns the index of the currently active match, or -1 if there is no active match.
+Retrieves the index of the currently active match in the find session.
+Returns the index of the currently active match, or -1 if there is no active match.
 The index starts at 1 for the first match.
-
 
 ### MatchCount
 
 > readonly  int MatchCount
 
 Gets the total count of matches found in the current document based on the last find session's criteria.
-The total count of matches.
-
+Returns the total count of matches.
 
 
 
@@ -68,8 +67,9 @@ The total count of matches.
 > void FindNext()
 
 Navigates to the next match in the document.
- If there are no matches to find, FindNext will wrap around to the first match's index. If called when there is no find session active, FindNext will silently fail. 
+If there are no more matches to find, FindNext will wrap around to the first match's index.
 
+If called when there is no find session active, `FindNext` throws an invalid state exception.
 
 
 
@@ -78,8 +78,9 @@ Navigates to the next match in the document.
 > void FindPrevious()
 
 Navigates to the previous match in the document.
-If there are no matches to find, FindPrevious will wrap around to the last match's index. If called when there is no find session active, FindPrevious will silently fail.
+If there are no more matches to find, FindPrevious will wrap around to the last match's index.
 
+If called when there is no find session active, `FindPrevious` throws an invalid state exception.
 
 
 
@@ -87,14 +88,19 @@ If there are no matches to find, FindPrevious will wrap around to the last match
 
 > [IAsyncAction](/uwp/api/Windows.Foundation.IAsyncAction) StartAsync([CoreWebView2FindOptions](corewebview2findoptions.md) options)
 
-Initiates a find operation using the specified options asynchronously. Starting find is an asynchronous operation and can be configured with notification handlers to know when the starting find operation has completed. The Find dialog will appear after the StartAsync operation completes. Note that the async behavior only applies to starting the find, not to the entire find dialog session.
-
-Displays the Find bar and starts the find session, replacing any existing session. Shows the Find bar even with empty search strings (no actual finding occurs). Supports HTML and TXT document queries; silently fails on unsupported formats. FindOptions changes after initiation don't affect the active session.
-
-The async action completes when the Find bar UI displays the search term and the match counter populates (may have slight latency). The `MatchCountChanged` and `ActiveMatchIndexChanged` events fire only after completion with default values of -1 for active match index and 0 for match count before completion.
-
-To start a new session from the first match, call `Stop()` before `StartAsync()`. Consecutive calls with the same options continue from the current position. Without parameters, it behaves as `FindNext` or `FindPrevious` based on the last action (defaults to forward). Different search terms always start a new session from the document beginning.
-
+Initiates a find using the specified find options asynchronously.
+Displays the Find bar and starts the find session. If a find session was already ongoing, it will be stopped and replaced with this new instance.
+If [CoreWebView2FindOptions.FindTerm](corewebview2findoptions.md#findterm) is an empty string, the Find bar is displayed but no finding occurs. Changing the [CoreWebView2FindOptions](corewebview2findoptions.md) object after initiation won't affect the ongoing find session.
+To change the ongoing find session, [CoreWebView2Find.StartAsync](corewebview2find.md#startasync) must be called again with a new or modified [CoreWebView2FindOptions](corewebview2findoptions.md) object.
+[CoreWebView2Find.StartAsync](corewebview2find.md#startasync) supports HTML and TXT document queries. In general, this API is designed for text-based find sessions.
+If you start a find session programmatically on another file format that doesn't have text fields, the find session will try to execute but will fail to find any matches. (It will silently fail) Note: The asynchronous action completes when the UI has been displayed with the find term in the UI bar, and the matches have populated on the counter on the find bar.
+There may be a slight latency between the UI display and the matches populating in the counter.
+The [CoreWebView2Find.MatchCountChanged](corewebview2find.md#matchcountchanged) and [CoreWebView2Find.ActiveMatchIndexChanged](corewebview2find.md#activematchindexchanged) events are only raised after [CoreWebView2Find.StartAsync](corewebview2find.md#startasync) has completed; otherwise, they will have their default values (-1 for active match index and 0 for match count).
+To start a new find session (beginning the search from the first match), call [CoreWebView2Find.Stop](corewebview2find.md#stop) before invoking [CoreWebView2Find.StartAsync](corewebview2find.md#startasync).
+If [CoreWebView2Find.StartAsync](corewebview2find.md#startasync) is called consecutively with the same options and without calling [CoreWebView2Find.Stop](corewebview2find.md#stop), the find session will continue from the current position in the existing session.
+Calling [CoreWebView2Find.StartAsync](corewebview2find.md#startasync) without altering its parameters will behave either as [CoreWebView2Find.FindNext](corewebview2find.md#findnext) or [CoreWebView2Find.FindPrevious](corewebview2find.md#findprevious), depending on the most recent search action performed.
+[CoreWebView2Find.StartAsync](corewebview2find.md#startasync) will default to forward if neither have been called.
+However, calling [CoreWebView2Find.StartAsync](corewebview2find.md#startasync) again during an ongoing find session does not resume from the point of the current active match. For example, given the text "1 1 A 1 1" and initiating a find session for "A", then starting another find session for "1", it will start searching from the beginning of the document, regardless of the previous active match. This behavior indicates that changing the find query initiates a completely new find session, rather than continuing from the previous match index.
 
 
 
@@ -102,8 +108,8 @@ To start a new session from the first match, call `Stop()` before `StartAsync()`
 
 > void Stop()
 
-Stops the current 'Find' session and hides the Find bar. Stopping Find is an asynchronous operation and can be configured with notification handlers to know when stopping find operation has completed. The Find dialog will disappear before the Stop operation completes. If called with no Find session active, it will silently do nothing.
-
+Stops the current 'Find' session and hides the Find bar.
+If called with no Find session active, it will silently do nothing.
 
 
 
@@ -112,15 +118,14 @@ Stops the current 'Find' session and hides the Find bar. Stopping Find is an asy
 
 ### ActiveMatchIndexChanged
 
-Registers an event handler for the ActiveMatchIndexChanged event. This event is raised when the index of the currently active match changes.
-
+Raised when the index of the currently active match changes.
+This can happen when the user navigates to a different match or when the active match is changed programmatically.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Find, Object&gt;
 
 ### MatchCountChanged
 
-Registers an event handler for the MatchCountChanged event. This event is raised when the total count of matches in the document changes due to a new find session or changes in the document.
-
+Raised when the total count of matches in the document changes due to a new find session or changes in the document.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Find, Object&gt;
 

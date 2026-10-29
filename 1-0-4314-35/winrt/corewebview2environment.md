@@ -1,7 +1,7 @@
 ---
 description: This represents the WebView2 Environment.
 title: CoreWebView2Environment
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Environment
 topic_type:
 - APIRef
@@ -59,27 +59,27 @@ Members|Description
 [CreateAsync](#createasync) | Creates a WebView2 Environment using the installed or a custom WebView2 Runtime version.
 [CreateContextMenuItem](#createcontextmenuitem) | Create a custom [CoreWebView2ContextMenuItem](corewebview2contextmenuitem.md) object to insert into the WebView context menu.
 [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | Asynchronously creates a new WebView for use with visual hosting.
-[CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | This is a overload method that creates a WebView2 composition controller using parent window and custom controller options.
-[CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | This is a overload method that creates a WebView2 controller using parent window and custom controller options.
+[CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | This is an overload method that creates a WebView2 composition controller using parent window and custom controller options.
+[CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | This is an overload method that creates a WebView2 controller using parent window and custom controller options.
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | Asynchronously creates a new WebView.
-[CreateCoreWebView2ControllerOptions](#createcorewebview2controlleroptions) | This is a overload method that creates a WebView2 ControllerOptions.
+[CreateCoreWebView2ControllerOptions](#createcorewebview2controlleroptions) | Creates a new [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) to be passed as a parameter of [CoreWebView2Environment.CreateCoreWebView2ControllerAsync](corewebview2environment.md#createcorewebview2controllerasync) and [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync](corewebview2environment.md#createcorewebview2compositioncontrollerasync) for multiple profiles support.
 [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Creates an empty [CoreWebView2PointerInfo](corewebview2pointerinfo.md).
-[CreateFindOptions](#createfindoptions) | 
+[CreateFindOptions](#createfindoptions) | Creates a new instance of a [CoreWebView2FindOptions](corewebview2findoptions.md) object.
 [CreatePrintSettings](#createprintsettings) | Creates the [CoreWebView2PrintSettings](corewebview2printsettings.md) used by the [CoreWebView2.PrintToPdfAsync](corewebview2.md#printtopdfasync) method.
 [CreateSharedBuffer](#createsharedbuffer) | Create a shared memory based buffer with the specified size in bytes.
-[CreateWebFileSystemDirectoryHandle](#createwebfilesystemdirectoryhandle) | Creates a [CoreWebView2FileSystemHandle](corewebview2filesystemhandle.md) object from a path that represents a Web [FileSystemDirectoryHandle](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle).
-[CreateWebFileSystemFileHandle](#createwebfilesystemfilehandle) | Creates a [CoreWebView2FileSystemHandle](corewebview2filesystemhandle.md) object from a path that represents a Web [FileSystemFileHandle](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle).
+[CreateWebFileSystemDirectoryHandle](#createwebfilesystemdirectoryhandle) | Create a [CoreWebView2FileSystemHandle](corewebview2filesystemhandle.md) object from a path that represents a Web [FileSystemDirectoryHandle](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle).
+[CreateWebFileSystemFileHandle](#createwebfilesystemfilehandle) | Create a [CoreWebView2FileSystemHandle](corewebview2filesystemhandle.md) object from a path that represents a Web [FileSystemFileHandle](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle).
 [CreateWebResourceRequest](#createwebresourcerequest) | Creates a new [CoreWebView2WebResourceRequest](corewebview2webresourcerequest.md) object.
 [CreateWebResourceResponse](#createwebresourceresponse) | Creates a new [CoreWebView2WebResourceResponse](corewebview2webresourceresponse.md) object.
 [CreateWithOptionsAsync](#createwithoptionsasync) | Creates a WebView2 Environment with a custom version of WebView2 Runtime, user data folder, and environment options.
-[GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Gets the browser version info including channel name if it is not the stable channel or WebView2 Runtime where `browserExecutableFolder` is the relative path to the folder that contains the WebView2 Runtime and `options` is the CoreWebViewEnvironmentOptions object used to create the environment.
-[GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Gets the browser version info including channel name if it is not the stable channel or WebView2 Runtime.
-[GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Gets the browser version info including channel name if it is not the stable channel or WebView2 Runtime where `browserExecutableFolder` is the relative path to the folder that contains the WebView2 Runtime.
-[GetProcessExtendedInfosAsync](#getprocessextendedinfosasync) | Returns a snapshot collection of [CoreWebView2ProcessInfo](corewebview2processinfo.md) corresponding to all currently running processes associated with this CoreWebView2Environment excludes crashpad process. This provides the same list of [CoreWebView2ProcessInfo](corewebview2processinfo.md) as what's provided in [CoreWebView2Environment.GetProcessInfos](corewebview2environment.md#getprocessinfos), but additionally provides a list of associated [CoreWebView2FrameInfo](corewebview2frameinfo.md) which are actively running (showing or hiding UI elements) in the renderer process. See [CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos](corewebview2processextendedinfo.md#associatedframeinfos) for more information.
+[GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Gets the browser version info including channel name if it is not the WebView2 Runtime, where `browserExecutableFolder` is the relative path to the folder that contains the WebView2 Runtime and `options` is the [CoreWebView2EnvironmentOptions](corewebview2environmentoptions.md) object used to create the environment.
+[GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Gets the browser version info including channel name if it is not the WebView2 Runtime.
+[GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Gets the browser version info including channel name if it is not the WebView2 Runtime, where `browserExecutableFolder` is the relative path to the folder that contains the WebView2 Runtime.
+[GetProcessExtendedInfosAsync](#getprocessextendedinfosasync) | Returns a snapshot collection of [CoreWebView2ProcessExtendedInfo](corewebview2processextendedinfo.md) corresponding to all currently running processes associated with this CoreWebView2Environment except for crashpad process.
 [GetProcessInfos](#getprocessinfos) | Returns the list of all [CoreWebView2ProcessInfo](corewebview2processinfo.md) using same user data folder except for crashpad process.
 [BrowserProcessExited](#browserprocessexited) | BrowserProcessExited is raised when the collection of WebView2 Runtime processes for the browser process of this CoreWebView2Environment terminate due to browser process failure or normal shutdown (for example, when all associated WebViews are closed), after all resources have been released (including the user data folder).
 [NewBrowserVersionAvailable](#newbrowserversionavailable) | NewBrowserVersionAvailable is raised when a newer version of the WebView2 Runtime is installed and available using WebView2.
-[ProcessInfosChanged](#processinfoschanged) | ProcessInfosChanged is raised when a collection of WebView2 Runtime processes changed due to new process being detected or when a existing process gone away.
+[ProcessInfosChanged](#processinfoschanged) | ProcessInfosChanged is raised when a collection of WebView2 Runtime processes changed due to new process being detected or when an existing process has gone away.
 
 ## Properties
 
@@ -88,6 +88,7 @@ Members|Description
 > readonly  string BrowserVersionString
 
 Gets the browser version info of the current CoreWebView2Environment, including channel name if it is not the stable channel.
+
 It matches the format of the [CoreWebView2Environment.GetAvailableBrowserVersionString](corewebview2environment.md#getavailablebrowserversionstring) method. Channel names are `beta`, `dev`, and `canary`.
 
 ### FailureReportFolderPath
@@ -101,6 +102,7 @@ Gets the failure report folder that all CoreWebView2s created from this environm
 > readonly  string UserDataFolder
 
 Gets the user data folder that all CoreWebView2s created from this environment are using.
+
 This could be either the value passed in by the developer when creating the environment object or the calculated one for default handling. And will always be an absolute path.
 
 
@@ -129,8 +131,9 @@ Creates a WebView2 Environment using the installed or a custom WebView2 Runtime 
 > [CoreWebView2ContextMenuItem](corewebview2contextmenuitem.md) CreateContextMenuItem(string Label, [IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) iconStream, [CoreWebView2ContextMenuItemKind](corewebview2contextmenuitemkind.md) Kind)
 
 Create a custom [CoreWebView2ContextMenuItem](corewebview2contextmenuitem.md) object to insert into the WebView context menu.
-CoreWebView2 will rewind the `icon` stream before decoding.
-There is a limit of 1000 active custom context menu items at a given time per CoreWebView2Environment. Attempting to create more before deleting existing ones will fail with `ERROR_NOT_ENOUGH_QUOTA`. It is recommended to reuse custom ContextMenuItems across CoreWebView2ContextMenuRequested events for performance. The created object's [CoreWebView2ContextMenuItem.IsEnabled](corewebview2contextmenuitem.md#isenabled) property will default to `true` and [CoreWebView2ContextMenuItem.IsChecked](corewebview2contextmenuitem.md#ischecked) property will default to `false`. A [CoreWebView2ContextMenuItem.CommandId](corewebview2contextmenuitem.md#commandid) will be assigned that's unique across active custom context menu items, but command ID values of deleted custom ContextMenuItems can be reassigned.
+
+CoreWebView2 will rewind the `iconStream` stream before decoding.
+There is a limit of 1000 active custom context menu items at a given time per CoreWebView2Environment. Attempting to create more before deleting existing ones throws an exception with HRESULT `HRESULT_FROM_WIN32(ERROR_NOT_ENOUGH_QUOTA)`. It is recommended to reuse custom ContextMenuItems across [CoreWebView2.ContextMenuRequested](corewebview2.md#contextmenurequested) events for performance. The created object's [CoreWebView2ContextMenuItem.IsEnabled](corewebview2contextmenuitem.md#isenabled) property will default to `true` and [CoreWebView2ContextMenuItem.IsChecked](corewebview2contextmenuitem.md#ischecked) property will default to `false`. A [CoreWebView2ContextMenuItem.CommandId](corewebview2contextmenuitem.md#commandid) will be assigned that's unique across active custom context menu items, but command ID values of deleted custom ContextMenuItems can be reassigned.
 
 
 
@@ -139,15 +142,16 @@ There is a limit of 1000 active custom context menu items at a given time per Co
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md)&gt; CreateCoreWebView2CompositionControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow)
 
 Asynchronously creates a new WebView for use with visual hosting.
-`ParentWindow` will be the HWND that the app will receive pointer/mouse input meant for the WebView (and will need to use [CoreWebView2CompositionController.SendMouseInput](corewebview2compositioncontroller.md#sendmouseinput) or [CoreWebView2CompositionController.SendPointerInput](corewebview2compositioncontroller.md#sendpointerinput) to forward). If the app moves the WebView visual tree to underneath a different window, then it needs to set [CoreWebView2Controller.ParentWindow](corewebview2controller.md#parentwindow) to update the new parent HWND of the visual tree.
+
+ParentWindow will be the HWND that the app will receive pointer/mouse input meant for the WebView (and will need to use [CoreWebView2CompositionController.SendMouseInput](corewebview2compositioncontroller.md#sendmouseinput) or [CoreWebView2CompositionController.SendPointerInput](corewebview2compositioncontroller.md#sendpointerinput) to forward). If the app moves the WebView visual tree to underneath a different window, then it needs to set [CoreWebView2Controller.ParentWindow](corewebview2controller.md#parentwindow) to update the new parent HWND of the visual tree.
 
 Set [CoreWebView2CompositionController.RootVisualTarget](corewebview2compositioncontroller.md#rootvisualtarget) property on the created [CoreWebView2CompositionController](corewebview2compositioncontroller.md) to provide a visual to host the browser's visual tree.
 
 It is recommended that the application set Application User Model ID for the process or the application window. If none is set, during WebView creation a generated Application User Model ID is set to root window of `ParentWindow`.
 
-It can also accept a [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) which is created by [CoreWebView2Environment.CreateCoreWebView2ControllerOptions](corewebview2environment.md#createcorewebview2controlleroptions) as the second parameter for multiple profiles support.
+An overload of this method accepts a [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) which is created by [CoreWebView2Environment.CreateCoreWebView2ControllerOptions](corewebview2environment.md#createcorewebview2controlleroptions) as the second parameter for multiple profiles support.
 
-CreateCoreWebView2CompositionController is supported in the following versions of Windows:
+CreateCoreWebView2CompositionControllerAsync is supported in the following versions of Windows:
 
 - Windows 11
 - Windows 10
@@ -160,7 +164,7 @@ CreateCoreWebView2CompositionController is supported in the following versions o
 
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2CompositionController](corewebview2compositioncontroller.md)&gt; CreateCoreWebView2CompositionControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow, [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) options)
 
-This is a overload method that creates a WebView2 composition controller using parent window and custom controller options.
+This is an overload method that creates a WebView2 composition controller using parent window and custom controller options.
 
 
 
@@ -168,7 +172,7 @@ This is a overload method that creates a WebView2 composition controller using p
 
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Controller](corewebview2controller.md)&gt; CreateCoreWebView2ControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow, [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) options)
 
-This is a overload method that creates a WebView2 controller using parent window and custom controller options.
+This is an overload method that creates a WebView2 controller using parent window and custom controller options.
 
 
 
@@ -177,11 +181,12 @@ This is a overload method that creates a WebView2 controller using parent window
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[CoreWebView2Controller](corewebview2controller.md)&gt; CreateCoreWebView2ControllerAsync([CoreWebView2ControllerWindowReference](corewebview2controllerwindowreference.md) ParentWindow)
 
 Asynchronously creates a new WebView.
+
 The WebView adds a child window to the provided window during WebView creation. Z-order and other things impacted by sibling window order are affected accordingly.
 
-HWND_MESSAGE is a valid parameter for `ParentWindow` for an invisible WebView for Windows 8 and above. In this case the window will never become visible. You are not able to reparent the window after you have created the WebView. This is not supported in Windows 7 or below. Passing this parameter in Windows 7 or below will return ERROR_INVALID_WINDOW_HANDLE in the controller callback.
+HWND_MESSAGE is a valid parameter for `ParentWindow` for an invisible WebView for Windows 8 and above. In this case the window will never become visible. You are not able to reparent the window after you have created the WebView. This is not supported in Windows 7 or below. Passing this parameter in Windows 7 or below throws an exception with HRESULT `HRESULT_FROM_WIN32(ERROR_INVALID_WINDOW_HANDLE)`.
 
-It can also accept a [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) which is created by [CoreWebView2Environment.CreateCoreWebView2ControllerOptions](corewebview2environment.md#createcorewebview2controlleroptions) as the second parameter for multiple profiles support. As WebView2 is built on top of Edge browser, it follows Edge's behavior pattern. To create an InPrivate WebView, we gets an off-the-record profile (an InPrivate profile) from a regular profile, then create the WebView with the off-the-record profile. Multiple profiles under single user data directory can share some system resources including memory, CPU footprint, disk space (such as compiled shaders and safebrowsing data) etc.
+An overload of this method accepts a [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) which is created by [CoreWebView2Environment.CreateCoreWebView2ControllerOptions](corewebview2environment.md#createcorewebview2controlleroptions) as the second parameter for multiple profiles support. As WebView2 is built on top of Edge browser, it follows Edge's behavior pattern. To create an InPrivate WebView, we get an off-the-record profile (an InPrivate profile) from a regular profile, then create the WebView with the off-the-record profile. Multiple profiles under single user data directory can share some system resources including memory, CPU footprint, disk space (such as compiled shaders and safebrowsing data) etc.
 
 It is recommended that the application set Application User Model ID for the process or the application window. If none is set, during WebView creation a generated Application User Model ID is set to root window of `ParentWindow`.
 
@@ -191,7 +196,7 @@ When the app retries CreateCoreWebView2ControllerAsync upon failure, it is recom
 
 WebView creation fails if a running instance using the same user data folder exists, and the Environment objects have different [CoreWebView2EnvironmentOptions](corewebview2environmentoptions.md). For example, if a WebView was created with one [CoreWebView2EnvironmentOptions.Language](corewebview2environmentoptions.md#language), an attempt to create a WebView with a different [CoreWebView2EnvironmentOptions.Language](corewebview2environmentoptions.md#language) using the same user data folder fails.
 
-WebView creation can fail with `E_UNEXPECTED` if runtime does not have permissions to the user data folder.
+WebView creation can throw an exception with HRESULT `E_UNEXPECTED` if runtime does not have permissions to the user data folder.
 
 
 
@@ -199,7 +204,7 @@ WebView creation can fail with `E_UNEXPECTED` if runtime does not have permissio
 
 > [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) CreateCoreWebView2ControllerOptions()
 
-This is a overload method that creates a WebView2 ControllerOptions.
+Creates a new [CoreWebView2ControllerOptions](corewebview2controlleroptions.md) to be passed as a parameter of [CoreWebView2Environment.CreateCoreWebView2ControllerAsync](corewebview2environment.md#createcorewebview2controllerasync) and [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync](corewebview2environment.md#createcorewebview2compositioncontrollerasync) for multiple profiles support.
 
 
 
@@ -208,6 +213,7 @@ This is a overload method that creates a WebView2 ControllerOptions.
 > [CoreWebView2PointerInfo](corewebview2pointerinfo.md) CreateCoreWebView2PointerInfo()
 
 Creates an empty [CoreWebView2PointerInfo](corewebview2pointerinfo.md).
+
 The returned [CoreWebView2PointerInfo](corewebview2pointerinfo.md) needs to be populated with all of the relevant info before calling [CoreWebView2CompositionController.SendPointerInput](corewebview2compositioncontroller.md#sendpointerinput).
 
 
@@ -215,6 +221,10 @@ The returned [CoreWebView2PointerInfo](corewebview2pointerinfo.md) needs to be p
 ### CreateFindOptions
 
 > [CoreWebView2FindOptions](corewebview2findoptions.md) CreateFindOptions()
+
+Creates a new instance of a [CoreWebView2FindOptions](corewebview2findoptions.md) object.
+
+This find options object can be used to define parameters for a find session.
 
 
 
@@ -231,6 +241,7 @@ Creates the [CoreWebView2PrintSettings](corewebview2printsettings.md) used by th
 > [CoreWebView2SharedBuffer](corewebview2sharedbuffer.md) CreateSharedBuffer(uint64_t Size)
 
 Create a shared memory based buffer with the specified size in bytes.
+
 The buffer can be shared with web contents in WebView by calling [CoreWebView2.PostSharedBufferToScript](corewebview2.md#postsharedbuffertoscript) or [CoreWebView2Frame.PostSharedBufferToScript](corewebview2frame.md#postsharedbuffertoscript).
 Once shared, the same content of the buffer will be accessible from both the app process and script in WebView.
 Modification to the content will be visible to all parties that have access to the buffer.
@@ -243,11 +254,19 @@ There is currently a limitation that only size less than 2GB is supported.
 
 > [CoreWebView2FileSystemHandle](corewebview2filesystemhandle.md) CreateWebFileSystemDirectoryHandle(string Path, [CoreWebView2FileSystemHandlePermission](corewebview2filesystemhandlepermission.md) Permission)
 
-Creates a [CoreWebView2FileSystemHandle](corewebview2filesystemhandle.md) object from a path that represents a Web [FileSystemDirectoryHandle](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle).
-This must be a syntactically correct fully qualified path, but it is not checked here whether it currently points to a directory. Any other state validation will be done when this handle is accessed from web content and will cause DOM exceptions if access operations fail. If an invalid path is passed, an `InvalidArgumentException` will be thrown.
-Note: An exception to this is, if there is a parent directory handle that has broader permissions in the same page context than specified in here, the handle will automatically inherit the most permissive permission of the parent handle when posted to that page context. i.e. If there is already a `FileSystemDirectoryHandle` to `C:\foo` that has write permission on a page, even though a [CoreWebView2FileSystemHandle](corewebview2filesystemhandle.md) to directory `C:\example\directory` may be created with [CoreWebView2FileSystemHandlePermission.ReadOnly](corewebview2filesystemhandlepermission.md#readonly) permission, when posted to that page, write permission will be automatically granted to the created handle.
-Additionally, the app must have the same OS permissions that have propagated to the [WebView2 browser process](/microsoft-edge/webview2/concepts/process-model) for the path it wishes to give the web content to make any operations on the directory. Specifically, the WebView2 browser process will run in same user, package identity, and app container of the app, but other means such as security context impersonations do not get propagated, so such permissions that the app has, will not be effective in WebView2.
-An app needs to be mindful that this object, when posted to the web content, provides it with unusual access to OS file system via the Web FileSystem API! The app should therefore only post objects for paths that it wants to allow access to the web content and it is not recommended that the web content "asks" for this path. The app should also check the source property of the target to ensure that it is sending to the web content of intended origin. Once the object is passed to web content, the path must point to a directory as if it was chosen via [directory picker](https://developer.mozilla.org/docs/Web/API/Window/showDirectoryPicker) otherwise any IO operation done on the `FileSystemDirectoryHandle` will throw a DOM exception.
+Create a [CoreWebView2FileSystemHandle](corewebview2filesystemhandle.md) object from a path that represents a Web [FileSystemDirectoryHandle](https://developer.mozilla.org/docs/Web/API/FileSystemDirectoryHandle).
+
+The `path` is the path pointed by the directory and must be a syntactically correct fully qualified path, but it is not checked here whether it currently points to a directory. Any other state validation will be done when this handle is accessed from web content and will cause DOM exceptions if access operations fail. If an invalid path is passed, an invalid argument exception is thrown and the object will fail to create.
+
+`Permission` property is used to specify whether the Handle should be created with a Read-only or Read-and-write web permission. For the `permission` value specified here, the Web [PermissionStatus](https://developer.mozilla.org/docs/Web/API/PermissionStatus) will be [granted](https://developer.mozilla.org/docs/Web/API/PermissionStatus/state) and the unspecified permission will be [prompt](https://developer.mozilla.org/docs/Web/API/PermissionStatus/state). Therefore, the web content then does not need to call [requestPermission](https://developer.mozilla.org/docs/Web/API/FileSystemHandle/requestPermission) for the permission that was specified before attempting the permitted operation, but if it does, the promise will immediately be resolved with 'granted' PermissionStatus without firing the WebView2 [CoreWebView2.PermissionRequested](corewebview2.md#permissionrequested) event or prompting the user for permission. Otherwise, `requestPermission` will behave as the status of permission is currently `Prompt`, which means the `PermissionRequested` event will fire or the user will be prompted.
+Additionally, the app must have the same OS permissions that have propagated to the [WebView2 browser process](/microsoft-edge/webview2/concepts/process-model) for the path it wishes to give the web content to make any operations on the directory.
+Specifically, the WebView2 browser process will run in same user, package identity, and app container of the app, but other means such as security context impersonations do not get propagated, so such permissions that the app has, will not be effective in WebView2.
+Note: An exception to this is, if there is a parent directory handle that has broader permissions in the same page context than specified in here, the handle will automatically inherit the most permissive permission of the parent handle when posted to that page context.
+i.e. If there is already a `FileSystemDirectoryHandle` to `C:\example` that has write permission on a page, even though a WebFileSystemHandle to directory `C:\example\directory` is created with [CoreWebView2FileSystemHandlePermission](corewebview2filesystemhandlepermission.md).ReadOnly permission, when posted to that page, write permission will be automatically granted to the created handle.
+
+An app needs to be mindful that this object, when posted to the web content, provides it with unusual access to OS file system via the Web FileSystem API! The app should therefore only post objects for paths that it wants to allow access to the web content and it is not recommended that the web content "asks" for this path. The app should also check the source property of the target to ensure that it is sending to the web content of intended origin.
+
+Once the object is passed to web content, the path must point to a directory as if it was chosen via [directory picker](https://developer.mozilla.org/docs/Web/API/Window/showDirectoryPicker) otherwise any IO operation done on the `FileSystemDirectoryHandle` will throw a DOM exception.
 
 
 
@@ -255,10 +274,20 @@ An app needs to be mindful that this object, when posted to the web content, pro
 
 > [CoreWebView2FileSystemHandle](corewebview2filesystemhandle.md) CreateWebFileSystemFileHandle(string Path, [CoreWebView2FileSystemHandlePermission](corewebview2filesystemhandlepermission.md) Permission)
 
-Creates a [CoreWebView2FileSystemHandle](corewebview2filesystemhandle.md) object from a path that represents a Web [FileSystemFileHandle](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle).
-Note: An exception to this is, if there is a parent directory handle that has broader permissions in the same page context than specified in here, the handle will automatically inherit the most permissive permission of the parent handle when posted to that page context. i.e. If there is already a `FileSystemDirectoryHandle` to `C:\foo` that has write permission on a page, even though a [CoreWebView2FileSystemHandle](corewebview2filesystemhandle.md) to file `C:\example\file.txt` may be created with [CoreWebView2FileSystemHandlePermission.ReadOnly](corewebview2filesystemhandlepermission.md#readonly) permission, when posted to that page, write permission will be automatically granted to the created handle.
-Additionally, the app must have the same OS permissions that have propagated to the [WebView2 browser process](/microsoft-edge/webview2/concepts/process-model) for the path it wishes to give the web content to read/write the file. Specifically, the WebView2 browser process will run in same user, package identity, and app container of the app, but other means such as security context impersonations do not get propagated, so such permissions that the app has, will not be effective in WebView2.
-An app needs to be mindful that this object, when posted to the web content, provides it with unusual access to OS file system via the Web FileSystem API! The app should therefore only post objects for paths that it wants to allow access to the web content and it is not recommended that the web content "asks" for this path. The app should also check the source property of the target to ensure that it is sending to the web content of intended origin. Once the object is passed to web content, if the content is attempting a read, the file must be existing and available to read similar to a file chosen by [open file picker](https://developer.mozilla.org/docs/Web/API/Window/showOpenFilePicker), otherwise the read operation will [throw a DOM exception](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle/getFile#exceptions). For write operations, the file does not need to exist as `FileSystemFileHandle` will behave as a file path chosen by [save file picker](https://developer.mozilla.org/docs/Web/API/Window/showSaveFilePicker) and will create or overwrite the file, but the parent directory structure pointed by the file must exist and an existing file must be available to write and delete or the write operation will [throw a DOM exception](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle/createWritable#exceptions).
+Create a [CoreWebView2FileSystemHandle](corewebview2filesystemhandle.md) object from a path that represents a Web [FileSystemFileHandle](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle).
+
+The `path` is the path pointed by the file and must be a syntactically correct fully qualified path, but it is not checked here whether it currently points to a file. If an invalid path is passed, an invalid argument exception is thrown and the object will fail to create. Any other state validation will be done when this handle is accessed from web content and will cause the DOM exceptions described in [FileSystemFileHandle methods](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle#instance_methods) if access operations fail.
+
+`Permission` property is used to specify whether the Handle should be created with a Read-only or Read-and-write web permission. For the `permission` value specified here, the DOM [PermissionStatus](https://developer.mozilla.org/docs/Web/API/PermissionStatus) property will be [granted](https://developer.mozilla.org/docs/Web/API/PermissionStatus/state) and the unspecified permission will be [prompt](https://developer.mozilla.org/docs/Web/API/PermissionStatus/state). Therefore, the web content then does not need to call [requestPermission](https://developer.mozilla.org/docs/Web/API/FileSystemHandle/requestPermission) for the permission that was specified before attempting the permitted operation, but if it does, the promise will immediately be resolved with 'granted' PermissionStatus without firing the WebView2 [CoreWebView2.PermissionRequested](corewebview2.md#permissionrequested) event or prompting the user for permission. Otherwise, `requestPermission` will behave as the status of permission is currently `prompt`, which means the `PermissionRequested` event will fire or the user will be prompted.
+Additionally, the app must have the same OS permissions that have propagated to the [WebView2 browser process](/microsoft-edge/webview2/concepts/process-model) for the path it wishes to give the web content to read/write the file.
+Specifically, the WebView2 browser process will run in same user, package identity, and app container of the app, but other means such as security context impersonations do not get propagated, so such permissions that the app has, will not be effective in WebView2.
+Note: An exception to this is, if there is a parent directory handle that has broader permissions in the same page context than specified in here, the handle will automatically inherit the most permissive permission of the parent handle when posted to that page context.
+i.e. If there is already a `FileSystemDirectoryHandle` to `C:\example` that has write permission on a page, even though a WebFileSystemHandle to file `C:\example\file.txt` is created with [CoreWebView2FileSystemHandlePermission](corewebview2filesystemhandlepermission.md).ReadOnly permission, when posted to that page, write permission will be automatically granted to the created handle.
+
+An app needs to be mindful that this object, when posted to the web content, provides it with unusual access to OS file system via the Web FileSystem API! The app should therefore only post objects for paths that it wants to allow access to the web content and it is not recommended that the web content "asks" for this path. The app should also check the source property of the target to ensure that it is sending to the web content of intended origin.
+
+Once the object is passed to web content, if the content is attempting a read, the file must be existing and available to read similar to a file chosen by [open file picker](https://developer.mozilla.org/docs/Web/API/Window/showOpenFilePicker), otherwise the read operation will [throw a DOM exception](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle/getFile#exceptions).
+For write operations, the file does not need to exist as `FileSystemFileHandle` will behave as a file path chosen by [save file picker](https://developer.mozilla.org/docs/Web/API/Window/showSaveFilePicker) and will create or overwrite the file, but the parent directory structure pointed by the file must exist and an existing file must be available to write and delete or the write operation will [throw a DOM exception](https://developer.mozilla.org/docs/Web/API/FileSystemFileHandle/createWritable#exceptions).
 
 
 
@@ -276,6 +305,7 @@ Creates a new [CoreWebView2WebResourceRequest](corewebview2webresourcerequest.md
 > [CoreWebView2WebResourceResponse](corewebview2webresourceresponse.md) CreateWebResourceResponse([IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) Content, int StatusCode, string ReasonPhrase, string Headers)
 
 Creates a new [CoreWebView2WebResourceResponse](corewebview2webresourceresponse.md) object.
+
 It is also possible to create this object with empty headers string and then use the [CoreWebView2HttpResponseHeaders](corewebview2httpresponseheaders.md) to construct the headers line by line.
 
 
@@ -292,7 +322,7 @@ Creates a WebView2 Environment with a custom version of WebView2 Runtime, user d
 
 > static string GetAvailableBrowserVersionString(string browserExecutableFolder, [CoreWebView2EnvironmentOptions](corewebview2environmentoptions.md) options)
 
-Gets the browser version info including channel name if it is not the stable channel or WebView2 Runtime where `browserExecutableFolder` is the relative path to the folder that contains the WebView2 Runtime and `options` is the CoreWebViewEnvironmentOptions object used to create the environment.
+Gets the browser version info including channel name if it is not the WebView2 Runtime, where `browserExecutableFolder` is the relative path to the folder that contains the WebView2 Runtime and `options` is the [CoreWebView2EnvironmentOptions](corewebview2environmentoptions.md) object used to create the environment.
 
 
 
@@ -300,7 +330,7 @@ Gets the browser version info including channel name if it is not the stable cha
 
 > static string GetAvailableBrowserVersionString()
 
-Gets the browser version info including channel name if it is not the stable channel or WebView2 Runtime.
+Gets the browser version info including channel name if it is not the WebView2 Runtime.
 
 
 
@@ -308,7 +338,7 @@ Gets the browser version info including channel name if it is not the stable cha
 
 > static string GetAvailableBrowserVersionString(string browserExecutableFolder)
 
-Gets the browser version info including channel name if it is not the stable channel or WebView2 Runtime where `browserExecutableFolder` is the relative path to the folder that contains the WebView2 Runtime.
+Gets the browser version info including channel name if it is not the WebView2 Runtime, where `browserExecutableFolder` is the relative path to the folder that contains the WebView2 Runtime.
 
 
 
@@ -316,7 +346,8 @@ Gets the browser version info including channel name if it is not the stable cha
 
 > [`IAsyncOperation`](/uwp/api/Windows.Foundation.IAsyncOperation-1)&lt;[`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;[CoreWebView2ProcessExtendedInfo](corewebview2processextendedinfo.md)&gt;&gt; GetProcessExtendedInfosAsync()
 
-Returns a snapshot collection of [CoreWebView2ProcessInfo](corewebview2processinfo.md) corresponding to all currently running processes associated with this CoreWebView2Environment excludes crashpad process. This provides the same list of [CoreWebView2ProcessInfo](corewebview2processinfo.md) as what's provided in [CoreWebView2Environment.GetProcessInfos](corewebview2environment.md#getprocessinfos), but additionally provides a list of associated [CoreWebView2FrameInfo](corewebview2frameinfo.md) which are actively running (showing or hiding UI elements) in the renderer process. See [CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos](corewebview2processextendedinfo.md#associatedframeinfos) for more information.
+Returns a snapshot collection of [CoreWebView2ProcessExtendedInfo](corewebview2processextendedinfo.md) corresponding to all currently running processes associated with this CoreWebView2Environment except for crashpad process.
+This provides the same list of [CoreWebView2ProcessInfo](corewebview2processinfo.md) as what's provided in [CoreWebView2Environment.GetProcessInfos](corewebview2environment.md#getprocessinfos), but additionally provides a list of associated [CoreWebView2FrameInfo](corewebview2frameinfo.md) which are actively running (showing or hiding UI elements) in the renderer process. See [CoreWebView2ProcessExtendedInfo.AssociatedFrameInfos](corewebview2processextendedinfo.md#associatedframeinfos) for more information.
 
 
 
@@ -334,6 +365,7 @@ Returns the list of all [CoreWebView2ProcessInfo](corewebview2processinfo.md) us
 ### BrowserProcessExited
 
 BrowserProcessExited is raised when the collection of WebView2 Runtime processes for the browser process of this CoreWebView2Environment terminate due to browser process failure or normal shutdown (for example, when all associated WebViews are closed), after all resources have been released (including the user data folder).
+
 Multiple app processes can share a browser process by creating their webviews from a CoreWebView2Environment with the same user data folder. When the entire collection of WebView2Runtime processes for the browser process exit, all associated CoreWebView2Environment objects receive the BrowserProcessExited event. Multiple processes sharing the same browser process need to coordinate their use of the shared user data folder to avoid race conditions and unnecessary waits. For example, one process should not clear the user data folder at the same time that another process recovers from a crash by recreating its WebView controls; one process should not block waiting for the event if other app processes are using the same browser process (the browser process will not exit until those other processes have closed their webviews too).
 
 Note this is an event from CoreWebView2Environment, not [CoreWebView2](corewebview2.md). The difference between BrowserProcessExited and [CoreWebView2.ProcessFailed](corewebview2.md#processfailed) is that BrowserProcessExited is raised for any **browser process** exit (expected or unexpected, after all associated processes have exited too), while [CoreWebView2.ProcessFailed](corewebview2.md#processfailed) is raised for **unexpected** process exits of any kind (browser, render, GPU, and all other types), or for main frame **render process** unresponsiveness. To learn more about the WebView2 Process Model, go to [Process model](/microsoft-edge/webview2/concepts/process-model).
@@ -345,6 +377,7 @@ Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;Co
 ### NewBrowserVersionAvailable
 
 NewBrowserVersionAvailable is raised when a newer version of the WebView2 Runtime is installed and available using WebView2.
+
 To use the newer version of the browser you must create a new environment and WebView. The event is only raised for new version from the same WebView2 Runtime from which the code is running. When not running with installed WebView2 Runtime, no event is raised.
 
 Because a user data folder is only able to be used by one browser process at a time, if you want to use the same user data folder in the WebViews using the new version of the browser, you must close the environment and instance of WebView that are using the older version of the browser first. Or simply prompt the user to restart the app.
@@ -353,7 +386,7 @@ Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;Co
 
 ### ProcessInfosChanged
 
-ProcessInfosChanged is raised when a collection of WebView2 Runtime processes changed due to new process being detected or when a existing process gone away.
+ProcessInfosChanged is raised when a collection of WebView2 Runtime processes changed due to new process being detected or when an existing process has gone away.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2Environment, Object&gt;
 

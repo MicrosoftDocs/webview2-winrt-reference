@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.ScriptDialogOpening event.
 title: CoreWebView2ScriptDialogOpeningEventArgs
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ScriptDialogOpeningEventArgs
 topic_type:
 - APIRef
@@ -35,7 +35,7 @@ Members|Description
 [Message](#message) | Gets the message of the dialog box.
 [ResultText](#resulttext) | Gets or sets the return value from the JavaScript `prompt` function if [CoreWebView2ScriptDialogOpeningEventArgs.Accept](corewebview2scriptdialogopeningeventargs.md#accept) is run.
 [Uri](#uri) | Gets the URI of the page that requested the dialog box.
-[Accept](#accept) | Responds with **OK** to `confirm`, `prompt`, and `beforeunload` dialogs. Not run this method to indicate cancel.
+[Accept](#accept) | Responds with **OK** to `confirm`, `prompt`, and `beforeunload` dialogs.
 [GetDeferral](#getdeferral) | Gets a Deferral object.
 
 ## Properties
@@ -45,6 +45,7 @@ Members|Description
 > readonly  string DefaultText
 
 Gets the default value to use for the result of the `prompt` JavaScript function.
+
 This is the second parameter passed to the JavaScript prompt dialog.
 
 ### Kind
@@ -58,6 +59,7 @@ Gets the kind of JavaScript dialog box.
 > readonly  string Message
 
 Gets the message of the dialog box.
+
 From JavaScript this is the first parameter passed to `alert`, `confirm`, and `prompt` and is empty for `beforeunload`.
 
 ### ResultText
@@ -65,7 +67,8 @@ From JavaScript this is the first parameter passed to `alert`, `confirm`, and `p
 >  string ResultText
 
 Gets or sets the return value from the JavaScript `prompt` function if [CoreWebView2ScriptDialogOpeningEventArgs.Accept](corewebview2scriptdialogopeningeventargs.md#accept) is run.
-This value is ignored for [CoreWebView2ScriptDialogOpeningEventArgs.Kind](corewebview2scriptdialogopeningeventargs.md#kind)s other than [CoreWebView2ScriptDialogKind](corewebview2scriptdialogkind.md).Prompt. If [CoreWebView2ScriptDialogOpeningEventArgs.Accept](corewebview2scriptdialogopeningeventargs.md#accept) is not run, this value is ignored and `false` is returned from `prompt`.
+
+This value is ignored for [CoreWebView2ScriptDialogOpeningEventArgs.Kind](corewebview2scriptdialogopeningeventargs.md#kind)s other than [CoreWebView2ScriptDialogKind](corewebview2scriptdialogkind.md).Prompt. If [CoreWebView2ScriptDialogOpeningEventArgs.Accept](corewebview2scriptdialogopeningeventargs.md#accept) is not run, this value is ignored and `null` is returned from `prompt`.
 
 ### Uri
 
@@ -81,8 +84,10 @@ Gets the URI of the page that requested the dialog box.
 
 > void Accept()
 
-Responds with **OK** to `confirm`, `prompt`, and `beforeunload` dialogs. Not run this method to indicate cancel.
-From JavaScript, this means that the `confirm` function and `beforeunload` event returns `true` if Accept is run. And for the `prompt` function it returns the value of [CoreWebView2ScriptDialogOpeningEventArgs.ResultText](corewebview2scriptdialogopeningeventargs.md#resulttext) if Accept is run and otherwise returns `false`.
+Responds with **OK** to `confirm`, `prompt`, and `beforeunload` dialogs.
+Do not run this method to indicate cancel.
+
+From JavaScript, this means that the `confirm` function and `beforeunload` event returns `true` if Accept is run. And for the `prompt` function it returns the value of [CoreWebView2ScriptDialogOpeningEventArgs.ResultText](corewebview2scriptdialogopeningeventargs.md#resulttext) if Accept is run and otherwise returns `null`.
 
 
 
@@ -91,7 +96,7 @@ From JavaScript, this means that the `confirm` function and `beforeunload` event
 > [Deferral](/uwp/api/Windows.Foundation.Deferral) GetDeferral()
 
 Gets a Deferral object.
-Use this to Complete the event at a later time.
+Use this to complete the event at a later time.
 
 
 

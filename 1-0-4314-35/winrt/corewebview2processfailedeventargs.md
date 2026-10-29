@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.ProcessFailed event.
 title: CoreWebView2ProcessFailedEventArgs
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ProcessFailedEventArgs
 topic_type:
 - APIRef
@@ -46,21 +46,20 @@ Members|Description
 
 The [CoreWebView2CrashReport](corewebview2crashreport.md) for this process failure, or `null` if no crash report is available (normal exit, external kill, launch failure, hang, or crash-type failure that produced no report).
 
-
 ### ExitCode
 
 > readonly  int ExitCode
 
 Gets the exit code of the failing process, for telemetry purposes.
-The exit code is always `STILL_ACTIVE`(`259`) when [CoreWebView2ProcessFailedEventArgs.ProcessFailedKind](corewebview2processfailedeventargs.md#processfailedkind) is [CoreWebView2ProcessFailedKind](corewebview2processfailedkind.md).RenderProcessUnresponsive.
 
+The exit code is always `STILL_ACTIVE` (`259`) when [CoreWebView2ProcessFailedEventArgs.ProcessFailedKind](corewebview2processfailedeventargs.md#processfailedkind) is [CoreWebView2ProcessFailedKind](corewebview2processfailedkind.md).RenderProcessUnresponsive.
 
 ### FailureSourceModulePath
 
 > readonly  string FailureSourceModulePath
 
 When ProcessFailed occurred due to a failed Code Integrity check, this property returns the full path of the file that was prevented from loading on the system.
-The webview2 process which tried to load the DLL will fail with exit code STATUS_INVALID_IMAGE_HASH(-1073740760).
+The WebView2 process which tried to load the DLL will fail with exit code `STATUS_INVALID_IMAGE_HASH` (`-1073740760`).
 
 ### FrameInfosForFailedProcess
 
@@ -74,6 +73,7 @@ This is only available when [CoreWebView2ProcessFailedEventArgs.ProcessFailedKin
 > readonly  string ProcessDescription
 
 Gets a description of the failing process, assigned by the WebView2 Runtime.
+
 This is a technical English term appropriate for logging or development purposes, and not localized for the end user. It applies to utility processes (for example, "Audio Service", "Video Capture") and plugin processes (for example, "Flash"). The returned string is empty if the WebView2 Runtime did not assign a description to the process.
 
 ### ProcessFailedKind
@@ -83,12 +83,12 @@ This is a technical English term appropriate for logging or development purposes
 Gets the kind of process failure that has occurred.
 `ProcessFailedKind` is a combination of process kind (for example, browser, renderer, gpu) and failure (exit, unresponsiveness). Renderer processes are further divided in main frame renderer (`RenderProcessExited`, `RenderProcessUnresponsive`) and subframe renderer (`FrameRenderProcessExited`). To learn about the conditions under which each failure kind occurs, see [CoreWebView2ProcessFailedKind](corewebview2processfailedkind.md).
 
-
 ### Reason
 
 > readonly  [CoreWebView2ProcessFailedReason](corewebview2processfailedreason.md) Reason
 
 Gets the reason for the process failure.
+
 Some of the reasons are only applicable to specific values of [CoreWebView2ProcessFailedEventArgs.ProcessFailedKind](corewebview2processfailedeventargs.md#processfailedkind), and the following [CoreWebView2ProcessFailedEventArgs.ProcessFailedKind](corewebview2processfailedeventargs.md#processfailedkind) values always return the indicated reason value:
 
 ProcessFailedKind | Reason
@@ -97,7 +97,6 @@ ProcessFailedKind | Reason
 `RenderProcessUnresponsive` | `Unresponsive`
 
 For other [CoreWebView2ProcessFailedEventArgs.ProcessFailedKind](corewebview2processfailedeventargs.md#processfailedkind) values, the reason may be any of the reason values. To learn about what these values mean, see [CoreWebView2ProcessFailedReason](corewebview2processfailedreason.md).
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Specifies the reason for moving focus.
 title: CoreWebView2MoveFocusReason
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2MoveFocusReason
 topic_type:
 - APIRef
@@ -20,8 +20,8 @@ Specifies the reason for moving focus.
 | Name |  Value | Description |
 |--|--|--|
 |`Programmatic` | 0x0  |  Specifies that the code is setting focus into WebView.|
-|`Next` | 0x1  |  Specifies that the focus is moved due to Tab traversal forward.|
-|`Previous` | 0x2  |  Specifies that the focus is moved due to Tab traversal backward.|
+|`Next` | 0x1  |  Specifies that the focus is moving due to Tab traversal forward.|
+|`Previous` | 0x2  |  Specifies that the focus is moving due to Tab traversal backward.|
 
 
 ## Referenced by

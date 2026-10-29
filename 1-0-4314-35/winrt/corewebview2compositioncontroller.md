@@ -1,7 +1,7 @@
 ---
 description: This class is an extension of the CoreWebView2Controller class to support visual hosting.
 title: CoreWebView2CompositionController
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2CompositionController
 topic_type:
 - APIRef
@@ -44,11 +44,11 @@ Members|Description
 [DragOver](#dragover) | Call this method to inform the CoreWebView2CompositionController that a drag operation is moving over the WebView2.
 [Drop](#drop) | Call this method to inform the CoreWebView2CompositionController that an object is being dropped into the WebView2.
 [GetNonClientRegionAtPoint](#getnonclientregionatpoint) | Call this method to perform hit-testing inside of your message loop when the message is WM_NCHITTEST.
-[QueryNonClientRegion](#querynonclientregion) | This method retrieves the non-client regions on the page which corresponds to a given kind [CoreWebView2NonClientRegionKind](corewebview2nonclientregionkind.md).
+[QueryNonClientRegion](#querynonclientregion) | This method retrieves the non-client regions on the page that correspond to a given kind [CoreWebView2NonClientRegionKind](corewebview2nonclientregionkind.md).
 [SendMouseInput](#sendmouseinput) | Sends mouse input to the WebView.
 [SendPointerInput](#sendpointerinput) | Sends pen or pointer input to the WebView.
 [CursorChanged](#cursorchanged) | The event is raised when WebView thinks the cursor should be changed.
-[NonClientRegionChanged](#nonclientregionchanged) | This event is raised when elements on the page with "app-region" CSS property values corresponding to non-client regions change. Use the [CoreWebView2NonClientRegionChangedEventArgs.RegionKind](corewebview2nonclientregionchangedeventargs.md#regionkind) to see the kind of non-client region that changed.
+[NonClientRegionChanged](#nonclientregionchanged) | This event is raised when elements on the page with "app-region" CSS property values corresponding to non-client regions change.
 
 ## Properties
 
@@ -63,7 +63,8 @@ The current cursor that WebView thinks it should be.
 >  Object RootVisualTarget
 
 Gets or sets the root visual in the hosting app's visual tree.
-This visual is where the WebView will connect its visual tree. The app uses this visual to position the WebView within the app. The app still needs to use the [CoreWebView2Controller.Bounds](corewebview2controller.md#bounds) property to size the WebView. The RootVisualTarget property can be an IDCompositionVisual or a Windows::UI::Composition::ContainerVisual. WebView will connect its visual tree to the provided visual before returning from the property setter. The app needs to commit on its device setting the RootVisualTarget property. The RootVisualTarget property supports being set to `null` to disconnect the WebView from the app's visual tree.
+
+This visual is where the WebView will connect its visual tree. The app uses this visual to position the WebView within the app. The app still needs to use the [CoreWebView2Controller.Bounds](corewebview2controller.md#bounds) property to size the WebView. The RootVisualTarget property can be a Windows.UI.Composition.ContainerVisual. WebView will connect its visual tree to the provided visual before returning from the property setter. The app needs to commit on its device setting the RootVisualTarget property. The RootVisualTarget property supports being set to `null` to disconnect the WebView from the app's visual tree.
 
 
 
@@ -83,6 +84,7 @@ Corresponds to the [ICoreDropOperationTarget.EnterAsync](/uwp/api/windows.applic
 > void DragLeave()
 
 Call this method to inform the CoreWebView2CompositionController that a drag operation has left the WebView.
+
 Corresponds to the [ICoreDropOperationTarget.LeaveAsync](/uwp/api/windows.applicationmodel.datatransfer.dragdrop.core.icoredropoperationtarget.leaveasync) method when performing a drag operation into the WebView.
 
 
@@ -117,7 +119,8 @@ Call this method to perform hit-testing inside of your message loop when the mes
 
 > [`IVectorView`](/uwp/api/Windows.Foundation.Collections.IVectorView-1)&lt;[Rect](/uwp/api/Windows.Foundation.Rect)&gt; QueryNonClientRegion([CoreWebView2NonClientRegionKind](corewebview2nonclientregionkind.md) Kind)
 
-This method retrieves the non-client regions on the page which corresponds to a given kind [CoreWebView2NonClientRegionKind](corewebview2nonclientregionkind.md).
+This method retrieves the non-client regions on the page that correspond to a given kind [CoreWebView2NonClientRegionKind](corewebview2nonclientregionkind.md).
+
 This method can be used inside the [CoreWebView2CompositionController.NonClientRegionChanged](corewebview2compositioncontroller.md#nonclientregionchanged) event handler to get the list of rects for the specific region that changed.
 
 
@@ -137,6 +140,7 @@ A positive value indicates that the wheel was rotated forward, away from the use
 > void SendPointerInput([CoreWebView2PointerEventKind](corewebview2pointereventkind.md) eventKind, [CoreWebView2PointerInfo](corewebview2pointerinfo.md) pointerInfo)
 
 Sends pen or pointer input to the WebView.
+
 Accepts touch or pen pointer input of kinds defined in [CoreWebView2PointerEventKind](corewebview2pointereventkind.md).
 Any pointer input from the system must be converted into a [CoreWebView2PointerInfo](corewebview2pointerinfo.md) first.
 
@@ -155,7 +159,8 @@ Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;Co
 
 ### NonClientRegionChanged
 
-This event is raised when elements on the page with "app-region" CSS property values corresponding to non-client regions change. Use the [CoreWebView2NonClientRegionChangedEventArgs.RegionKind](corewebview2nonclientregionchangedeventargs.md#regionkind) to see the kind of non-client region that changed.
+This event is raised when elements on the page with "app-region" CSS property values corresponding to non-client regions change.
+Use the [CoreWebView2NonClientRegionChangedEventArgs.RegionKind](corewebview2nonclientregionchangedeventargs.md#regionkind) to see the kind of non-client region that changed.
 
 Type: [TypedEventHandler](/uwp/api/Windows.Foundation.TypedEventHandler-2)&lt;CoreWebView2CompositionController, [CoreWebView2NonClientRegionChangedEventArgs](corewebview2nonclientregionchangedeventargs.md)&gt;
 

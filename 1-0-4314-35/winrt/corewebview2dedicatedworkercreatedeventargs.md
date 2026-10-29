@@ -1,7 +1,7 @@
 ---
 description: Event args for CoreWebView2.DedicatedWorkerCreated, CoreWebView2Frame.DedicatedWorkerCreated, and CoreWebView2DedicatedWorker.DedicatedWorkerCreated events.
 title: CoreWebView2DedicatedWorkerCreatedEventArgs
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DedicatedWorkerCreatedEventArgs
 topic_type:
 - APIRef
@@ -21,12 +21,11 @@ api_name:
 
 Event args for [CoreWebView2.DedicatedWorkerCreated](corewebview2.md#dedicatedworkercreated), [CoreWebView2Frame.DedicatedWorkerCreated](corewebview2frame.md#dedicatedworkercreated), and [CoreWebView2DedicatedWorker.DedicatedWorkerCreated](corewebview2dedicatedworker.md#dedicatedworkercreated) events.
 
-
 ## Summary
 
 Members|Description
 --|--
-[OriginalSourceFrameInfo](#originalsourceframeinfo) | The associated frame information that created the dedicated worker. This can be used to get the frame source, name, frameId, and parent frame information.
+[OriginalSourceFrameInfo](#originalsourceframeinfo) | The associated frame information that created the dedicated worker.
 [Worker](#worker) | The dedicated worker that was created.
 
 ## Properties
@@ -35,15 +34,14 @@ Members|Description
 
 > readonly  [CoreWebView2FrameInfo](corewebview2frameinfo.md) OriginalSourceFrameInfo
 
-The associated frame information that created the dedicated worker. This can be used to get the frame source, name, frameId, and parent frame information.
-
+The associated frame information that created the dedicated worker.
+This can be used to get the frame source, name, frameId, and parent frame information.
 
 ### Worker
 
 > readonly  [CoreWebView2DedicatedWorker](corewebview2dedicatedworker.md) Worker
 
 The dedicated worker that was created.
-
 
 
 

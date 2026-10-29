@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.SaveAsUIShowing event.
 title: CoreWebView2SaveAsUIShowingEventArgs
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2SaveAsUIShowingEventArgs
 topic_type:
 - APIRef
@@ -30,13 +30,13 @@ Event args for the [CoreWebView2.SaveAsUIShowing](corewebview2.md#saveasuishowin
 
 Members|Description
 --|--
-[AllowReplace](#allowreplace) | Indicates whether to allow replace old file when it already exists in the target save file path.
-[Cancel](#cancel) | Indicates whether to cancel the save as before download.
+[AllowReplace](#allowreplace) | Indicates whether to allow replacing an existing file at the target save file path.
+[Cancel](#cancel) | Indicates whether to cancel the Save As action before download.
 [ContentMimeType](#contentmimetype) | Mime type of content to be saved.
-[Kind](#kind) | The option to save content to different document. [CoreWebView2SaveAsKind](corewebview2saveaskind.md)
-[SaveAsFilePath](#saveasfilepath) | The absolute full path of save as location.
+[Kind](#kind) | The option to save content as a different document kind.
+[SaveAsFilePath](#saveasfilepath) | The absolute full path of the Save As location.
 [SuppressDefaultDialog](#suppressdefaultdialog) | Indicates if the system default dialog will be suppressed.
-[GetDeferral](#getdeferral) | Gets a Deferral object.
+[GetDeferral](#getdeferral) | Gets a [Deferral](/uwp/api/windows.foundation.deferral) object.
 
 ## Properties
 
@@ -44,15 +44,17 @@ Members|Description
 
 >  bool AllowReplace
 
-Indicates whether to allow replace old file when it already exists in the target save file path.
-Setting this property to `TRUE` allows existing files to be replaced. Setting this property to `FALSE` will not replace existing files and will return [CoreWebView2SaveAsUIResult.FileAlreadyExists](corewebview2saveasuiresult.md#filealreadyexists).
+Indicates whether to allow replacing an existing file at the target save file path.
+
+Setting this property to `true` allows existing files to be replaced. Setting this property to `false` will not replace existing files and will return [CoreWebView2SaveAsUIResult](corewebview2saveasuiresult.md).FileAlreadyExists.
 
 ### Cancel
 
 >  bool Cancel
 
-Indicates whether to cancel the save as before download.
-Set this property to `TRUE` to cancel the Save As action and prevent the download from starting. [CoreWebView2.ShowSaveAsUIAsync](corewebview2.md#showsaveasuiasync) returns [CoreWebView2SaveAsUIResult.Cancelled](corewebview2saveasuiresult.md#cancelled).
+Indicates whether to cancel the Save As action before download.
+
+Set this property to `true` to cancel the Save As action and prevent the download from starting. [CoreWebView2.ShowSaveAsUIAsync](corewebview2.md#showsaveasuiasync) returns [CoreWebView2SaveAsUIResult](corewebview2saveasuiresult.md).Cancelled.
 
 ### ContentMimeType
 
@@ -64,22 +66,26 @@ Mime type of content to be saved.
 
 >  [CoreWebView2SaveAsKind](corewebview2saveaskind.md) Kind
 
-The option to save content to different document. [CoreWebView2SaveAsKind](corewebview2saveaskind.md)
-If it is not allowed for the current document, method [CoreWebView2.ShowSaveAsUIAsync](corewebview2.md#showsaveasuiasync) returns [CoreWebView2SaveAsUIResult.InvalidPath](corewebview2saveasuiresult.md#invalidpath).
+The option to save content as a different document kind.
+See [CoreWebView2SaveAsKind](corewebview2saveaskind.md).
+
+If it is not allowed for the current document, [CoreWebView2.ShowSaveAsUIAsync](corewebview2.md#showsaveasuiasync) returns [CoreWebView2SaveAsUIResult](corewebview2saveasuiresult.md).KindNotSupported.
 
 ### SaveAsFilePath
 
 >  string SaveAsFilePath
 
-The absolute full path of save as location.
-It includes the file name and extension. If it is not valid (for example, the root drive does not exist), Save As is denied, and [CoreWebView2SaveAsUIResult.InvalidPath](corewebview2saveasuiresult.md#invalidpath) is returned. If the associated download completes successfully, a target file is saved at this location. If the `Kind` property is [CoreWebView2SaveAsKind.Complete](corewebview2saveaskind.md#complete), there will be an additional directory with resources files.
+The absolute full path of the Save As location.
+
+It includes the file name and extension. If it is not valid (for example, the root drive does not exist), Save As is denied, and [CoreWebView2SaveAsUIResult](corewebview2saveasuiresult.md).InvalidPath is returned. If the associated download completes successfully, a target file is saved at this location. If the [CoreWebView2SaveAsUIShowingEventArgs.Kind](corewebview2saveasuishowingeventargs.md#kind) property is [CoreWebView2SaveAsKind](corewebview2saveaskind.md).Complete, there will be an additional directory with resource files.
 
 ### SuppressDefaultDialog
 
 >  bool SuppressDefaultDialog
 
 Indicates if the system default dialog will be suppressed.
-When this property is FALSE, the default Save As dialog is shown and the values assigned through `SaveAsFilePath`, `AllowReplace` and `Kind` are ignored when the event args invoke completed. When it is `TRUE`, the system dialog is skipped and all assigned values are used.
+
+When this property is `false`, the default Save As dialog is shown and the values assigned through [CoreWebView2SaveAsUIShowingEventArgs.SaveAsFilePath](corewebview2saveasuishowingeventargs.md#saveasfilepath), [CoreWebView2SaveAsUIShowingEventArgs.AllowReplace](corewebview2saveasuishowingeventargs.md#allowreplace), and [CoreWebView2SaveAsUIShowingEventArgs.Kind](corewebview2saveasuishowingeventargs.md#kind) are ignored when the event handler completes. When it is `true`, the system dialog is skipped and all assigned values are used.
 
 
 
@@ -89,9 +95,9 @@ When this property is FALSE, the default Save As dialog is shown and the values 
 
 > [Deferral](/uwp/api/Windows.Foundation.Deferral) GetDeferral()
 
-Gets a Deferral object.
-This will defer showing the default Save As dialog. Use this to Complete the event at a later time to perform a Save As operation.
+Gets a [Deferral](/uwp/api/windows.foundation.deferral) object.
 
+This will defer showing the default Save As dialog. Use this to [Deferral.Complete](/uwp/api/windows.foundation.deferral.complete) the event at a later time to perform a Save As operation.
 
 
 

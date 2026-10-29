@@ -1,7 +1,7 @@
 ---
-description: This interface represents a JavaScript exception.
+description: This represents a JavaScript exception.
 title: CoreWebView2ScriptException
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ScriptException
 topic_type:
 - APIRef
@@ -22,14 +22,14 @@ api_name:
 
 
 
-This interface represents a JavaScript exception.
+This represents a JavaScript exception.
 
 ## Summary
 
 Members|Description
 --|--
-[ColumnNumber](#columnnumber) | The column number of the source where the exception occurred. Note that this position starts at 0.
-[LineNumber](#linenumber) | The line number of the source where the exception occurred. Note that this position starts at 0.
+[ColumnNumber](#columnnumber) | The column number of the source where the exception occurred.
+[LineNumber](#linenumber) | The line number of the source where the exception occurred.
 [Message](#message) | The Message is the exception's message and potentially stack.
 [Name](#name) | The Name is the exception's class name.
 [ToJson](#tojson) | This will return all details of the exception as a JSON string.
@@ -40,13 +40,15 @@ Members|Description
 
 > readonly  uint32_t ColumnNumber
 
-The column number of the source where the exception occurred. Note that this position starts at 0.
+The column number of the source where the exception occurred.
+Note that this position starts at 0.
 
 ### LineNumber
 
 > readonly  uint32_t LineNumber
 
-The line number of the source where the exception occurred. Note that this position starts at 0.
+The line number of the source where the exception occurred.
+Note that this position starts at 0.
 
 ### Message
 

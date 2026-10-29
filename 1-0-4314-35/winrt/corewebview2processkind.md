@@ -1,7 +1,7 @@
 ---
 description: Specifies the process kind used in CoreWebView2ProcessInfo.
 title: CoreWebView2ProcessKind
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ProcessKind
 topic_type:
 - APIRef
@@ -20,11 +20,11 @@ The values in this enum make reference to the process kinds in the Chromium arch
 
 | Name |  Value | Description |
 |--|--|--|
-|`Browser` | 0x0  |  Indicates that the process is browser process.|
-|`Renderer` | 0x1  |  Indicates that the process is render process.|
-|`Utility` | 0x2  |  Indicates that the process is utility process.|
-|`SandboxHelper` | 0x3  |  Indicates that the process is sandbox helper process.|
-|`Gpu` | 0x4  |  Indicates that the process is Gpu process.|
+|`Browser` | 0x0  |  Indicates the browser process kind.|
+|`Renderer` | 0x1  |  Indicates the render process kind.|
+|`Utility` | 0x2  |  Indicates the utility process kind.|
+|`SandboxHelper` | 0x3  |  Indicates the sandbox helper process kind.|
+|`Gpu` | 0x4  |  Indicates the GPU process kind.|
 |`PpapiPlugin` | 0x5  |  Deprecated. This value is unused.|
 |`PpapiBroker` | 0x6  |  Deprecated. This value is unused.|
 

@@ -1,7 +1,7 @@
 ---
 description: Specifies the source of CoreWebView2.WebResourceRequested.
 title: CoreWebView2WebResourceRequestSourceKinds
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebResourceRequestSourceKinds
 topic_type:
 - APIRef
@@ -19,7 +19,7 @@ Specifies the source of [CoreWebView2.WebResourceRequested](corewebview2.md#webr
 
 | Name |  Value | Description |
 |--|--|--|
-|`None` | 0x0  |  |
+|`None` | 0x0  |  No request source kinds.|
 |`Document` | 0x1  |  Indicates that web resource is requested from main page including dedicated workers, iframes and main script for shared workers.|
 |`SharedWorker` | 0x2  |  Indicates that web resource is requested from shared worker.|
 |`ServiceWorker` | 0x4  |  Indicates that web resource is requested from service worker.|

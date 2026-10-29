@@ -1,7 +1,7 @@
 ---
-description: Settings used by the CoreWebView2.PrintToPdfAsync method.
+description: Settings used by the CoreWebView2.PrintAsync, CoreWebView2.PrintToPdfAsync, and CoreWebView2.PrintToPdfStreamAsync methods.
 title: CoreWebView2PrintSettings
-ms.date: 10/19/2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PrintSettings
 topic_type:
 - APIRef
@@ -38,7 +38,7 @@ api_name:
 
 
 
-Settings used by the [CoreWebView2.PrintToPdfAsync](corewebview2.md#printtopdfasync) method.
+Settings used by the [CoreWebView2.PrintAsync](corewebview2.md#printasync), [CoreWebView2.PrintToPdfAsync](corewebview2.md#printtopdfasync), and [CoreWebView2.PrintToPdfStreamAsync](corewebview2.md#printtopdfstreamasync) methods.
 
 ## Summary
 
@@ -46,7 +46,7 @@ Members|Description
 --|--
 [Collation](#collation) | Printer collation.
 [ColorMode](#colormode) | Printer color mode.
-[Copies](#copies) | Number of copies to print. Minimum value is `1` and the maximum copies count is `999`.
+[Copies](#copies) | Number of copies to print.
 [Duplex](#duplex) | Printer duplex settings.
 [FooterUri](#footeruri) | The URI in the footer if [CoreWebView2PrintSettings.ShouldPrintHeaderAndFooter](corewebview2printsettings.md#shouldprintheaderandfooter) is `true`.
 [HeaderTitle](#headertitle) | The title in the header if [CoreWebView2PrintSettings.ShouldPrintHeaderAndFooter](corewebview2printsettings.md#shouldprintheaderandfooter) is `true`.
@@ -57,9 +57,9 @@ Members|Description
 [MediaSize](#mediasize) | Printer media size.
 [Orientation](#orientation) | The orientation can be portrait or landscape.
 [PageHeight](#pageheight) | The page height in inches.
-[PageRanges](#pageranges) | Page range to print. Defaults to empty string, which means print all pages.
+[PageRanges](#pageranges) | Page range to print.
 [PageWidth](#pagewidth) | The page width in inches.
-[PagesPerSide](#pagesperside) | Prints multiple pages of a document on a single piece of paper. Choose from 1, 2, 4, 6, 9 or 16.
+[PagesPerSide](#pagesperside) | Prints multiple pages of a document on a single piece of paper.
 [PrinterName](#printername) | The name of the printer to use.
 [ScaleFactor](#scalefactor) | The scale factor is a value between 0.1 and 2.0.
 [ShouldPrintBackgrounds](#shouldprintbackgrounds) | `true` if background colors and images should be printed.
@@ -73,7 +73,8 @@ Members|Description
 >  [CoreWebView2PrintCollation](corewebview2printcollation.md) Collation
 
 Printer collation.
-See [CoreWebView2PrintCollation](corewebview2printcollation.md) for descriptions of collation. The default value is [CoreWebView2PrintCollation](corewebview2printcollation.md).Default.
+
+See [CoreWebView2PrintCollation](corewebview2printcollation.md) for descriptions of collation. The default value is `CoreWebView2PrintCollation.Default`.
 
 Printing uses default value of printer's collation if an invalid value is provided for the specific printer.
 
@@ -84,7 +85,8 @@ This value is ignored in [CoreWebView2.PrintToPdfStreamAsync](corewebview2.md#pr
 >  [CoreWebView2PrintColorMode](corewebview2printcolormode.md) ColorMode
 
 Printer color mode.
-See [CoreWebView2PrintColorMode](corewebview2printcolormode.md) for descriptions of color modes. The default value is [CoreWebView2PrintColorMode](corewebview2printcolormode.md).Default.
+
+See [CoreWebView2PrintColorMode](corewebview2printcolormode.md) for descriptions of color modes. The default value is `CoreWebView2PrintColorMode.Default`.
 
 Printing uses default value of printer supported color if an invalid value is provided for the specific printer.
 
@@ -92,15 +94,20 @@ Printing uses default value of printer supported color if an invalid value is pr
 
 >  int Copies
 
-Number of copies to print. Minimum value is `1` and the maximum copies count is `999`.
-The default value is 1.
+Number of copies to print.
+Minimum value is `1` and the maximum copies count is `999`.
+
+The default value is 1. If an invalid value is provided, the current value is not changed and an invalid argument exception is thrown.
+
+This value is ignored in [CoreWebView2.PrintToPdfStreamAsync](corewebview2.md#printtopdfstreamasync) method.
 
 ### Duplex
 
 >  [CoreWebView2PrintDuplex](corewebview2printduplex.md) Duplex
 
 Printer duplex settings.
-See [CoreWebView2PrintDuplex](corewebview2printduplex.md) for descriptions of duplex. The default value is [CoreWebView2PrintDuplex](corewebview2printduplex.md).Default.
+
+See [CoreWebView2PrintDuplex](corewebview2printduplex.md) for descriptions of duplex. The default value is `CoreWebView2PrintDuplex.Default`.
 
 Printing uses default value of printer's duplex if an invalid value is provided for the specific printer.
 
@@ -111,6 +118,7 @@ This value is ignored in [CoreWebView2.PrintToPdfStreamAsync](corewebview2.md#pr
 >  string FooterUri
 
 The URI in the footer if [CoreWebView2PrintSettings.ShouldPrintHeaderAndFooter](corewebview2printsettings.md#shouldprintheaderandfooter) is `true`.
+
 The default value is the current URI. If an empty string or null value is provided, no URI is shown in the footer.
 
 ### HeaderTitle
@@ -118,6 +126,7 @@ The default value is the current URI. If an empty string or null value is provid
 >  string HeaderTitle
 
 The title in the header if [CoreWebView2PrintSettings.ShouldPrintHeaderAndFooter](corewebview2printsettings.md#shouldprintheaderandfooter) is `true`.
+
 The default value is the title of the current document. If an empty string or null value is provided, no title is shown in the header.
 
 ### MarginBottom
@@ -125,37 +134,42 @@ The default value is the title of the current document. If an empty string or nu
 >  double MarginBottom
 
 The bottom margin in inches.
-The default is 1 cm, or ~0.4 inches. A margin cannot be less than zero. If an invalid value is provided, the current value is not changed and an ArgumentException is thrown.
+
+The default is 1 cm, or ~0.4 inches. A margin cannot be less than zero. If an invalid value is provided, the current value is not changed and an invalid argument exception is thrown.
 
 ### MarginLeft
 
 >  double MarginLeft
 
 The left margin in inches.
-The default is 1 cm, or ~0.4 inches. A margin cannot be less than zero. If an invalid value is provided, the current value is not changed and an ArgumentException is thrown.
+
+The default is 1 cm, or ~0.4 inches. A margin cannot be less than zero. If an invalid value is provided, the current value is not changed and an invalid argument exception is thrown.
 
 ### MarginRight
 
 >  double MarginRight
 
 The right margin in inches.
-The default is 1 cm, or ~0.4 inches. A margin cannot be less than zero. If an invalid value is provided, the current value is not changed and an ArgumentException is thrown.
+
+The default is 1 cm, or ~0.4 inches. A margin cannot be less than zero. If an invalid value is provided, the current value is not changed and an invalid argument exception is thrown.
 
 ### MarginTop
 
 >  double MarginTop
 
 The top margin in inches.
-The default is 1 cm, or ~0.4 inches. A margin cannot be less than zero. If an invalid value is provided, the current value is not changed and an ArgumentException is thrown.
+
+The default is 1 cm, or ~0.4 inches. A margin cannot be less than zero. If an invalid value is provided, the current value is not changed and an invalid argument exception is thrown.
 
 ### MediaSize
 
 >  [CoreWebView2PrintMediaSize](corewebview2printmediasize.md) MediaSize
 
 Printer media size.
-See [CoreWebView2PrintMediaSize](corewebview2printmediasize.md) for descriptions of media size. The default value is [CoreWebView2PrintMediaSize](corewebview2printmediasize.md).Default.
 
-If media size is [CoreWebView2PrintMediaSize](corewebview2printmediasize.md).Custom, you should set the PageWidth and PageHeight.
+See [CoreWebView2PrintMediaSize](corewebview2printmediasize.md) for descriptions of media size. The default value is `CoreWebView2PrintMediaSize.Default`.
+
+If media size is `CoreWebView2PrintMediaSize.Custom`, you should set the PageWidth and PageHeight.
 
 Printing uses default value of printer supported media size if an invalid value is provided for the specific printer.
 
@@ -166,6 +180,7 @@ This value is ignored in [CoreWebView2.PrintToPdfStreamAsync](corewebview2.md#pr
 >  [CoreWebView2PrintOrientation](corewebview2printorientation.md) Orientation
 
 The orientation can be portrait or landscape.
+
 The default orientation is portrait. See [CoreWebView2PrintOrientation](corewebview2printorientation.md).
 
 ### PageHeight
@@ -173,13 +188,16 @@ The default orientation is portrait. See [CoreWebView2PrintOrientation](corewebv
 >  double PageHeight
 
 The page height in inches.
-The default height is 11 inches. If the provided page height is less than or equal to zero, the current value is not changed and an ArgumentException is thrown.
+
+The default height is 11 inches. If the provided page height is less than or equal to zero, the current value is not changed and an invalid argument exception is thrown.
 
 ### PageRanges
 
 >  string PageRanges
 
-Page range to print. Defaults to empty string, which means print all pages.
+Page range to print.
+Defaults to empty string, which means print all pages.
+
 The PageRanges property is a list of page ranges specifying one or more pages that should be printed separated by commas. Any whitespace between page ranges is ignored.
 A valid page range is either a single integer identifying the page to print, or a range in the form `[start page]-[last page]` where `start page` and `last page` are integers identifying the first and last inclusive pages respectively to print.
 Every page identifier is an integer greater than 0 unless wildcards are used (see below examples).
@@ -187,14 +205,14 @@ The first page is 1.
 
 In a page range of the form `[start page]-[last page]` the start page number must be larger than 0 and less than or equal to the document's total page count.
 If the `start page` is not present, then 1 is used as the `start page`.
-The `last page` must be larger than the `start page`.
+The `last page` must be larger than or equal to the `start page`.
 If the `last page` is not present, then the document total page count is used as the `last page`.
 
 Repeating a page does not print it multiple times. To print multiple times, use the [CoreWebView2PrintSettings.Copies](corewebview2printsettings.md#copies) property.
 
 The pages are always printed in ascending order, even if specified in non-ascending order.
 
-If page range is not valid or if a page is greater than document total page count, ArgumentException is thrown.
+If page range is not valid or if a page is greater than document total page count, [CoreWebView2.PrintAsync](corewebview2.md#printasync) or [CoreWebView2.PrintToPdfStreamAsync](corewebview2.md#printtopdfstreamasync) throws an invalid argument exception.
 
 The following examples assume a document with 20 total pages.
 
@@ -214,18 +232,21 @@ The following examples assume a document with 20 total pages.
 >  double PageWidth
 
 The page width in inches.
-The default width is 8.5 inches. If the provided page width is less than or equal to zero, the current value is not changed and an ArgumentException is thrown.
+
+The default width is 8.5 inches. If the provided page width is less than or equal to zero, the current value is not changed and an invalid argument exception is thrown.
 
 ### PagesPerSide
 
 >  int PagesPerSide
 
-Prints multiple pages of a document on a single piece of paper. Choose from 1, 2, 4, 6, 9 or 16.
+Prints multiple pages of a document on a single piece of paper.
+Choose from 1, 2, 4, 6, 9 or 16.
+
 The default value is 1.
 
-If an invalid value is provided, ArgumentException is thrown.
+If an invalid value is provided, an invalid argument exception is thrown.
 
-Below examples shows print output for PagesPerSide and Duplex.
+Below examples show print output for PagesPerSide and Duplex.
 
 |  PagesPerSide   |    Total pages   | Two-sided printing  |              Result                                               |
 | --- | --- | --- | --- |
@@ -241,9 +262,10 @@ Below examples shows print output for PagesPerSide and Duplex.
 >  string PrinterName
 
 The name of the printer to use.
+
 Defaults to empty string. If the printer name is empty string or null, then it prints to the default printer on the user OS.
 
-If provided printer name doesn't match with the name of any installed printers on the user OS, the method returns with [CoreWebView2PrintStatus](corewebview2printstatus.md).PrinterUnavailable.
+If provided printer name doesn't match with the name of any installed printers on the user OS, [CoreWebView2.PrintAsync](corewebview2.md#printasync) returns [CoreWebView2PrintStatus](corewebview2printstatus.md).PrinterUnavailable.
 
 Use [DeviceInformation.FindAllAsync](/uwp/api/windows.devices.enumeration.deviceinformation.findallasync) to get the list of local printers with AQS as "System.Devices.HardwareIds:~~"PRINTENUM\LocalPrintQueue""
 
@@ -254,13 +276,15 @@ This value is ignored in [CoreWebView2.PrintToPdfStreamAsync](corewebview2.md#pr
 >  double ScaleFactor
 
 The scale factor is a value between 0.1 and 2.0.
-The default is 1.0. If an invalid value is provided, the current value is not changed and an ArgumentException is thrown.
+
+The default is 1.0. If an invalid value is provided, the current value is not changed and an invalid argument exception is thrown.
 
 ### ShouldPrintBackgrounds
 
 >  bool ShouldPrintBackgrounds
 
 `true` if background colors and images should be printed.
+
 The default value is `false`.
 
 ### ShouldPrintHeaderAndFooter
@@ -268,6 +292,7 @@ The default value is `false`.
 >  bool ShouldPrintHeaderAndFooter
 
 `true` if header and footer should be printed.
+
 The default value is `false`. The header consists of the date and time of printing, and the title of the page. The footer consists of the URI and page number. The height of the header and footer is 0.5 cm, or ~0.2 inches.
 
 ### ShouldPrintSelectionOnly
@@ -275,6 +300,7 @@ The default value is `false`. The header consists of the date and time of printi
 >  bool ShouldPrintSelectionOnly
 
 `true` if only the current end user's selection of HTML in the document should be printed.
+
 The default value is `false`.
 
 
