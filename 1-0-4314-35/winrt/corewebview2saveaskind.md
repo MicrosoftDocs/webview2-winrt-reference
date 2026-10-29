@@ -1,7 +1,7 @@
 ---
 description: Specifies CoreWebView2SaveAsUIShowingEventArgs.Kind selection options.
 title: CoreWebView2SaveAsKind
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2SaveAsKind
 topic_type:
 - APIRef

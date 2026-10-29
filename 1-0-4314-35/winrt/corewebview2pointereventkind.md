@@ -1,7 +1,7 @@
 ---
 description: Pointer event kind used by CoreWebView2CompositionController.SendPointerInput to convey the kind of pointer event being sent to WebView.
 title: CoreWebView2PointerEventKind
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PointerEventKind
 topic_type:
 - APIRef

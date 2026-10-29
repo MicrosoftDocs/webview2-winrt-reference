@@ -1,7 +1,7 @@
 ---
 description: The reason why the CoreWebView2DownloadOperation was interrupted.
 title: CoreWebView2DownloadInterruptReason
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DownloadInterruptReason
 topic_type:
 - APIRef

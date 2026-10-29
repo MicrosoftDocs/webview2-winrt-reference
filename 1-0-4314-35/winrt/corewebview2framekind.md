@@ -1,7 +1,7 @@
 ---
 description: Indicates the frame type used in the CoreWebView2FrameInfo.
 title: CoreWebView2FrameKind
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2FrameKind
 topic_type:
 - APIRef

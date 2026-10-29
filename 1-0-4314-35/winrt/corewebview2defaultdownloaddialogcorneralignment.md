@@ -1,7 +1,7 @@
 ---
 description: The default download dialog can be aligned to any of the WebView corners by setting the CoreWebView2.DefaultDownloadDialogCornerAlignment property.
 title: CoreWebView2DefaultDownloadDialogCornerAlignment
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DefaultDownloadDialogCornerAlignment
 topic_type:
 - APIRef

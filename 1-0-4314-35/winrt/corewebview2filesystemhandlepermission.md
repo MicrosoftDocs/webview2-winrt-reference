@@ -1,7 +1,7 @@
 ---
 description: Allowed permissions of a CoreWebView2FileSystemHandle as described in FileSystemHandle.requestPermission().
 title: CoreWebView2FileSystemHandlePermission
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2FileSystemHandlePermission
 topic_type:
 - APIRef

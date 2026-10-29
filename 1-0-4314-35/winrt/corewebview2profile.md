@@ -1,7 +1,7 @@
 ---
 description: Multiple profiles can be created under a single user data directory but with separated cookies, user preference settings, and various data storage etc..
 title: CoreWebView2Profile
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Profile
 topic_type:
 - APIRef

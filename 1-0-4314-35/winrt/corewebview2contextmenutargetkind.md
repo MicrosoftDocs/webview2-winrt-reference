@@ -1,7 +1,7 @@
 ---
 description: Indicates the kind of context for which the context menu was created for the CoreWebView2ContextMenuTarget.Kind property.
 title: CoreWebView2ContextMenuTargetKind
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContextMenuTargetKind
 topic_type:
 - APIRef

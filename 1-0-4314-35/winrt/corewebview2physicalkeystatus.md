@@ -1,7 +1,7 @@
 ---
 description: Contains the information packed into the `LPARAM` sent to a Win32 key event.
 title: CoreWebView2PhysicalKeyStatus
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2PhysicalKeyStatus
 topic_type:
 - APIRef

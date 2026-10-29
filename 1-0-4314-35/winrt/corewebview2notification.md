@@ -1,7 +1,7 @@
 ---
 description: An object that represents an HTML Notification object.
 title: CoreWebView2Notification
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Notification
 topic_type:
 - APIRef

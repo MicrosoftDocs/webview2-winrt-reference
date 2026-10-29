@@ -1,7 +1,7 @@
 ---
 description: Represents a dedicated worker in WebView2 and provides methods and properties for interacting with it, such as getting the script URI, posting messages, managing events related to the creation of child workers, termination, etc.
 title: CoreWebView2DedicatedWorker
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DedicatedWorker
 topic_type:
 - APIRef

@@ -1,7 +1,7 @@
 ---
 description: Specifies the key event kind that raises an CoreWebView2Controller.AcceleratorKeyPressed event.
 title: CoreWebView2KeyEventKind
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2KeyEventKind
 topic_type:
 - APIRef

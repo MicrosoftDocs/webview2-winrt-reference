@@ -1,7 +1,7 @@
 ---
 description: Event args for the CoreWebView2.FrameCreated and CoreWebView2Frame.FrameCreated events.
 title: CoreWebView2FrameCreatedEventArgs
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2FrameCreatedEventArgs
 topic_type:
 - APIRef

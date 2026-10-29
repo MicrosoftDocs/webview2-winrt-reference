@@ -1,7 +1,7 @@
 ---
 description: Represents a context menu item of a context menu displayed by WebView.
 title: CoreWebView2ContextMenuItem
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ContextMenuItem
 topic_type:
 - APIRef

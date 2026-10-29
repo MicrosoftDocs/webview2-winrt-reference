@@ -1,7 +1,7 @@
 ---
 description: Kind of CoreWebView2FileSystemHandle as described in FileSystemHandle.kind.
 title: CoreWebView2FileSystemHandleKind
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2FileSystemHandleKind
 topic_type:
 - APIRef

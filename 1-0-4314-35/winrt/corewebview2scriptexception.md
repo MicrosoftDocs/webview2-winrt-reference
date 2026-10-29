@@ -1,7 +1,7 @@
 ---
 description: This represents a JavaScript exception.
 title: CoreWebView2ScriptException
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ScriptException
 topic_type:
 - APIRef

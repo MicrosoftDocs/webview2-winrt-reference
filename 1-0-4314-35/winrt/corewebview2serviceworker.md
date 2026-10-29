@@ -1,7 +1,7 @@
 ---
 description: Represents a service worker in WebView2 and provides methods and properties for interacting with it, such as getting the script URI, posting messages to it, etc.
 title: CoreWebView2ServiceWorker
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2ServiceWorker
 topic_type:
 - APIRef

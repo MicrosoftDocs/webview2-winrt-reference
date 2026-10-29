@@ -1,7 +1,7 @@
 ---
 description: Represents the registration of a custom scheme with the CoreWebView2Environment.
 title: CoreWebView2CustomSchemeRegistration
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2CustomSchemeRegistration
 topic_type:
 - APIRef

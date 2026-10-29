@@ -1,7 +1,7 @@
 ---
 description: An HTTP request used with the CoreWebView2.WebResourceRequested event.
 title: CoreWebView2WebResourceRequest
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2WebResourceRequest
 topic_type:
 - APIRef

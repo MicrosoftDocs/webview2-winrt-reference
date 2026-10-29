@@ -1,7 +1,7 @@
 ---
 description: CoreWebView2Frame provides direct access to the iframes information and handling.
 title: CoreWebView2Frame
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Frame
 topic_type:
 - APIRef

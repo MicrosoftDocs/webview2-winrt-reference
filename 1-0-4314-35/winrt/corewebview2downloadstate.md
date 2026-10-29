@@ -1,7 +1,7 @@
 ---
 description: The state of the CoreWebView2DownloadOperation.
 title: CoreWebView2DownloadState
-ms.date: 10-29-2026
+ms.date: 10/29/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2DownloadState
 topic_type:
 - APIRef
