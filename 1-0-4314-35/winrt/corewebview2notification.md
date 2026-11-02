@@ -1,7 +1,7 @@
 ---
 description: An object that represents an HTML Notification object.
 title: CoreWebView2Notification
-ms.date: 10/29/2026
+ms.date: 11/02/2026
 keywords: webview2, webview, winrt, win32, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, CoreWebView2Notification
 topic_type:
 - APIRef
@@ -50,7 +50,7 @@ Members|Description
 [RequiresInteraction](#requiresinteraction) | A boolean value indicating that a notification should remain active until the user clicks or dismisses it, rather than closing automatically.
 [ShouldRenotify](#shouldrenotify) | Indicates whether the user should be notified after a new notification replaces an old one.
 [Tag](#tag) | A string representing an identifying tag for the notification.
-[Timestamp](#timestamp) | Indicates the time at which a notification is created or applicable (past, present, or future) as the number of milliseconds since the UNIX epoch.
+[Timestamp](#timestamp) | Indicates the time at which a notification is created or applicable (past, present, or future).
 [Title](#title) | The title of the notification.
 [VibrationPattern](#vibrationpattern) | Gets the vibration pattern for devices with vibration hardware to emit.
 [ReportClicked](#reportclicked) | The host may run this to report the notification has been clicked, and it will cause the [click](https://developer.mozilla.org/docs/Web/API/Notification/click_event) event to be raised for non-persistent notifications and the [notificationclick](https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope/notificationclick_event) event for persistent notifications.
@@ -144,7 +144,7 @@ This corresponds to [Notification.tag](https://developer.mozilla.org/docs/Web/AP
 
 > readonly  double Timestamp
 
-Indicates the time at which a notification is created or applicable (past, present, or future) as the number of milliseconds since the UNIX epoch.
+Indicates the time at which a notification is created or applicable (past, present, or future).
 
 ### Title
 
